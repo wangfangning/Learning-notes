@@ -106,8 +106,8 @@
 			var sec1 = parseInt($("section.header .top").css("height"));
 			var sec2 = parseInt($("section.bottom").css("height"));
 			var sec3 = parseInt($("section.footer").css("height"));
-			var Hei = height - sec1 - sec2 - sec3-20 + "px";
-			$(".songliwu").css("height",Hei);
+			var Hei = height - sec1 - sec2 - sec3 - 20 + "px";
+			$(".songliwu").css("height", Hei);
 			name.style.height = height + "px";
 
 
@@ -160,6 +160,9 @@
 
 				})
 				// 发送礼物
+			function xiaoshi() {
+
+			}
 			$(".chongzhi p i").click(function() {
 				// 获取图片路径
 				var src = $(".swiper-slide ul li p.bianxian .ti").attr("src");
@@ -170,8 +173,12 @@
 				// 字符串拼接
 				var div = '<div class="fangke">' + '<img src="images/headw.png" alt="" class="fangketouxiang"/>' + '<div class="user">' + '<p>' + '访客1' + '</p>' +
 					'<p>' + name + '</p>' + '	</div>' + '<div class="liwudan">' + '<img src="images/' + imgURL + '	" alt=""/>' + '	</div>' + '</div>';
-
-				$(".songliwu").prepend(div)
+				$(".songliwu").prepend(div);
+				// setTimeout(xiaoshi, "2500");
+				var len = $(".fangke").size()
+				for (var i = len; i >= 0; i--) {
+					$(".fangke").eq(i).delay(3000).fadeOut(300);
+				}
 			})
 		})
 	</script>
