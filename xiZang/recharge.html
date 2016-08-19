@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta id="viewport" name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta http-equiv="pragma" content="no-cache">  
+<meta http-equiv="cache-control" content="no-cache">  
+<meta http-equiv="expires" content="0">  
+<meta name="format-detection" content="telephone=no" />
+<title>充值</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/mxhStyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/public4.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<style type="text/css">
+	p{
+	margin-bottom: 0;
+}
+</style>
+<body>
+	<div id='bodyContainer'>
+		<!--#include virtual="include/headXiZang.html"-->
+		<div class='showCustomInfo'>
+			<p class='currentAdmin'>
+				<span class='busTip color333'>当前充值用户：</span>
+				<span class='adminN color89'>Really（ID:611198205）</span>
+			</p>
+			<p class='currentAdmin lastMar0'>
+				<span class='busTip color333'>藏金币金额：</span>
+				<span class='adminC colorff7800'>200</span>
+			</p>
+		</div>
+		<div class='CostListContainer'>
+			<ul>
+				<li>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>60</span>
+							<span>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							&yen;<span>6.00</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+				<li>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>300</span>
+							<span>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							&yen;<span>30.0</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+				<li>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>980</span>
+							<span>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							&yen;<span>98.0</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+				<li>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>15980</span>
+							<span>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							&yen;<span>1598.0</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+				<li>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>5980</span>
+							<span>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							&yen;<span>598.0</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+				<li class='customProperty'>
+					<div class='detailcostConatiner'>
+						<p class='showGameCurrency'>
+							<span class='colorff7800 GameMoney'>自定义</span>
+							<span class='dn'>金额</span>
+						</p>
+						<p class='showYenCurrency color8b051d'>
+							<span class='dn'>&yen;</span>
+							<span class='yenCurrency'>充值金额</span>
+						</p>
+						<img src="images/onMe.png" class='OnIcon dn' />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class='submitButtonContainer'>
+			<button class=''>确定充值</button>
+		</div>
+		<div class='protocolConatiner'>
+			<div class='radioContainer'>
+				<img src="images/OnChooseIcon.png" class='readIcon dn' />
+			</div>
+			<p class='protoColText'>我已阅读并同意<span>《用户充值协议》</span></p>
+			
+		</div>
+	</div>
+	<div class='CoverElement dn'></div>
+	<div class='PoupleCharge dn'>
+		<div class='PoupleHead'>
+			<p class='PoupleTitle'>自定义充值</p>
+			<div class='ClosePouple'>
+				<img src="images/CloseIcon.png" />
+			</div>
+		</div>
+		<div class='PoupleBody'>
+			<div class='liContainer'>
+				<span>充值账号：</span>
+				<input type='text' />
+			</div>
+			<div class='liContainer'>
+				<span>充值数量：</span>
+				<input type='text' class='rechangeInput' />
+				<span class='mar10'>金币</span>
+			</div>
+			<div class='liContainerCoston '>
+				<span class = 'lititle'>充值金额：</span>
+				<span class='showmoney'>&yen;</span>
+				<span class='showmoney calculateMoney'>60.0</span>
+			</div>
+			<button class='PoupleButton'>确&nbsp;定</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var bodyH = $('body').height();
+			$('.CoverElement').height(bodyH);
+			var totalLi = $('.CostListContainer').find('li');
+			for(var i = 0;i < totalLi.length;i++){
+				var idx = i + 1;
+				if((idx%3)==0){
+					totalLi.eq(i).css('margin-right','0px');
+				}
+			}
+			$('.CostListContainer').on('click',function(event){
+				var targetEl = (event.target.nodeName == 'LI')?$(event.target):$(event.target).parents('li');
+				//console.log('targetEl---->'+targetEl.html());
+				if(targetEl.find('.OnIcon').hasClass('dn')){
+					targetEl.find('.OnIcon').removeClass('dn');
+					targetEl.find('.detailcostConatiner').addClass('onLi');
+					targetEl.siblings('li').find('.OnIcon').addClass('dn');
+					targetEl.siblings('li').find('.detailcostConatiner').removeClass('onLi');
+				}
+			})
+			$('.radioContainer').on('click',function(){
+				var isChoose = $(this).children('img').hasClass('dn');
+				if(isChoose){
+					$(this).children('img').removeClass('dn');
+					$(this).addClass('bgread');
+					$('.submitButtonContainer').children('button').addClass('onbutton');
+				}else{
+					$(this).children('img').addClass('dn');
+					$(this).removeClass('bgread');
+					$('.submitButtonContainer').children('button').removeClass('onbutton');
+				}
+			})
+			$('.ClosePouple').on('click',function(){
+				$(this).parents('.PoupleCharge').hide();
+				$('.CoverElement').hide();
+			});
+			$('.customProperty').on('click',function(){
+				$('.PoupleCharge').show();
+				$('.CoverElement').show();
+			});
+			$('.rechangeInput').on('input propertychange',function(){
+				var thisValue = (parseFloat($(this).val())*0.1).toFixed(2);
+				$('.calculateMoney').text(thisValue);
+
+			})
+			$('.PoupleButton').on('click',function(){
+				var GameMoney = $('.rechangeInput').val();
+				var currencyYen = $('.calculateMoney').text();
+				$('.customProperty').find('.GameMoney').text(GameMoney);
+				$('.customProperty').find('.GameMoney').siblings('span').removeClass('dn');
+				$('.customProperty').find('.yenCurrency').text(currencyYen);
+				$('.customProperty').find('.yenCurrency').siblings('span').removeClass('dn');
+				$(this).parents('.PoupleCharge').hide();
+				$('.CoverElement').hide();
+			})
+
+		})
+	</script>
+</body>
+</html>

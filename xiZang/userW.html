@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>用户界面</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link href="css/userW.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/public4.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+	<body>
+		<div class="mengceng">
+
+		</div>
+		<section class="tanceng">
+			<h1>余额不足</h1>
+			<p>
+				当前余额不足，充值才可以继续送礼，是否去充值？
+			</p>
+			<div class="">
+				<span style="border-left: none;">取消</span><span>确定</span>
+			</div>
+
+		</section>
+		<main id="main">
+			<section class="header">
+				<div class="top">
+					<div class="left">
+						<img src="images/headw.png" alt="" />
+						<div class="user">
+							<p>
+								主播小璇
+							</p>
+							<p>
+								611人
+							</p>
+						</div>
+					</div>
+					<div class="right">
+						<ul>
+							<li><img src="images/headw.png" alt="" /></li>
+							<li><img src="images/headw.png" alt="" /></li>
+							<li><img src="images/headw.png" alt="" /></li>
+						</ul>
+						<img src="images/closew.png" alt="" />
+					</div>
+			</section>
+			<section class="bottom">
+				<p>
+					藏金币<span>200</span><img src="images/arroww.png" alt="" />
+				</p>
+				</div>
+			</section>
+			<div class="songliwu">
+				<!-- <div class="fangke">
+					<img src="images/headw.png" alt="" class="fangketouxiang" />
+					<div class="user">
+						<p>
+							访客1
+						</p>
+						<p>
+							生生世世
+						</p>
+
+					</div>
+					<div class="liwudan">
+						<img src="images/liwu2.png" alt="" />
+					</div>
+				</div> -->
+			</div>
+			<section class="footer">
+				<div class="top visible3 visible">
+					<ul>
+						<li class="guan"><span>访客1</span><i>王小可关注了主播</i></li>
+						<li><span>访客2</span><i>您好，主播</i></li>
+						<li class="zhubo"><span>主播</span><i>您好</i></li>
+						<li><span>访客2</span><i>现在网站上有什么特价商品吗？</i></li>
+						<li class="zhubo"><span>主播</span><i>有的，亲</i></li>
+					</ul>
+				</div>
+				<!--#include virtual="include/Swiper.html"-->
+				<div class="bottom">
+					<ul>
+						<li><img src="images/gongnengw1.png" alt="" class="click1" /></li>
+						<li><img src="images/gongnengw2.png" alt="" class="click2" /></li>
+						<li><img src="images/gongnengw3.png" alt="" class="click3" /></li>
+					</ul>
+				</div>
+			</section>
+
+		</main>
+	</body>
+	<script>
+		window.onload = function() {
+			var height = window.innerHeight;
+			var yuan1 = $("section.header").css("height");
+			var yuan2 = $("section.header").css("height");
+			var name = document.getElementById("main");
+			var sec1 = parseInt($("section.header .top").css("height"));
+			var sec2 = parseInt($("section.bottom").css("height"));
+			var sec3 = parseInt($("section.footer").css("height"));
+			var Hei = height - sec1 - sec2 - sec3-20 + "px";
+			$(".songliwu").css("height",Hei);
+			name.style.height = height + "px";
+
+
+		}
+		$(document).ready(function() {
+			$(".swiper-container,.chongzhi").hide();
+			$(".tanceng,.mengceng").hide();
+
+			$(".click2").click(function() {
+
+					$("div.bottom").hide();
+					$(".visible,.swiper-container").hide();
+					$(".swiper-container,.chongzhi").show();
+					$(".bottom ul").hide()
+
+
+
+
+				})
+				// $(".click3").click(function() {
+				// 	if ($(".visible3").css("display") == "block") {
+				// 		$(".visible").hide();
+				// 	} else {
+				// 		$(".visible").hide();
+				// 		$(".visible3").show();
+				// 	}
+				// })
+
+			$(".swiper-slide li p").click(function(even) {
+				$(".swiper-slide li p").each(function() {
+					$(".swiper-slide li p").removeClass("bianxian");
+					$(".swiper-slide li p .gouxuan").hide();
+				})
+				$(this).addClass("bianxian");
+				$(this).children(".gouxuan").show();
+			})
+			$(".songliwu").click(function() {
+				$(".swiper-container,.chongzhi").hide();
+				$(".visible3").show();
+				$("div.bottom").show();
+				$("div.bottom ul").show();
+
+			})
+			$(".tanceng span").click(function() {
+				$(".tanceng,.mengceng").hide();
+
+			})
+			$(".tancengan").click(function() {
+					$(".tanceng,.mengceng").show();
+
+				})
+				// 发送礼物
+			$(".chongzhi p i").click(function() {
+				// 获取图片路径
+				var src = $(".swiper-slide ul li p.bianxian .ti").attr("src");
+				var imgURL = src.split("/")[1];
+				// 获取礼物名称
+				var name = $(".swiper-slide ul li p.bianxian").siblings(".liwuname").text();
+				// alert(name)
+				// 字符串拼接
+				var div = '<div class="fangke">' + '<img src="images/headw.png" alt="" class="fangketouxiang"/>' + '<div class="user">' + '<p>' + '访客1' + '</p>' +
+					'<p>' + name + '</p>' + '	</div>' + '<div class="liwudan">' + '<img src="images/' + imgURL + '	" alt=""/>' + '	</div>' + '</div>';
+
+				$(".songliwu").prepend(div)
+			})
+		})
+	</script>
+
+	</html>

@@ -1,0 +1,302 @@
+* {
+  font-style: normal;
+  outline: none;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: auto;
+  font-size: .24rem;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+main {
+  background-image: url("../images/bgw.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+/*头部样式*/
+
+.top {
+  margin-top: .28rem;
+  margin-bottom: .2rem;
+  overflow: hidden;
+}
+.header img {
+  width: .84rem;
+}
+.header .left {
+  float: left;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 .5rem .5rem 0;
+}
+.header .left img {
+  float: left;
+  margin: .04rem .12rem;
+}
+.header .left div {
+  float: left;
+  margin-right: .4rem;
+  margin-top: .15rem;
+}
+.header .right {
+  float: right;
+}
+.header .right ul {
+  float: left;
+}
+.header .right>img {
+  width: .44rem;
+  margin: .18rem .12rem 0 0;
+}
+.header .right ul li {
+  float: left;
+}
+.header .right ul li img {
+  margin: 0 .06rem;
+}
+.bottom {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 .5rem .5rem 0;
+  display: inline-block;
+}
+.bottom p {
+  margin: .18rem .22rem .18rem .14rem;
+  ;
+}
+.bottom p span {
+  color: #ffba00;
+  display: inline-block;
+  margin: 0 .45rem 0 .05rem;
+}
+.bottom p img {
+  width: .32rem;
+  vertical-align: middle;
+}
+
+/*底部样式*/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer .top {
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer ul li {
+  margin: .2rem .15rem;
+}
+.footer ul li span {
+  display: inline-block;
+  height: .48rem;
+  width: .95rem;
+  line-height: .48rem;
+  background-color: #996a39;
+  text-align: center;
+  border-radius: .1rem;
+  margin-right: .15rem;
+}
+.footer ul li.zhubo {
+  overflow: hidden;
+}
+.footer ul li.guan i {
+  color: #ffba00;
+}
+.footer ul li.zhubo span {
+  background-color: #8b051d;
+  margin-left: .15rem;
+  margin-right: 0;
+}
+.footer ul li.zhubo * {
+  float: right;
+}
+.footer ul li.zhubo i {
+  margin-top: .06rem;
+}
+.bottom ul li {
+  width: 33.3%;
+  float: left;
+  margin: 0;
+  text-align: center;
+}
+.footer .bottom {
+  background: none;
+  display: block;
+  margin: .18rem 0;
+  overflow: hidden;
+}
+.footer .bottom img {
+  width: 1.1rem;
+}
+.swiper-slide {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.swiper-slide img.ti {
+  width: 1rem;
+  height: .9rem;
+  position: absolute;
+  top: -0.05rem;
+  left: .05rem;
+}
+
+/*.swiper-slide ul{
+  width: 95%;
+  margin: auto;
+}*/
+
+.footer .swiper-slide p {
+  width: 1.1rem;
+  height: .85rem;
+  margin: auto;
+  position: relative;
+  border: 1px solid #645f4e;
+}
+.footer .swiper-slide p.bianxian {
+  border: 1px solid #ffc600;
+}
+.footer .swiper-slide p .gouxuan {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.footer .swiper-slide li {
+  width: 25%;
+  float: left;
+  margin: .15rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer .swiper-slide div {
+  margin-top: .08rem;
+}
+.swiper-pagination-bullet {
+  width: .2rem;
+  height: .2rem;
+  background-color: #272727;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.chongzhi {
+  border-top: 1px solid #19110a;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: .14rem .12rem;
+}
+.chongzhi p {
+  line-height: .75rem;
+}
+.chongzhi p span {
+  color: #ffc600;
+}
+.chongzhi i {
+  font-size: .36rem;
+  color: #fff;
+  text-align: center;
+  line-height: .75rem;
+  float: right;
+  width: 2.1rem;
+  height: .75rem;
+  background-color: #8b051d;
+  border-radius: .25rem;
+  outline: none;
+}
+.songliwu{
+  height: 3.8rem;
+}
+/*弹层样式*/
+.tanceng{
+  width: 4.35rem;
+  height: 2.7rem;
+  position: fixed;
+  top: 50%;
+  margin-top: -3.17rem;
+  left: 50%;
+  margin-left: -2.22rem;
+  background-color: #fff;
+  border-radius: .3rem;
+  z-index: 1000;
+  
+}
+.tanceng h1{
+  font-size: .3rem;
+  color: #8b051d;
+  text-align: center;
+  margin: .2rem 0 .4rem 0;
+}
+.tanceng p{
+  padding: 0 .45rem;
+  text-align: center;
+  font-size: .24rem;
+  color: #666;
+}
+.tanceng div{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.tanceng span{
+  width: 49.6%;
+  float: left;
+  margin-top: .25rem;
+  border: 1px solid #0e0909;
+  border-bottom: none;
+  border-right: none;
+font-size: .28rem;
+color: #1e6da4;
+padding: .23rem 0;
+text-align: center;
+}
+.mengceng{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+/*送礼物*/
+.songliwu{
+  overflow: auto;;
+}
+.songliwu .fangke{
+  margin: .5rem .2rem;
+  margin-bottom: 0;
+}
+.songliwu .fangketouxiang{
+  width: .84rem;
+  float: left;
+  margin: .04rem .12rem;
+  margin-left: 0;
+}
+.songliwu .fangke{
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  position: relative;
+}
+.songliwu .fangke div {
+  float: left;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  margin-right: 2rem;
+  margin-top: .15rem;
+}
+.liwudan{
+
+  background: none!important;
+  position: absolute;
+  bottom: 0;
+  right: -2rem;
+
+}
+.liwudan img{
+  width: 1.1rem!important;
+}

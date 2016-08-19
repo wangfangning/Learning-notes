@@ -1,0 +1,529 @@
+#bodyContainer{
+		min-width: 320px;
+		max-width: 640px;
+		margin:0 auto;
+		font-family: "微软雅黑";
+		background-color: #f8f7f7;
+	}
+	.showCustomInfo{
+		background: #ebe4c5;
+		padding:0.34rem 0.24rem;
+	}
+	.showCustomInfo .currentAdmin{
+		font-size: 0.24rem;
+		margin-bottom: 0.2rem;
+	}
+	.lastMar0{
+		margin-bottom: 0 !important;
+	}
+	.color333{
+		color: #333333;
+	}
+	.color89651{
+		color: #c89651;
+	}
+	.colorff7800{
+		color: #ff7800;
+	}
+	.showCustomInfo .currentAdmin .busTip{
+		
+		
+	}
+	.showCustomInfo .currentAdmin .adminN{
+		
+	}
+	.CostListContainer ul{
+		overflow: hidden;
+	}
+	.CostListContainer ul li{
+		float: left;
+		margin-right: 0.28rem;
+		margin-bottom: 0.34rem;
+		position: relative;
+	}
+	.CostListContainer ul li .OnIcon{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0.37rem;
+	}
+	.CostListContainer{
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+		margin-top: 0.35rem;
+	}
+	.CostListContainer ul li .detailcostConatiner{
+		width: 1.7rem;
+		height: 1.35rem;
+		float: left;
+		border:1px solid #ccc;
+		padding-left: 0.07rem;
+		padding-right: 0.07rem;
+	}
+	.onLi{
+		border:1px solid #8b051d !important;
+	}
+	.color666{
+		color: #666;
+	}
+	.color8b051d{
+		color: #8b051d;
+	}
+	.CostListContainer ul li .detailcostConatiner .showGameCurrency{
+		font-size: 0.24rem;
+		color: #666;
+		text-align: center;
+		line-height: 0.7rem;
+		border-bottom: 1px dashed #f8d6bd;
+	}
+	.CostListContainer ul li .detailcostConatiner .showGameCurrency .GameMoney{
+		font-size: 0.34rem;
+	}
+	.CostListContainer ul li .detailcostConatiner .showYenCurrency{
+		font-size: 0.24rem;
+		text-align: center;
+		line-height: 0.6rem;
+	}
+	.dn{
+		display: none;
+	}
+	.submitButtonContainer{
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+	}
+	.submitButtonContainer button{
+		background: grey;
+		font-size: 0.3rem;
+		color: #fff;
+		height: 0.88rem;
+		line-height: 0.88rem;
+		border-radius: 5px;
+		width: 100%;
+		border:none;
+		outline: none;
+	}
+	.onbutton{
+		background: #caa16d !important; 
+	}
+	.protocolConatiner{
+		height: 0.38rem;
+		line-height: 0.38rem;
+		margin-top: 0.28rem;
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+	}
+	.protocolConatiner .radioContainer{
+		width: 0.38rem;
+		height: 0.38rem;
+		border-radius: 50%;
+		border:1px solid #ccc;
+		float: left;
+		margin-right: 0.1rem;
+		position: relative;
+	}
+	.protocolConatiner .protoColText{
+		font-size: 0.24rem;
+		color: #999;
+		line-height: 0.45rem;
+	}
+	.protocolConatiner .protoColText span{
+		color: #c89651;
+	}
+	.protocolConatiner .readIcon{
+		height: 0.18rem;
+		position: absolute;
+		top: 50%;
+		margin-top: -0.09rem;
+		left: 0.05rem;
+	}
+	.bgread{
+		background: #00cc00 !important;
+		border:none;
+	}
+	.CoverElement{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 100;
+	    /*display: none;*/
+	    
+	    width: 6.4rem;
+	    background: #666;
+	    opacity: 0.5;
+	    filter: alpha(opacity=50);
+	}
+/*弹层样式start*/
+.PoupleCharge{
+			width: 5.74rem;
+			position: fixed;
+			top: 50%;
+			margin-top: -1.96rem;
+			background: #fff;
+			left: 50%;
+			margin-left: -2.87rem;
+			z-index: 10000;
+			border-radius: 5px;
+		}
+		.PoupleCharge .PoupleHead{
+			height: 0.67rem;
+			line-height: 0.67rem;
+			background: #f7f7f7;
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+			position: relative;
+		}
+		.PoupleCharge .PoupleHead .PoupleTitle{
+			font-size: 0.28rem;
+			color: #8b051d;
+			float: left;
+			padding-left: 0.25rem;
+		}
+		.PoupleCharge .PoupleHead .ClosePouple img{
+			height: 0.26rem;
+			position: absolute;
+			top: 50%;
+			margin-top: -0.13rem;
+			right: 0.24rem;
+		}
+		.PoupleCharge .PoupleHead .ClosePouple{
+			float: right;
+			width: 1rem;
+			height: 100%;
+			position: relative;
+		}
+		.PoupleBody{
+			text-align: center;
+		}
+		.PoupleBody .liContainer{
+			overflow: hidden;
+			height: 0.5rem;
+			line-height: 0.5rem;
+			padding-top: 0.2rem;
+			padding-bottom: 0.2rem;
+			padding-left: 0.45rem;
+		}
+		.PoupleBody .liContainerCoston{
+			overflow: hidden;
+			height: 0.5rem;
+			line-height: 0.5rem;
+			padding-top: 0.2rem;
+			padding-left: 0.45rem;
+		}
+		.PoupleBody .liContainerCoston .showmoney{
+			font-size: 0.3rem;
+			color: #8b051d;
+			float: left;
+			font-weight: bold;
+		}
+		.PoupleBody .liContainerCoston .lititle{
+			font-size: 0.24rem;
+			color: #333333;
+			float: left;
+		}
+		.PoupleBody .liContainer span{
+			font-size: 0.24rem;
+			color: #333333;
+			float: left;
+		}
+		.PoupleBody .liContainer input{
+			float: left;
+			height: 0.5rem;
+			line-height: 0.5rem;
+			border:1px solid #cccccc;
+			color: #999999;
+			font-size: 0.24rem;
+			width: 2.88rem;
+			padding-left: 0.1rem;
+		}
+		.mar10{
+			margin-left: 0.1rem;
+		}
+		.col8b051d{
+			color: #8b051d !important;
+		}
+		.PoupleBody .PoupleButton{
+			border:none;
+			outline: none;
+			background: #8b051d;
+			color: #fff;
+			font-size: 0.3rem;
+			width: 2rem;
+			height: 0.6rem;
+			border-radius: 5px;
+			margin-bottom: 0.1rem;
+		}
+.OrderTab{
+
+}
+.OrderTab ul{
+	overflow: hidden;
+}
+.OrderTab ul li{
+	float: left;
+	width: 33.3%;
+	background: #ececec;
+	color: #666666;
+	font-size: 0.3rem;
+	text-align: center;
+	height: 0.88rem;
+	line-height: 0.88rem;
+}
+.OrderTab ul li .tabName{
+	position: relative;
+	display: inline;
+}
+.OrderTab ul li .tabName .showQuantity{
+	border-radius: 50%;
+	border:1px solid #ff7800;
+	font-size: 0.18rem;
+	color:#ff7800;
+	position: absolute;
+	top: -0.12rem;
+	right: -0.21rem;
+}
+.onwhite span{
+	line-height: normal;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    z-index: 110;
+    background: #fff;
+}
+.onwhite .imgreCharge{
+	position: absolute;
+	height: 0.12rem;
+	z-index: 10;
+    left: 2px;
+    bottom: -3px;
+}
+.onliwhite{
+	background: #fff !important;
+}
+.mui-content-padded a .mui-icon {
+    margin-top: 12px;
+}
+.mui-icon {
+    font-family: Muiicons;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+.messageIcon{
+	position: relative;
+}
+.messageCost{
+	margin-left: -8px;
+    position: absolute;
+    font-size: 0.18rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+}
+.messageTip{
+	position: absolute;
+	right: -25px;
+	top: -13px;
+	line-height: normal;
+}
+.onliwhite{
+	border-bottom: 2px solid #8b061c;
+}
+.onliwhite .tabName{
+	color: #8b061c;
+}
+.onliwhite .messageTip{
+	color: #ff7800;
+}
+.outLi .messageTip{
+	color: #af7731;
+}
+.tabgetgifts,.tabgSendGifts{
+	background: #fff;
+}
+.tabgetgifts ul{
+	overflow: hidden;
+}
+.tabgSendGifts ul{
+	overflow: hidden;
+}
+.tabgetgifts ul li{
+	width: 50%;
+	float: left;
+	border-bottom: 1px solid #dfdddd;
+}
+.tabgSendGifts ul li{
+	width: 50%;
+	float: left;
+	border-bottom: 1px solid #dfdddd;
+}
+.tabgetgifts ul li .liContainer{
+	border-right: 1px solid #dfdddd;
+	padding-top: 0.2rem;
+}
+.tabgSendGifts ul li .liContainer{
+	border-right: 1px solid #dfdddd;
+	padding-top: 0.2rem;
+}
+.tabgetgifts ul li .liContainer .giftImgContainer{
+	height: 1.61rem;
+	text-align: center;
+}
+.tabgSendGifts ul li .liContainer .giftImgContainer{
+	height: 1.61rem;
+	text-align: center;
+}
+.tabgetgifts ul li .liContainer .giftImgContainer img{
+	height: 100%;
+}
+.tabgSendGifts ul li .liContainer .giftImgContainer img{
+	height: 100%;
+}
+.tabgetgifts ul li .liContainer .showgiftPrice{
+	font-size: 0.28rem;
+	color: #333333;
+	text-align: center;
+	margin-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	border-bottom: 1px dashed #f8d6bd;
+	margin-bottom: 0;
+}
+.tabgSendGifts ul li .liContainer .showgiftPrice{
+	font-size: 0.28rem;
+	color: #333333;
+	text-align: center;
+	margin-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	border-bottom: 1px dashed #f8d6bd;
+	margin-bottom: 0;
+}
+.tabgetgifts ul li .liContainer .showgiftPrice span{
+	color: #ff8400;
+}
+.tabgSendGifts ul li .liContainer .showgiftPrice span{
+	color: #ff8400;
+}
+.showGiftF{
+	background: #f8f7f7;
+	overflow: hidden;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+}
+.showGiftF .NameFrom{
+	color: #c89651;
+	font-size: 0.23rem;
+	float: left;
+}
+.showGiftF .NameFrom span{
+	color: #999999;
+}
+.showGiftF .TimeFrom{
+	color: #999;
+	font-size: 0.23rem;
+	float: right;
+
+}
+
+.borR0{
+	border-right: none;
+}
+.loadMore{
+	text-align: center;
+	background: #f8f7f7;
+	font-size: 0.24rem;
+	color: #b38145;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	border-bottom: 1px solid #dfdddd;
+}
+.CopyRight{
+	font-size: 0.24rem;
+	color: #b9b9b9;
+	text-align: center;
+	height: 0.75rem;
+	line-height: 0.75rem;
+}
+.buttonZhiDing{
+	position: fixed;
+	bottom: 0.48rem;
+	height: 1.06rem;
+	right: 0;
+}
+.DateSlider{
+	height: 0.88rem;
+	line-height: 0.88rem;
+	background: #fff;
+
+}
+
+.swiper-container_Upload{
+		margin:0 auto;
+		overflow: hidden;
+		background: #fff;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	.swiper-container_Upload .swiper-slide .slide_p{
+		font-size: 0.18rem;
+		color:#888888;
+		text-align: center;
+	}
+	.swiper-container_Upload .swiper-slide .silde_h{
+		font-size: 0.28rem;
+		text-align: center;
+	}
+	.swiper-slide{
+		text-align: center;
+	}
+.onDate{
+	color: #8b061c !important;
+}
+.showPaymentDetail{
+	overflow: hidden;
+}
+.showPaymentDetail .payItem{
+	height: 0.76rem;
+	line-height: 0.76rem;
+	background: #f5f5f5;
+	border-bottom: 1px solid #eeeeee;
+}
+.showPaymentDetail .payItem p{
+	width: 33.3%;
+	float: left;
+}
+.showPaymentDetail .payItem p span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid #eeeeee;
+	font-size: 0.24rem;
+	color: #666666;
+}
+.showListPay ul{
+	overflow: hidden;
+}
+.showListPay ul li{
+	
+	border-bottom: 1px solid #eeeeee;
+}
+.showListPay ul li .payLi{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	background: #fff;
+	font-size: 0.24rem;
+	color: #666666;
+}
+.showListPay ul li .payLi p{
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	border-right: 1px solid #eeeeee;
+}
+.border{
+	border-right: 1px solid #d6d6d6;
+	border-left: 1px solid #d6d6d6;
+}
