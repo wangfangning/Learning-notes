@@ -44,11 +44,12 @@
 						</div>
 					</div>
 					<div class="right">
-						<ul>
+						<!--#include virtual="include/freemode.html"-->
+						<!-- <ul>
 							<li><img src="images/headw.png" alt="" /></li>
 							<li><img src="images/headw.png" alt="" /></li>
 							<li><img src="images/headw.png" alt="" /></li>
-						</ul>
+						</ul> -->
 						<img src="images/closew.png" alt="" />
 					</div>
 			</section>
@@ -86,6 +87,10 @@
 					</ul>
 				</div>
 				<!--#include virtual="include/Swiper.html"-->
+				<div class="liaotian">
+					<input type="text" name="name" value="">
+					<img src="" alt="" />
+				</div>
 				<div class="bottom">
 					<ul>
 						<li><img src="images/gongnengw1.png" alt="" class="click1" /></li>
@@ -115,26 +120,28 @@
 		$(document).ready(function() {
 			$(".swiper-container,.chongzhi").hide();
 			$(".tanceng,.mengceng").hide();
-
+			$(".liaotian").hide();
+			$(".swiper-containerUP").show();
 			$(".click2").click(function() {
 
-					$("div.bottom").hide();
-					$(".visible,.swiper-container").hide();
-					$(".swiper-container,.chongzhi").show();
-					$(".bottom ul").hide()
+				$("div.bottom").hide();
+				$(".visible,.swiper-container").hide();
+				$(".swiper-container,.chongzhi").show();
+				$(".bottom ul").hide()
 
 
 
 
-				})
-				// $(".click3").click(function() {
-				// 	if ($(".visible3").css("display") == "block") {
-				// 		$(".visible").hide();
-				// 	} else {
-				// 		$(".visible").hide();
-				// 		$(".visible3").show();
-				// 	}
-				// })
+			})
+			$(".click3").click(function() {
+				// if ($(".visible3").css("display") == "block") {
+				// 	$(".visible").hide();
+				// } else {
+				// $(".visible").hide();
+				$(".visible3").hide();
+				$(".liaotian").show();
+				// }
+			})
 
 			$(".swiper-slide li p").click(function(even) {
 				$(".swiper-slide li p").each(function() {
@@ -160,9 +167,6 @@
 
 				})
 				// 发送礼物
-			function xiaoshi() {
-
-			}
 			$(".chongzhi p i").click(function() {
 				// 获取图片路径
 				var src = $(".swiper-slide ul li p.bianxian .ti").attr("src");

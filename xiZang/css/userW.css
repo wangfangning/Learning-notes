@@ -50,7 +50,8 @@ main {
 }
 .header .right>img {
   width: .44rem;
-  margin: .18rem .12rem 0 0;
+  margin: .2rem .12rem 0 0;
+  vertical-align: top;
 }
 .header .right ul li {
   float: left;
@@ -222,7 +223,7 @@ main {
   background-color: #fff;
   border-radius: .3rem;
   z-index: 1000;
-  
+
 }
 .tanceng h1{
   font-size: .3rem;
@@ -299,4 +300,8 @@ text-align: center;
 }
 .liwudan img{
   width: 1.1rem!important;
+}
+.swiper-containerUP div.swiper-slide{
+  width: .95rem!important;
+  background: none;
 }

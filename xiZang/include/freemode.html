@@ -1,0 +1,34 @@
+<!-- Swiper -->
+<div class="swiper-container swiper-containerUP" style="width:2.9rem;display:inline-block;height:.9rem;">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="width:.84rem"><img src="images/headw.png" alt="" /></div>
+    <div class="swiper-slide" style="width:.84rem"><img src="images/headw.png" alt="" /></div>
+    <div class="swiper-slide" style="width:.84rem"><img src="images/headw.png" alt="" /></div>
+    <div class="swiper-slide" style="width:.84rem"><img src="images/headw.png" alt="" /></div>
+    <div class="swiper-slide" style="width:.84rem"><img src="images/headw.png" alt="" /></div>
+
+  </div>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="../dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-containerUP', {
+    // pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 3,
+    freeMode: true,
+    boolean: true
+  });
+  $(document).ready(function(){
+    var lenSize=$(".swiper-containerUP .swiper-slide").size();
+    var lenWidth=parseInt($(".swiper-containerUP .swiper-slide").css("width"));
+    var tabWidth=lenSize*lenWidth;
+    $(".swiper-wrapper").css("width",tabWidth+"px");
+    // alert(typeof lenWidth)
+  })
+</script>
