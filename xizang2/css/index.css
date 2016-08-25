@@ -1,0 +1,106 @@
+body {
+  background: #e7e8eb;
+}
+.banner img {
+  width: 100%;
+}
+.message-box {
+
+  height: 2.1rem;
+  overflow: hidden;
+
+}
+.msg-list {
+  padding-top: 0.15rem;
+  padding-left: .2rem;
+}
+.msg-list em {
+  font-size: .24rem;
+  background: #97e0a8;
+  border-radius: 4px;
+  color: #fff;
+  padding: 2px;
+}
+.msg-list .name {
+  color: #999;
+  font-size: .18rem;
+  margin: 0 5px;
+}
+.msg-list .nr {
+  color: #000;
+}
+.msg-list:nth-child(2) em {
+  background: #f6996d;
+}
+.msg-list:nth-child(3) em {
+  background: #7ecef4;
+}
+.msg-list:nth-child(4) em {
+  background: #8c97cb;
+}
+.msg-list:nth-child(5) em {
+  background: #eb6877;
+}
+.msg-list:nth-child(6) em {
+  background: #f6996d;
+}
+.msg-list:nth-child(7) em {
+  background: #7ecef4;
+}
+.input-box {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #f8f8f8;
+  border-top: 1px solid #dcdcdc;
+  padding: .2rem;
+}
+.input-box img {
+  width: .5rem;
+  vertical-align: middle;
+}
+.input-box .text {
+  height: .5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding-left: 2px;
+  width: 3.5rem;
+  margin: 0 0 0 .1rem;
+}
+.input-box .btn {
+  background: #bb0404;
+  color: #fff;
+  border: none;
+  font-size: .24rem;
+  height: .5rem;
+  padding: 0 .22rem;
+}
+#emotions {
+  left: 0!important;
+  top: auto!important;
+  bottom: 1.1rem!important;
+  width: 100%!important;
+  box-sizing: border-box;
+}
+
+/*NEW*/
+#pullUp{
+  color: #333;
+}
+.message-box-nr{
+  position: static!important;
+}
+.swiper-container{
+      background-color: rgba(0, 0, 0, 0.5);
+}
+.banner{
+  height: 5.6rem;
+}
+.banner *{
+  width: 100%;
+  height: 100%;
+}
+#thelist{
+  overflow: auto;
+}
