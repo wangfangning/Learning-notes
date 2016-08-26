@@ -54,8 +54,10 @@ $(function() {
 			}
 		}
 	});
-});
 
+});
+var Href = $(".container img").attr("src");
+alert(Href)
 //替换
 function AnalyticEmotion(s) {
 	if(typeof (s) != "undefined") {
@@ -68,7 +70,6 @@ function AnalyticEmotion(s) {
 				}
 			}
 		}
-		
 	}
 	return s;
 }
@@ -81,7 +82,7 @@ function AnalyticEmotion(s) {
 			event.stopPropagation();
 			var eTop = target.offset().top + target.height() + 15;
 			var eLeft = target.offset().left - 1;
-			
+
 			if($('#emotions .categorys')[0]){
 				$('#emotions').css({top: eTop, left: eLeft});
 				$('#emotions').toggle();
@@ -102,7 +103,7 @@ function AnalyticEmotion(s) {
 			});
 			showCategorys();
 			showEmotions();
-			
+
 		});
 		$('body').click(function(){
 			$('#emotions').remove();
@@ -117,7 +118,7 @@ function AnalyticEmotion(s) {
 					cr.collapse();
 					cr.select();
 				}else if (this.selectionStart || this.selectionStart == '0') {
-					var 
+					var
 					start = this.selectionStart,
 					end = this.selectionEnd;
 					this.value = this.value.substring(0, start)+ text+ this.value.substring(end, this.value.length);
@@ -125,7 +126,7 @@ function AnalyticEmotion(s) {
 				}else {
 					this.value += text;
 				}
-			});        
+			});
 			return this;
 		}
 		function showCategorys(){
@@ -159,7 +160,7 @@ function AnalyticEmotion(s) {
 				target.insertText($(this).attr('title'));
 				$('#emotions').remove();
 			});
-			 
+
 			$('#emotions .categorys a.current').removeClass('current');
 			$('#emotions .categorys a').each(function(){
 				if($(this).text() == category){

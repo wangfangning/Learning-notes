@@ -85,7 +85,7 @@
 	</div>
 	<div class="input-box"><img class="face-icon" src="images/icon.png">
 		<img class="click2" src="images/gongnengw2.png">
-		<input type="text" class="text">
+		<input type="text" placeholder="请输入您的聊天信息" class="text">
 		<button type="button" class="btn">提交</button>
 	</div>
 
@@ -164,8 +164,7 @@
 				onScrollEnd: function() {
 					if (pullDownEl.className.match('flip')) {
 						pullDownEl.className = 'loading';
-						//	pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Loading...';
-						//pullDownAction();	// Execute custom function (ajax call?)
+
 					} else if (pullUpEl.className.match('flip')) {
 						pullUpEl.className = 'loading';
 						pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Loading...';
@@ -183,12 +182,9 @@
 			e.preventDefault();
 		}, false);
 
-		//document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
 		$(window).load(function() {
 			loaded();
 		});
-		//setTimeout(loaded, 100);
-		//loaded();
 
 
 
@@ -198,24 +194,31 @@
 
 			$('.btn').click(function() {
 				var _txt = $('.text').val();
-				$('#thelist').append('<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">' + _txt + '</span></div>');
-				//myScroll.refresh();
-				setTimeout(function() {
-					myScroll.refresh();
-				}, 0);
-				/*myScroll = new iScroll('wrapper', {
-				useTransition: true,
-				topOffset: pullDownOffset
+				if (_txt == "") {
 
-				});*/
-				var _heg = $('.message-box-nr').height() - $('.message-box').height();
-				$('.message-box-nr').css({
-					"top": -_heg
-				});
+				} else {
+					var Href = $(".container img").attr("src");
+					alert(Href)
+					// var r = /\[(.+?)\]/g;
+					// for (var i = 0; i < _txt.match(r).length; i++) {
+					//
+					// }
 
-				$('#thelist').scrollTop( $('#thelist')[0].scrollHeight );
-				//$('.message-box-nr').css({"transform": "translate(0px, -"+_heg+"px) translateZ(0px)"});
-				//$('.message-box-nr').css({"-webkit-transform": "translate(0px, -"+_heg+"px) translateZ(0px)"});
+					$('#thelist').append('<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">' + _txt + '</span></div>');
+					//myScroll.refresh();
+					setTimeout(function() {
+						myScroll.refresh();
+					}, 0);
+
+					var _heg = $('.message-box-nr').height() - $('.message-box').height();
+					$('.message-box-nr').css({
+						"top": -_heg
+					});
+
+					$('#thelist').scrollTop($('#thelist')[0].scrollHeight);
+
+				}
+
 			});
 
 		});
@@ -255,13 +258,9 @@
 
 			})
 			$(".click3").click(function() {
-				// if ($(".visible3").css("display") == "block") {
-				// 	$(".visible").hide();
-				// } else {
-				// $(".visible").hide();
 				$(".visible3").hide();
 				$(".liaotian").show();
-				// }
+
 			})
 
 			$(".swiper-slide li p").click(function(even) {
@@ -299,13 +298,13 @@
 				var suiji = (Math.floor(Math.random() * 100)) + "px";
 				var div = '<div class="ding"><div class="fangke" style="top:' + suiji + '">' + '<img src="images/headw.png" alt="" class="fangketouxiang"/>' + '<div class="user">' + '<p>' + '访客1' + '</p>' +
 					'<p>' + name + '</p>' + '	</div>' + '<div class="liwudan">' + '<img src="images/' + imgURL + '	" alt=""/>' + '	</div>' + '</div></div>';
-				// alert(suiji)
+
 
 				$("body").prepend(div);
-				// setTimeout(xiaoshi, "2500");
+
 				var len = $(".fangke").size()
 				for (var i = len; i >= 0; i--) {
-					$(".fangke").eq(i).delay(3200).fadeOut(1500);
+					$(".fangke").eq(i).delay(3200).fadeOut(2000);
 				}
 			})
 		})
