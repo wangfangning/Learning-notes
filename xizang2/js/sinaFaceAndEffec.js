@@ -56,8 +56,7 @@ $(function() {
 	});
 
 });
-var Href = $(".container img").attr("src");
-alert(Href)
+
 //替换
 function AnalyticEmotion(s) {
 	if(typeof (s) != "undefined") {

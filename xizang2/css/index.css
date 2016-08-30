@@ -11,7 +11,7 @@ body {
 
 }
 .msg-list {
-  padding-top: 0.15rem;
+  padding-top: 0.1rem;
   padding-left: .2rem;
 }
 .msg-list em {
@@ -52,6 +52,7 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
+  right: 0;
   background: #f8f8f8;
   border-top: 1px solid #dcdcdc;
   padding: .2rem;
@@ -93,6 +94,7 @@ body {
 }
 .swiper-container{
       background-color: rgba(0, 0, 0, 0.5);
+
 }
 .banner{
   height: 5.6rem;
@@ -102,5 +104,11 @@ body {
   height: 100%;
 }
 #thelist{
-  overflow: auto;
+  overflow-y: auto;
+}
+#wrapper{
+  overflow-y: auto!important;
+}
+.message-box-nr{
+overflow-y: auto;
 }

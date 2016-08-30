@@ -134,7 +134,6 @@ main {
 .footer .bottom img {
   width: 1.1rem;
 }
-
 .swiper-slide img.ti {
   width: 1rem;
   height: .9rem;
@@ -148,30 +147,30 @@ main {
   margin: auto;
 }*/
 
- .swiper-slide p {
+.swiper-slide p {
   width: 1.1rem;
   height: .85rem;
   margin: auto;
   position: relative;
   border: 1px solid #645f4e;
 }
- .swiper-slide p.bianxian {
+.swiper-slide p.bianxian {
   border: 1px solid #ffc600;
 }
- .swiper-slide p .gouxuan {
+.swiper-slide p .gouxuan {
   position: absolute;
   right: 0;
   bottom: 0;
   display: none;
 }
- .swiper-slide li {
-  width: 25%;
+.swiper-slide li {
+  width: 1.6rem;
   float: left;
   margin: .25rem 0;
   text-align: center;
   margin-bottom: 0;
 }
- .swiper-slide div {
+.swiper-slide div {
   margin-top: .1rem;
 }
 .swiper-pagination-bullet {
@@ -184,13 +183,15 @@ main {
 }
 .chongzhi {
   border-top: 1px solid #19110a;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   overflow: hidden;
   padding: .14rem .12rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 9999999;
+  display: none;
 }
-/*.chongzhi p {
-  line-height: .75rem;
-}*/
 .chongzhi p span {
   color: #ffc600;
 }
@@ -205,12 +206,15 @@ main {
   background-color: #8b051d;
   border-radius: .25rem;
   outline: none;
+  margin-right: .24rem;
 }
-.songliwu{
+.songliwu {
   height: 3.8rem;
 }
+
 /*弹层样式*/
-.tanceng{
+
+.tanceng {
   width: 4.35rem;
   height: 2.7rem;
   position: fixed;
@@ -221,96 +225,99 @@ main {
   background-color: #fff;
   border-radius: .3rem;
   z-index: 1000;
-
+  display: none;
 }
-.tanceng h1{
+.tanceng h1 {
   font-size: .3rem;
   color: #8b051d;
   text-align: center;
   margin: .2rem 0 .4rem 0;
 }
-.tanceng p{
+.tanceng p {
   padding: 0 .45rem;
   text-align: center;
   font-size: .24rem;
   color: #666;
 }
-.tanceng div{
+.tanceng div {
   overflow: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-.tanceng span{
+.tanceng span {
   width: 49.6%;
   float: left;
   margin-top: .25rem;
   border: 1px solid #0e0909;
   border-bottom: none;
   border-right: none;
-font-size: .28rem;
-color: #1e6da4;
-padding: .23rem 0;
-text-align: center;
+  font-size: .28rem;
+  color: #1e6da4;
+  padding: .23rem 0;
+  text-align: center;
 }
-.mengceng{
+.mengceng {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color:  rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  display: none;
 }
+
 /*送礼物*/
-.songliwu{
-  overflow: auto;;
+
+.songliwu {
+  overflow: auto;
+  ;
 }
-.ding{
-  position: absolute;
+.ding {
+  position: fixed;
+  z-index: 999;
 }
- .fangke{
-   position: relative;;
-   left: 6.2rem;
+.fangke {
+  position: relative;
+  left: 6.2rem;
   margin: .5rem .2rem;
   margin-bottom: 0;
   -webkit-animation: Left 7s;
-  background-color:  rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 @-webkit-keyframes Left {
-  to {left: 0;}
+  to {
+    left: 0;
+  }
 }
-
- .fangketouxiang{
+.fangketouxiang {
   width: .84rem;
   float: left;
   margin: .04rem .12rem;
   margin-left: 0;
 }
- .fangke{
+.fangke {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   border-radius: .5rem;
   position: relative;
 }
- .fangke div {
+.fangke div {
   float: left;
-
   border-radius: .5rem;
   margin-right: 2rem;
   margin-top: .15rem;
 }
-.liwudan{
-
+.liwudan {
   background: none!important;
   position: absolute;
   bottom: 0;
   right: -2rem;
-
 }
-.liwudan img{
+.liwudan img {
   width: 1.1rem!important;
 }
-.swiper-containerUP div.swiper-slide{
+.swiper-containerUP div.swiper-slide {
   width: .95rem!important;
   background: none;
 }

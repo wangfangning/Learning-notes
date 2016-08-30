@@ -18,7 +18,7 @@
 	<!--<script src="js/zepto-1.1.6-min.js"></script>-->
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/common.js?t=67554"></script>
-	<script src="js/iscroll.js"></script>
+	<!-- <script src="js/iscroll.js"></script> -->
 	<script src="js/swiper.min.js"></script>
 	<script type="text/javascript" src="js/public4.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -43,9 +43,6 @@
 
 	<div class="message-box" id="wrapper" style="position:relative">
 		<div class="message-box-nr">
-			<div id="pullDown">
-				<span class="pullDownIcon"></span><span class="pullDownLabel"></span>
-			</div>
 			<div id="thelist">
 
 				<div class="msg-list"><em>用户</em><span class="name">小凡：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
@@ -62,27 +59,13 @@
 				<div class="msg-list"><em>用户</em><span class="name">瓜子曲奇：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
 				<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
 				<div class="msg-list"><em>用户</em><span class="name">瓜子曲奇：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
-				<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
-				<div class="msg-list"><em>用户</em><span class="name">瓜子曲奇：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
-				<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
-				<div class="msg-list"><em>用户</em><span class="name">瓜子曲奇：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
-				<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
+
 			</div>
-			<div id="pullUp">
-				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
-			</div>
+
 		</div>
 		<!--#include virtual="include/Swiper.html"-->
 	</div>
-	<div class="chongzhi">
-		<p>
-			充值：<span>200金币</span>
-			<i>发送</i>
-		</p>
-		<span class="tancengan">
-	  弹层
-	</span>
-	</div>
+
 	<div class="input-box"><img class="face-icon" src="images/icon.png">
 		<img class="click2" src="images/gongnengw2.png">
 		<input type="text" placeholder="请输入您的聊天信息" class="text">
@@ -92,19 +75,20 @@
 	<script type="text/javascript">
 		window.onload = function() {
 			var height = window.innerHeight;
-
 			var name = document.getElementsByTagName("body")[0];
 			var sec1 = parseInt($(".banner").css("height"));
 			var sec2 = parseInt($(".input-box").css("height"));
 			var HeiG = height - sec1 + "px";
+			var Width = window.screen.width;
 
 			var Hei = height - sec1 - sec2 - 30 + "px";
+
 			// $(".swiper-container").css("height", HeiG);
+
 			$("#wrapper").css("height", Hei);
+			$(".swiper-container-horizontal,.swiper-wrapper").css("width", Width);
 			$("#thelist").css("height", Hei);
 			name.style.height = height + "px";
-
-
 		}
 		var myScroll,
 			pullDownEl, pullDownOffset,
@@ -197,7 +181,7 @@
 				if (_txt == "") {
 
 				} else {
-
+					$('.text').val("");
 					$('#thelist').append('<div class="msg-list"><em>用户</em><span class="name">浓茶咖啡+牛奶：</span><span class="nr">' + _txt + '</span></div>');
 					//myScroll.refresh();
 					setTimeout(function() {
@@ -236,19 +220,23 @@
 	</script>
 	<script>
 		$(document).ready(function() {
-			$(".swiper-container,.chongzhi").hide();
-			$(".tanceng,.mengceng").hide();
+			$(".swiper-container").hide();
+
 			$(".liaotian").hide();
 			$(".swiper-containerUP").show();
 			$(".click2").click(function() {
+				var height = window.innerHeight;
 
+				var sec1 = parseInt($(".banner").css("height"));
+				var sec2 = parseInt($(".input-box").css("height"));
+				var Hei = height - sec1 + "px";
+
+				$("#wrapper").css("height", Hei);
 				$("div.bottom").hide();
 				$(".visible,.swiper-container").hide();
-				$(".swiper-container,.chongzhi").show();
+				$(".swiper-container,.chongzhi,#wrapper").show();
 				$(".bottom ul").hide()
-
 				$(".message-box-nr,.input-box").hide();
-
 
 			})
 			$(".click3").click(function() {
@@ -302,6 +290,81 @@
 				}
 			})
 		})
+	</script>
+	<script>
+		function ismobile(test) {
+			var u = navigator.userAgent,
+				app = navigator.appVersion;
+			if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+				if (window.location.href.indexOf("?mobile") < 0) {
+					try {
+						if (/iPhone|mac|iPod|iPad/i.test(navigator.userAgent)) {
+							return '0';
+						} else {
+							return '1';
+						}
+					} catch (e) {}
+				}
+			} else if (u.indexOf('iPad') > -1) {
+				return '0';
+			} else {
+				return '1';
+			}
+		};
+
+		$('.text').on({
+			focus: function() {
+				var pla = ismobile(1);
+				var sec1 = parseInt($(".banner").css("height"));
+				if (pla == "1") {
+					$(".input-box").css({
+						top: "215px"
+					});
+					$("#wrapper").hide();
+					$(".banner").css("position", "fixed")
+				} else {
+					$("body").css("position", "static")
+					$(".input-box").css({
+						position:"absolute",
+						bottom: "0px"
+					});
+					$("#wrapper").hide();
+					$(".banner").css({
+						position: "absolute",
+						top: "200px"
+					})
+				}
+
+			},
+			blur: function() {
+				var sec1 = parseInt($(".banner").css("height"));
+				var pla = ismobile(1);
+				if (pla == "1") {
+					$(".input-box").css({
+						top: "auto"
+					});
+					$("#wrapper").show().css({
+						position: "static",
+						top: sec1
+					});
+					$("body").css("position", "static");
+					$(".banner").css("position", "static")
+				} else {
+					$(".input-box").css({
+						bottom: "0px"
+					});
+					$("#wrapper").show().css({
+						position: "static",
+						top: sec1
+					});
+					$(".banner").css({
+						position: "static",
+						top: "0px"
+					});
+					$("body").css("position", "static")
+				}
+			}
+		});
 	</script>
 </body>
 
