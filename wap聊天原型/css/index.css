@@ -1,0 +1,35 @@
+body{ background:#e7e8eb;}
+.banner img{ width:100%;}
+
+.message-box{ padding:1rem 1rem 0; height:11rem; overflow:hidden;top:1rem;}
+.msg-list{ padding-bottom:0.8rem; padding-left:1rem;}
+.msg-list em{ font-size:1.2rem; background:#97e0a8;border-radius:4px;color:#fff; padding:2px;}
+.msg-list .name{color:#999; font-size:1.1rem; margin:0 5px;}
+.msg-list .nr{color:#000; }
+.msg-list:nth-child(2) em{background:#f6996d;}
+.msg-list:nth-child(3) em{background:#7ecef4;}
+.msg-list:nth-child(4) em{background:#8c97cb;}
+.msg-list:nth-child(5) em{background:#eb6877;}
+.msg-list:nth-child(6) em{background:#f6996d;}
+.msg-list:nth-child(7) em{background:#7ecef4;}
+
+
+
+.input-box{ position:fixed; width:100%; bottom:0;left:0; background:#f8f8f8;border-top:1px solid #dcdcdc; padding:1rem;}
+.input-box img{ width:2.5rem; vertical-align:middle;}
+.input-box .text{ height:2.5rem;border:1px solid #dcdcdc;border-radius:3px; padding-left:2px; width:19.5rem; margin:0 1rem;}
+.input-box .btn{ background:#bb0404;color:#fff;border:none; font-size:1.3rem; height:2.5rem; padding:0 1rem;}
+
+
+
+
+#emotions{left:0!important;top:auto!important;bottom:5.2rem!important; width:100%!important; box-sizing:border-box;}
+
+
+
+
+
+
+
+
+

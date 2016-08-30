@@ -12,13 +12,10 @@
 	<link href="css/userW.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/mobase.css">
 	<link rel="stylesheet" href="css/index.css?t=12355">
-
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/sinaFaceAndEffec.css" />
-	<!--<script src="js/zepto-1.1.6-min.js"></script>-->
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/common.js?t=67554"></script>
-	<!-- <script src="js/iscroll.js"></script> -->
 	<script src="js/swiper.min.js"></script>
 	<script type="text/javascript" src="js/public4.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -43,6 +40,7 @@
 
 	<div class="message-box" id="wrapper" style="position:relative">
 		<div class="message-box-nr">
+
 			<div id="thelist">
 
 				<div class="msg-list"><em>用户</em><span class="name">小凡：</span><span class="nr">去西藏穿什么装备比较合适？</span></div>
@@ -73,6 +71,9 @@
 	</div>
 
 	<script type="text/javascript">
+	document.ontouchstart=function(){
+return true;
+}
 		window.onload = function() {
 			var height = window.innerHeight;
 			var name = document.getElementsByTagName("body")[0];
@@ -80,99 +81,17 @@
 			var sec2 = parseInt($(".input-box").css("height"));
 			var HeiG = height - sec1 + "px";
 			var Width = window.screen.width;
-
 			var Hei = height - sec1 - sec2 - 30 + "px";
-
-			// $(".swiper-container").css("height", HeiG);
 
 			$("#wrapper").css("height", Hei);
 			$(".swiper-container-horizontal,.swiper-wrapper").css("width", Width);
-			$("#thelist").css("height", Hei);
+			$(".message-box-nr").css("height", Hei);
 			name.style.height = height + "px";
 		}
 		var myScroll,
 			pullDownEl, pullDownOffset,
 			pullUpEl, pullUpOffset,
 			generatedCount = 0;
-
-
-		function pullUpAction() { //加载更多数据
-			setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
-				var el, li, i;
-				el = document.getElementById('thelist');
-				alert('加载更多数据。。。');
-
-
-
-				myScroll.refresh(); // Remember to refresh when contents are loaded (ie: on ajax completion)
-			}, 1000); // <-- Simulate network congestion, remove setTimeout from production!
-		}
-
-		function loaded() {
-			pullDownEl = document.getElementById('pullDown');
-			pullDownOffset = pullDownEl.offsetHeight;
-			pullUpEl = document.getElementById('pullUp');
-			pullUpOffset = pullUpEl.offsetHeight;
-
-			myScroll = new iScroll('wrapper', {
-				useTransition: true,
-				topOffset: pullDownOffset,
-				onRefresh: function() {
-					if (pullDownEl.className.match('loading')) {
-						pullDownEl.className = '';
-						//	pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
-					} else if (pullUpEl.className.match('loading')) {
-						pullUpEl.className = '';
-						pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';
-					}
-				},
-				onScrollMove: function() {
-					if (this.y > 5 && !pullDownEl.className.match('flip')) {
-						pullDownEl.className = 'flip';
-						//	pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Release to refresh...';
-						this.minScrollY = 0;
-					} else if (this.y < 5 && pullDownEl.className.match('flip')) {
-						pullDownEl.className = '';
-						//	pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
-						this.minScrollY = -pullDownOffset;
-					} else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
-						pullUpEl.className = 'flip';
-						pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Release to refresh...';
-						this.maxScrollY = this.maxScrollY;
-					} else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
-						pullUpEl.className = '';
-						pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';
-						this.maxScrollY = pullUpOffset;
-					}
-				},
-				onScrollEnd: function() {
-					if (pullDownEl.className.match('flip')) {
-						pullDownEl.className = 'loading';
-
-					} else if (pullUpEl.className.match('flip')) {
-						pullUpEl.className = 'loading';
-						pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Loading...';
-						pullUpAction(); // Execute custom function (ajax call?)
-					}
-				}
-			});
-
-			setTimeout(function() {
-				document.getElementById('wrapper').style.left = '0';
-			}, 100);
-		}
-
-		document.addEventListener('touchmove', function(e) {
-			e.preventDefault();
-		}, false);
-
-		$(window).load(function() {
-			loaded();
-		});
-
-
-
-
 
 		$(function() {
 
@@ -193,7 +112,7 @@
 						"top": -_heg
 					});
 
-					$('#thelist').scrollTop($('#thelist')[0].scrollHeight);
+					$('.message-box-nr').scrollTop($('#thelist')[0].scrollHeight);
 
 				}
 
