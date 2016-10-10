@@ -1,0 +1,408 @@
+<style>
+.headContainerWap5 .HeadbgImg{
+        width:100%;
+        display: block;
+        z-index: 0;
+        position: absolute;
+    }
+    .startVipContainer .startwap5{
+        width: 0.34rem;
+    }
+    .startVipContainer span{
+        font-size: 0.34rem;
+        color: #fff;
+        float: left;
+        margin-right: 5px;
+    }
+    .headContainerWap5{
+        /*position: absolute;*/
+        top: 0;
+        height: 320px;
+        position: relative;
+        width: 100%;
+    }
+    .startVipContainer{
+        /*float: left;*/
+        position: absolute;
+        background: rgba(255,255,255,0.2);
+        line-height: 0.7rem;
+        padding-right: 10px;
+        height: 0.7rem;
+        border-radius: 0.35rem;
+        padding-left: 15px;
+        margin-left: 0.47rem;
+        margin-top: 10px;
+    }
+    .startVipContainer .startwap5{
+        margin-top: 0.15rem;
+        float: left;
+        margin-right: 5px;
+    }
+    .contentContainer{
+        position: absolute;
+        width: 100%;
+        /*height: 100%;*/
+        left: 0;
+        top: 0;
+    }
+    .funHead{
+        /*float: right;*/
+        margin-top: 4px;
+        height: 0.8rem;
+        line-height: 0.8rem;
+       /* padding-right: 0.4rem;*/
+       right: 0.4rem;
+        position: absolute;
+    }
+    .funHead .seachIconWap5{
+        height: 0.7rem;
+        vertical-align: middle;
+        margin-right: 0.3rem;
+    }
+    .funHead .erweiMaWap5{
+        height: 0.64rem;
+        vertical-align: middle;
+        margin-right: 0.3rem;
+    }
+    .funHead span{
+        font-size: 0.54rem;
+        color: #fff;
+    }
+    .circleflowContainer{
+        width: 5.52rem;
+        height: 5.44rem;
+        border-radius: 50%;
+        border:1px solid #fff;
+        clear: both;
+        margin-top: 0.8rem;
+        margin:0 auto;
+        position: relative;
+        top: 2rem;
+    }
+    .gap8{
+        height: 0.84rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .circleflowContainer .textTip{
+        font-size: 0.46rem;
+        color: #fff;
+        text-align: center;
+        margin-top: 0.9rem;
+    }
+    .circleflowContainer .lastDataFlow{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 0.34rem;
+        line-height: 1rem;
+        color: #fff;
+    }
+    .circleflowContainer .lastDataFlow span{
+        font-size: 0.4rem;
+    }
+    .circleflowContainer .DataPercent{
+        font-size: 0.4rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .circleflowContainer .buttonRecharge{
+        font-size: 0.36rem;
+        color: #fff;
+        border:1px solid #fff;
+        width: 2.09rem;
+        height: 0.64rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+        margin:0 auto;
+        text-align: center;
+    }
+    .circleflowContainer .dataArae{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+    .QiandaoBtn{
+        position: absolute;
+        left: 0.47rem;
+        top: 2rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        background: rgba(255,255,255,0.2);
+        padding-left: 0.3rem;
+        border-radius: 0.4rem;
+        padding-right: 0.4rem;
+    }
+    .QiandaoBtn span{
+        font-size: 0.34rem;
+        color: #fff;
+        float: left;
+    }
+    .QiandaoBtn img{
+        height: 0.56rem;
+        float: left;
+        margin-top: 0.12rem;
+        margin-right: 0.1rem;
+    }
+    .HongBaoBtn{
+        position: absolute;
+        right: 0.47rem;
+        top: 2rem;
+    }
+    .HongBaoBtn img{
+        height: 1.64rem;
+    }
+    .DataDetailClien{
+      top: 7.5rem;
+      width: 100%;
+      position: absolute;
+      margin-top: 0.4rem;
+                      }
+    .DataDetailClien ul{
+      overflow: hidden;
+    }
+    .DataDetailClien ul li{
+      float: left;
+      width: 33.3%;
+      text-align: center;
+    }
+    .DataDetailClien ul li .dataText{
+      font-size: 0.4rem;
+      color: #fff;
+
+    }
+    .DataDetailClien ul li .dataInfo{
+      font-size: 0.64rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-top: 0.2rem;
+    }
+    .DataDetailClien ul li .dataInfo span{
+      font-size: 0.34rem;
+      color: #fff;
+    }
+    .DataDetailClien ul li .dataButton{
+      font-size: 0.36rem;
+      color: #fff;
+      background: rgba(255,255,255,0.2);
+      margin:0 auto;
+      height: 0.64rem;
+      line-height: 0.64rem;
+      border:1px solid #fff;
+      border-radius: 0.32rem;
+      width: 70%;
+    }
+    .bottomInfo{
+      position: relative;
+      height: 0.7rem;
+    }
+    .bottomInfo .date{
+      font-size: 0.3rem;
+      color: #FFF;
+      position: absolute;
+      left: 0.47rem;
+      line-height: 0.7rem;
+    }
+    .bottomInfo .sliderIcon{
+      width: 0.58rem;
+      position: absolute;
+      left: 50%;
+      margin-left: -0.29rem;
+      top: 50%;
+      margin-top: -0.23rem;
+    }
+    .bottomInfo .Mize{
+      width: 0.42rem;
+      position: absolute;
+      right: 0.47rem;
+      top: 50%;
+      margin-top: -0.21rem;
+    }
+    .bottomADContainer{
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      bottom: 0.2rem;
+    }
+</style>
+<div class='headContainerWap5'>
+        <img src="images/bg5.jpg" class='HeadbgImg' onclick = "window.location.href='../index.html'" />
+        <div class='startVipContainer'>
+                <span>五星用户</span>
+                <img src="images/start.png" class='startwap5' />
+                <img src="images/start.png" class='startwap5' />
+                <img src="images/start.png" class='startwap5' />
+                <img src="images/start.png" class='startwap5' />
+                <img src="images/start.png" class='startwap5' />
+            </div>
+            <div class='funHead'>
+                <img src="images/seach.png" class='seachIconWap5' />
+                <img src="images/erweima.png" class='erweiMaWap5'>
+                <span>北京</span>
+            </div>
+            <div class='circleflowContainer'>
+                <canvas id="canvas" style="z-index:99;position:absolute;top:0px;left:0px;"></canvas>
+                <div class='dataArae'>
+                    <p class='textTip'>剩余流量</p>
+                    <p class='lastDataFlow'>1226<span>MB</span></p>
+                    <p class='DataPercent'>已用80%</p>
+                    <p class='buttonRecharge'>冲流量</p>
+                </div>
+            </div>
+                    <div class='QiandaoBtn'>
+                        <img src="images/pencil.png" class='penIcon' />
+                        <span class='text'>签到</span>
+                    </div>
+                    <div class='HongBaoBtn'>
+                        <img src="images/hongBao.png" class='penIcon' />
+                    </div>
+                    <div class='DataDetailClien'>
+                        <ul>
+                            <li>
+                                <p class='dataText'>剩余语音</p>
+                                <p class='dataInfo'>126<span>分钟</span></p>
+                                <p class='dataButton'>升级套餐</p>
+                            </li>
+                            <li>
+                                <p class='dataText'>剩余话费</p>
+                                <p class='dataInfo'>51.01<span>元</span></p>
+                                <p class='dataButton'>充值</p>
+                            </li>
+                            <li>
+                                <p class='dataText'>合约剩余</p>
+                                <p class='dataInfo'>100<span>元</span></p>
+                                <p class='dataButton'>续办合约</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='bottomADContainer'>
+                      <div class='bottomInfo'>
+                        <p class='date'>[截至2016/09/01 12:00]</p>
+                        <img src="images/sliderDown.png" class='sliderIcon' />
+                        <img src="images/Mianze.png" class='Mize' />
+                      </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+
+      var HeadbgImgHeight = $('.HeadbgImg').height();
+      $('.headContainerWap5').height(HeadbgImgHeight);
+
+      var canvas = document.getElementById('canvas');
+                      var ctx = canvas.getContext('2d');
+                      canvas.width = canvas.parentNode.offsetWidth;
+                      canvas.height = canvas.parentNode.offsetHeight;
+                      $(canvas).css('border-radius','50%');
+                      
+                      //填充颜色
+                     ctx.fillStyle = "rgba(0,222,255, 0.2)";
+                     //开始绘制路径
+                     ctx.beginPath();
+                     //左上角
+                     ctx.moveTo(0, canvas.height/2);
+                     //右上角
+                     ctx.lineTo(canvas.width, canvas.height/2);
+                     //右下角
+                     ctx.lineTo(canvas.width, canvas.height);
+                     //左下角
+                     ctx.lineTo(0, canvas.height);
+                     //左上角
+                     ctx.lineTo(0, canvas.height/2);
+                     //闭合路径
+                     ctx.closePath();
+                     //填充路径
+                     ctx.fill();
+                     
+                    //如果浏览器支持requestAnimFrame则使用requestAnimFrame否则使用setTimeout
+                     window.requestAnimFrame = (function(){
+                       return window.requestAnimationFrame ||
+                        window.webkitRequestAnimationFrame ||
+                           window.mozRequestAnimationFrame ||
+                           function( callback ){
+                            window.setTimeout(callback, 1000 / 60);
+                           };
+                      })();
+                    
+                      function loop(){
+                        requestAnimFrame(loop);
+                      }
+                    loop();
+                    
+                     function loop(){
+                      //清空canvas
+                      ctx.clearRect(0,0,canvas.width,canvas.height);
+                      //绘制矩形
+                      ctx.fillStyle = "rgba(175,153,186, 0.2)";
+                      ctx.beginPath();
+                      ctx.moveTo(0, canvas.height/2);
+                      ctx.lineTo(canvas.width, canvas.height/2);
+                      ctx.lineTo(canvas.width, canvas.height);
+                      ctx.lineTo(0, canvas.height);
+                      ctx.lineTo(0, canvas.height/2);
+                      ctx.closePath();
+                      ctx.fill();
+                      requestAnimFrame(loop);
+                     }
+                    
+                     //初始角度为0
+                     var step = 0;
+                     function loop(){
+                      ctx.clearRect(0,0,canvas.width,canvas.height);
+                      ctx.fillStyle = "rgba(175,153,186, 0.2)";
+                      //角度增加一度
+                      step++;
+                       //角度转换成弧度
+                      var angle = step*Math.PI/180;
+                      //矩形高度的变化量
+                      var deltaHeight = Math.sin(angle) * 50;
+                      //矩形高度的变化量(右上顶点)
+                      var deltaHeightRight = Math.cos(angle) * 50;
+                      ctx.beginPath();
+                      ctx.moveTo(0, canvas.height/2+deltaHeight);
+                      //右上顶点
+                      ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
+                      ctx.lineTo(canvas.width, canvas.height);
+                      ctx.lineTo(0, canvas.height);
+                      ctx.lineTo(0, canvas.height/2+deltaHeight);
+                      ctx.closePath();
+                      ctx.fill();
+                      requestAnimFrame(loop);
+                    }
+                      var angle = step*Math.PI/180;
+                      var deltaHeight = Math.sin(angle) * 50;
+                      var deltaHeightRight = Math.cos(angle) * 50;
+                      ctx.beginPath();
+                      ctx.moveTo(0, canvas.height/2+deltaHeight);
+                      //ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
+                      //画曲线
+                      ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2,    canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
+                      ctx.lineTo(canvas.width, canvas.height);
+                      ctx.lineTo(0, canvas.height);
+                      ctx.lineTo(0, canvas.height/2+deltaHeight);
+                      ctx.closePath();
+                      //定义三条不同波浪的颜色
+                      var lines = ["rgba(175,153,186, 0.4)", "rgba(169,129,165, 0.4)", "rgba(177,153,185, 0.4)"];
+                      var len = lines.length;
+                      function loop(){
+                       ctx.clearRect(0,0,canvas.width,canvas.height);
+                       step++;
+                       //画3个不同颜色的矩形
+                       for(var j = len - 1; j >= 0; j--) {
+                         ctx.fillStyle = lines[j];
+                         //每个矩形的角度都不同，每个之间相差45度
+                         var angle = (step+j*45)*Math.PI/180;
+                         var deltaHeight = Math.sin(angle) * 20;
+                         var deltaHeightRight = Math.cos(angle) * 20;
+                         ctx.beginPath();
+                         ctx.moveTo(0, canvas.height/2+deltaHeight);
+                         ctx.bezierCurveTo(canvas.width /2, canvas.height/1+deltaHeight-50, canvas.width / 2,         canvas.height/1+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
+                         ctx.lineTo(canvas.width, canvas.height);
+                         ctx.lineTo(0, canvas.height);
+                         ctx.lineTo(0, canvas.height/2+deltaHeight);
+                         ctx.closePath();
+                         ctx.fill();
+                      }
+                       requestAnimFrame(loop);
+                     }
+    </script>

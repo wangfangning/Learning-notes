@@ -1,0 +1,226 @@
+<style type="text/css">
+    html,body,div,canvas,a{margin: 0px;padding: 0px;}
+    #container{width: 100%;margin:0px auto;overflow: hidden;}
+    #clockBoard{width: 320px;height: 220px;margin: 0px auto;position: relative;}
+    #pointer{position: relative;top:-560px;left: -112px;position: absolute;top: -176px;}
+    #value{position: relative;z-index: 10;top: 0;left: 210;border-radius: 5px;line-height: 20px;}
+    #clock{
+    	left: -112px;
+	    position: absolute;
+	    top: -176px;
+    }
+</style>
+<div id="container">
+    <div id="clockBoard">
+        <canvas id="clock" width="440px" height="400px"></canvas>
+        <canvas id="pointer" width="440px" height="400px"></canvas>
+        <input type="hidden" id="value" value='53' placeholder="80" maxlength="4" min='300'>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload=function(){
+        var canvas=document.getElementById('clock');
+        var ctx=canvas.getContext('2d');
+        // 绘制外环
+        ctx.beginPath();
+        ctx.arc(275,330,144,30/180*Math.PI,150/180*Math.PI,true);
+        ctx.strokeStyle='#ffa07c';
+        ctx.lineWidth='3'
+        ctx.stroke();
+        ctx.closePath();
+        // 绘制内环
+        ctx.beginPath();
+        ctx.arc(275,330,120,30/180*Math.PI,150/180*Math.PI,true);
+        ctx.strokeStyle='#ffc9b4';
+        ctx.lineWidth='12';
+        ctx.stroke();
+        ctx.closePath();
+        ctx.translate(275,330);
+        // 绘制刻度
+        var total=[0,'较差',20,'中等',40,'良好',60,'优秀',80,'极好',100];
+        for(var i=0;i<17;i++){
+            if(i%6===3){
+                ctx.beginPath();
+                ctx.lineWidth='2';
+                ctx.strokeStyle='#fff';//长刻度线的颜色
+                ctx.moveTo(144*0.8*Math.sin(7.5*i/180*Math.PI),-144*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.lineTo(156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.moveTo(-144*0.8*Math.sin(7.5*i/180*Math.PI),-144*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.lineTo(-156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.stroke();
+                ctx.closePath();
+            }else{
+                ctx.beginPath();
+                ctx.lineWidth='1';
+                ctx.strokeStyle='#fff';//短刻度线的颜色
+                ctx.moveTo(150*0.8*Math.sin(7.5*i/180*Math.PI),-150*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.lineTo(156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.moveTo(-150*0.8*Math.sin(7.5*i/180*Math.PI),-150*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.lineTo(-156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
+                ctx.stroke();
+                ctx.closePath();
+            }
+        }
+        // 绘制文本
+        ctx.font='';
+        ctx.fillStyle='#ffa07c';
+        ctx.textAlign='center';
+        ctx.textBaseline='bottom';
+        ctx.rotate((-7.5*15)/180*Math.PI);
+        for(var i=0;i<11;i++){
+            ctx.fillStyle=i%2? '#ffa07c':'#ffa07c';
+            ctx.fillText(total[i],0,-124*0.8);
+            ctx.rotate((7.5*3)/180*Math.PI);
+        }
+        ctx.rotate(-7.5*18/180*Math.PI);
+        ctx.fillStyle='#ffa07c';
+        ctx.font='20px normal';
+        ctx.fillText('SCORE',0,-60);
+        ctx.font='14px normal';
+        // 获取当前日期
+       
+        // 绘制动画需要重置幕布，所以重建一个canvas对象
+        var pointer=document.getElementById('pointer');
+        var ctxPoint=pointer.getContext('2d');
+        function run(inputValue){
+            var timer;
+            var i=0;
+            ctxPoint.translate(275,330);
+            ctxPoint.fillStyle ='#ff7744';//圆点的颜色
+            ctxPoint.strokeStyle='#ff7744';//圆点的颜色
+            // 设置最终的值
+            //var finalValue=inputValue;
+            var finalValue;
+            if(inputValue < 20){
+                var temp = inputValue / 20;
+                finalValue = (550 - 350)*temp + 350;
+            }else if(inputValue < 40){
+                var temp2 = (inputValue - 20) / 20;
+                finalValue = (600 - 550)*temp2 + 550;
+            }else if(inputValue < 60){
+                var temp2 = (inputValue - 40) / 20;
+                finalValue = (650 - 600)*temp2 + 600;
+            }else if(inputValue < 80){
+                var temp2 = (inputValue - 60) / 20;
+                finalValue = (700 - 650)*temp2 + 650;
+            }else if(inputValue < 100){
+                var temp2 = (inputValue - 80) / 20;
+                finalValue = (950 - 700)*temp2 + 700;
+            }else if(inputValue == 100){
+                var temp2 = (inputValue - 1 - 80) / 20;
+                finalValue = (950 - 700)*temp2 + 700;
+            }
+            var value=0;
+            // 根据值的大小确定应该到达的位置
+            if(finalValue<550){
+                value=(finalValue-316.7)*0.225;
+            }else if(finalValue<700){
+                value=(finalValue-550)*0.9+52.5;
+            }else{
+                value=finalValue>1000?1000:finalValue;
+                value=(value-700)*0.18+187.5;
+            }
+            var evluate='';
+            if(inputValue<20){
+                evluate='较差'
+            }else if(inputValue<40){
+                evluate='中等';
+            }else if(inputValue<60){
+                evluate='良好';
+            }else if(inputValue<80){
+                evluate='优秀';
+            }else{
+                evluate='极好';
+            }
+            ctxPoint.font='95px bold';
+            ctxPoint.textAlign='center';
+            ctxPoint.shadowColor='red';
+            // 所有的动画事件
+            function slideValue(){
+                ctxPoint.translate(-275,-330);
+                ctxPoint.clearRect(0,0,pointer.width,pointer.height);
+                ctxPoint.translate(275,330);
+                i++;
+                // 绘制滚动元素
+                ctxPoint.beginPath();
+                ctxPoint.shadowBlur=30;
+                ctxPoint.arc(-180*0.8*Math.sin((i+60)/180*Math.PI),180*0.8*Math.cos((i+60)/180*Math.PI),4,0,2*Math.PI,true);//5
+                ctxPoint.fillStyle='red';
+                ctxPoint.fill();
+                ctxPoint.arc(-180*0.8*Math.sin((i+60)/180*Math.PI),180*0.8*Math.cos((i+60)/180*Math.PI),2.4,0,2*Math.PI,true);//3
+                ctxPoint.fillStyle='red';//圆点颜色
+                ctxPoint.fill();
+                // 填充分数和评分
+                ctxPoint.fillStyle='#ff7744';
+                ctxPoint.font='72px bold';
+                var text=0;
+                if(i<52.5){
+                    text=i/0.225+316.7;
+                }else if(i<187.5){
+                    text=(i-52.5)/0.9+550;
+                }else{
+                    text=(i-187.5)/0.18+700;
+                    text=text>1000?1000:text;
+                }
+                text=text>inputValue?inputValue:text;
+                ctxPoint.shadowBlur=0;
+                ctxPoint.fillText(parseInt(text,10),0,10);
+                ctxPoint.font='30px bold';
+                ctxPoint.fillText('分',60*0.8,10);
+                ctxPoint.stroke();
+                ctxPoint.font='18px bold';
+                ctxPoint.stroke();
+                ctxPoint.closePath();
+                var dataPoint = parseInt(document.getElementById('value').getAttribute('value'));
+                // 如果到达所需要的弧度，则停止，否则继续跳动
+                if(i>value){
+                    setTimeout(function(){//表盘提示字
+                       // ctxPoint.fillText('存在超量风险',0,70);
+                       console.log('322');
+                        if(dataPoint < 20){
+                            ctxPoint.fillText('存在风险1',0,50);
+                        }else if(dataPoint < 40){
+                            ctxPoint.fillText('存在风险2',0,50);
+                        }else if(dataPoint < 60){
+                            ctxPoint.fillText('存在风险3',0,50);
+                        }else if(dataPoint < 80){
+                            ctxPoint.fillText('存在风险4',0,50);
+                        }else if(dataPoint < 100){
+                            ctxPoint.fillText('存在风险5',0,50);
+                        }
+
+                    },200);
+                    clearTimeout(timer);
+                }else{
+                    timer=setTimeout(slideValue,text/finalValue*15);
+                }
+            }
+            slideValue();
+        }
+        // 打开页面时默认的跳动数字
+
+        
+        // 重新绘制的函数
+        var runBtn=document.getElementById('run');
+        var valueInput=document.getElementById('value');
+        var initValue = parseInt(valueInput.getAttribute('value'));
+        run(initValue);
+        function reRun(){
+            // 判断输入的内容是否合乎预期
+            if(isNaN(parseInt(valueInput.value),10)){
+                return 0;
+            }
+            ctxPoint.translate(-275,-330);
+            run(parseInt(valueInput.value,10));//获得的值
+        }
+        // 按钮事件，当点击时重新绘制
+        //runBtn.onclick=reRun;
+        // 键盘事件，当输入数字回车后重新绘制
+        window.document.onkeydown = function(e){
+            var e=e||window.event;
+            if(e.keyCode===13){
+                reRun();
+            }
+        }
+    }
+</script>

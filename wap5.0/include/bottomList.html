@@ -1,0 +1,72 @@
+<style type="text/css">
+.footContainer{
+	height: 1.5rem;
+	border-top: 1px solid #ccc;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+}
+.footContainer ul{
+	overflow: hidden;
+}
+.footContainer ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding-top: 0.2rem;
+}
+.gapfooter{
+	height: 1.5rem;
+	overflow: hidden;
+	width: 100%;
+}
+.footContainer ul li img{
+	width: 0.74rem;
+	display: block;
+	margin:0 auto;
+}
+.footContainer ul li p{
+	font-size: 0.34rem;
+	color: #7c7c7c;
+	line-height: normal;
+	margin-top: 0.08rem;
+}
+</style>
+<div class='gapfooter'></div>
+<div class='footContainer'>
+	<ul>
+		<li>
+			<div>
+				<img src="images/footerIcon1.png" />
+				<p>首页</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<img src="images/footerIcon2.png" />
+				<p>服务</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<img src="images/footerIcon3.png" />
+				<p>商城</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<img src="images/footerIcon4.png" />
+				<p>我的</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	var windowWidth = $(window).width();
+	if(windowWidth > 768){
+		$('.footContainer').css('left','50%');
+		$('.footContainer').css('margin-left',-windowWidth/2);
+	}
+</script>

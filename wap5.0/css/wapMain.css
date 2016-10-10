@@ -1,0 +1,431 @@
+body{
+    font-family: "Microsoft YaHei";
+}
+.pageContainer{
+    max-width: 768px;
+    min-width: 320px;
+    margin:0 auto;
+}
+.titleHad{
+    margin-top: 0.53rem;
+    position: relative;
+    height: 0.46rem;
+    line-height: 0.46rem;
+}
+.titleHad img{
+    position: absolute;
+    height: 0.04rem;
+    width: 3.27rem;
+    top: 50%;
+    margin-top: -0.02rem;
+}
+.titleHad p{
+    font-size: 0.52rem;
+    color: #ff7744;
+    width: 100%;
+    text-align: center;
+}
+.analysisAdText5{
+    font-size: 0.4rem;
+    color: #999999;
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.9rem;
+}
+.showDataDetailList5{
+    font-size: 0.46rem;
+    color: #666666;
+    padding-left: 1.75rem;
+    margin-top: 0.9rem;
+}
+.showDataDetailList5 ul li{
+    margin-bottom: 0.3rem;
+}
+.analysisPart1PackageList{
+    margin-top: 0.6rem;
+    margin-bottom: 0.9rem;
+}
+.analysisPart1PackageList ul{
+    overflow: hidden;
+}
+.analysisPart1PackageList ul li{
+    float: left;
+    font-size: 0.48rem;
+    color: #333333;
+    width: 33.33%;
+    text-align: center;
+}
+.analysisPart1PackageList ul li img{
+    height: 2.24rem;
+}
+.gapPartWap5{
+    width: 100%;
+    height: 0.5rem;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.analysisAdText5 span{
+    color: #ff7744;
+}
+.ShowPackageFriend{
+    text-align: center;
+}
+.ShowPackageFriend .packageRecommend{
+    height: 2.47rem;
+}
+.ShowPackageFriend p{
+    font-size: 0.52rem;
+    color: #333333;
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+.ShowPackageFriend p span{
+    color: #ff7744;
+}
+.analysisPart3PackageList{
+    padding-bottom: 1.88rem;
+}
+.analysisPart3PackageList ul{
+    overflow: hidden;
+}
+.analysisPart3PackageList ul li{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+}
+.analysisPart3PackageList ul li img{
+    width: 2.24rem;
+}
+.analysisPart3PackageList ul li .lableIntro{
+    font-size: 0.46rem;
+    color: #666666;
+    margin-bottom: 0.4rem;
+}
+.analysisPart3PackageList ul li .lableIntro span{
+    color: #ff7744;
+}
+.analysisPart3PackageList ul li .showNumberalysis{
+    color: #666666;
+    font-size: 0.4rem;
+    padding-bottom: 0.27rem;
+}
+.headpageInfo5{
+    text-align: center;
+    padding-top: 0.33rem;
+    padding-bottom: 0.58rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+.headpageInfo5 .showCheckDate{
+    font-size: 0.34rem;
+    color: #cccccc;
+    padding-bottom: 0.57rem;
+}
+.headpageInfo5 .showCheckpackage{
+    font-size: 0.46rem;
+    color: #333333;
+}
+.busiInfoContainer{
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.busiInfoContainer .busiTitle5{
+    
+}
+.busiInfoContainer .busiTitle5 img{
+    width: 0.74rem;
+    float: left;
+    margin-right: 0.3rem;
+}
+.busiInfoContainer .busiTitle5 p{
+    font-size: 0.46rem;
+    color: #333333;
+}
+.busiName5{
+    padding-top: 0.6rem;
+    padding-bottom: 0.2rem;
+}
+.busiName5 p{
+    font-size: 0.4rem;
+    color: #999999;
+}
+.busiDetailInfo5{
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+.busiDetailInfo5 .TotleData{
+    font-size: 0.4rem;
+    color: #333333;
+    float: left;
+}
+.busiDetailInfo5 .lastData{
+    font-size: 0.4rem;
+    float: right;
+}
+.busiDetailInfo5 .lastData span{
+    font-size: 0.54rem;
+    color: #ff7744;
+}
+.busiDetailInfo5 .lastData i{
+    font-size: 0.4rem;
+    color: #ff7744;
+}
+.dataPercentyContainer{
+            clear: both;
+        }
+        .dataPercentyContainer .loadOutLine{
+           border-radius:0.1rem;
+           width: 100%;
+           height: 0.2rem;
+        }
+        .dataPercentyContainer .redLine{
+            border:1px solid #ff7861;
+        }
+        .dataPercentyContainer .redLine div{
+            background: #ffaa9c;
+            height: 0.2rem;
+            width: 20%;
+            border-radius:0.1rem;
+        }
+        .dataPercentyContainer .greenLine{
+            border:1px solid #93c15c;
+        }
+        .dataPercentyContainer .greenLine div{
+            background: #b2e07c;
+            height: 0.2rem;
+            width: 0;
+            border-radius:0.1rem;
+        }
+        .margTop6{
+            margin-top: 0.6rem;
+        }
+        .gapKong{
+            height: 1.2rem;
+            width: 100%;
+            clear: both;
+            overflow: hidden;
+        }
+        .warmText .atention{
+            font-size: 0.46rem;
+            color: #333333;
+            padding-bottom: 0.3rem;
+        }
+        .warmText .detailT{
+            font-size: 0.34rem;
+            color: #999999;
+        }
+        .warmText{
+            padding-top: 0.6rem;
+            padding-left: 0.5rem;
+        }
+        .gapKong9{
+            height: 0.9rem;
+            width: 100%;
+            overflow: hidden;
+        }
+.YouNeed .needpartName{
+        font-size: 0.46rem;
+        color: #333333;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #d2d2d2;
+        margin-bottom: 0.48rem;
+        padding-left: 0.52rem;
+        padding-right: 0.52rem;
+    }
+    .YouNeed .needList{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .YouNeed .needList ul{
+        overflow: hidden;
+    }
+    .YouNeed .needList ul li{
+        float: left;
+        width: 50%;
+    }
+    .YouNeed .needList ul li .needliContainer{
+        border:1px solid #e9e9e9;
+        border-radius: 5px;
+        margin-right: 0.24rem;
+        position: relative;
+        padding: 0.4rem;
+    }
+
+    .YouNeed .needList ul li .needliContainer dl{
+        overflow: hidden;
+
+    }
+    .YouNeed .needList ul li .needliContainer dt{
+        float: left;
+        margin-right: 2%;
+        height: 64px;
+        position: relative;
+        width: 18%;
+    }
+    .YouNeed .needList ul li .needliContainer dt img{
+        height: 0.74rem;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.37rem;
+    }
+    .YouNeed .needList ul li .needliContainer dd{
+        float: left;
+        width: 80%;
+    }
+    .YouNeed .needList ul li .needliContainer dd .needbusiName{
+        font-size: 0.4rem;
+        color: #666666;
+    }
+    .YouNeed .needList ul li .needliContainer dd .introbusi{
+        font-size: 0.34rem;
+        color: #999999;
+    }
+    .YouNeed .needList ul li .needliContainer .serverBg{
+        background: #ff7744;
+        font-size: 0.34rem;
+        color: #fff;
+        width: 1rem;
+        height: 0.54rem;
+        line-height: 0.54rem;
+        border-radius-top-right:5px;
+        border-radius-bottom-left:5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+    }
+.clear:after {
+    content:".";
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+.container_lll{
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+.date_lll{
+    height: 1rem;
+    line-height: 1rem;
+    color: #999;
+    font-size: 0.34rem;
+}
+.coupon_conta_lll li{
+    min-height: 3.3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.coupon_top_lll{
+    min-height: 2.57rem;
+    overflow: hidden;
+}
+.coupon_box{
+    width: 3.14rem;
+    height: 3.14rem;
+    background: url("../images/coupon_lll.png") no-repeat;
+    background-size: 100% 100%;
+    margin: -0.8rem 0 0 -0.85rem;
+}
+.num_lll{
+    color: #ff7744;
+    position: absolute;
+    z-index: 5;
+    top: 0.5rem;
+    left: 0.2rem;
+    font-weight: bold;
+}
+.si60{
+    font-size: 0.6rem;
+}
+.si160{
+    font-size: 1.6rem;
+}
+.coupon_fr{
+    width: 2.6rem;
+    margin-right: 1.48rem;
+    padding: 0.82rem 0 0.6rem;
+}
+.coupon_fr p{
+    font-size: 0.46rem;
+    color: #666;
+    line-height: 0.6rem;
+}
+.coupon_bottom_lll{
+    border-top: dotted 1px #f0f0f0;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.34rem;
+    padding-right: 0.31rem;
+    color: #999;
+    margin: 0 0.4rem;
+}
+.next_lll{
+    width: 0.32rem;
+    height: 0.56rem;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.28rem;
+}
+.date_lll{
+    height: 1rem;
+    line-height: 1rem;
+    color: #999;
+    font-size: 0.34rem;
+}
+.gift_conta_lll li{
+    min-height: 3.3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.gift_top_lll{
+    min-height: 2.57rem;
+    overflow: hidden;
+}
+.gift_fl{
+    margin-right: 1.48rem;
+    padding: 0.67rem 0.3rem 0.75rem;
+    width: 6rem;
+}
+.gift_fl p{
+    font-size: 0.46rem;
+    color: #666;
+    line-height: 0.7rem;
+}
+.name_lll{
+    font-weight: bold;
+    color: #333!important;
+}
+.gift_fr{
+
+}
+.gift_bottom_lll{
+    border-top: dotted 1px #f0f0f0;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.34rem;
+    padding-right: 0.61rem;
+    color: #999;
+    margin: 0 0.4rem;
+}
+.next_lll{
+    width: 0.32rem;
+    height: 0.56rem;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.28rem;
+}
+.gift_lll{
+    width: 1.74rem;
+    height: 1.74rem;
+    position: absolute;
+    top: 50%;
+    right: 1.1rem;
+    margin-top: -0.97rem;
+}

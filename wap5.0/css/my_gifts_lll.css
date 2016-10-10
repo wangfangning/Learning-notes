@@ -1,0 +1,73 @@
+body{
+    font-family: "Î¢ÈíÑÅºÚ";
+    background: #f5f5f5;
+}
+.clear:after {
+    ¡¡content:".";
+    ¡¡height:0;
+    ¡¡visibility:hidden;
+    ¡¡display:block;
+    ¡¡clear:both;
+}
+.container_lll{
+    min-height: 768px;
+    padding: 0 0.5rem;
+}
+.date_lll{
+    height: 1rem;
+    line-height: 1rem;
+    color: #999;
+    font-size: 0.34rem;
+}
+.gift_conta_lll li{
+    min-height: 3.3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.gift_top_lll{
+    min-height: 2.57rem;
+    overflow: hidden;
+}
+.gift_fl{
+    margin-right: 1.48rem;
+    padding: 0.67rem 0.3rem 0.75rem;
+    width: 6rem;
+}
+.gift_fl p{
+    font-size: 0.46rem;
+    color: #666;
+    line-height: 0.7rem;
+}
+.name_lll{
+    font-weight: bold;
+    color: #333!important;
+}
+.gift_fr{
+
+}
+.gift_bottom_lll{
+    border-top: dotted 1px #f0f0f0;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.34rem;
+    padding-right: 0.61rem;
+    color: #999;
+    margin: 0 0.4rem;
+}
+.next_lll{
+    width: 0.32rem;
+    height: 0.56rem;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.28rem;
+}
+.gift_lll{
+    width: 1.74rem;
+    height: 1.74rem;
+    position: absolute;
+    top: 50%;
+    right: 1.1rem;
+    margin-top: -0.97rem;
+}

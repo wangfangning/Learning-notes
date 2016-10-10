@@ -1,0 +1,79 @@
+body{
+    font-family: "Î¢ÈíÑÅºÚ";
+    background: #f5f5f5;
+}
+.clear:after {
+    ¡¡content:".";
+    ¡¡height:0;
+    ¡¡visibility:hidden;
+    ¡¡display:block;
+    ¡¡clear:both;
+}
+.container_lll{
+    min-height: 768px;
+    padding: 0 0.5rem;
+}
+.date_lll{
+    height: 1rem;
+    line-height: 1rem;
+    color: #999;
+    font-size: 0.34rem;
+}
+.coupon_conta_lll li{
+    min-height: 3.3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.coupon_top_lll{
+    min-height: 2.57rem;
+    overflow: hidden;
+}
+.coupon_box{
+    width: 3.14rem;
+    height: 3.14rem;
+    background: url("../images/coupon_lll.png") no-repeat;
+    background-size: 100% 100%;
+    margin: -0.8rem 0 0 -0.85rem;
+}
+.num_lll{
+    color: #ff7744;
+    position: absolute;
+    z-index: 5;
+    top: 0.5rem;
+    left: 0.2rem;
+    font-weight: bold;
+}
+.si60{
+    font-size: 0.6rem;
+}
+.si160{
+    font-size: 1.6rem;
+}
+.coupon_fr{
+    width: 2.6rem;
+    margin-right: 1.48rem;
+    padding: 0.82rem 0 0.6rem;
+}
+.coupon_fr p{
+    font-size: 0.46rem;
+    color: #666;
+    line-height: 0.6rem;
+}
+.coupon_bottom_lll{
+    border-top: dotted 1px #f0f0f0;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.34rem;
+    padding-right: 0.31rem;
+    color: #999;
+    margin: 0 0.4rem;
+}
+.next_lll{
+    width: 0.32rem;
+    height: 0.56rem;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.28rem;
+}

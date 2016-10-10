@@ -1,0 +1,234 @@
+<style media="screen">
+    .pie_wfn{
+        font-size: .46rem;
+    }
+    i{
+        font-style: normal;
+    }
+        .bg_height {
+            background-color: #f5f5f5;
+            height: .4rem;
+        }
+
+        .pie_wfn .analysisAdText5 span {
+            color: #ff7744;
+        }
+
+        .pie_wfn .analysisAdText5 {
+            color: #999999;
+        }
+
+        #histroyb1 {
+            width: 8.6rem;
+            margin: auto;
+            height: 7rem;
+        }
+
+        .jushu_zc {
+            position: relative;
+        }
+
+        .liuliang_wfn {
+            position: absolute;
+            display: block;
+            color: #999999;
+            top: 2.7rem;
+            left: 50%;
+            margin-left: -0.85rem;
+            font-size: .26rem;
+            z-index: 999;
+        }
+
+        .shuzi_wfn {
+            display: inline-block;
+            top: 3.3rem;
+            margin-left: -1.16rem;
+            color: #666666;
+            font-size: .7rem;
+        }
+        .classify_wfn{
+            width: 80%;
+            margin: auto;
+            margin-top: 1rem;
+overflow: hidden;
+        }
+        .classify_wfn li{
+            width: 50%;
+            float: left;
+            margin-bottom: .6rem;
+        }
+        .classify_wfn li span{
+            display: inline-block;
+            width: .36rem;
+            height: .36rem;
+            margin: 0 .36rem 0 .9rem;
+        }
+        .tab_wfn{
+            overflow: hidden;
+            clear: both;
+            margin-top: 1rem;
+            border-bottom: 1px solid #dedede;
+        }
+        .tab_wfn li{
+            width: 33.33%;
+            float: left;
+            text-align: center;
+        }
+        .tab_wfn li img{
+            width: 60%;
+            overflow: hidden;
+            display: block;
+            margin: auto;
+        }
+        .tab_wfn li span{
+            display: inline-block;
+            padding: .2rem .3rem .4rem;
+
+        }
+        .tab_wfn li span.border_wfn{
+            border-bottom: 3px solid #ff7744;
+            color: #ff7744;
+        }
+        .img_wfn img{
+            width: 4.8rem;
+            height: 7rem;
+            margin: .7rem .3rem;
+        }
+        .img_wfn{
+            text-align: center;
+        }
+    </style>
+<div class="pie_wfn">
+    <div class="top_wfn">
+        <div class='titleHad'>
+            <img src="images/titleBg1.png" style='left:0.7rem;' />
+            <p>流量去哪了</p>
+            <img src="images/titleBg2.png" style='right:0.7rem;' />
+        </div>
+        <p class='analysisAdText5' style="margin-bottom:0;">聊天流量占比<span>30%</span>，有点儿话唠</p>
+        <p class='analysisAdText5' style="margin-top:0.05rem;">闲余时刻，不如看个直播</p>
+        <div class="jushu_zc">
+            <div class="number_wfn">
+                <span class="liuliang_wfn">流量已用</span>
+                <span class="liuliang_wfn shuzi_wfn">500MB</span>
+            </div>
+
+            <div class="charts_left FailFather " id="histroyb1"></div>
+                <ul class="classify_wfn">
+                    <li data="20"><span style="background-color:#f39800"></span>视频：<i></i>%</li>
+                    <li data="15" style="float:right"><span style="background-color:#dedede"></span>网页：<i></i>%</li>
+                    <li data="30"><span style="background-color:#ff7744"></span>聊天：<i></i>%</li>
+                    <li data="10" style="float:right"><span style="background-color:#a3e1d4"></span>直播：<i></i>%</li>
+                    <li data="25"><span style="background-color:#b5b8cf"></span>新闻：<i></i>%</li>
+                </ul>
+        </div>
+    </div>
+    <div class="bottom_wfn">
+        <ul class="tab_wfn">
+            <li><img src="images/qq_wfn.gif" alt="" /><span class="border_wfn">腾讯</span></li>
+            <li><img src="images/music_wfn.gif" alt="" style="width:"/><span>QQ音乐</span></li>
+            <li><img src="images/weixin_wfn.gif" alt="" /><span>微信畅聊</span></li>
+        </ul>
+        <div class="img_wfn">
+            <img src="images/pie_wfn1.jpg" alt="" />
+            <img src="images/pie_wfn2.jpg" alt="" />
+        </div>
+        <div class="img_wfn" style="display:none">
+        2
+        <img src="images/pie_wfn.jpg" alt="" />
+        <img src="images/pie_wfn.jpg" alt="" />
+    </div>
+    <div class="img_wfn" style="display:none">
+        3
+        <img src="images/pie_wfn.jpg" alt="" />
+        <img src="images/pie_wfn.jpg" alt="" />
+    </div>
+
+</div>
+
+</div>
+<!-- 饼图 -->
+<script type="text/javascript">
+//  饼图
+$(function() {
+var index1=parseInt($(".classify_wfn li").eq(0).attr("data"));
+var index2=parseInt($(".classify_wfn li").eq(1).attr("data"));
+var index3=parseInt($(".classify_wfn li").eq(2).attr("data"));
+var index4=parseInt($(".classify_wfn li").eq(3).attr("data"));
+var index5=parseInt($(".classify_wfn li").eq(4).attr("data"));
+$(".classify_wfn li").eq(0).children("i").text(index1);
+$(".classify_wfn li").eq(1).children("i").text(index2);
+$(".classify_wfn li").eq(2).children("i").text(index3);
+$(".classify_wfn li").eq(3).children("i").text(index4);
+$(".classify_wfn li").eq(4).children("i").text(index5);
+
+                $('#histroyb1').highcharts({
+                    chart: {
+                        //  type: 'line',
+                        margin: [0, 2, 2, 2],
+
+                        //距离上下左右的距离值
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null
+
+                    },
+
+                    title: {
+                        text: '',
+                        style: {
+                            "fontSize": ".66rem",
+                            "color": "#666",
+                            "fontfamily": "微软雅黑"
+                        },
+                        align: 'center',
+                        verticalAlign: 'middle',
+                        x: 0,
+                        y: 10
+                    },
+
+                    tooltip: {
+                        pointFormat: ': <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            size: "100%",
+                            center: ['50%', '50%'],
+                            dataLabels: {
+                                enabled: false,
+
+                            },
+                            showInLegend: true,
+                            innerSize: '50'
+                        }
+                    },
+
+                    legend: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'TITLE',
+                        innerSize: '60%',
+                        data: [{name: '视频',y: index1,color:'#f39800'},
+                               {name: '聊天',y: index2,color:'#ff7744'},
+                                     {name: '网页',y: index3,color:'#dedede'},
+                                     {name: '直播',y: index4,color:'#a3e1d4'},
+                                     {name: '新闻',y: index5,color:'#b5b8cf'}
+                                 ]
+                    }]
+                });
+
+
+$(".tab_wfn").on("click", "li", function(event) {
+    var Index = $(this).index();
+    $(".img_wfn").hide();
+    $(".img_wfn").eq(Index).show();
+    // alert(Index);
+    $(this).siblings().children("span").removeClass("border_wfn");
+    $(this).children("span").addClass("border_wfn");
+})
+            });
+</script>
