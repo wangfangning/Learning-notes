@@ -2,12 +2,13 @@
     html,body,div,canvas,a{margin: 0px;padding: 0px;}
     #container{width: 100%;margin:0px auto;overflow: hidden;}
     #clockBoard{width: 320px;height: 220px;margin: 0px auto;position: relative;}
-    #pointer{position: relative;top:-560px;left: -112px;position: absolute;top: -176px;}
+    #pointer{left: -112px;position: absolute;top: -176px;z-index: 2;}
     #value{position: relative;z-index: 10;top: 0;left: 210;border-radius: 5px;line-height: 20px;}
     #clock{
     	left: -112px;
 	    position: absolute;
 	    top: -176px;
+        z-index: 1;
     }
 </style>
 <div id="container">
@@ -42,7 +43,7 @@
             if(i%6===3){
                 ctx.beginPath();
                 ctx.lineWidth='2';
-                ctx.strokeStyle='#fff';//长刻度线的颜色
+                ctx.strokeStyle='#ffa887';//长刻度线的颜色
                 ctx.moveTo(144*0.8*Math.sin(7.5*i/180*Math.PI),-144*0.8*Math.cos(7.5*i/180*Math.PI));
                 ctx.lineTo(156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
                 ctx.moveTo(-144*0.8*Math.sin(7.5*i/180*Math.PI),-144*0.8*Math.cos(7.5*i/180*Math.PI));
@@ -52,7 +53,7 @@
             }else{
                 ctx.beginPath();
                 ctx.lineWidth='1';
-                ctx.strokeStyle='#fff';//短刻度线的颜色
+                ctx.strokeStyle='#ffb89d';//短刻度线的颜色
                 ctx.moveTo(150*0.8*Math.sin(7.5*i/180*Math.PI),-150*0.8*Math.cos(7.5*i/180*Math.PI));
                 ctx.lineTo(156*0.8*Math.sin(7.5*i/180*Math.PI),-156*0.8*Math.cos(7.5*i/180*Math.PI));
                 ctx.moveTo(-150*0.8*Math.sin(7.5*i/180*Math.PI),-150*0.8*Math.cos(7.5*i/180*Math.PI));

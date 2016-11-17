@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>实时话费</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/sshf.css">
+    <script type="text/javascript" src='js/top.js'></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="contaner_zhl">
+		<!--#include virtual="/wap5.0/include/headPart2.html"-->
+		<div>
+			<div class="cx_date">查询日期：2105.04.18 XX:XX:XX</div>
+			<ul class="total_data">
+				<li class="li1 color_1">
+					<p>本月实时话费</p>
+					<p class="color_3"><span class="hf_data data_num">247.00</span>元</p>
+				</li>
+				<li class="li1 color_1">
+					<p>当前余额/欠费</p>
+					<p class="color_3"><span class="ye_data data_num">50.00</span>元</p>
+				</li>
+			</ul>
+		</div>
+		<div class="fg_line"></div>
+
+		<!-- 页面主体部分 -->
+		<ul>
+			<li class="li2 color_1">
+				<div class='containerwap5'><!--改-->
+					<div class="li2_title">本月实时话费明细</div>
+					<img src="images/xjt.png" class="fr ck_xx">
+					<div class="fr color_3">247.00元</div>
+					<div class="fr mr_1">合计</div>
+				</div>
+			</li>
+			<div class="sshf_div">
+				<ul class="jbxf_ul">
+					<li class="li3 li_tit">
+						<div class="li3_title">基本消费套餐</div>
+						<div class="fr">136.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">流量产品</div>
+						<div class="fr">50.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">语音产品</div>
+						<div class="fr">136.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">短彩信</div>
+						<div class="fr">50.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">......</div>
+						<div class="fr">6.00元</div>
+					</li>
+				</ul>
+				<ul class="tcw_ul">
+					<li class="li3 li_tit">
+						<div class="li3_title">套餐外消费</div>
+						<div class="fr">111.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">全国上网流量费</div>
+						<div class="fr">6.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">本地语音通话</div>
+						<div class="fr">20.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">全国流量半年包</div>
+						<div class="fr">80.00元</div>
+					</li>
+					<li class="li3">
+						<div class="li3_title">......</div>
+						<div class="fr">5.00元</div>
+					</li>
+				</ul>
+			</div>
+			<li class="li2 color_1">
+				<div class='containerwap5'><!--改-->
+					<div class="li2_title">当前余额/欠费</div>
+					<div class="fr color_3">XX.XX元</div>
+				</div>
+			</li>
+			<li class="li2 color_1">
+				<div class='containerwap5'><!--改-->
+					<div class="li2_title">可用额度</div>
+					<div class="fr color_3">XX.XX元</div>
+				</div>
+			</li>
+			<ul class="xy_ul color_1">
+				<li class="li3">
+					<div class="li3_title">信用额度</div>
+					<div class="fr">XX.XX元</div>
+				</li>
+				<li class="li3">
+					<div class="li3_title">当前余额</div>
+					<div class="fr">XX.XX元</div>
+				</li>
+				<p class="xy_bz color_4">注：可用额度=信用额度+当前（信用额度-当前欠费）</p>
+			</ul>
+			<li class="li2 color_1">
+				<div class='containerwap5'><!--改-->
+					<div class="li2_title">备注：账户未返还款</div>
+					<img src="images/xjt.png" class="fr ck_xx">
+				</div>
+			</li>
+			<ul class="wfk_ul color_1">
+				<li class="li3">
+					<div class="li3_title">xx活动1剩余冻结款</div>
+					<div class="fr"><span class="hddjk1">XX.XX元</span><a href="###">></a></div>
+				</li>
+				<li class="li3">
+					<div class="li3_title">xx活动2剩余冻结款</div>
+					<div class="fr"><span class="hddjk1">XX.XX元</span><a href="###">></a></div>
+				</li>
+				<li class="li3">
+					<div class="li3_title">剩余赠款</div>
+					<div class="fr"><span class="syzk">XX.XX元</span><a href="###">></a></div>
+				</li>
+				<li class="li3">
+					<div class="li3_title">备注赠款周期</div>
+				</li>
+			</ul>
+		</ul>
+		<div class="czjf_btn">充值缴费</div>
+		<p class='OnlyData'>只有一项数据</p>
+		<script type="text/javascript">
+			$('.OnlyData').bind('click',function(){
+				$('.total_data').children('li').eq(0).addClass('hidePartWap5');
+				$('.total_data').children('li').eq(1).addClass('showPartWap5');
+			})
+		</script>
+		<div class='ZhiHuServer'>
+			<div class='ZhiHuTitle'>
+				<span class='fl textNeed'>您可能需要</span>
+				<a class='fr linkMore' href='#'>更多 &gt;</a>
+			</div>
+			<div class='ZhiHuServerListItem'>
+				<ul>
+					<li>
+						<div class='ServerIconImg'>
+							<div class='ServerIconBorder'>
+								<img src="images/taocanbian.png" />
+							</div>
+						</div>
+						<div class='describeTextContaner'>
+							<div class='TitleContent'>
+								套餐变更
+								<span>服务</span>
+							</div>
+							<p class='describeContent'>推荐理由：您当前套餐高于106元，连续三个月流量仅用80%以下，推荐办理。</p>
+						</div>
+						<div class='clr'></div>
+					</li>
+				</ul>
+			</div>
+			<div class='ZhiHuServerListItem'>
+				<ul>
+					<li>
+						<div class='ServerIconImg'>
+							<div class='ServerIconBorder'>
+								<img src="images/flowban.png" />
+							</div>
+						</div>
+						<div class='describeTextContaner'>
+							<div class='TitleContent'>
+								流量包办理
+								<span>服务</span>
+							</div>
+							<p class='describeContent'>推荐理由：您当前是2/3G号码，正使用4G终端，推荐您办理速度更快，均价更低的套餐。</p>
+						</div>
+						<div class='clr'></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="wxts">
+			<p class="wxts_title">温馨提示：</p>
+			<div class="listTip_ssfh">
+				<p>1、文字文字文字文字文字文字。</p>
+				<p>2、文字文字文字文字。</p>
+				<p class="getMoreButton">点击了解更多 &gt;</p>
+				<p class="dn hide">3、文字文字。</p>
+				<p class="dn hide">3、文字文字文字。</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".ck_xx").click(function(){
+				console.log('333');
+				var dis=$(this).parents('li').next().css("display");
+				var diss=$(this).parents('li').next().prop("css");
+				if(dis=="block"){
+					$(this).attr("src","images/xjt_2.png");
+					$(this).parents('li').next().slideUp(500);
+				}else{
+					$(this).attr("src","images/xjt.png");
+					$(this).parents('li').next().slideDown(500);
+				}
+			})
+			$('.getMoreButton').bind('click',function(){
+				$(this).hide();
+				$(this).siblings('.hide').removeClass('dn');
+			});
+		})
+	</script>
+</body>
+</html>

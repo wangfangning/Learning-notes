@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>引导页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/public640.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate.min.js"></script>
+    <style type="text/css">
+        .pageContainer{
+            max-width: 640px;
+            min-width: 320px;
+            margin:0 auto;
+            font-family: "Microsoft YaHei";
+        }
+        .pageTitleCompaign{
+            font-size: 0.46rem;
+            color: #ff7744;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 1.07rem;
+        }
+        .pageInfoCompaign{
+            font-size: 0.3rem;
+            color: #9d9d9d;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 1.85rem;
+            left: 0;
+        }
+        .page5Compaign{
+            position: relative;
+        }
+        .phone_con{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 3.5rem;
+        }
+        .phone{
+            width: 3.62rem;
+        }
+        .bg{
+            width: 100%;
+            height: 3.37rem;
+            background: url("images/bg4.png") no-repeat 0 0;
+            background-size: 100%;
+            margin-top: 6rem;
+        }
+        .starcon{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top:3.1rem;
+            left: 0rem;
+        }
+        .star{
+            width: 4.46rem;
+        }
+        .gift1{
+            width: 1.3rem;
+            position: absolute;
+            top: 3rem;
+            left: 1.2rem;
+        }
+        .gift2{
+            width: 0.98rem;
+            position: absolute;
+            top: 3rem;
+            left: 3.5rem;
+        }
+        .gift3{
+            width: 0.98rem;
+            position: absolute;
+            top: 5rem;
+            left: 0.8rem;
+        }
+        .tabbarcon{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top:6.7rem;
+        }
+        .tabbar{
+            width: 4.6rem;
+        }
+        .gift11{
+            -webkit-animation: balloon1 5s ease-in-out infinite;
+            -moz-animation: balloon1 5s ease-in-out infinite;
+            -o-animation: balloon1 5s ease-in-out infinite;
+            animation: balloon1 5s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes balloon1 {
+            0%, 100% {
+                -webkit-transform: translateY(0) ;
+            }
+            50% {
+                -webkit-transform: translateY(-5px);
+            }
+        }
+        @-moz-keyframes balloon1 {
+            0%, 100% {
+                -moz-transform: translateY(0);
+            }
+            50% {
+                -moz-transform: translateY(-5px);
+            }
+        }
+        @-o-keyframes balloon1 {
+            0%, 100% {
+                -o-transform: translateY(0);
+            }
+            50% {
+                -o-transform: translateY(-5px);
+            }
+        }
+        @keyframes balloon1 {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .gift22{
+            -webkit-animation: balloon2 5s ease-in-out infinite;
+            -moz-animation: balloon2 5s ease-in-out infinite;
+            -o-animation: balloon2 5s ease-in-out infinite;
+            animation: balloon2 5s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes balloon2 {
+            0%, 100% {
+                -webkit-transform: translateX(0) ;
+            }
+            50% {
+                -webkit-transform: translateX(-5px);
+            }
+        }
+        @-moz-keyframes balloon2 {
+            0%, 100% {
+                -moz-transform: translateX(0);
+            }
+            50% {
+                -moz-transform: translateX(-5px);
+            }
+        }
+        @-o-keyframes balloon2 {
+            0%, 100% {
+                -o-transform: translateX(0);
+            }
+            50% {
+                -o-transform: translateX(-5px);
+            }
+        }
+        @keyframes balloon2 {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-5px);
+            }
+        }
+
+        .gift33{
+            -webkit-animation: balloon3 5s ease-in-out infinite;
+            -moz-animation: balloon3 5s ease-in-out infinite;
+            -o-animation: balloon3 5s ease-in-out infinite;
+            animation: balloon3 5s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes balloon3 {
+            0%, 100% {
+                -webkit-transform: translateX(0) ;
+            }
+            50% {
+                -webkit-transform: translateX(5px);
+            }
+        }
+        @-moz-keyframes balloon3 {
+            0%, 100% {
+                -moz-transform: translateX(0);
+            }
+            50% {
+                -moz-transform: translateX(5px);
+            }
+        }
+        @-o-keyframes balloon3 {
+            0%, 100% {
+                -o-transform: translateX(0);
+            }
+            50% {
+                -o-transform: translateX(5px);
+            }
+        }
+        @keyframes balloon3 {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+        .next_page_con{
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0.05rem;
+            left: 0;
+            -webkit-animation: fly 0.8s linear 1.2s infinite;
+            -o-animation: fly 0.8s linear 1.2s;
+            animation: fly 0.8s linear 1.2s infinite;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        @-webkit-keyframes fly {
+            0% {
+                -webkit-transform: translate3d(0,0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                -webkit-transform: translate3d(0, 0.1rem, 0);
+                transform: translate3d(0, 0.1rem, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        @keyframes fly {
+            0% {
+                -webkit-transform: translate3d(0,0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                -webkit-transform: translate3d(0, 0.1rem, 0);
+                transform: translate3d(0, 0.1rem, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class='pageContainer swiper-container'>
+    <div class='page5Compaign swiper-wrapper'>
+        <div class="swiper-slide">
+            <div class="bg"></div>
+            <div class="starcon ani"swiper-animate-effect="bounceIn" swiper-animate-delay='2.5s' swiper-animate-duration="1s">
+                <img src="images/star.png" class="star">
+            </div>
+            <h1 class='pageTitleCompaign ani' swiper-animate-effect="fadeInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">
+                "发现"新上线
+            </h1>
+            <p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='0.5s' swiper-animate-duration="1s">
+                发现新品  发现优惠
+            </p>
+            <div class="phone_con ani" swiper-animate-effect="fadeInUp" swiper-animate-delay='0.8s' swiper-animate-duration="1s">
+                <img src="images/phone.png" class="phone">
+            </div>
+            <img src="images/gift1.png" id="gift1" class="gift1 ani" swiper-animate-effect="bounceIn" swiper-animate-delay='1.8s' swiper-animate-duration="1s">
+            <img src="images/gift2.png" id="gift2" class="gift2 ani" swiper-animate-effect="bounceIn" swiper-animate-delay='1.8s' swiper-animate-duration="1s">
+            <img src="images/gift3.png" id="gift3" class="gift3 ani" swiper-animate-effect="bounceIn" swiper-animate-delay='1.8s' swiper-animate-duration="1s">
+            <div class="tabbarcon ani"  swiper-animate-effect="bounceIn" swiper-animate-delay='2s' swiper-animate-duration="1s">
+                <img src="images/tabbar.png" class="tabbar">
+            </div>
+            <div class="next_page_con">
+                <img src="images/next_page.png">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var windowHeight = $(window).height();
+        $('.page5Compaign').height(windowHeight);
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction : 'vertical',
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            }
+        })
+    });
+    setTimeout(function(){
+        $("#gift1").addClass("gift11");
+        $("#gift2").addClass("gift22");
+        $("#gift3").addClass("gift33");
+    },2500);
+</script>
+</body>
+</html>

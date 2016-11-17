@@ -11,18 +11,65 @@
     <script src="/wap5.0/js/public4.js"></script>
     <script src="/wap5.0/js/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" href="/wap5.0/css/wapMain.css" />
+    <style type="text/css">
+        body{
+            font-family: "微软雅黑";
+            background: #f5f5f5;
+        }
+    </style>
 </head>
 
 <body>
-     <!--#include virtual="/wap5.0/include/headPart.html"-->
+    <style type="text/css">
+            .meng{
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,0.6);
+                z-index: 9999;
+            }
+            .load{
+                margin-top:40%; 
+                position: fixed;
+                z-index: 10000;
+                width: 1.24rem;
+                left: 50%;
+                margin-left: -0.62rem;
+
+            }
+        </style>
+        <div class='meng'></div>
+        <img src="images/load_icon.gif" class='load' />
+    <!--#include virtual="/wap5.0/include/headPart.html"-->
     <div class="container_lll">
-       
+       <ul class="active_lll">
+           <li class="clear">
+               <div class="fl acti_lll">
+                   <span class="or_color_lll">大转盘活动</span>
+                   您还有<span class="or_color_lll">2</span>次机会哦~不要浪费，快去抽奖吧！
+               </div>
+               <div class="fr cj_lll">
+                   <img src="images/go_cj_lll.png" class="cj_lll">
+               </div>
+           </li>
+           <li class="clear border_no_lll">
+               <div class="fl acti_lll">
+                   <span class="or_color_lll">腾讯视频包活动</span>
+                   您还有<span class="or_color_lll">2</span>次机会哦~不要浪费，快去抽奖吧！
+               </div>
+               <div class="fr cj_lll">
+                   <img src="images/go_cj_lll.png" class="cj_lll">
+               </div>
+           </li>
+       </ul>
         <div class="date_lll">
             2016年09月01日
         </div>
         <ul class="gift_conta_lll">
             <li>
-                <div class="gift_top_lll clear">
+                <a href="http://124.192.56.213:99/jinbichaxun/wdjp_xq.html"><div class="gift_top_lll clear">
                     <div class="gift_fl fl">
                         <p class="name_lll">活动名称XXX</p>
                         <p>获得产品XXXMB</p>
@@ -31,7 +78,7 @@
                     <div class="gift_fr fr">
                         <img src="images/gift_lll.png" class="gift_lll">
                     </div>
-                </div>
+                </div></a>
                 <div class="gift_bottom_lll clear">
                     <div class="fr">2016.09.01到期</div>
                 </div>
@@ -81,6 +128,7 @@
                 <img src="images/next_lll.png" class="next_lll">
             </li>
         </ul>
+        
     </div>
     <script type="text/javascript">
         $(function(){

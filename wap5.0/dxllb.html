@@ -9,24 +9,18 @@
     <meta http-equiv="Expires" content="0">
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bass.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sshf.css">
+    <link rel="stylesheet" type="text/css" href="css/wapMain.css">
+    <script type="text/javascript" src='js/top.js'></script>
     <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/top.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div id="body_qu">
-	<div id="header">
-		<img src="images/tou.jpg"/>
-	</div>
-	<div class="body_top">
-		<ul>
-			<li><img src="images/zuojt.jpg"/></li>
-			<li><h1>腾讯视频定向流量包</h1></li>
-			<li><img src="images/sangedian.jpg"/></li>
-		</ul>
-	</div>
+	<!--#include virtual="/wap5.0/include/headPart2.html"-->
 	<div class="body_2">
-		<ul>
+		<ul class='packageHead'>
 			<li><img src="images/wo4g.jpg"/></li>
 			<li>
 				<h6>
@@ -34,18 +28,42 @@
 		        </h6>
 			</li>
 		</ul>
-			<div id="br_nei">
-				<ul>
-					<li><h5>共2GB</h5></li>
-					<li>剩余<span>500.00</span>MB</li>
-				</ul>
-			</div>
-		<div class="br_t">
-			<div class="br_tn"></div>
+		<div id="br_nei">
+			<ul>
+				<li><h5>共2GB</h5></li>
+				<li>剩余<span>500.00</span>MB</li>
+			</ul>
 		</div>
-		<span id="br_wz">
-			已用70%
-		</span>
+		<style type="text/css">
+			.ProgressInfo{
+				display: table;
+				width: 86%;
+				margin:0 auto;
+			}
+			.ProgressInfo .ProgressBar{
+				display: table-cell;
+				vertical-align: middle;
+				width: 75%;
+			}
+			.br_t{
+				width: 100%;
+			}
+			.ProgressInfo .ProgressText{
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 0.17rem;
+				text-align: right;
+				color: #999999;
+			}
+		</style>
+		<div class='ProgressInfo'>
+			<div class='ProgressBar dataPercentyContainer'>
+				<div class="br_t greenLine">
+					<div class="br_tn" data='70'></div>
+				</div>
+			</div>
+			<div class='ProgressText'>已用70%</div>
+		</div>
 	</div>
 	<div class="body_3">
 		<ul>
@@ -54,11 +72,20 @@
 			<li>包含流量<span>300M 国内流量</span></li>
 			<li>使用有效期<span>2016年06月06日</span></li>
 			<li>当前状态<span style="color:#ff7744;">已申请退订</span></li>
-			<li style="margin-top: 0.5rem;font-size: 0.3rem;">历史订购记录（近一年）</li>
 		</ul>
 	</div>
-	<div class="body_3" style="height:5.6rem;margin-top: 0;color: #999999;">
-		
+	<style type="text/css">
+		.body_3 h3{
+			font-size: 0.24rem;
+			color: #333333;
+			padding-left: 0.5rem;
+			padding-bottom: 0.24rem;
+			border-bottom: 2px solid #dedede;
+			margin-bottom: 0.3rem;
+		}
+	</style>
+	<div class="body_3" style="margin-top: 0;color: #999999;">
+		<h3>历史订购记录（近一年）</h3>
 		<ul>
 			<li>2016年04月17日<span>10元500MB国内流量包</span></li>
 			<li>2016年07月22日<span>50元1GB省内流量包</span></li>
@@ -66,23 +93,75 @@
 			<li>2016年09月17日</li>
 			<li style="margin-top: 0.2rem;font-size: 0.4rem;">.......</li>
 		</ul>
-		<input type="button" name="" id="btt" value="继续订购/退订" />
+	</div>
+	 <div class='recommite'>
+		<input type="button" name="" id="btt" value="继续订购/退订">
 		<h5 class="h_5">跟我一样的人在用</h5>
 	</div>
-	  <div class="body_4">
-	  	<ul>
-	  		<li style="width: 20%;margin-left: 0.5rem;"><img src="images/heika.jpg"/></li>
-	  		<li style="width: 62%;margin-left:0.1rem;margin-right:0.5rem;line-height: 1.7;">166元国际及台港澳漫游套餐（<span>7800人</span>在用）
-                26/56元包天不限量出访数据包</li>
+	<div class="body_4">
+	  	<ul class='recommendListPackage'>
+	  		<li>
+	  			<div class='packageImg'>
+	  				<img src="images/heika.jpg" />
+	  			</div>
+	  			<div class='remommendDecribe'>
+	  				<p class='part'>166元国际及台港澳漫游套餐（<span>7800</span>人在用）</p>
+	  				<p class='part'>26/56元包天不限量出访数据包</p>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<div class='packageImg'>
+	  				<img src="images/heika1.jpg" />
+	  			</div>
+	  			<div class='remommendDecribe'>
+	  				<p class='part'>10元1.5GB省内流量半年包（<span>7800</span>人在用）</p>
+	  				<p class='part'>省内流量，有效期半年</p>
+	  			</div>
+	  		</li>
 	  	</ul>
-	  </div>
-	   <div class="body_4" style="margin-bottom: 1rem;">
-	  	<ul>
-	  		<li style="width: 20%;margin-left: 0.5rem;"><img src="images/heika1.jpg"/></li>
-	  		<li style="width: 62%;margin-left:0.1rem;margin-right:0.5rem;line-height: 1.7;">166元国际及台港澳漫游套餐（<span>7800人</span>在用）
-                26/56元包天不限量出访数据包</li>
-	  	</ul>
-	  </div>
 	</div>
+	   
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('.ym_title').text('腾讯视频定向流量包');
+
+			progressAnimate();
+			function progressAnimate(){
+				var progressPercenty = parseInt($('.ProgressBar').find('.br_tn').attr('data'));
+				if(progressPercenty <2){
+			        progressPercenty = 2;
+			    }
+			    if(progressPercenty > 90){
+                  $('.ProgressBar').children('.br_t').removeClass('greenLine')
+                  $('.ProgressBar').children('.br_t').addClass('redLine');
+              	}
+              	var total = progressPercenty + '%';
+              	$('.ProgressBar').find('.br_tn').animate({ width:total }, 1000);
+
+			}
+
+			// $('.load_4gNew').each(function(){//进度条动画
+		 //      var dataschedule = $(this).children('div').attr('data');
+		 //      if(dataschedule <2){
+		 //          dataschedule = 2;
+		 //      }
+		 //      var total = dataschedule + '%';
+		 //      if(dataschedule > 90){
+		 //          $(this).children('div').addClass('warningBg');
+		 //          $(this).addClass('warningBorder');
+		 //          $(this).removeClass('normalBorder');
+		 //          $(this).children('div').removeClass('normalBg');
+		 //      }else{
+		 //          $(this).addClass('normalBorder');
+		 //          $(this).children('div').addClass('normalBg');
+		 //          $(this).removeClass('warningBorder');
+		 //          $(this).children('div').removeClass('warningBg');
+		 //      }
+		 //      $(this).children('div').animate({ width:total }, 1000);
+		 //  });
+
+		})
+	</script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+.main_lll{
+    width: 100%;
+    text-align: center;
+    font-family: "Î¢ÈíÑÅºÚ";
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/bg2.png") no-repeat 0 2rem;
+    height: 10rem;
+    background-size: 100% 100%;
+}
+.title_big{
+    color: #ff7744;
+    font-size: 0.46rem;
+    position: absolute;
+    top: 1rem;
+    left:1.5rem;
+}
+.title_small{
+    color: #9d9d9d;
+    font-size: 0.3rem;
+    padding-top: 0.18rem;
+    position: absolute;
+    top: 1.6rem;
+    left:1.8rem;
+}

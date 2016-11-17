@@ -1,0 +1,317 @@
+.contaner_zhl{
+	width:100%;
+	margin: 0 auto;
+  text-align: center;
+	font-family: "微软雅黑";
+}
+
+/*页面常用颜色*/
+
+.color_1{
+	color:#333!important;
+}
+.color_2{
+	color:#999!important;
+}
+.color_3{
+	color:#ff7744!important;
+}
+.color_4{
+	color:#ccc!important;
+}
+
+/*头部部分样式*/
+.head_zhl{
+	width:95%;
+	height:0.8rem;
+	padding:0 2.5%;
+	border-bottom: 1px solid #dedede;
+	position: fixed;
+	background:#fff;
+	top:0;
+	z-index: 1000;
+}
+.ym_title{
+	width:100%;
+	height:0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.27rem;
+	font-weight: bolder;
+	color:#333;
+}
+.back_zhl{
+	width: 0.2rem;
+	height:auto;
+	margin-top:-0.6rem;
+	float: left;
+}
+.more_zhl{
+	width:0.1rem;
+	float:right;
+	margin-top: -0.65rem;
+    margin-right: 0.15rem;
+}
+.cx_date{
+	font-size:0.2rem;
+	color:#ccc;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+
+.total_data{
+	width:100%;
+	overflow: hidden;
+}
+.li1{
+	float: left;
+	width:49%;
+	height:1rem;
+	font-size:0.3rem;
+	margin-top:0.3rem;
+	margin-bottom: 0.3rem;
+}
+.li1:first-child{
+	border-right:1px solid #e0e0e0;
+}
+.li1 p:first-child{
+	font-size: 0.23rem;
+	margin-bottom: 0.05rem;
+}
+.data_num{
+	font-size: 0.37rem;
+    font-weight: bold;
+}
+.fg_line{
+	width:100%;
+	height:0.2rem;
+	background: #f5f5f5;
+}
+.fg_line:after{
+	display: block;
+    content: '';
+    height: 1px;
+    background-color: #dedede;
+    transform: scaleY(0.3);
+}
+
+
+
+/*页面主体部分样式*/
+
+.li2{
+	
+    height: 0.7rem;
+    
+    font-size: 0.23rem;
+    text-align: left;
+    line-height: 0.7rem;
+    clear: both;
+}
+.li2:after{
+	display: block;
+    content: '';
+    height: 1px;
+    background-color: #d2d2d2;
+    transform: scaleY(0.3);
+}
+.li2 .containerwap5{
+	width: 91%;
+	margin:0 auto;
+	display: block !important;
+}
+.li2 div,.li3 div{
+	display: inline-block;
+}
+.mr_1{
+	margin-right: 0.1rem;
+}
+.ck_xx{
+	width:0.3rem;
+	height: auto;
+	margin: 0.25rem 0 0 0.25rem;
+}
+.sshf_div{
+	clear: both;
+	height:4.6rem;
+	text-align:left;
+}
+.sshf_div:after{
+	display: block;
+    content: '';
+    height: 1px;
+    background-color: #dedede;
+    transform: scaleY(0.3);
+}
+.sshf_div ul{
+	margin:0.1rem 0 0.2rem;
+}
+.xy_ul{
+	padding:0.1rem 0;
+	text-align: left;
+}
+.xy_ul:after{
+	display: block;
+    content: '';
+    height: 1px;
+    background-color: #dedede;
+    transform: scaleY(0.3);
+}
+.li3{
+	width: 91%;
+    margin:0 auto;
+	height:0.4rem;
+	line-height: 0.4rem;
+	font-size:0.2rem;
+	color:#999;
+	clear: both;
+}
+.li_tit{
+	line-height: 0.4rem;
+	height:0.4rem;
+	margin-bottom: 0.1rem;
+	color:#333;
+}
+.xy_bz{
+	width: 91%;
+	line-height: 0.6rem;
+    padding: 0 2.5%;
+	font-size:0.2rem;
+}
+.wfk_ul{
+	height:1.6rem;
+	text-align: left;
+    margin: 0.1rem 0;
+}
+
+.czjf_btn{
+	width:91%;
+	margin: 0.7rem auto 0.4rem;
+	height:0.71rem;
+	line-height: 0.71rem;
+	border-radius:5px;
+	background:#ff7744;
+	color:#fff;
+	font-size: 0.34rem;
+    letter-spacing: 0.02rem
+}
+
+.wxts{
+	width:91%;
+	margin: 0 auto 0.5rem;
+	font-size: 0.18rem;
+	text-align: left;
+	line-height: 0.3rem;
+	color:#333;
+}
+.wxts_title{
+	font-size:0.25rem;
+}
+.wxts .listTip_ssfh p{
+	margin-bottom: 0.12rem;
+}
+.wxts_title{
+	margin-bottom: 0.12rem;
+}
+.wxts .listTip_ssfh .getMoreButton{
+	color: #fe7f05 !important;
+}
+.dn{
+	display: none;
+}
+.ZhiHuServer{
+	width: 91%;
+	margin:0 auto 0.5rem;
+}
+.ZhiHuServer .ZhiHuTitle{
+	overflow: hidden;
+	padding-bottom: 0.1rem;
+}
+.ZhiHuServer .ZhiHuTitle:after{
+	display: block;
+    content: '';
+    height: 1px;
+    background-color: #d4d4d4;
+    transform: scaleY(0.3);
+    clear: both;
+    margin-top: 0.6rem;
+}
+.ZhiHuServer .ZhiHuTitle .textNeed{
+	font-size: 0.32rem;
+	color: #707070;
+}
+.ZhiHuServer .ZhiHuTitle .linkMore{
+	font-size: 0.26rem;
+	color: #fe7f05;
+	padding-top: 0.06rem;
+}
+.ZhiHuServer .ZhiHuServerListItem{
+	overflow: hidden;
+}
+.ZhiHuServer .ZhiHuServerListItem ul{
+	overflow: hidden;
+}
+.ZhiHuServer .ZhiHuServerListItem ul li{
+	
+	margin-top: 0.26rem;
+}
+.ZhiHuServer .ZhiHuServerListItem ul li:after{
+	display: block;
+	content: '';
+	height: 1px;
+	background-color: #d4d4d4;
+	transform: scaleY(0.3);
+	margin-top: 0.26rem;
+}
+.ZhiHuServer .ZhiHuServerListItem ul li .ServerIconImg{
+	margin-right: 0.2rem;
+	float: left;
+}
+.ZhiHuServer .ZhiHuServerListItem ul li .ServerIconImg img{
+	height: 0.88rem;
+}
+.clr{
+	clear: both;
+}
+.ZhiHuServer .ZhiHuServerListItem ul li .ServerIconBorder{
+	width: 0.96rem;
+    height: 1.2rem;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.ZhiHuServerListItem .TitleContent{
+	line-height: 150%;
+    font-size: 0.28rem;
+    color: #333333;
+    text-align: left;
+}
+.ZhiHuServerListItem .TitleContent span{
+	background: #fc2928;
+    color: #fff;
+    padding-left: 0.16rem;
+    padding-right: 0.16rem;
+    border-radius: 0.1rem;
+    float: right;
+}
+.ZhiHuServerListItem .describeContent{
+	font-size: 0.26rem;
+    color: #3d4245;
+    line-height: 150%;
+    margin-top: 0.1rem;
+    margin-left: 1.16rem;
+    text-align: left;
+}
+.hidePartWap5{
+	display: none;
+}
+.showPartWap5{
+	width: 100% !important;
+}
+.OnlyData{
+	color: blue;
+	text-align: center;
+	font-size: 16px;
+}

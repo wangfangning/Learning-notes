@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>活动</title>
+    <link rel="stylesheet" href="/wap5.0/css/reset.css" />
+    <script src="/wap5.0/js/public4.js"></script>
+    <script src="/wap5.0/js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="/wap5.0/css/wapMain.css" />
+    <style type="text/css">
+        body{
+            font-family: "微软雅黑";
+            background: #f5f5f5;
+        }
+        .ActivityAD_Container{
+            width: 11.42rem;
+            margin:0.4rem auto;
+            position: relative;
+        }
+        .ActivityAD_Container img{
+            width: 100%;
+            display: block;
+        }
+        .EditPart .editButton{
+            color: #fff;
+            font-size: 12px;
+            width: 50px;
+            border:1px solid #fff;
+            text-align: center;
+            margin-right: 20px;
+            display: inline-block;
+            line-height: normal;
+            cursor: pointer;
+        }
+        .EditPart .reloadButton{
+            color: #fff;
+            font-size: 12px;
+            width: 50px;
+            border:1px solid #fff;
+            text-align: center;
+            margin: 0 auto;
+            display: inline-block;
+            line-height: normal;
+            cursor: pointer;
+        }
+        .EditPart .buttonContainer{
+            margin: 0 auto;
+            text-align: center;
+            line-height: 0;
+        }
+        .clr{
+          clear: both;
+        }
+        .EditPart .showTextwap5{
+            font-size: 13px;
+            color: #fff;
+            padding-left: 0.47rem;
+            padding-right: 0.47rem;
+            margin-top: 10%;
+        }
+        .dn{
+          display: none;
+        }
+        .mengwap5{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #000;
+      opacity: 0.5;
+      top: 0;
+      z-index: 101;
+    }
+    .EditPart{
+      width: 99.7%;
+      height: 99.7%;
+      position: absolute;
+      top: 0;
+      z-index: 102;
+      border:1px dashed #fff;
+    }
+    </style>
+</head>
+
+<body>
+     <div class='pageContainer'>
+        <div class='ActivityAD_Container'>
+            <img src="images/activityAD1.jpg" />
+            <div class='mengwap5 dn'></div>
+          <div class='EditPart dn'>
+              <div class='buttonContainer'>
+                <div class='editButton'>编辑</div>
+                <div class='reloadButton'>刷新</div>
+                <div class='clr'></div>
+              </div>
+              <p class='showTextwap5'>文字文字文字文</p>
+          </div>
+        </div>
+        <div class='ActivityAD_Container'>
+            <img src="images/activityAD2.jpg" />
+            <div class='mengwap5 dn'></div>
+          <div class='EditPart dn'>
+              <div class='buttonContainer'>
+                <div class='editButton'>编辑</div>
+                <div class='reloadButton'>刷新</div>
+                <div class='clr'></div>
+              </div>
+              <p class='showTextwap5'>文字文字文字文</p>
+          </div>
+        </div>
+        <div class='ActivityAD_Container'>
+            <img src="images/activityAD3.jpg" />
+            <div class='mengwap5 dn'></div>
+          <div class='EditPart dn'>
+              <div class='buttonContainer'>
+                <div class='editButton'>编辑</div>
+                <div class='reloadButton'>刷新</div>
+                <div class='clr'></div>
+              </div>
+              <p class='showTextwap5'>文字文字文字文</p>
+          </div>
+        </div>
+        <div class='ActivityAD_Container'>
+            <img src="images/activityAD1.jpg" />
+            <div class='mengwap5 dn'></div>
+          <div class='EditPart dn'>
+              <div class='buttonContainer'>
+                <div class='editButton'>编辑</div>
+                <div class='reloadButton'>刷新</div>
+                <div class='clr'></div>
+              </div>
+              <p class='showTextwap5'>文字文字文字文</p>
+          </div>
+        </div>
+     </div>
+     <script type="text/javascript">
+        $(".ActivityAD_Container").hover(function(){
+            $(this).find('.mengwap5').removeClass('dn');
+            $(this).find('.EditPart').removeClass('dn');
+          },function(){
+            $(this).find('.mengwap5').addClass('dn');
+            $(this).find('.EditPart').addClass('dn');
+        });
+     </script>
+</body>
+</html>

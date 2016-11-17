@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>手厅触屏版首页</title>
+    <link rel="stylesheet" href="/wap5.0/css/reset.css" />
+    <link rel="stylesheet" href="/wap5.0/css/swiper.min.css" />
+    <link rel="stylesheet" href="/wap5.0/css/wapMain.css" />
+    <script src="/wap5.0/js/public4.js"></script>
+    <script src="/wap5.0/js/jquery-1.10.2.min.js"></script>
+    <script src="/wap5.0/js/swiper.min.js"></script>
+    <style type="text/css">
+        body{
+            font-family: "微软雅黑";
+            background: #f5f5f5;
+            max-width: 768px;
+            min-width: 320px;
+            margin:0 auto;
+        }
+        .personalInfoCheck{
+            font-size: 0.46rem;
+            color: #666666;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            background: #fff;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        .personalInfoCheck ul li{
+            display: table;
+            width: 100%;
+            padding-bottom: 0.3rem;
+        }
+        .personalInfoCheck ul li p{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .tl{
+            text-align: left;
+        }
+        .tr{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--#include virtual="/wap5.0/include/headPart.html"-->
+    <div class='pageContainer'>
+        <div class='personalInfoCheck'>
+            <ul>
+                <li>
+                    <p class='tl'>客户姓名：</p>
+                    <p class='tr'>郭鹏</p>
+                </li>
+                <li>
+                    <p class='tl'>手机号码：</p>
+                    <p class='tr'>17600808728</p>
+                </li>
+                <li>
+                    <p class='tl'>合约名称：</p>
+                    <p class='tr'>XXXXXXX</p>
+                </li>
+                <li>
+                    <p class='tl'>生效时间：</p>
+                    <p class='tr'>2016年10月1日</p>
+                </li>
+                <li>
+                    <p class='tl'>失效时间：</p>
+                    <p class='tr'>2018年10月1日</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            $('.pageName').text('合约期查询');
+        })
+    </script>
+</body>
+</html>

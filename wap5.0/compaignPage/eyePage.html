@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>引导页</title>
+    <link rel="stylesheet" type="text/css" href="/dlJiang/compaignPage/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dlJiang/compaignPage/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/dlJiang/compaignPage/css/swiper.min.css">
+    <script type="text/javascript" src="/dlJiang/compaignPage/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/dlJiang/compaignPage/js/public640.js"></script>
+    <script type="text/javascript" src="/dlJiang/compaignPage/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/dlJiang/compaignPage/js/swiper.animate.min.js"></script>
+    <style type="text/css">
+        .pageContainer{
+            max-width: 640px;
+            min-width: 320px;
+            margin:0 auto;
+            font-family: "Microsoft YaHei";
+        }
+        .pageTitleCompaign{
+            font-size: 0.46rem;
+            color: #ff7744;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 1.07rem;
+        }
+        .pageInfoCompaign{
+            font-size: 0.3rem;
+            color: #9d9d9d;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 1.65rem;
+            left: 0;
+        }
+        .page5Compaign{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+<div class='pageContainer swiper-container'>
+    <div class='page5Compaign swiper-wrapper'>
+        <div class="swiper-slide">
+            <h1 class='pageTitleCompaign ani' swiper-animate-effect="bounceInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">5.0聚焦服务</h1>
+            <p class='pageInfoCompaign ani' swiper-animate-effect="bounceInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">从生日、流量、活动提醒开始，不断进化</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var windowHeight = $(window).height();
+        $('.page5Compaign').height(windowHeight);
+
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction : 'vertical',
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            }
+        })
+    })
+</script>
+</body>
+</html>

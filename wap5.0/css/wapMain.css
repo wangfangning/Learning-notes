@@ -2,65 +2,77 @@ body{
     font-family: "Microsoft YaHei";
 }
 .pageContainer{
-    max-width: 768px;
+    max-width: 1240px;
     min-width: 320px;
     margin:0 auto;
 }
 .titleHad{
-    margin-top: 0.53rem;
+    margin-top: 0.27rem;
     position: relative;
-    height: 0.46rem;
-    line-height: 0.46rem;
+    height: 0.23rem;
+    line-height: 0.23rem;
 }
 .titleHad img{
     position: absolute;
-    height: 0.04rem;
-    width: 3.27rem;
+    height: 0.02rem;
+    width: 1.64rem;
     top: 50%;
-    margin-top: -0.02rem;
+    margin-top: -0.01rem;
 }
 .titleHad p{
-    font-size: 0.52rem;
+    font-size: 0.26rem;
     color: #ff7744;
     width: 100%;
     text-align: center;
 }
+@media (min-width: 375px){
+    .analysisAdText5{
+        font-size: 0.2rem;
+        color: #999999;
+        text-align: center;
+        margin-top: 0.2rem;
+        margin-bottom: 0.45rem;
+    }
+}
+.clearBottomMargin{
+    margin-bottom: 0 !important;
+}
 .analysisAdText5{
-    font-size: 0.4rem;
+    font-size: 0.2rem;
     color: #999999;
     text-align: center;
-    margin-top: 0.4rem;
-    margin-bottom: 0.9rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.45rem;
 }
 .showDataDetailList5{
-    font-size: 0.46rem;
+    font-size: 0.23rem;
     color: #666666;
-    padding-left: 1.75rem;
-    margin-top: 0.9rem;
+    padding-left: 0.88rem;
+    margin-top: 0.45rem;
 }
 .showDataDetailList5 ul li{
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.15rem;
 }
 .analysisPart1PackageList{
-    margin-top: 0.6rem;
-    margin-bottom: 0.9rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.45rem;
 }
 .analysisPart1PackageList ul{
     overflow: hidden;
 }
 .analysisPart1PackageList ul li{
     float: left;
-    font-size: 0.48rem;
+    font-size: 0.24rem;
     color: #333333;
     width: 33.33%;
     text-align: center;
 }
 .analysisPart1PackageList ul li img{
-    height: 2.24rem;
+    height: 1.12rem;
 }
 .gapPartWap5{
     width: 100%;
-    height: 0.5rem;
+    height: 0.25rem;
     background: #f5f5f5;
     overflow: hidden;
 }
@@ -71,19 +83,18 @@ body{
     text-align: center;
 }
 .ShowPackageFriend .packageRecommend{
-    height: 2.47rem;
+    height: 1.24rem;
 }
 .ShowPackageFriend p{
-    font-size: 0.52rem;
+    font-size: 0.26rem;
     color: #333333;
-    margin-top: 0.3rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 .ShowPackageFriend p span{
     color: #ff7744;
 }
 .analysisPart3PackageList{
-    padding-bottom: 1.88rem;
+    padding-bottom: 0.94rem;
 }
 .analysisPart3PackageList ul{
     overflow: hidden;
@@ -94,147 +105,255 @@ body{
     float: left;
 }
 .analysisPart3PackageList ul li img{
-    width: 2.24rem;
+    width: 1.14rem;
 }
 .analysisPart3PackageList ul li .lableIntro{
-    font-size: 0.46rem;
+    font-size: 0.23rem;
     color: #666666;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
 }
 .analysisPart3PackageList ul li .lableIntro span{
     color: #ff7744;
 }
 .analysisPart3PackageList ul li .showNumberalysis{
     color: #666666;
-    font-size: 0.4rem;
-    padding-bottom: 0.27rem;
+    font-size: 0.2rem;
+    padding-bottom: 0.14rem;
 }
+/*改 */
 .headpageInfo5{
     text-align: center;
-    padding-top: 0.33rem;
-    padding-bottom: 0.58rem;
-    border-bottom: 1px solid #d2d2d2;
-}
-.headpageInfo5 .showCheckDate{
-    font-size: 0.34rem;
-    color: #cccccc;
-    padding-bottom: 0.57rem;
-}
-.headpageInfo5 .showCheckpackage{
-    font-size: 0.46rem;
-    color: #333333;
-}
-.busiInfoContainer{
-    padding-top: 0.6rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-.busiInfoContainer .busiTitle5{
+    padding-top: 0.18rem;
     
 }
-.busiInfoContainer .busiTitle5 img{
-    width: 0.74rem;
-    float: left;
-    margin-right: 0.3rem;
+.headpageInfo5:after{
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: #d2d2d2;
+    transform:scaleY(0.3);
 }
-.busiInfoContainer .busiTitle5 p{
-    font-size: 0.46rem;
-    color: #333333;
-}
-.busiName5{
-    padding-top: 0.6rem;
+
+.headpageInfo5 .showCheckDate{
+    font-size: 0.17rem;
+    color: #cccccc;
     padding-bottom: 0.2rem;
 }
-.busiName5 p{
-    font-size: 0.4rem;
-    color: #999999;
-}
-.busiDetailInfo5{
-    padding-top: 0.2rem;
-    padding-bottom: 0.3rem;
-}
-.busiDetailInfo5 .TotleData{
-    font-size: 0.4rem;
+.headpageInfo5 .showCheckpackage{
+    font-size: 0.23rem;
     color: #333333;
+    padding-bottom: 0.2rem;
+}
+.busiInfoContainer{
+    padding-top: 0.3rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.busiInfoContainer .busiTitle5{/*改*/
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    margin-bottom: -0.2rem;
+}
+.busiInfoContainer .busiTitle5 img{
+    width: 0.37rem;
+    float: left;
+    display: block;
+}
+.busiInfoContainer .busiTitle5 p{
+    font-size: 0.23rem;
+    color: #333333;
+    height: 0.37rem;
+    line-height: 0.45rem;
     float: left;
 }
+.busiName5{/*改*/
+    padding-top: 0.5rem;
+    position: relative;
+    display: table;
+}
+.poupleContainer{
+    background: #fff;
+    position: absolute;
+    top: 0.9rem;
+    z-index: 10000;
+    width: 100%;
+    border: 1px solid #999;
+    padding-bottom: 0.2rem;
+    display: none;
+}
+.poupleContainer .listItemPoulePercent{
+    font-size: 0.24rem;
+    width: 96%;
+    margin: 0 auto;
+    line-height: 180%;
+
+}
+.poupleflowHead{
+    font-size: 0.28rem;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.infopackage5 .labelDate{
+    background: #fff;
+    color: #ff7744;
+    border:1px solid #ff7744;
+    border-radius: 3px;
+    padding-left: 0.16rem;
+    padding-right: 0.16rem;
+    border-radius: 5px;
+    margin-left: 0.1rem;
+    font-size: 0.15rem;
+    margin-bottom: 0.05rem;
+    vertical-align: top;
+}
+.outflow{
+    font-size: 0.23rem;
+    color: #555555;
+    text-align: right;
+    height: 0.37rem;
+    line-height: 0.45rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+                    .outflow a{
+                        color: #fe7f05;
+                    }
+                    .iconItempart{
+                        width: 0.37rem;
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 0.37rem;
+                        line-height: 0.37rem;
+                    }
+                    .percentPoupleButton{
+                        color: #51a9F3;
+                        text-decoration: underline;
+                    }
+.bg_popup{
+    width: 100%;
+    min-height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    display: none;
+}
+.labelTextflow5{
+                font-size: 0.23rem;
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 0.15rem;
+            }
+.busiName5 .infopackage5{/*改*/
+    font-size: 0.2rem;
+    color: #999999;
+    display: table-cell;
+    vertical-align: top;
+}
+.busiDetailInfo5{
+    display: table;
+    width: 100%;
+    margin-bottom: 0.15rem;
+    vertical-align: bottom;
+}
+
+.busiDetailInfo5 .TotleData{
+    font-size: 0.2rem;
+    color: #333333;
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+}
 .busiDetailInfo5 .lastData{
-    font-size: 0.4rem;
-    float: right;
+    font-size: 0.2rem;
+    display: table-cell;
+    text-align: right;
 }
 .busiDetailInfo5 .lastData span{
-    font-size: 0.54rem;
+    font-size: 0.27rem;
     color: #ff7744;
+    font-weight: bold;
 }
 .busiDetailInfo5 .lastData i{
-    font-size: 0.4rem;
+    font-size: 0.2rem;
     color: #ff7744;
+    font-style: normal;
 }
 .dataPercentyContainer{
             clear: both;
         }
         .dataPercentyContainer .loadOutLine{
-           border-radius:0.1rem;
+           border-radius:0.06rem;
            width: 100%;
-           height: 0.2rem;
+           height: 0.08rem;
         }
         .dataPercentyContainer .redLine{
             border:1px solid #ff7861;
         }
         .dataPercentyContainer .redLine div{
             background: #ffaa9c;
-            height: 0.2rem;
+            height: 0.08rem;
             width: 20%;
-            border-radius:0.1rem;
+            border-radius:0.06rem;
         }
         .dataPercentyContainer .greenLine{
             border:1px solid #93c15c;
         }
         .dataPercentyContainer .greenLine div{
             background: #b2e07c;
-            height: 0.2rem;
+            height: 0.08rem;
             width: 0;
-            border-radius:0.1rem;
+            border-radius:0.06rem;
         }
         .margTop6{
-            margin-top: 0.6rem;
+            margin-top: 0.3rem;
         }
         .gapKong{
-            height: 1.2rem;
+            height: 0.3rem;
             width: 100%;
             clear: both;
             overflow: hidden;
         }
         .warmText .atention{
-            font-size: 0.46rem;
+            font-size: 0.23rem;
             color: #333333;
-            padding-bottom: 0.3rem;
+            padding-bottom: 0.15rem;
         }
         .warmText .detailT{
-            font-size: 0.34rem;
+            font-size: 0.17rem;
             color: #999999;
         }
         .warmText{
-            padding-top: 0.6rem;
-            padding-left: 0.5rem;
+            padding-top: 0.3rem;
+            padding-left: 0.25rem;
         }
         .gapKong9{
-            height: 0.9rem;
+            height: 0.6rem;
             width: 100%;
             overflow: hidden;
         }
 .YouNeed .needpartName{
-        font-size: 0.46rem;
+        font-size: 0.23rem;
         color: #333333;
-        padding-bottom: 0.3rem;
-        border-bottom: 1px solid #d2d2d2;
-        margin-bottom: 0.48rem;
-        padding-left: 0.52rem;
-        padding-right: 0.52rem;
+        margin-bottom: 0.25rem;
+        padding-left: 0.26rem;
+        padding-right: 0.26rem;
     }
+.YouNeed .needpartName:after{
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: #d2d2d2;
+    transform: scaleY(0.3);
+    margin-top: 0.15rem;
+}
     .YouNeed .needList{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
     .YouNeed .needList ul{
         overflow: hidden;
@@ -246,9 +365,10 @@ body{
     .YouNeed .needList ul li .needliContainer{
         border:1px solid #e9e9e9;
         border-radius: 5px;
-        margin-right: 0.24rem;
+        margin-right: 0.1rem;
         position: relative;
-        padding: 0.4rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 
     .YouNeed .needList ul li .needliContainer dl{
@@ -257,44 +377,46 @@ body{
     }
     .YouNeed .needList ul li .needliContainer dt{
         float: left;
-        margin-right: 2%;
         height: 64px;
         position: relative;
-        width: 18%;
+        width: 26%;
     }
     .YouNeed .needList ul li .needliContainer dt img{
-        height: 0.74rem;
+        height: 0.37rem;
         vertical-align: middle;
         position: absolute;
         top: 50%;
-        margin-top: -0.37rem;
+        margin-top: -0.185rem;
+        left: 50%;
+        margin-left: -0.18rem;
     }
     .YouNeed .needList ul li .needliContainer dd{
         float: left;
-        width: 80%;
+        width: 74%;
     }
     .YouNeed .needList ul li .needliContainer dd .needbusiName{
-        font-size: 0.4rem;
+        font-size: 0.2rem;
         color: #666666;
     }
     .YouNeed .needList ul li .needliContainer dd .introbusi{
-        font-size: 0.34rem;
+        font-size: 0.17rem;
         color: #999999;
     }
-    .YouNeed .needList ul li .needliContainer .serverBg{
+    .YouNeed .needList ul li .needliContainer .serverBg{/*改*/
         background: #ff7744;
-        font-size: 0.34rem;
+        font-size: 0.17rem;
         color: #fff;
-        width: 1rem;
-        height: 0.54rem;
-        line-height: 0.54rem;
-        border-radius-top-right:5px;
-        border-radius-bottom-left:5px;
+        width: 0.5rem;
+        height: 0.27rem;
+        line-height: 0.27rem;
+        border-top-right-radius:5px;
+        border-bottom-left-radius:5px;
         position: absolute;
         right: 0;
         top: 0;
         text-align: center;
     }
+    /*10-18 end*/
 .clear:after {
     content:".";
     height:0;
@@ -303,7 +425,7 @@ body{
     clear:both;
 }
 .container_lll{
-    max-width: 768px;
+    
     margin: 0 auto;
     padding: 0 0.5rem;
 }
@@ -428,4 +550,194 @@ body{
     top: 50%;
     right: 1.1rem;
     margin-top: -0.97rem;
+}
+/*异网用户*/
+.headMainContainer{
+    width: 100%;
+    position: relative;
+    height: 4.14rem;
+    text-align: center;
+}
+.headMainContainer img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.headMainContainer .ContentContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.headMainContainer .ContentContainer .buttonCard{
+    border:1px solid #fff;
+    width: 3.98rem;
+    height: 1.1rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #fff;
+    font-size: 0.52rem;
+    margin:0 auto;
+    margin-top: 0.5rem;
+}
+.headMainContainer .ContentContainer .welcomeText{
+    font-size: 0.52rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.headMainContainer .ContentContainer .linkButton{
+    font-size: 0.4rem;
+    color: #ffcf31;
+    display: block;
+    margin-top: 0.3rem;
+    text-decoration: underline;
+}
+.netContentBodyPart .introImg{
+    width: 100%;
+    display: block;
+}
+.netContentBodyPart .partADContainer{
+    width: 100%;
+}
+.netContentBodyPart .partADContainer img{
+    width: 100%;
+    display: block;
+}
+.listOperation{
+
+}
+.listOperation ul{
+    overflow: hidden;
+}
+.listOperation ul li{
+    float: left;
+    width: 25%;
+    height: 1.48rem;
+    text-align: center;
+    position: relative;
+    background:#fff;
+}
+.listOperation ul li .operationContainer{
+    height: 0.52rem;
+    border-right: 1px solid #d9d9d9;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 50%;
+    margin-top: -0.26rem;
+    left: 0;
+}
+.listOperation ul li .operationContainer img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.listOperation ul li img{
+    width: 98%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+}
+.lastPartNet{
+    width: 95%;
+    margin:0 auto;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+}
+.lastPartNet ul{
+    overflow: hidden;
+}
+.lastPartNet ul li{
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+.lastPartNet ul li:nth-child(even){
+    margin-right: 0;
+}
+.lastPartNet ul li .operationNetContainer{
+    width: 5.83rem;
+    height: 3.88rem;
+}
+.lastPartNet ul li .operationNetContainer img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.lastPartNet ul li .OperaName{
+    font-size: 0.8rem;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 0.28rem;
+    left: 0.5rem;
+}
+.lastPartNet ul li .buttonLink{
+    font-size: 0.4rem;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 1.5rem;
+    left: 0.5rem;
+    width: 1.65rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    background: #53b0fe;
+    border-radius: 4px;
+    text-align: center;
+}
+.lastPartNet .link2{
+    background: #afbbeb !important;
+}
+.lastPartNet .link3{
+    background: #e5abbf !important;
+}
+.lastPartNet .link4{
+    background: #af9ad9 !important;
+}
+.active_lll{
+    font-size: 0.46rem;
+    color: #666;
+    background-color: #fff;
+    padding: 0 0.3rem;
+}
+.active_lll li{
+    border-bottom: solid 1px #ccc;
+    padding: 0.5rem 0;
+}
+.border_no_lll{
+    border-bottom: none!important;
+}
+.or_color_lll{
+    color: #f57979;
+}
+.acti_lll{
+    width: 6.7rem;
+    line-height: 0.7rem;
+}
+.cj_lll{
+    width: 3rem;
+}
+.shareFriendContainer{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.shareFriendContainer button{
+    width: 100%;
+    height: 0.8rem;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    background: #ff7744;
+    color: #fff;
+    font-size: 0.36rem;
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/wap5.0/css/reset.css" />
     <link rel="stylesheet" href="/wap5.0/css/swiper.min.css" />
     <link rel="stylesheet" href="/wap5.0/css/wapMain.css" />
-    <script src="/wap5.0/js/public4.js"></script>
+    <script src="/wap5.0/js/public640.js"></script>
     <script src="/wap5.0/js/jquery-1.10.2.min.js"></script>
     <script src="/wap5.0/js/swiper.min.js"></script>
     <style type="text/css">
@@ -25,27 +25,44 @@
     </style>
 </head>
 <body>
-    <!--#include virtual="/wap5.0/include/headPart.html"-->
+    <!--#include virtual="/wap5.0/include/headPart640.html"-->
     <div class='pageContainer'>
+        <div class='bg_popup'></div>
         <div class='headpageInfo5'>
             <p class='showCheckDate'>查询日期：2016.09.16 10:10:28</p>
             <p class='showCheckpackage'>当前套餐：4G全国套餐-76元套餐（新）</p>
         </div>
         <div class='busiInfoContainer'>
             <div class='busiTitle5'>
-                <img src="images/busiIcon1.png" />
-                <p>剩余流量</p>
+                <div class='iconItempart'>
+                    <img src="images/busiIcon1.png" />
+                </div>
+                <div class='labelTextflow5'>剩余流量</div>
+                <div class='outflow'><span>超出XXXGB,</span><a href='#'>去充值&gt;</a></div>
             </div>
             <div class='flowpackageList5'>
                 <div class='busiDetaileContainer'>
                     <div class='busiName5 clr'>
-                        <p>基本套餐76元-800M国内流量</p>
+                        <div class='infopackage5'>基本套餐76元-800M国内流量
+                            <span href='javascript:void(0)' class='percentPoupleButton'>结转流量</span>
+                            <span class='labelDate'>次月生效</span>
+                        </div>
+
+                        <div class='poupleContainer'>
+                            <h3 class='poupleflowHead'>结转流量说明</h3>
+                            <div class='listItemPoulePercent'>1、结转流量即是流量不清零：是指本月月底最后一日24时，主套餐内未用尽的剩余流量（以下统称“剩余流量”）执行当月不清零，“剩余流量”自动结转至次月使用。如“剩余流量”在次月仍未用尽，则在次月月底最后一日24时自动清零，并依此类推。</div>
+                            <div class='listItemPoulePercent'>2、用户办理2G、3G、4G互转、预后互转、套餐变更、改号、过户、销户等情况下，不结转相关“剩余流量”。</div>
+                            <div class='listItemPoulePercent'>3、“剩余流量”保持原套餐的全国/本地/小区等流量属性不变。</div>
+                            <div class='listItemPoulePercent'>4、用户仅在正常在用状态下方能使用“剩余流量”。</div>
+                        </div>
                     </div>
                     <div class='busiDetailInfo5'>
                         <p class='TotleData'>共800M</p>
                         <p class='lastData'>剩余<span>200</span><i>MB</i></p>
                         <div class='clr'></div>
                     </div>
+
+
                     
                     <div class="ap dataPercentyContainer">
                         <div class="loadOutLine greenLine">
@@ -53,9 +70,20 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class='busiDetaileContainer'>
                     <div class='busiName5 clr'>
-                        <p>全国流量半年包</p>
+                        <div class='infopackage5'>全国流量半年包
+                            <span href='javascript:void(0)' class='percentPoupleButton'>结转流量</span>
+                            <span class='labelDate'>次月生效</span>
+                        </div>
+                        <div class='poupleContainer'>
+                            <h3 class='poupleflowHead'>结转流量说明</h3>
+                            <div class='listItemPoulePercent'>1、结转流量即是流量不清零：是指本月月底最后一日24时，主套餐内未用尽的剩余流量（以下统称“剩余流量”）执行当月不清零，“剩余流量”自动结转至次月使用。如“剩余流量”在次月仍未用尽，则在次月月底最后一日24时自动清零，并依此类推。</div>
+                            <div class='listItemPoulePercent'>2、用户办理2G、3G、4G互转、预后互转、套餐变更、改号、过户、销户等情况下，不结转相关“剩余流量”。</div>
+                            <div class='listItemPoulePercent'>3、“剩余流量”保持原套餐的全国/本地/小区等流量属性不变。</div>
+                            <div class='listItemPoulePercent'>4、用户仅在正常在用状态下方能使用“剩余流量”。</div>
+                        </div>
                     </div>
                     <div class='busiDetailInfo5'>
                         <p class='TotleData'>共2048MB</p>
@@ -70,17 +98,18 @@
                 </div>
             </div>
         </div>
-
         <div class='busiInfoContainer margTop6'>
             <div class='busiTitle5'>
-                <img src="images/busiIcon2.png" />
-                <p>语音剩余</p>
+                <div class='iconItempart'>
+                    <img src="images/busiIcon2.png" />
+                </div>
+                <div class='labelTextflow5'>语音剩余</div>
             </div>
-
+            
             <div class='flowpackageList5'>
                 <div class='busiDetaileContainer'>
                     <div class='busiName5 clr'>
-                        <p>基本套餐76元-200分钟语音</p>
+                        <div class='infopackage5'>基本套餐76元-200分钟语音</div>
                     </div>
                     <div class='busiDetailInfo5'>
                         <p class='TotleData'>共200分钟</p>
@@ -98,14 +127,16 @@
 
         <div class='busiInfoContainer margTop6'>
             <div class='busiTitle5'>
-                <img src="images/busiIcon2.png" />
-                <p>短信/彩信</p>
+                <div class='iconItempart'>
+                    <img src="images/busiIcon3.png" />
+                </div>
+                <div class='labelTextflow5'>短信/彩信</div>
             </div>
 
             <div class='flowpackageList5'>
                 <div class='busiDetaileContainer'>
                     <div class='busiName5 clr'>
-                        <p>短信网龄升级计划（国内短信）</p>
+                        <div class='infopackage5'>短信网龄升级计划（国内短信）</div>
                     </div>
                     <div class='busiDetailInfo5'>
                         <p class='TotleData'>共200条</p>
@@ -124,6 +155,9 @@
         <div class='warmText'>
             <p class='atention'>注：</p>
             <p class='detailT'>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+        </div>
+        <div class="tc shareFriendContainer">
+            <button class="shareFriendButton">分享给朋友</button>
         </div>
         <div class='gapKong9'></div>
         <div class='YouNeed'>
@@ -166,6 +200,7 @@
     <script type="text/javascript">
         $(function(){
             $('.pageName').text('余量查询');
+
             function sortFlowList(obj){//对每个模块里的进度条块排序
               var listchildren = $(obj).children('.busiDetaileContainer');
               var arr = [];
@@ -186,7 +221,7 @@
                  getlistContainer.empty();
                   for(var j in sortarr){
                     //console.log('tt---->'+sortarr[j].html());
-                      var newobj = '<div class="ap dataPercentyContainer">'+sortarr[j].html()+'</div>';
+                      var newobj = '<div class="busiDetaileContainer">'+sortarr[j].html()+'</div>';
                       getlistContainer.append(newobj);
                   }
               }
@@ -203,7 +238,6 @@
           }
 
           $('.loadOutLine').each(function(){//进度条动画
-            console.log('222');
               var dataschedule = $(this).children('div').attr('data');
               if(dataschedule <2){
                   dataschedule = 2;
@@ -215,6 +249,17 @@
               }
               $(this).children('div').animate({ width:total }, 1000);
           });
+
+          $('.percentPoupleButton').bind('click',function(){
+                $('.bg_popup').show();
+                $(this).parent('.infopackage5').siblings('.poupleContainer').show();
+            });
+
+          $('.bg_popup').bind('click',function(){
+                $(this).hide();
+                $('.poupleContainer').hide();
+            });
+
         })
     </script>
 </body>
