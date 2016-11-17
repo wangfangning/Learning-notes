@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>引导页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/CompagenStyle.css">
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/public640.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate.min.js"></script>
+</head>
+<body>
+<div class='pageContainer swiper-container'>
+    <div class='page5Compaign swiper-wrapper'>
+        <div class="swiper-slide six">
+            <div class="bg"></div>
+            <div class="starcon ani"swiper-animate-effect="bounceIn" swiper-animate-delay='4.3s' swiper-animate-duration="1s">
+                <img src="images/star.png" class="star">
+            </div>
+            <h1 class='pageTitleCompaign ani' swiper-animate-effect="fadeInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">
+                5.0聚焦服务
+            </h1>
+            <p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='0.5s' swiper-animate-duration="1s">
+                <span>青,取之于蓝，而青于蓝；</span>
+                <span>冰，水为之,而寒于水。</span>
+                <span>聚焦服务从生日、流量、活动提醒开始，不断进化。</span>
+            </p>
+            <div class="secondeCord ani" swiper-animate-effect="bounceIn" swiper-animate-delay='3.5s' swiper-animate-duration="1s">
+                <img src="images/downLoadCord.png" class="">
+            </div>
+            <p class='labelIntroCompaign ani' swiper-animate-effect="fadeIn" swiper-animate-delay='2.5s' swiper-animate-duration="1s">手厅营业厅（V 5.0）</p>
+            <div class="buttonConmpaign ani"  swiper-animate-effect="fadeInUp " swiper-animate-delay='1.5s' swiper-animate-duration="1s">
+                <button class='buttonDownLoadCompaign'>下载客户端</button>
+            </div>
+            <div class="next_page_con">
+                <img src="images/next_page.png">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var windowHeight = $(window).height();
+        $('.page5Compaign').height(windowHeight);
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction : 'vertical',
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            }
+        })
+    });
+    // setTimeout(function(){
+    //     $("#gift1").addClass("gift11");
+    //     $("#gift2").addClass("gift22");
+    //     $("#gift3").addClass("gift33");
+    // },2500);
+</script>
+</body>
+</html>

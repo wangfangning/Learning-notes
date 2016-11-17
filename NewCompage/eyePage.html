@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>引导页</title>
+    <link rel="stylesheet" type="text/css" href="/dlJiang/NewCompage/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/dlJiang/NewCompage/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/dlJiang/NewCompage/css/swiper.min.css">
+    <script type="text/javascript" src="/dlJiang/NewCompage/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/dlJiang/NewCompage/js/public640.js"></script>
+    <script type="text/javascript" src="/dlJiang/NewCompage/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/dlJiang/NewCompage/js/swiper.animate.min.js"></script>
+    <style type="text/css">
+        .pageContainer{
+            max-width: 640px;
+            min-width: 320px;
+            margin:0 auto;
+            font-family: "Microsoft YaHei";
+        }
+        .pageTitleCompaign{
+            font-size: 0.46rem;
+            color: #ff7744;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+        }
+        .pageInfoCompaign{
+            font-size: 0.3rem;
+            color: #9d9d9d;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 1.28rem;
+            left: 0;
+        }
+        .page5Compaign{
+            position: relative;
+        }
+        .bgpart5{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+        .eyebg{
+            position: absolute;
+            top: 2.97rem;
+            width: 4.41rem;
+            left: 50%;
+            margin-left: -2.29rem;
+            z-index: 8;
+        }
+        .eyeLine{
+            position: absolute;
+            /*top: 4.29rem;*/
+            width: 3.22rem;
+            left: 50%;
+            margin-left: -1.61rem;
+            z-index: 10;
+        }
+        .eyeball{
+            position: absolute;
+            /*top: 4.23rem;*/
+            top: -0.05rem;
+            width: 1.9rem;
+            left: 50%;
+            margin-left: -0.95rem;
+            z-index: 10;
+        }
+        .ciclrout{
+            position: absolute;
+            top: 2.23rem;
+            width: 4.56rem;
+            left: 50%;
+            margin-left: -2.28rem;
+            z-index: 9;
+        }
+        .startBg{
+            position: absolute;
+            top: 2.74rem;
+            width: 5.24rem;
+            left: 50%;
+            margin-left: -2.62rem;
+            z-index: 9;
+        }
+        .logoLian{
+            position: absolute;
+            bottom: 0.9rem;
+            width: 2.74rem;
+            left: 50%;
+            margin-left: -1.37rem;
+            z-index: 11;
+        }
+        .dn{
+            display: none;
+        }
+        .moveSector{
+            
+            -webkit-animation-name: mymove;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-iteration-count: linear;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+        @-webkit-keyframes mymove{
+            0% {transform:rotate(0deg)}
+            10%{transform:rotate(10deg)}
+            20%{transform:rotate(20deg)}
+            40%{transform:rotate(30deg)}
+            60%{transform:rotate(20deg)}
+            80%{transform:rotate(10deg)}
+            100%{transform:rotate(0deg)}
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class='pageContainer swiper-container'>
+        <div class='page5Compaign swiper-wrapper'>
+            <div class="swiper-slide">
+                <h1 class='pageTitleCompaign ani' swiper-animate-effect="bounceInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">5.0聚焦服务</h1>
+                <p class='pageInfoCompaign ani' swiper-animate-effect="bounceInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">从生日、流量、活动提醒开始，不断进化</p>
+                <img src="images/circlePart5.png" class='ani eyebg' swiper-animate-effect="rotateIn" swiper-animate-delay='1.5s' swiper-animate-duration="1s" />
+                <style type="text/css">
+                    .eyePlace{
+                        position: absolute;
+                        top: 4.29rem;
+                        height: 1.79rem;
+                        width: 3.22rem;
+                        left: 50%;
+                        margin-left: -1.61rem;
+                        z-index: 10;
+                    }
+                </style>
+                <div class='eyePlace ani' swiper-animate-effect="zoomIn" swiper-animate-delay='2.5s' swiper-animate-duration="1s">
+                    <img src="images/eyeLine.png" class=' eyeLine'  />
+                    <img src="images/eyeball.png" class=' eyeball eyeballS' />
+                    <img src="images/eyeball.png" class='ani eyeballMove eyeball moveSector dn' />
+                </div>
+                
+                <img src="images/05_03.png" swiper-animate-effect="rotateIn" swiper-animate-delay='4.5s' swiper-animate-duration="4s" class='ani ciclrout' />
+                <img src="images/startBg.png" swiper-animate-effect="zoomIn" swiper-animate-delay='5.5s' swiper-animate-duration="3s" class='ani startBg' />
+                <img src="images/logoLian.png" class='ani logoLian' />
+                <img src="images/part5Bg.png" class='bgpart5' />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var windowHeight = $(window).height();
+            $('.page5Compaign').height(windowHeight);
+
+            setTimeout(function(){
+                $('.eyeballMove').removeClass('dn');
+                $('.eyeballS').addClass('dn');
+            },3500);
+            var mySwiper = new Swiper ('.swiper-container', {
+               direction : 'vertical',
+               onInit: function(swiper){
+               swiperAnimateCache(swiper);
+               swiperAnimate(swiper);
+                },
+               onSlideChangeEnd: function(swiper){
+              swiperAnimate(swiper);
+              
+                },
+              onTransitionEnd: function(swiper){
+              swiperAnimate(swiper);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

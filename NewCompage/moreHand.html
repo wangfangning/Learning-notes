@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<title>moreHand</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/public640.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate.min.js"></script>
+	<script type="text/javascript">
+		var _self = this;
+		_self.width = 640; // 璁剧疆榛樿鏈€澶у搴�
+		_self.fontSize = 100; // 榛樿瀛椾綋澶у皬
+		_self.widthProportion = function() {
+			var p = (document.body && document.body.clientWidth || document.getElementsByTagName("html")[0].offsetWidth) / _self.width;
+			return p > 1 ? 1 : p < 0.5 ? 0.5 : p;
+		};
+		_self.changePage = function() {
+			document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + _self.widthProportion() * _self.fontSize + "px !important");
+		}
+		_self.changePage();
+		window.addEventListener('resize', function() {
+			_self.changePage();
+		}, false);
+	</script>
+</head>
+<style type="text/css">
+	.pageContainer {
+		max-width: 640px;
+		min-width: 320px;
+		margin: 0 auto;
+		font-family: "Microsoft YaHei";
+	}
+
+	.wode_wfn .pageTitleCompaign {
+		font-size: 0.3rem;
+		color: #ff7744;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: .42rem;
+	}
+
+	.wode_wfn .pageInfoCompaign {
+		font-size: 0.22rem;
+		color: #9d9d9d;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		color: #aaaaaa;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(2) {
+		top: 1rem;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(3) {
+		top: 1.4rem;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(4) {
+		top: 1.8rem;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(5) {
+		top: 2.2rem;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(6) {
+		top: 2.6rem;
+	}
+
+	.wode_wfn .pageInfoCompaign:nth-child(7) {
+		top: 3rem;
+	}
+
+	.wode_wfn .page5Compaign {
+		position: relative;
+	}
+
+	.wode_wfn .bg_wfn {
+		position: absolute;
+		bottom: 0rem;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	.wode_wfn .star_wfn {
+		width: 4.8rem;
+		position: absolute;
+		top: 3.4rem;
+		left: 50%;
+		margin-left: -2.4rem;
+		z-index: 99;
+	}
+
+	.wode_wfn .bao_wfn1 {
+		position: absolute;
+		width: 3.4rem;
+		top: 3.9rem;
+		left: 50%;
+		margin-left: -1.7rem;
+		z-index: 999;
+	}
+
+	.wode_wfn .bao_wfn2 {
+		position: absolute;
+		width: 4rem;
+		left: 50%;
+		top: 5rem;
+		margin-left: -2rem;
+		z-index: 999;
+	}
+
+	.wode_wfn .bao_wfn3 {
+		position: absolute;
+		width: 3.4rem;
+		left: 50%;
+		top: 6.3rem;
+		margin-left: -1.7rem;
+		z-index: 999;
+	}
+
+	.wode_wfn .phone_wfn {
+		width: 4.2rem;
+		position: absolute;
+		top: 6.3rem;
+		left: 50%;
+		margin-left: -2.1rem;
+	}
+
+	.wode_wfn .hand_wfn {
+		width: 1.1rem;
+		position: absolute;
+		top: 8rem;
+
+		visibility: inherit!important;
+		right: -1.4rem;
+		/*bottom: .5rem;*/
+		z-index: 99999;
+	}
+
+	.wode_wfn .yun1_wfn {
+		position: absolute;
+		top: 8.7rem;
+		left: 2.2rem;
+		width: .5rem;
+	}
+
+	.wode_wfn .star1_wfn {
+		position: absolute;
+		top: 6rem;
+		left: 1rem;
+		z-index: 99;
+		width: .15rem;
+	}
+
+	.wode_wfn .star2_wfn {
+		position: absolute;
+		top: 5.6rem;
+		right: .9rem;
+		z-index: 99;
+		width: .12rem
+	}
+
+	.wode_wfn .yun_wfn {
+		position: absolute;
+		top: 8.4rem;
+		left: 3.5rem;
+		width: .38rem;
+	}
+	.wode_wfn .paopao_wfn {
+		width: 2.3rem;
+		position: absolute;
+		top: 4.5rem;
+		right: 1.4rem;
+		z-index: 99999;
+	}
+
+	.wode_wfn .jian_wfn {
+		position: absolute;
+		width: .5rem;
+		left: 50%;
+		margin-left: -0.25rem;
+		transition: all 2s ease-in-out;
+		-webkit-animation: my_wfn 1.8s infinite;
+		animation: my_wfn 1.8s infinite;
+	}
+
+	@-webkit-keyframes my_wfn {
+		from {
+			bottom: .2rem;
+			opacity: 1;
+		}
+		to {
+			bottom: .4rem;
+			opacity: 0.2;
+		}
+	}
+@media (max-height:439px){
+	.wode_wfn .pageTitleCompaign {
+		top: .2rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(2) {
+		top: .7rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(3) {
+		top: 1.05rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(4) {
+		top: 1.4rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(5) {
+		top: 1.75rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(6) {
+		top: 2.1rem;
+	}
+	.wode_wfn .pageInfoCompaign:nth-child(7) {
+		top: 2.45rem;
+	}
+	.wode_wfn .star_wfn {
+		top: 2.9rem;
+	}
+	.wode_wfn .bao_wfn1 {
+		top: 3.3rem;
+		width: 3.2rem;
+	}
+	.wode_wfn .bao_wfn2 {
+		top: 4.3rem;
+		width: 3.8rem;
+	}
+	.wode_wfn .bao_wfn3 {
+		top: 5.46rem;
+		width: 3.2rem;
+	}
+	.wode_wfn .phone_wfn {
+		top: 5.4rem;
+	}
+	.wode_wfn .paopao_wfn{
+		top: 3.6rem;
+	}
+
+	.wode_wfn .yun_wfn {
+		top: 7.3rem;
+	}
+	.wode_wfn .yun1_wfn {
+		top: 7.5rem;
+	}
+}
+	@media (max-height:540px) and (min-height:440px){
+		.wode_wfn .pageTitleCompaign {
+			top: .4rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(2) {
+			top: 1rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(3) {
+			top: 1.3rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(4) {
+			top: 1.6rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(5) {
+			top: 1.9rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(6) {
+			top: 2.2rem;
+		}
+		.wode_wfn .pageInfoCompaign:nth-child(7) {
+			top: 2.5rem;
+		}
+		.wode_wfn .star_wfn {
+			top: 3.5rem;
+		}
+		.wode_wfn .bao_wfn1 {
+			top: 3.9rem;
+		}
+		.wode_wfn .bao_wfn2 {
+			top: 5rem;
+		}
+		.wode_wfn .bao_wfn3 {
+			top: 6.26rem;
+		}
+		.wode_wfn .phone_wfn {
+			top: 6.25rem;
+		}
+		.wode_wfn .paopao_wfn{
+			top: 4.5rem;
+		}
+		/*.wode_wfn	.star2_wfn{
+	top: 4.8rem;
+}
+.wode_wfn	.star1_wfn{
+	top: 5rem;
+}*/
+		.wode_wfn .yun_wfn {
+			top: 8.3rem;
+		}
+		.wode_wfn .yun1_wfn {
+			top: 8.5rem;
+		}
+	}
+</style>
+
+<body>
+	<div class='pageContainer swiper-container'>
+		<div class='page5Compaign swiper-wrapper'>
+			<div class="swiper-slide wode_wfn">
+				<h1 class='pageTitleCompaign ani' swiper-animate-effect="fadeInDown" swiper-animate-delay='0.5s' swiper-animate-duration="1s">3、特色多样的流量包</h1>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">放假了，来个假日流量包，流量翻倍。</p>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">月底流量不足，办个日租包，不浪费。</p>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">夜猫子，用夜间闲时流量包。</p>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">最爆炸当属视频流量包，</p>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">简直是流量包中的黑科技，看视频定向流量</p>
+				<p class='pageInfoCompaign ani' swiper-animate-effect="fadeInRight" swiper-animate-delay='1s' swiper-animate-duration="1s">包月不限量，离流量免费近了一丢丢。</p>
+				<img src="images/ri_wfn.png" alt="" class="bao_wfn1 ani" swiper-animate-effect="fadeInUp" swiper-animate-delay='2.4s' swiper-animate-duration="1s" />
+				<img src="images/jia_wfn.png" alt="" class="bao_wfn2 ani" swiper-animate-effect="fadeInUp" swiper-animate-delay='2.5s' swiper-animate-duration="1s" />
+				<img src="images/shi_wfn.png" alt="" class="bao_wfn3 ani" swiper-animate-effect="fadeInUp" swiper-animate-delay='2.6s' swiper-animate-duration="1s" />
+				<img src="images/star_wfn.png" alt="" class="star_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='5.2s' swiper-animate-duration=".6s" />
+				<!-- <img src="images/star1_wfn.png" alt="" class="star1_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='4.5s' swiper-animate-duration=".6s"/>
+				<img src="images/star2_wfn.png" alt="" class="star2_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='4.5s' swiper-animate-duration=".6s"/> -->
+				<img src="images/bg_wfn.png" alt="" class="bg_wfn" />
+
+				<img src="images/phone_wfn.png" alt="" class="phone_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='1.8s' swiper-animate-duration=".8s" />
+
+				<img src="images/yun_wfn.png" alt="" class="yun_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='5.2s' swiper-animate-duration=".6s" />
+				<img src="images/yun1_wfn.png" alt="" class="yun1_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='5.3s' swiper-animate-duration=".6s" />
+				<img src="images/jian_wfn.png" alt="" class="jian_wfn ani" />
+				<img src="images/hand_wfn.png" alt="" class="hand_wfn" />
+				<img src="images/paopao_wfn.png" alt="" class="paopao_wfn ani" swiper-animate-effect="zoomIn" swiper-animate-delay='4.7s' swiper-animate-duration=".6s" />
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script>
+	$(document).ready(function() {
+
+		var windowHeight = $(window).height();
+		$('.page5Compaign').height(windowHeight);
+
+		var mySwiper = new Swiper('.swiper-container', {
+			direction: 'vertical',
+			onInit: function(swiper) {
+				swiperAnimateCache(swiper);
+				swiperAnimate(swiper);
+			},
+			onSlideChangeEnd: function(swiper) {
+				swiperAnimate(swiper);
+
+			},
+			onTransitionEnd: function(swiper) {
+				swiperAnimate(swiper);
+			}
+		});
+
+
+		(function functionName() {
+			var WidthPixel = window.screen.height;
+			if (WidthPixel<540 && WidthPixel>440) {
+				setTimeout(function() {
+					$(".hand_wfn").animate({
+						top: "6.7rem",
+						right: "1rem",
+						visibility: " inherit"
+					}, 1200)
+				}, 3400);
+			};
+			if (WidthPixel>540){
+
+				setTimeout(function() {
+					$(".hand_wfn").animate({
+						top: "6.6rem",
+						right: "1rem",
+						visibility: " inherit"
+					}, 1200)
+				}, 3400);
+			};
+			if (WidthPixel<439) {
+				setTimeout(function() {
+					$(".hand_wfn").animate({
+						top: "5.8rem",
+						right: "1rem",
+						visibility: " inherit"
+					}, 1200)
+				}, 3400);
+			}
+		}())
+
+	});
+</script>
+
+</html>

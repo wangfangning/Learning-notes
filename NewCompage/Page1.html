@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,minimum-scale=1,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>引导页1</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/public640.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/swiper.animate.min.js"></script>
+		<style media="screen">
+		.pageContainer{
+					max-width: 640px;
+					min-width: 320px;
+					margin:0 auto;
+					font-family: "Microsoft YaHei";
+			}
+		.One_page	.ydy_bg{
+				width:100%;
+				height:auto;
+			}
+		.One_page	.pageTitleCompaign{
+				font-size: 0.35rem;
+            color: #ff7744;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0.4rem;
+			}
+	.One_page	.s_title{
+				font-size:0.25rem;
+				line-height: 0.4rem;
+				color:#9d9d9d;
+				text-align: center;
+				width:100%;
+				position:absolute;
+				left:0;
+				top:1.2rem;
+			}
+			.One_page	.star_wfn{
+				width:4.8rem;
+				position:absolute;
+				top:2.6rem;
+				left:0.8rem;
+			}
+			.One_page	.phone_1{
+				width: 60%;
+				height: auto;
+				position: absolute;
+				top: 3.6rem;
+				left: 20%;
+			}
+			.One_page	.round1,.One_page	.round2{
+				width: 1.2rem;
+		    height: auto;
+		    position: absolute;
+		    top: 3rem;
+		    left: 2rem;
+			}
+			.One_page	.round2{
+				top: 4.6rem;
+				left: 0.7rem;
+			}
+			.One_page	.yun_wfn{
+				width: 0.5rem;
+				position: absolute;
+				top: 7.6rem;
+				left: 0.8rem;
+			}
+			.One_page	.yun1_wfn{
+				width: 0.7rem;
+				position: absolute;
+				top: 8.35rem;
+				left: 1.5rem;
+			}
+			.One_page	.handle{
+				width:1rem;
+				position:absolute;
+				right: -1rem;
+				top: 9.5rem;
+			}
+			.One_page	.zdy_btn{
+				width: 1.8rem;
+				position: absolute;
+				top: 6.1rem;
+				right: 0.9rem;
+			}
+			.One_page	.jian_wfn{
+				position: absolute;
+				bottom: .6rem;
+				width: .5rem;
+				left: 50%;
+				margin-left: -0.25rem;
+				transition: all 2s ease-in-out;
+				-webkit-animation: mymove 1.8s infinite;
+				animation: mymove 1.8s infinite;
+			}
+			@-webkit-keyframes mymove
+{
+from {bottom:.2rem;opacity: 1;}
+to {bottom:.4rem;opacity: 0.2;}
+}
+
+@media screen and (max-height:485px){
+	.One_page	.pageTitleCompaign{
+			font-size: 0.3rem;
+			color: #ff7744;
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0.2rem;
+		}
+.One_page	.s_title{
+			font-size:0.18rem;
+			line-height: 0.35rem;
+			color:#9d9d9d;
+			text-align: center;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0.65rem;
+		}
+		.One_page	.star_wfn{
+			width:4.8rem;
+			position:absolute;
+			top:1.8rem;
+			left:0.8rem;
+		}
+		.One_page	.phone_1{
+			width: 60%;
+			height: auto;
+			position: absolute;
+			top: 2.4rem;
+			left: 20%;
+		}
+		.One_page	.round1,.One_page	.round2{
+			width: 0.8rem;
+			height: auto;
+			position: absolute;
+			top: 2.1rem;
+			left: 2rem;
+		}
+		.One_page	.round2{
+			top: 3.6rem;
+			left: 0.9rem;
+		}
+		.One_page	.yun_wfn{
+			width: 0.5rem;
+			position: absolute;
+			top: 6.6rem;
+			left: 0.8rem;
+		}
+		.One_page	.yun1_wfn{
+			width: 0.7rem;
+			position: absolute;
+			top: 7.2rem;
+			left: 1.5rem;
+		}
+		.One_page	.handle{
+			width:1rem;
+			position:absolute;
+			right: -1rem;
+			top: 8.5rem;
+		}
+		.One_page	.zdy_btn{
+			width: 1.8rem;
+			position: absolute;
+			top: 5.15rem;
+			right: 0.85rem;
+		}
+
+
+
+}
+
+</style>
+</head>
+<body>
+	<div class="pageContainer swiper-container One_page">
+		<div class="page1ompaign swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/ydy_1_bg.png" class="ydy_bg" alt="" />
+					<h1 class="pageTitleCompaign ani" swiper-animate-effect="bounceInDown"
+					swiper-animate-delay='0.5s' swiper-animate-duration="1s">1、流量语音话费数据1秒看完</h1>
+
+					<p class="s_title ani" swiper-animate-effect="bounceInRight"
+					swiper-animate-delay='1s' swiper-animate-duration="1s">
+						每次看到亲们在评论中留言的烦恼，</br>
+小沃感同身受，默记在心，恨不能自己去敲代码。</br>
+今天小沃终于可以自豪的向大家说，新发布5.0版，</br>
+集中解决了日常关注较多的问题。
+				</p>
+
+					<img src="images/star_zhl.png" alt="" class="star_wfn ani"
+					 swiper-animate-effect="zoomIn" swiper-animate-delay='3.8s'
+					  swiper-animate-duration="1.2s"/>
+
+					<img src="images/phone_1_zhl.png" class="phone_1 ani"
+					swiper-animate-effect="bounceInUp" swiper-animate-delay='1.5s'
+					 swiper-animate-duration="1s" alt="" />
+
+					 <img src="images/round1_zhl.png" class="round1 ani"
+					 swiper-animate-effect="zoomIn" swiper-animate-delay='2.5s'
+						swiper-animate-duration="1s" alt="" />
+
+						<img src="images/round2_zhl.png" class="round2 ani"
+ 					 swiper-animate-effect="zoomIn" swiper-animate-delay='2.8s'
+ 						swiper-animate-duration="1s" alt="" />
+
+						<img src="images/yun_wfn.png" alt="" class="yun_wfn ani"
+						 swiper-animate-effect="zoomIn" swiper-animate-delay='3.8s'
+						  swiper-animate-duration=".6s"/>
+
+				<img src="images/yun1_wfn.png" alt="" class="yun1_wfn ani"
+				 swiper-animate-effect="zoomIn" swiper-animate-delay='3.6s'
+				  swiper-animate-duration=".6s"/>
+
+						<img src="images/handle_zhl.png" class="handle" alt="" />
+
+						<img src="images/zdy_btn.png" alt="" class="zdy_btn ani"
+						 swiper-animate-effect="zoomIn" swiper-animate-delay='5.6s'
+						  swiper-animate-duration=".6s"/>
+
+						<img src="images/jian_wfn.png" alt="" class="jian_wfn ani"/>
+
+				</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+	$(function(){
+	var windowWidth=$(window).width();
+			 var windowHeight = $(window).height();
+			 $('.page1ompaign').height(windowHeight);
+			 $('.ydy_bg').width(windowWidth).height(windowHeight);
+			 setTimeout(function(){
+
+				 if(windowHeight<485){
+					 $(".handle").animate({
+						 	"top":"6.65rem",
+							"right":"0.9rem"
+					 },1000)
+				 }else{
+					 $(".handle").animate({
+						 	"top":"7.55rem",
+							"right":"0.95rem"
+					 },1000)
+				 }
+			 },4500)
+
+
+
+			 var mySwiper = new Swiper ('.swiper-container', {
+					direction : 'vertical',
+					onInit: function(swiper){
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+					 },
+					onSlideChangeEnd: function(swiper){
+				 swiperAnimate(swiper);
+
+					 },
+				 onTransitionEnd: function(swiper){
+				 swiperAnimate(swiper);
+					 }
+			 })
+	 })
+	</script>
+</body>
+</html>
