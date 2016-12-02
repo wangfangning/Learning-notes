@@ -1,0 +1,93 @@
+<!--#include virtual="/dlJiang/shake/include/headerNew.html"-->
+<style type="text/css">
+body{ background:#fff8f2;}
+audio{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+</style>
+<audio src="music/bgmusic.mp3" loop="loop" id="audioplay"></audio>
+<audio src="music/good.mp3" id="audioplayGoog"></audio>
+<audio src="music/bad.mp3" id="audioplayBad"></audio>
+<ul class="tab_award">
+    <li class="on">首页</li>
+    <li onClick="url('myaward.html')">中奖查询</li>
+    <li onClick="url('capt.html')">活动说明</li>
+</ul>
+<div class="bg_pull1">
+	<div class="space_20"></div>
+    <div class="space_05"></div>
+    <div class="wid320">
+        <div class="pullBox">
+            <div class="awards">
+                <ul class="award award1">
+                    <li><img src="images/pull_award.png" height="59"></li>
+                    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+                </ul>
+            </div>
+            <div class="awards">
+                <ul class="award award2">
+                    <li><img src="images/pull_award.png" height="59"></li>
+                    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+                </ul>
+            </div>
+            <div class="awards">
+                <ul class="award award3">
+                    <li><img src="images/pull_award.png" height="59"></li>
+                    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+                </ul>
+            </div>
+            <!-- <div class="hand"></div> -->
+            <style type="text/css">
+                @keyframes mymove
+                    {
+                    from {transform: rotateX(0deg);}
+                    to {transform: rotateX(180deg);}
+                    }
+                .handImg{
+                    width: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 82px;
+                }
+                .animate{
+                    -webkit-animation:mymove 5s infinite;
+                }
+            </style>
+            <img src="images/hand.png" class='handImg' />
+            <div class="start_pull"></div>
+            <div class="prizeTip"><img class="vm" src="images/smile.png" width="15"> <span class="vm">恭喜！您获得iPhone 5s 一部！</span></div>
+        </div>
+    </div>
+    <div class="space_20"></div>
+    <div class="awardTips"><img class="vm" src="images/shake.png" height="13"> <span class="vm">您今天还有<em>N</em>次机会</span></div>
+    <p class='noPrize' style='color:blue;text-align:center;'>未中奖</p>
+    <p class='Prize' style='color:blue;text-align:center;'>中奖</p>
+    <div class="space_10"></div>
+    <div class="notice">
+        <marquee align="center" behavior="scroll" style=" background:##7f7e77; color:#fff;" direction="up" height="30" width="280" hspace="0" vspace="2" scrollamount="1">
+            <ul class="ul_scroll">
+            	<li><span>186xxxx0303</span><span>一等奖</span>获得iPhone5s一部1</li>
+                <li><span>186xxxx0303</span><span>一等奖</span>获得iPhone5s一部1</li>
+                <li><span>186xxxx0303</span><span>一等奖</span>获得iPhone5s一部1</li>
+                <li><span>186xxxx0303</span><span>一等奖</span>获得iPhone5s一部1</li>
+                <li><span>186xxxx0303</span><span>一等奖</span>获得iPhone5s一部1</li>
+            </ul>
+        </marquee>
+    </div>
+    <div class="space_30"></div>
+</div>
+<div class="bg_popup bg_popup1"><!--中奖弹出层-->
+	<div class="popup_con">
+    	<div class="popup_close"></div>
+    	<p class="tc"><img src="images/wo01.png" width="71"></p>
+        <p class="popupTips">亲，恭喜您获得XXXXXXXXX!</p>
+        <div class="space_10"></div>
+        <div class="tc">
+            <input type="button" class="btn btn_small btn_orange btn_left" onClick="url('myaward.html')" value="查 看">
+            <input type="button" class="btn btn_small btn_orange ensureBtn" value="继续摇">
+        </div>
+    </div>
+</div>
+<!--#include virtual="/dlJiang/shake/include/footerNew.html"-->

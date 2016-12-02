@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* 站点说明： 中国联通手机客户端
+ * 开发时间： 2014-04-29
+ * 开发者： 胡建  
+ * 维护者： 胡建
+ *
+ * 样式版本： v1.0
+ * 版本时间： 2014-04-29
+ * 注意事项： 基本样式,所有共用基本样式将在这里定义,此次针对三级页面改版重新编写,客户端和wap均使用此文件
+ */
+
+/*--仅作为不同场景入口链接使用--*/
+.otherLink{ font-size:14px; height:40px; line-height:40px; color:#00f;}
+.otherLink a{ color:#00f;}
+
+/*---Initialization---*/
+input::-moz-focus-inner,input::-webkit-focus-inner,input::-o-focus-inner,input::focus-inner{border-color:transparent;}
+body,ul,li,dl,dt,dd,form,input,h1,h2,h3,h4,h5,p,hr,img{margin:0;padding:0;}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus { border-color: #ffffff; -webkit-box-shadow: 0 0 0px #fff; -moz-box-shadow: 0 0 0px #fff; -o-box-shadow: 0 0 0px #fff; box-shadow: 0 0 0px #fff; outline: none; background: none repeat scroll 0 0 #FFFFFF;  -webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none;}
+.colOrange{ color:#fe7f05;}
+.colGrey{ color:#707070;}
+.wid290{ width:290px; margin:0 auto; overflow:hidden;}
+.wid280{ width:280px; margin:0 auto; overflow:hidden;}
+.wid320{ width:320px; margin:0 auto; overflow:hidden;}
+.wid300{ width:300px; margin:0 auto; overflow:hidden;}
+.wid305{ width:305px; margin:0 auto; overflow:hidden;}
+.f14{ font-size:14px!important;}
+.f20{ font-size:20px!important;}
+.pad_0_15{ padding:0 15px; overflow:hidden;}
+
+.tab_award{ height:60px; position:relative;}
+.tab_award > li{ width:33.33%; height:59px; float:left; background:#fff; border-bottom:1px solid #cfcfcf; font-size:18px; line-height:59px; text-align:center;}
+.tab_award > li.on{ height:57px; border-bottom:3px solid #fc8310; color:#fe7f05; background:#fff;}
+.sub_tab{ height:40px; border-bottom:1px solid #d2d2d2; border-top:1px solid #d2d2d2; overflow:hidden; z-index:99; margin:5px 0;}
+.sub_tab li{ float:left; background:#f1f1f1; line-height:40px; height:40px; text-align:center; font-size:15px; color:#707070; border-right:1px solid #d6d6d6; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;}
+.sub_tab li:last-child{ border-right:0 none;}
+.sub_tab li.on{ background:#fe7f05; color:#fff;}
+
+/*--老虎机--*/
+.bg_pull{ background:#fff8f2 url(../images/bg_pull.png) no-repeat center 80px; -webkit-background-size:320px 227px; -moz-background-size:320px 227px; -o-background-size:320px 227px; background-size:320px 227px;}
+.bg_pull1{ background:#fff8f2 url(../images/bg_pull.png) no-repeat center top; -webkit-background-size:320px 227px; -moz-background-size:320px 227px; -o-background-size:320px 227px; background-size:320px 227px;}
+.pullBox{ width:313px; height:251px; background:url(../images/bg_pullBox.png) no-repeat 0 0;; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; position:relative;}
+.hand{ width:20px; height:104px; background:url(../images/hand.png) no-repeat 0 0;; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; position:absolute; right:0; top:82px;}
+.start_pull{ width:100px; height:39px; background:url(../images/start_pull.png) no-repeat 0 top; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; position:absolute; right:102px;; bottom:0;}
+.start_pull.on{ background-position:0 -39px;}
+.awards{ width:63px; height:80px; position:absolute; top:93px; overflow:hidden;}
+.awards:first-child{ left:49px;}
+.awards:nth-child(2){ left:120px;}
+.awards:nth-child(3){ left:192px;}
+.awards li{ width:63px; height:80px; text-align:center; line-height:80px; font-size:50px;}
+.awards li img{ vertical-align:middle;}
+.awardTips{ font-size:16px; color:#666; text-align:center; padding:18px 0px;}
+.awardTips em{color:#fb7c03;}
+.notice{ width:280px; height:34px;/* line-height:34px;*/ background:rgba(127,126,119,0.5); margin:0 auto; border-radius:5px; font-size:13px; color:#fff; padding:0 10px; overflow:hidden;}
+.notice ul,.notice li{ position:relative;}
+.notice span{ margin-right:20px;}
+.prizeTip{ width:313px; height:15px; line-height:15px; font-size:15px; text-align:center; color:#fff; position:absolute; top:23px; left:0;}
+
+/*--btn--*/
+.btn{ height:40px; border:0 none; outline:0 none; color:#fff; font-size:21px; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px; background: url(../images/bg_btn.png) repeat-x 0 0;}
+.btnS{ height:30px; font-size:19px;}  /*--高度较小的按钮--*/
+.btn_large{ width:160px;}
+.btn_larger{ width:208px;}
+.btn_small{ width:120px;}
+.btn_mid{ width:135px;}   /*--不同宽度的按钮--*/
+.btn_convert{ width:175px;}
+
+.btn_orange.active{ background-position:0 -40px;}
+.btn_grey{ background-position:0 -80px;}
+.btn_grey.active{ background-position:0 -120px;}
+.btn_green{ background-position:0 -160px;}
+.btn_green.active{ background-position:0 -200px;}
+.btn_blue{ background-position:0 -240px;}
+.btn_blue.active{ background-position:0 -280px;}  /*--不同背景色的按钮及其点击效果--*/
+.btn_left{ margin-right:4px;}
+
+/*--弹出层--*/
+.bg_popup{ width:100%; height:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,0.6); z-index:999; display:none;}
+.popup_con{ width:288px; padding:15px 0; border:1px solid #b6babb; -webkit-border-radius:6px; -moz-border-radius:6px; -o-border-radius:6px; border-radius:6px; overflow:hidden; background:#fff; position:absolute; left:50%; top:50%; margin-left:-145px; margin-top:-150px;}
+.popup_close{ width:24px; height:24px; background:url(../images/icon_close.png) no-repeat 0 0; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; position:absolute; right:5px; top:5px;}
+
+/*--中奖排行--*/
+.table_rank td{ height:61px; text-align:center; font-size:16px; color:#333; border-bottom:1px solid #d2d2d2;}
+.awardimg{ width:55px; height:55px; line-height:55px; margin:3px auto; background:#efede8; text-align:center;}
+.checkmore{ height:42px; line-height:42px; text-align:center; color:#fe7f05; font-size:15px;}
+.checkmore a{ color:#fe7f05; text-decoration:none;}
+.confirm_text{ padding:10px 0; line-height:22px; font-size:15px; text-align:center;}
+.popupTips{ text-align:center; font-size:15px; color:#333;}
+.popupTips span.fontOB{ font-size:21px; color:#fe7f05; font-weight:bold;}
+
+/*--邮取地址--*/
+.add_title{ height:35px; line-height:35px; font-size:16px; border-bottom:1px solid #d2d2d2; padding:0 15px; margin-bottom:10px;}
+.table_add td{ height:26px; line-height:26px; font-size:14px; color:#707070; padding:0 15px;}
+.addT{ height:40px; line-height:40px; font-size:13px; color:#707070;}
+.inputBox{width:100%; height:39px; padding-right:40px; position:relative; border:1px solid #d2d2d2; border-radius:6px; overflow:hidden; background:#fff none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;}
+.inputBox.err{ border-color:#fe0101;}
+.inputBox input{ width:100%; height:37px; line-height:37px; padding:0 5px; font-size:16px; color:#333; border:0 none; outline:0 none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;}
+.inputBox .del{ width:40px; height:39px;position:absolute;background:url(../images/btn_delete.png) no-repeat 10px 9px; background-size:22px 22px;-moz-background-size:22px 22px;-ms-background-size:22px 22px;-o-background-size:22px 22px; top:0;right: 2px; display:none;}
+.errorTip{ height:20px; line-height:20px; color:#f00; font-size:13px; overflow:hidden;}
+.conTip{ color:#b0b0b0; text-indent:-2em; padding-left:2em;}
+.confirmT{ height:60px; line-height:60px; text-align:center; font-size:21px;}
+.confirm_info{ padding:10px 0; border-bottom:1px solid #d2d2d2;}
+.confirm_info th,.confirm_info td{ height:24px; font-size:15px;}
+.confirm_info td{ text-align:right; color:#fe7f05;}
+.conf_text{ padding:10px 0; line-height:22px; font-size:14px; color:#707070;}
+.traTime{ height:30px; line-height:30px; text-align:right; font-size:13px; color:#aaa;}
+
+/*--金币兑换--*/
+.tab_convert > li{ width:50%;}
+.td_con{ line-height:1.15;}
+.table_convert td{ height:71px;}
+.coinLeft{ height:42px; line-height:42px; font-size:14px; color:#707070;}
