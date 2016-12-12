@@ -1,0 +1,139 @@
+data1 = [{
+  "PlatformInfo": "网上营业厅",
+  "PlatformCore": "1010"
+}, {
+  "PlatformInfo": "手机营业厅",
+  "PlatformCore": "1020"
+}, {
+  "PlatformInfo": "短信营业厅",
+  "PlatformCore": "1030"
+}, {
+  "PlatformInfo": "自助终端",
+  "PlatformCore": "1040"
+}, {
+  "PlatformInfo": "企业门户",
+  "PlatformCore": "1250"
+}, {
+  "PlatformInfo": "微信营业厅",
+  "PlatformCore": "1350"
+}, {
+  "PlatformInfo": "QQ营业厅",
+  "PlatformCore": "1400"
+}, {
+  "PlatformInfo": "旧版网厅",
+  "PlatformCore": "1280"
+}, {
+  "PlatformInfo": "积分商城",
+  "PlatformCore": "1390"
+}, {
+  "PlatformInfo": "ECS AOP系统",
+  "PlatformCore": "1090"
+}, {
+  "PlatformInfo": "MINI终端",
+  "PlatformCore": "1050"
+}, {
+  "PlatformInfo": "自助服务应用平台",
+  "PlatformCore": "1070"
+}, {
+  "PlatformInfo": "交费充值",
+  "PlatformCore": "1220"
+}, {
+  "PlatformInfo": "联通商城",
+  "PlatformCore": "1360"
+}, {
+  "PlatformInfo": "客户中心",
+  "PlatformCore": "1100"
+}, {
+  "PlatformInfo": "统一认证中心",
+  "PlatformCore": "1110"
+}, {
+  "PlatformInfo": "客户安全中心",
+  "PlatformCore": "1380"
+}, {
+  "PlatformInfo": "统一订单中心",
+  "PlatformCore": "1120"
+}, {
+  "PlatformInfo": "第三方网关",
+  "PlatformCore": "1130"
+}, {
+  "PlatformInfo": "统一接口平台",
+  "PlatformCore": "1140"
+}, {
+  "PlatformInfo": "统一管理平台",
+  "PlatformCore": "1160"
+}, {
+  "PlatformInfo": "广告中心",
+  "PlatformCore": "1190"
+}, {
+  "PlatformInfo": "搜索中心",
+  "PlatformCore": "1200"
+}, {
+  "PlatformInfo": "亚联报表",
+  "PlatformCore": "1210"
+}, {
+  "PlatformInfo": "统一支付",
+  "PlatformCore": "1230"
+}, {
+  "PlatformInfo": "增值服务",
+  "PlatformCore": "1240"
+}, {
+  "PlatformInfo": "统一通知",
+  "PlatformCore": "1260"
+}, {
+  "PlatformInfo": "数据分析",
+  "PlatformCore": "1270"
+}, {
+  "PlatformInfo": "炎黄报表",
+  "PlatformCore": "1290"
+}, {
+  "PlatformInfo": "统一广告",
+  "PlatformCore": "1300"
+}, {
+  "PlatformInfo": "统一公告",
+  "PlatformCore": "1310"
+}, {
+  "PlatformInfo": "统一发布",
+  "PlatformCore": "1330"
+}, {
+  "PlatformInfo": "统一导航",
+  "PlatformCore": "1340"
+}, {
+  "PlatformInfo": "支付宝",
+  "PlatformCore": "1370"
+}, {
+  "PlatformInfo": "服务信息平台",
+  "PlatformCore": "1320"
+}, {
+  "PlatformInfo": "ECS开放平台",
+  "PlatformCore": "1410"
+}, {
+  "PlatformInfo": "营销传播",
+  "PlatformCore": "1420"
+}, {
+  "PlatformInfo": "客户感知分析平台",
+  "PlatformCore": "1430"
+}, {
+  "PlatformInfo": "运营平台",
+  "PlatformCore": "1440"
+}, {
+  "PlatformInfo": "资产管理平台",
+  "PlatformCore": "1450"
+}, {
+  "PlatformInfo": "E币管理平台",
+  "PlatformCore": "1460"
+}, {
+  "PlatformInfo": "沃知道帮助中心",
+  "PlatformCore": "1470"
+}, {
+  "PlatformInfo": "ESS AOP系统",
+  "PlatformCore": "2100"
+}, {
+  "PlatformInfo": "银联",
+  "PlatformCore": "2010"
+}, {
+  "PlatformInfo": "产创",
+  "PlatformCore": "2020"
+}, {
+  "PlatformInfo": "智能客服系统",
+  "PlatformCore": "2030"
+}]
