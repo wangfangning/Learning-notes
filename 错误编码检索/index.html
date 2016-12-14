@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>异常编码检测系统</title>
+    <title>异常编码检索系统</title>
     <script src="jquery-1.8.0.min.js"></script>
     <script src="dataW.js"></script>
     <script src="dataW1.js"></script>
@@ -35,8 +35,8 @@
         }
 
         input {
-            padding: 4px 3px;
-            width: 200px;
+            padding: 6px 3px;
+            width: 240px;
         }
 
         img {
@@ -68,7 +68,7 @@
         }
 
         tr:first-child {
-            background-color: #fff;
+            background-color: #ffd8d8;
         }
 
         tr th:nth-child(3) {
@@ -80,7 +80,7 @@
         }
 
         tr {
-            background-color: #ffd8d8;
+            background-color: #fff;
         }
 
         .Nonum {
@@ -95,58 +95,63 @@
         span {
             color: #ff6600;
         }
-        .tcw{
-          position: fixed;
-          background:rgba(255,255,255,0);
 
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
+        .tcw {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.3);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
         }
-        .tcwf{
-          position: fixed;
-          width: 600px;
-          min-height: 300px;
-          left: 50%;
-          margin-left: -300px;
-          background-color: #fff;
-          z-index: 100;
-          margin-top: 200px;
-        }
-        .shuju{
-          padding: 10px 15px;
-        }
-        .tcwf h1{
-          text-align: left;
-          padding: 5px 15px;
-          margin: 5px auto;
-          font-size: 20px;
-        }
-        .tcwf h1 i{
-          float: right;
-          font-style: normal;
-          cursor: pointer;
-        }
-        .shuju{
-          text-align: left;
-        }
-        .shuju p{
-          margin-bottom: 12px;
-        }
-        .tcwf a{
-          cursor: pointer;
-          background-color:rgb(160, 153, 162) ;
 
-          padding: 8px 30px;
+        .tcwf {
+            position: fixed;
+            width: 640px;
+            min-height: 320px;
+            left: 50%;
+            margin-left: -320px;
+            background-color: #fff;
+            z-index: 100;
+            margin-top: 150px;
+        }
+
+        .shuju {
+            padding: 10px 15px;
+        }
+
+        .tcwf h1 {
+            text-align: left;
+            padding: 5px 15px;
+            margin: 5px auto;
+            font-size: 20px;
+        }
+
+        .shuju {
+            text-align: left;
+        }
+
+        .shuju p {
+            margin-bottom: 10px;
+            line-height: 22px;
+        }
+
+        .tcwf a {
+            cursor: pointer;
+            background-color: #b5b5b5;
+            padding: 8px 60px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -76px;
         }
     </style>
 </head>
 
 <body>
-    <h1>异常编码检测系统</h1>
+    <h1>异常编码检索系统</h1>
     <div class="search">
         <input type="text" name="" placeholder="请输入要搜索的编码"><img src="images/fajW.png" alt="">
     </div>
@@ -165,13 +170,13 @@
         <p>未搜索到<span></span>编码，请立该反馈给我们</p>
     </div>
     <div class="tcw" style="display:none;">
-      <div class="tcwf">
-<h1>异常编码详情<i>X</i></h1>
-<div class="shuju">
+        <div class="tcwf">
+            <h1>异常编码详情<i>X</i></h1>
+            <div class="shuju">
 
-</div>
-<a>关闭</a>
-      </div>
+            </div>
+            <a>关闭</a>
+        </div>
 
     </div>
 </body>
@@ -184,9 +189,11 @@
             var dataW = "<tr><td>" + NumberW + "</td><td>" + Illustrationvw + "</td><td>" + NoteW + "</td></tr>";
             $("tbody").append(dataW);
         };
+
+
         $(".search img").on('click', function(event) {
             $('tbody tr').eq(0).siblings().hide();
-                     dataWf=""
+            dataWf = ""
             for (var i = 0; i < data.length; i++) {
                 var NumberW = String(data[i].number);
                 var Text = $("input").val();
@@ -194,55 +201,59 @@
                     var NumberW = data[i].number;
                     var Illustrationvw = data[i].illustration;
                     var NoteW = data[i].point;
-                     dataWf += "<tr><td>" + NumberW + "</td><td>" + Illustrationvw + "</td><td>" + NoteW + "</td></tr>";
+                    dataWf += "<tr><td>" + NumberW + "</td><td>" + Illustrationvw + "</td><td>" + NoteW + "</td></tr>";
                     $(".Nonum").hide();
 
                 }
             }
             $("tbody").append(dataWf);
-            if (dataWf=="") {
+            if (dataWf == "") {
                 $(".Nonum span").text(' ' + Text + ' ');
                 $(".Nonum").show()
             }
         });
-        $("tr").on('click','td', function(event) {
-          var Indexw = $(this).parent().index()-1;
-          var remark = data[Indexw].remark;
-          // var core = data[Indexw].core;
-          var number = data[Indexw].number;
-          var sub =String(number).substring(1,5)
-          var illustration =data[Indexw].illustration;
-          var point =data[Indexw].point;
-          for (var i = 0; i < data1.length; i++) {
-            var NumberW1=data1[i].PlatformCore;
-            if (sub==NumberW1) {
-            var terrace = data1[i].PlatformInfo
+
+        $("tr").live('click', 'td', function(event) {
+            // var Indexw = $(this).parent().index() - 1;
+            console.log(this);
+            var Indexw = $(this).children().eq(0).text();
+            var point = $(this).children('td').eq(2).text();
+            var illustration = $(this).children('td').eq(1).text();
+            var sub = Indexw.substring(1, 5);
+            var sunm = Indexw.substring(0, 1);
+            switch (sunm) {
+                case '1':
+                    var remark = '成功';
+                    break;
+                case '2':
+                    var remark = '不符合办理条件';
+                    break;
+                case '3':
+                    var remark = '业务逻辑错误';
+                    break;
+                case '4':
+                    var remark = '接口错误';
+                    break;
+                default:
             }
-          }
-          var fruit ="<p>错误编码："+number+"</p><p>所属平台："+terrace+"</p><p>错误类型："+remark+"</p>"+"<p>原型说明："+illustration+"</p><p>备注："+point+"</p>";
-          $(".shuju").append(fruit)
-         $(".tcw").show();
+            for (var i = 0; i < data1.length; i++) {
+                var NumberW1 = data1[i].PlatformCore;
+                if (sub == NumberW1) {
+                    var terrace = data1[i].PlatformInfo
+                }
+            }
+            var fruit = "<p>错误编码：" + Indexw + "</p><p>所属平台：" + terrace + "</p><p>错误类型：" + remark + "</p>" + "<p>原型说明：" + illustration + "</p><p>备注：" + point + "</p>";
+            $(".shuju").append(fruit)
+            $(".tcw").show();
         });
+
         $(".tcwf  h1 i,.tcw a").on('click', function(event) {
-          $(".shuju").text("")
-          $(".tcw").hide();
+            $(".shuju").text("")
+            $(".tcw").hide();
 
         });
     });
-    // $.ajax({
-    //     url: "dataW.txt",
-    //     dataType: "json",
-    //     type: "get",
-    //     async: false,
-    //     success: function(data) {
-    //         // var text = '';
-    //         alert(data);
-    //         // data.map(function(item, index) {
-    //         //     text += '<li>' + item + '</li>';
-    //         // });
-    //         // $("tbody").prepend('<tr>' + text + '<tr>');
-    //     }
-    // })
+
 </script>
 
 </html>
