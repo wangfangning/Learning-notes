@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>13本人查看-赢得手机一部</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="close" id="close"></div>
+        <div class="houseconBig">
+            <div class="tip3">
+                <p>金蛋孵金“机”</p>
+                <p>恭喜获得1部手机</p>
+            </div>
+            <div class="getPhoneCon" style="margin-top: 0.3rem;">
+                <img src="images/getPhone.png" class="getPhone">
+            </div>
+            <div class="smaTip">
+                <p>*实物礼品将在活动结束后由工作人员 </p>
+                <p>主动电话联系并在30个工作日内安排寄送。</p>
+            </div>
+            <div class="btncon" style="margin-top: -0.45rem;">
+                <button class="btn" id="close2">咯叽咯叽，我知道啦！</button>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>

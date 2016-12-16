@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>14本人查看-赢得50元话费</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="close" id="close"></div>
+        <div class="houseconBig">
+            <div class="tip3">
+                <p>金蛋最懂你</p>
+                <p>恭喜获得50元话费</p>
+            </div>
+            <div class="getPhoneCon" style="margin-top: 0.3rem;">
+                <img src="images/getPhoneMoney.png" class="getPhone">
+            </div>
+            <div class="smaTip" style="padding-top: 0.2rem;">
+                <p>*请在活动结束后点击“点击领奖”按钮领取</p>
+            </div>
+            <div class="btncon" style="margin-top: -0.4rem;">
+                <button class="btn" id="close2">咯叽咯叽，我知道啦！</button>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>

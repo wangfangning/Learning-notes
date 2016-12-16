@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>26好友查看-捣蛋弹窗</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con2"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="piaodaicon">
+            <img src="images/piaodai.png" class="piaodai">
+        </div>
+        <div class="close" id="close"></div>
+        <div class="housecon2">
+
+            <div class="tip2" style="padding-top: 0.9rem;">
+                <p>捣个蛋，帮TA减掉<span class="redcolor">88</span>成长值</p>
+                <p>脚底一抹油，我溜走~</p>
+            </div>
+            <div class="eggcon" style="margin-top: 0.4rem;">
+                <img src="images/jokeface.png" class="eggface" style="height: 1.49rem;">
+            </div>
+            <div class="btncon" style="margin-top: -0.6rem;">
+                <button class="btn" id="close2">咯叽咯叽，我也要参加</button>
+            </div>
+            <p class="tips" style="font-size: 0.18rem;">天天来孵蛋，天天有惊喜喔！</p>
+
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+
+</script>
+</body>
+</html>

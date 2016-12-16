@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>32通用报错弹窗</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="close" id="close"></div>
+        <div class="housecon">
+            <div class="tip" style="padding-top: 1.2rem;">
+                <p>鸡场爆满，请稍后再试哦</p>
+            </div>
+            <div class="eggcon" style="margin-top: 0.5rem;">
+                <img src="images/comloadface.png" class="eggface">
+            </div>
+            <div class="btncon" style="margin-top: 0.5rem;">
+                <button class="btn" id="close2">咯叽咯叽，稍后再来！</button>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>

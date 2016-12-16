@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>未关注提醒</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <link rel="stylesheet" href="css/SecondCode.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body class='foleFail'>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="close" id="close"></div>
+        <div class="houseconBig">
+            <div class="tip" style="padding-top: 0.8rem;">
+                <p>咯叽咯叽，原来是你！</p>
+                <p>还差两步才能帮我孵蛋喔！</p>
+            </div>
+            <div class="CodeContainer">
+                <img src="images/dolefailCore.jpg" class="dolefailCore">
+            </div>
+            <div class='explainCode'>
+                <ul>
+                    <li>
+                        <span>*</span>长按二维码关注并绑定公众账号：“中国移动10086”；
+                    </li>
+                    <li>
+                        <span>*</span>在公众号内回复“绑定”，根据提示登记手机号码；
+                    </li>
+                    <li>
+                        <span>*</span>在公众号内回复“孵蛋”参与游戏！
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>

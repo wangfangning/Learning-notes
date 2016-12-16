@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>随机话费</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/thermometer.css" />
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<style>
+    .sleep1{
+        width: 5.07rem;
+        height: 4.54rem;
+        margin-top: 1.76rem;
+        margin-left: 1.6rem;
+    }
+    .fri_wf {
+        margin-top: 0.2rem;
+    }
+    .bottom{
+        position: relative;
+    }
+    .bottom img{
+        width: 0.65rem;
+        height: 0.32rem;
+        position: absolute;
+        top:-0.18rem;
+    }
+</style>
+<body>
+<section class="top">
+    <div>
+        <a href="#"><img src="images/logow.png" alt="" class="logow"></a>
+    </div>
+    <div class="toptext">
+        <p class="phone">136XXXX1234</p>
+        <p class="texto">成长值突破2017，养成金蛋孵出小鸡，赢得最终奖励！</p>
+    </div>
+</section>
+<section class="zhong">
+    <div class="wenduji">
+        <img src="images/sun_btn_pic.png" alt="" class="sunclick" onclick="window.location.href='lj_brck.html'">
+        <img src="images/wenduji_pic.png" alt="" class="wendujiim">
+        <img src="images/hold_money_egg.png" alt="" class="sleep1">
+        <span class="wenduji_n"></span>
+        <span class="number" data-value="2017"></span>
+        <p class="jilu_p"><a href="czrj_brck.html" class="jilu">成长记录</a></p>
+        <p class="fri_wf">恭喜获得50元话费</p>
+        <div class="buttonw">
+            拉好友领新年好礼
+        </div>
+    </div>
+</section>
+<section class="bottom">
+    <a href="hdgz.html" class="huodongw" style="margin-right:0.3rem">活动规则</a>
+    <a href="ddphb.html" class="huodongw" style="margin-left:0.3rem">捣蛋排行榜 </a>
+    <img src="images/TM_new.png"/>
+</section>
+</body>
+
+</html>
+<script>
+    $(document).ready(function() {
+        var Data = parseInt($(".number").attr('data-value'));
+        var colorV = Data / 2017;
+        var Height_new = parseFloat("3.25rem")
+        var Height = Height_new * colorV + "rem";
+        if (Data > 0 && Data < 2017) {
+            $(".number").css('height', '.68rem');
+            $(".number").text('' + Data + '');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data > 2016) {
+            $('.wenduji_n').css('border-radius', '.28rem');
+            $(".number").css('height', '.68rem');
+            $(".number").text('完成');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data<1) {
+            $(".number").text('' + Data + '');
+            $(".number").css('color', '#3fafcb');
+        }
+    });
+</script>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

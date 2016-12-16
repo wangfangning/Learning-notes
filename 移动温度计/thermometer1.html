@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>随机话费</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/thermometer.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="bgdark" id="bgdark4" style="display: none;">
+    <div class="piaodaicon">
+        <img src="images/piaodai.png" class="piaodai">
+    </div>
+    <div class="close"></div>
+    <div class="housecon">
+        <div class="jiangcon">
+            <img src="images/jiang.png" class="jiang">
+        </div>
+        <div class="tip">
+            <p>哇！我简直是主人的幸运蛋！</p>
+            <p>恭喜获得0.1元话费奖励！</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/eggface.png" class="eggface">
+        </div>
+        <div style="margin-top: 0.3rem;">
+            <button class="btn" id="btn4">咯叽咯叽，我收下啦！</button>
+        </div>
+        <p class="tips">明天还有奖励，主人记得肥来喔~</p>
+    </div>
+</div>
+
+<div class="bgdark" id="bgdark5"  style="display: none;">
+    <div class="piaodaicon">
+        <img src="images/piaodai.png" class="piaodai">
+    </div>
+    <div class="close" id="close"></div>
+    <div class="housecon">
+        <div class="jiangcon">
+            <img src="images/jiang.png" class="jiang">
+        </div>
+        <div class="tip">
+            <p>勤劳的小鸡儿有虫吃！</p>
+            <p>恭喜获得10成长值</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/shyface.png" class="eggface">
+        </div>
+        <div style="margin-top: 0.3rem;">
+            <button class="btn" id="btn5">咯叽咯叽，我收下啦！</button>
+        </div>
+        <p class="tips">明天还有奖励，主人记得肥来喔~</p>
+    </div>
+</div>
+
+<div class="bgdark" id="bgdark6" style="display: none;">
+    <div class="piaodaicon">
+        <img src="images/piaodai.png" class="piaodai">
+    </div>
+    <div class="close"></div>
+    <div class="housecon">
+        <div class="jiangcon">
+            <img src="images/jiang.png" class="jiang">
+        </div>
+        <div class="tip">
+            <p>鸡年讨个好彩头！</p>
+            <p>恭喜获得10元体育彩票代金券！</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/loveface.png" class="eggface">
+        </div>
+        <div style="margin-top: 0.3rem;">
+            <button class="btn" id="btn6">咯叽咯叽，我收下啦！</button>
+        </div>
+        <p class="tips">明天还有奖励，主人记得肥来喔~</p>
+
+    </div>
+</div>
+
+<div class="bgdark" id="bgdark7" style="display: none;">
+    <div class="close"></div>
+    <div class="housecon">
+        <div class="tip" style="padding-top: 1.2rem;">
+            <p>阿西吧，鸡瘟来袭~</p>
+            <p>减去10成长值~呜呜呜</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/accidentface.png" class="eggface">
+        </div>
+        <div style="margin-top: 0.3rem;">
+            <button class="btn" id="btn7" style="font-size: 0.24rem!important;">咯叽咯叽，我还会再来的！</button>
+        </div>
+        <p class="tips" style="margin-top: 0.2rem;">明天还有奖励，主人记得肥来喔~</p>
+
+    </div>
+</div>
+
+<div class="bgdark" id="bgdark8" style="display: none;">
+    <div class="close"></div>
+    <div class="housecon">
+        <div class="tip" style="padding-top: 1.2rem;">
+            <p>正在加载中，</p>
+            <p>小鸡还要再飞一会儿~</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/comloadface.png" class="eggface">
+        </div>
+        <div style="margin-top: 1rem;">
+            <button class="btn closeEnd" id="btn8">稍后我再试</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <section class="top">
+        <div>
+            <a href="#"><img src="images/logow.png" alt="" class="logow"></a>
+        </div>
+        <div class="toptext">
+            <p class="phone">136XXXX1234</p>
+
+            <p class="texto">成长值突破2017，养成金蛋孵出小鸡，赢得最终奖励！</p>
+        </div>
+    </section>
+    <section class="zhong">
+        <div class="wenduji">
+            <img src="images/sun_btn_pic.png" alt="" class="sunclick" onclick="window.location.href='lj_brck.html'">
+            <img src="images/wenduji_pic.png" alt="" class="wendujiim">
+            <img src="images/sleep_egg.png" alt="" class="sleep1">
+            <span class="wenduji_n"></span>
+            <span class="number" data-value="-50"></span>
+
+            <p class="jilu_p"><a href="czrj_brck.html" class="jilu">成长记录</a></p>
+
+            <p class="fri_wf">天天来孵蛋，天天有惊喜喔！</p>
+
+            <div class="buttonw" id="sunclick">
+                我要孵蛋领奖励拉！
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <a href="hdgz.html" class="huodongw">活动规则</a>
+    </section>
+</div>
+
+</body>
+
+</html>
+<script>
+    function closeAndShow(clickID,showCon,closeCon){
+        $(clickID).on("click", function () {
+            $(showCon).show();
+            $(closeCon).hide()
+        });
+    }
+    closeAndShow("#sunclick","#bgdark4","");
+    closeAndShow("#btn4","#bgdark5","#bgdark4");
+    closeAndShow("#btn5","#bgdark6","#bgdark5");
+    closeAndShow("#btn6","#bgdark7","#bgdark6");
+    closeAndShow("#btn7","#bgdark8","#bgdark7");
+
+    $(document).ready(function () {
+
+        $("body").height($(window).height());
+        $(".close,.closeEnd").on("click", function () {
+            $(".bgdark").hide();
+        });
+
+        var Data = parseInt($(".number").attr('data-value'));
+        var colorV = Data / 2017;
+        var Height_new = parseFloat("3.25rem")
+        var Height = Height_new * colorV + "rem";
+        if (Data > 0 && Data < 2017) {
+            $(".number").css('height', '.68rem');
+            $(".number").text('' + Data + '');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data > 2016) {
+            $('.wenduji_n').css('border-radius', '.28rem');
+            $(".number").css('height', '.68rem');
+            $(".number").text('完成');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data < 1) {
+            $(".number").text('' + Data + '');
+            $(".number").css('color', '#3fafcb');
+        }
+    });
+</script>

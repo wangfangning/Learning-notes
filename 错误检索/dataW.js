@@ -1,0 +1,5534 @@
+data =
+	[{
+  "remark": "",
+  "core": "ssp_interface_001",
+  "number": "4114030100",
+  "illustration": "INTERFACE交换中心发现超时，根据交易属性已发冲正。",
+  "point": "INTERFACE交换中心发现超时，根据交易属性已发冲正。"
+}, {
+  "remark": "",
+  "core": "ssp_interface_002",
+  "number": "4114030101",
+  "illustration": "INTERFACE交换中心发现超时，根据交易属性不发冲正。",
+  "point": "INTERFACE交换中心发现超时，根据交易属性不发冲正。"
+}, {
+  "remark": "",
+  "core": "ssp_interface_003",
+  "number": "4114030102",
+  "illustration": "INTERFACE交换中心发现具有重复发起方交易或业务流水号的交易。对于重发类交易和具有相关性的交易（如异地卡充异地用户时的扣款和缴费交易）除外",
+  "point": "INTERFACE交换中心发现具有重复发起方交易或业务流水号的交易。对于重发类交易和具有相关性的交易（如异地卡充异地用户时的扣款和缴费交易）除外"
+}, {
+  "remark": "",
+  "core": "ssp_interface_004",
+  "number": "4114030103",
+  "illustration": "INTERFACE交换中心无法根据请求报文找到落地方交换节点。",
+  "point": "INTERFACE交换中心无法根据请求报文找到落地方交换节点。"
+}, {
+  "remark": "",
+  "core": "ssp_interface_005",
+  "number": "4114030104",
+  "illustration": "INTERFACE发起方交换节点发现Message Header 格式错误",
+  "point": "INTERFACE发起方交换节点发现Message Header 格式错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_006",
+  "number": "4114030105",
+  "illustration": "INTERFACE发起方交换节点发现报文ServiceContent格式错误。",
+  "point": "INTERFACE发起方交换节点发现报文ServiceContent格式错误。"
+}, {
+  "remark": "",
+  "core": "ssp_interface_007",
+  "number": "4114030106",
+  "illustration": "INTERFACE落地方机构检查请求报文格式出错",
+  "point": "INTERFACE落地方机构检查请求报文格式出错"
+}, {
+  "remark": "",
+  "core": "ssp_interface_008",
+  "number": "4114030107",
+  "illustration": "INTERFACE落地方交换节点发现报文Message Header格式错误",
+  "point": "INTERFACE落地方交换节点发现报文Message Header格式错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_009",
+  "number": "4114030108",
+  "illustration": "INTERFACE落地方交换节点发现报文Service Content格式错误",
+  "point": "INTERFACE落地方交换节点发现报文Service Content格式错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_010",
+  "number": "4114030109",
+  "illustration": "INTERFACE发起方交换节点超时，未发冲正",
+  "point": "INTERFACE发起方交换节点超时，未发冲正"
+}, {
+  "remark": "",
+  "core": "ssp_interface_011",
+  "number": "4114030110",
+  "illustration": "INTERFACE交换中心内部错误",
+  "point": "INTERFACE交换中心内部错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_012",
+  "number": "4114030111",
+  "illustration": "INTERFACE发起方交换节点内部错误",
+  "point": "INTERFACE发起方交换节点内部错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_013",
+  "number": "4114030112",
+  "illustration": "INTERFACE落地方交换节点内部错误",
+  "point": "INTERFACE落地方交换节点内部错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_014",
+  "number": "4114030113",
+  "illustration": "INTERFACE发起方机构没开通、签到",
+  "point": "INTERFACE发起方机构没开通、签到"
+}, {
+  "remark": "",
+  "core": "ssp_interface_015",
+  "number": "4114030114",
+  "illustration": "INTERFACE落地方机构没开通/签到",
+  "point": "INTERFACE落地方机构没开通/签到"
+}, {
+  "remark": "",
+  "core": "ssp_interface_016",
+  "number": "4114030115",
+  "illustration": "INTERFACE发起方机构未签到此交易测试模式",
+  "point": "INTERFACE发起方机构未签到此交易测试模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_017",
+  "number": "4114030116",
+  "illustration": "INTERFACE落地方机构未签到此交易测试模式",
+  "point": "INTERFACE落地方机构未签到此交易测试模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_018",
+  "number": "4114030117",
+  "illustration": "INTERFACE发起方机构未签到此交易正常模式",
+  "point": "INTERFACE发起方机构未签到此交易正常模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_019",
+  "number": "4114030118",
+  "illustration": "INTERFACE落地方机构未签到此交易正常模式",
+  "point": "INTERFACE落地方机构未签到此交易正常模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_020",
+  "number": "4114030119",
+  "illustration": "INTERFACE发起方机构未开通此交易测试模式",
+  "point": "INTERFACE发起方机构未开通此交易测试模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_021",
+  "number": "4114030120",
+  "illustration": "INTERFACE落地方机构未开通此交易测试模式",
+  "point": "INTERFACE落地方机构未开通此交易测试模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_022",
+  "number": "4114030121",
+  "illustration": "INTERFACE发起方机构未开通此交易正常模式",
+  "point": "INTERFACE发起方机构未开通此交易正常模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_023",
+  "number": "4114030122",
+  "illustration": "INTERFACE落地方机构未开通此交易正常模式",
+  "point": "INTERFACE落地方机构未开通此交易正常模式"
+}, {
+  "remark": "",
+  "core": "ssp_interface_024",
+  "number": "4114030123",
+  "illustration": "INTERFACE请求报文的BIPcode和ACTIVITY CODE不一致",
+  "point": "INTERFACE请求报文的BIPcode和ACTIVITY CODE不一致"
+}, {
+  "remark": "",
+  "core": "ssp_interface_025",
+  "number": "4114030124",
+  "illustration": "INTERFACE中心缺少对应的对帐记录",
+  "point": "INTERFACE中心缺少对应的对帐记录"
+}, {
+  "remark": "",
+  "core": "ssp_interface_026",
+  "number": "4114030125",
+  "illustration": "INTERFACE对帐结果报文中的数量字段与报文中实际的记录数不同",
+  "point": "INTERFACE对帐结果报文中的数量字段与报文中实际的记录数不同"
+}, {
+  "remark": "",
+  "core": "ssp_interface_027",
+  "number": "4114030126",
+  "illustration": "INTERFACE中心拒绝发起方与落地方相同的业务",
+  "point": "INTERFACE中心拒绝发起方与落地方相同的业务"
+}, {
+  "remark": "",
+  "core": "ssp_interface_028",
+  "number": "4114030127",
+  "illustration": "INTERFACE发起方交换节点拥塞",
+  "point": "INTERFACE发起方交换节点拥塞"
+}, {
+  "remark": "",
+  "core": "ssp_interface_029",
+  "number": "4114030128",
+  "illustration": "INTERFACE交换中心拥塞",
+  "point": "INTERFACE交换中心拥塞"
+}, {
+  "remark": "",
+  "core": "ssp_interface_030",
+  "number": "4114030129",
+  "illustration": "INTERFACE落地方交换节点拥塞或故障",
+  "point": "INTERFACE落地方交换节点拥塞或故障"
+}, {
+  "remark": "",
+  "core": "ssp_interface_031",
+  "number": "4114030130",
+  "illustration": "INTERFACE落地方机构故障",
+  "point": "INTERFACE落地方机构故障"
+}, {
+  "remark": "",
+  "core": "ssp_interface_032",
+  "number": "4114030131",
+  "illustration": "INTERFACE交换中心已经对此交易发起冲正",
+  "point": "INTERFACE交换中心已经对此交易发起冲正"
+}, {
+  "remark": "",
+  "core": "ssp_interface_033",
+  "number": "4114030132",
+  "illustration": "INTERFACE未找到被冲正的交易",
+  "point": "INTERFACE未找到被冲正的交易"
+}, {
+  "remark": "",
+  "core": "ssp_interface_034",
+  "number": "4114030133",
+  "illustration": "INTERFACE隔日冲正",
+  "point": "INTERFACE隔日冲正"
+}, {
+  "remark": "",
+  "core": "ssp_interface_035",
+  "number": "4114030134",
+  "illustration": "INTERFACE根据交易类型定义被冲正的交易不可以冲正",
+  "point": "INTERFACE根据交易类型定义被冲正的交易不可以冲正"
+}, {
+  "remark": "",
+  "core": "ssp_interface_036",
+  "number": "4114030135",
+  "illustration": "INTERFACE中心发现原交易已经失败,不需要冲正",
+  "point": "INTERFACE中心发现原交易已经失败,不需要冲正"
+}, {
+  "remark": "",
+  "core": "ssp_interface_037",
+  "number": "4114030136",
+  "illustration": "INTERFACE原交易已被冲正，不能重发",
+  "point": "INTERFACE原交易已被冲正，不能重发"
+}, {
+  "remark": "",
+  "core": "ssp_interface_038",
+  "number": "4114030137",
+  "illustration": "INTERFACE中心未找到被查询的交易流水",
+  "point": "INTERFACE中心未找到被查询的交易流水"
+}, {
+  "remark": "",
+  "core": "ssp_interface_039",
+  "number": "4114030138",
+  "illustration": "INTERFACE冲正失败",
+  "point": "INTERFACE冲正失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_040",
+  "number": "4114030139",
+  "illustration": "INTERFACE密钥产生失败",
+  "point": "INTERFACE密钥产生失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_041",
+  "number": "4114030140",
+  "illustration": "INTERFACE中心密码重加密失败",
+  "point": "INTERFACE中心密码重加密失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_042",
+  "number": "4114030141",
+  "illustration": "INTERFACE中心摘要检验失败",
+  "point": "INTERFACE中心摘要检验失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_043",
+  "number": "4114030142",
+  "illustration": "INTERFACE签到失败",
+  "point": "INTERFACE签到失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_044",
+  "number": "4114030143",
+  "illustration": "INTERFACE签退失败",
+  "point": "INTERFACE签退失败"
+}, {
+  "remark": "",
+  "core": "ssp_interface_054",
+  "number": "4114030153",
+  "illustration": "INTERFACE这个应答码适用于交易成功，但落地方系统业务拒绝的情况，此时应利用业务应答报文中的错误码和错误描述字段来说明业务拒绝的原因",
+  "point": "INTERFACE这个应答码适用于交易成功，但落地方系统业务拒绝的情况，此时应利用业务应答报文中的错误码和错误描述字段来说明业务拒绝的原因"
+}, {
+  "remark": "",
+  "core": "ssp_interface_055",
+  "number": "4114030154",
+  "illustration": "INTERFACE落地方系统故障",
+  "point": "INTERFACE落地方系统故障"
+}, {
+  "remark": "",
+  "core": "ssp_interface_056",
+  "number": "4114030155",
+  "illustration": "INTERFACE其他错误，交易失败，详细原因在报文中RspDesc字段中描述",
+  "point": "INTERFACE其他错误，交易失败，详细原因在报文中RspDesc字段中描述"
+}, {
+  "remark": "",
+  "core": "ssp_interface_153",
+  "number": "4114030252",
+  "illustration": "INTERFACE网络连接超时",
+  "point": "网络连接超时"
+}, {
+  "remark": "",
+  "core": "ssp_interface_156",
+  "number": "4114030253",
+  "illustration": "INTERFACE网络连接错误",
+  "point": "网络连接超时"
+}, {
+  "remark": "",
+  "core": "ssp_interface_904",
+  "number": "4114030181",
+  "illustration": "INTERFACE系统正在出帐",
+  "point": "INTERFACE系统正在出帐"
+}, {
+  "remark": "",
+  "core": "ssp_interface_999",
+  "number": "4114030194",
+  "illustration": "INTERFACE接口返回报文解析错误",
+  "point": "INTERFACE接口返回报文解析错误"
+}, {
+  "remark": "",
+  "core": "ssp_interface_9999",
+  "number": "4114030193",
+  "illustration": "INTERFACE接口返回码无对应关系",
+  "point": "INTERFACE接口返回码无对应关系"
+}, {
+  "remark": "",
+  "core": "ssp_interface_301",
+  "number": "4114030100",
+  "illustration": "INTERFACE交换中心发现超时，根据交易属性已发冲正。",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_302",
+  "number": "4114030101",
+  "illustration": "INTERFACE交换中心发现超时，根据交易属性不发冲正。",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_303",
+  "number": "4114030102",
+  "illustration": "INTERFACE交换中心发现具有重复发起方交易或业务流水号的交易。对于重发类交易和具有相关性的交易（如异地卡充异地用户时的扣款和缴费交易）除外",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_304",
+  "number": "4114030103",
+  "illustration": "INTERFACE交换中心无法根据请求报文找到落地方交换节点。",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_305",
+  "number": "4114030104",
+  "illustration": "INTERFACE发起方交换节点发现Message Header 格式错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_306",
+  "number": "4114030105",
+  "illustration": "INTERFACE发起方交换节点发现报文ServiceContent格式错误。",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_307",
+  "number": "4114030106",
+  "illustration": "INTERFACE落地方机构检查请求报文格式出错",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_308",
+  "number": "4114030107",
+  "illustration": "INTERFACE落地方交换节点发现报文Message Header格式错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_309",
+  "number": "4114030108",
+  "illustration": "INTERFACE落地方交换节点发现报文Service Content格式错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_310",
+  "number": "4114030109",
+  "illustration": "INTERFACE发起方交换节点超时，未发冲正",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_311",
+  "number": "4114030110",
+  "illustration": "INTERFACE交换中心内部错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_312",
+  "number": "4114030111",
+  "illustration": "INTERFACE发起方交换节点内部错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_313",
+  "number": "4114030112",
+  "illustration": "INTERFACE落地方交换节点内部错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_314",
+  "number": "4114030113",
+  "illustration": "INTERFACE发起方机构没开通、签到",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_315",
+  "number": "4114030114",
+  "illustration": "INTERFACE落地方机构没开通/签到",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_316",
+  "number": "4114030115",
+  "illustration": "INTERFACE发起方机构未签到此交易测试模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_317",
+  "number": "4114030116",
+  "illustration": "INTERFACE落地方机构未签到此交易测试模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_318",
+  "number": "4114030117",
+  "illustration": "INTERFACE发起方机构未签到此交易正常模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_319",
+  "number": "4114030118",
+  "illustration": "INTERFACE落地方机构未签到此交易正常模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_320",
+  "number": "4114030119",
+  "illustration": "INTERFACE发起方机构未开通此交易测试模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_321",
+  "number": "4114030120",
+  "illustration": "INTERFACE落地方机构未开通此交易测试模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_322",
+  "number": "4114030121",
+  "illustration": "INTERFACE发起方机构未开通此交易正常模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_323",
+  "number": "4114030122",
+  "illustration": "INTERFACE落地方机构未开通此交易正常模式",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_324",
+  "number": "4114030123",
+  "illustration": "INTERFACE请求报文的BIPcode和ACTIVITY CODE不一致",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_325",
+  "number": "4114030124",
+  "illustration": "INTERFACE中心缺少对应的对帐记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_326",
+  "number": "4114030125",
+  "illustration": "INTERFACE对帐结果报文中的数量字段与报文中实际的记录数不同",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_327",
+  "number": "4114030126",
+  "illustration": "INTERFACE中心拒绝发起方与落地方相同的业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_328",
+  "number": "4114030127",
+  "illustration": "INTERFACE发起方交换节点拥塞",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_329",
+  "number": "4114030128",
+  "illustration": "INTERFACE交换中心拥塞",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_330",
+  "number": "4114030129",
+  "illustration": "INTERFACE落地方交换节点拥塞或故障",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_331",
+  "number": "4114030130",
+  "illustration": "INTERFACE落地方机构故障",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_332",
+  "number": "4114030131",
+  "illustration": "INTERFACE交换中心已经对此交易发起冲正",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_333",
+  "number": "4114030132",
+  "illustration": "INTERFACE未找到被冲正的交易",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_334",
+  "number": "4114030133",
+  "illustration": "INTERFACE隔日冲正",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_335",
+  "number": "4114030134",
+  "illustration": "INTERFACE根据交易类型定义被冲正的交易不可以冲正",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_336",
+  "number": "4114030135",
+  "illustration": "INTERFACE中心发现原交易已经失败,不需要冲正",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_337",
+  "number": "4114030136",
+  "illustration": "INTERFACE原交易已被冲正，不能重发",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_338",
+  "number": "4114030137",
+  "illustration": "INTERFACE中心未找到被查询的交易流水",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_339",
+  "number": "4114030138",
+  "illustration": "INTERFACE冲正失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_340",
+  "number": "4114030139",
+  "illustration": "INTERFACE密钥产生失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_341",
+  "number": "4114030140",
+  "illustration": "INTERFACE中心密码重加密失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_342",
+  "number": "4114030141",
+  "illustration": "INTERFACE中心摘要检验失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_343",
+  "number": "4114030142",
+  "illustration": "INTERFACE签到失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_344",
+  "number": "4114030143",
+  "illustration": "INTERFACE签退失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_354",
+  "number": "4114030153",
+  "illustration": "INTERFACE这个应答码适用于交易成功，但落地方系统业务拒绝的情况，此时应利用业务应答报文中的错误码和错误描述字段来说明业务拒绝的原因",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_355",
+  "number": "4114030154",
+  "illustration": "INTERFACE落地方系统故障",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_356",
+  "number": "4114030155",
+  "illustration": "INTERFACE其他错误，交易失败，详细原因在报文中RspDesc字段中描述",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_411",
+  "number": "4114030252",
+  "illustration": "INTERFACE网络连接超时",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_423",
+  "number": "4114030181",
+  "illustration": "INTERFACE系统正在出帐",
+  "point": ""
+}, {
+  "remark": "对应接口平台编码99996",
+  "core": "ssp_interface_440",
+  "number": "4114030182",
+  "illustration": "省分系统升级，如带来不便敬请谅解，谢谢您的支持",
+  "point": ""
+}, {
+  "remark": "对应接口平台编码99997",
+  "core": "ssp_interface_441",
+  "number": "4114030183",
+  "illustration": "枢纽系统异常，如带来不便敬请谅解，谢谢您的支持",
+  "point": ""
+}, {
+  "remark": "对应接口平台编码99998",
+  "core": "ssp_interface_442",
+  "number": "4114030184",
+  "illustration": "省分系统异常，如带来不便敬请谅解，谢谢您的支持",
+  "point": ""
+}, {
+  "remark": "对应接口平台编码00216",
+  "core": "ssp_interface_443",
+  "number": "4114030185",
+  "illustration": "出账期维护，如带来不便敬请谅解，谢谢您的支持",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_500",
+  "number": "4114030186",
+  "illustration": "其它系统错误",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_501",
+  "number": "4114030187",
+  "illustration": "数据库查找操作出错",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_502",
+  "number": "4114030188",
+  "illustration": "数据库中无可选记录",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_503",
+  "number": "4114030189",
+  "illustration": "查询数据库超时",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_504",
+  "number": "4114030190",
+  "illustration": "数据库更新操作出错",
+  "point": ""
+}, {
+  "remark": "11.11新增ECS公共错误码",
+  "core": "ssp_interface_505",
+  "number": "4114030191",
+  "illustration": "其它数据库错误",
+  "point": ""
+}, {
+  "remark": "老用户转4G办理成功后，限制用户进行套餐变更，产品订购、业务开通等。（从办理当日到月末20点）\n服务集：6666 8888\nHTTP：6666 9999 \nH2：00666\n枢纽新增",
+  "core": "ssp_interface_506",
+  "number": "4114030192",
+  "illustration": "您已办理了老用户转4G业务，资料被冻结，暂时不能办理业务。",
+  "point": ""
+}, {
+  "remark": "月底CBSS进行资料迁移期间及出账期间限制业务办理，查询等。（从办理当月月末20点到生效后4号8点） \n服务集：7777 8888 \nHTTP ：7777 9999\nH2：00777\n枢纽新增",
+  "core": "ssp_interface_507",
+  "number": "4114030195",
+  "illustration": "由于账期系统期间，系统暂停查询和办理服务",
+  "point": ""
+}, {
+  "remark": "20160516新增加",
+  "core": "ssp_interface_543",
+  "number": "4114030196",
+  "illustration": "INTERFACE接口超时00143自动迁出",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_001",
+  "number": "3107020100",
+  "illustration": "BUSINESS业务不可用",
+  "point": "BUSINESS业务不可用"
+}, {
+  "remark": "",
+  "core": "ssp_business_002",
+  "number": "3107020101",
+  "illustration": "BUSINESS业务校验异常",
+  "point": "BUSINESS业务校验异常"
+}, {
+  "remark": "",
+  "core": "ssp_business_003",
+  "number": "3107020102",
+  "illustration": "BUSINESS参数转换异常",
+  "point": "BUSINESS参数转换异常"
+}, {
+  "remark": "",
+  "core": "ssp_business_004",
+  "number": "3107020103",
+  "illustration": "BUSINESS参数校验异常",
+  "point": "BUSINESS参数校验异常"
+}, {
+  "remark": "",
+  "core": "ssp_business_005",
+  "number": "3107020104",
+  "illustration": "BUSINESS非空校验未通过",
+  "point": "BUSINESS非空校验未通过"
+}, {
+  "remark": "",
+  "core": "ssp_business_006",
+  "number": "3107020105",
+  "illustration": "BUSINESS长度校验未通过",
+  "point": "BUSINESS长度校验未通过"
+}, {
+  "remark": "",
+  "core": "ssp_business_007",
+  "number": "3107020106",
+  "illustration": "BUSINESS调用接口或HBASE异常",
+  "point": "BUSINESS调用接口或HBASE异常"
+}, {
+  "remark": "",
+  "core": "ssp_business_008",
+  "number": "3107020107",
+  "illustration": "BUSINESS请求调用业务编码错误!",
+  "point": "BUSINESS请求调用业务编码错误!"
+}, {
+  "remark": "",
+  "core": "ssp_business_009",
+  "number": "3107020108",
+  "illustration": "BUSINESS业务订单号错误!",
+  "point": "BUSINESS业务订单号错误!"
+}, {
+  "remark": "",
+  "core": "ssp_business_010",
+  "number": "3107020109",
+  "illustration": "BUSINESS业务服务关系配置无效!",
+  "point": "BUSINESS业务服务关系配置无效!"
+}, {
+  "remark": "",
+  "core": "ssp_business_011",
+  "number": "3107020110",
+  "illustration": "BUSINESS业务订单号为空，含有 上一个服务编码!",
+  "point": "BUSINESS业务订单号为空，含有 上一个服务编码!"
+}, {
+  "remark": "",
+  "core": "ssp_business_012",
+  "number": "3107020111",
+  "illustration": "BUSINESS上一个组合服务序列号不正确!",
+  "point": "BUSINESS上一个组合服务序列号不正确!"
+}, {
+  "remark": "",
+  "core": "ssp_business_013",
+  "number": "3107020112",
+  "illustration": "BUSINESS未查询到服务订单信息!",
+  "point": "BUSINESS未查询到服务订单信息!"
+}, {
+  "remark": "",
+  "core": "ssp_business_014",
+  "number": "3107020113",
+  "illustration": "BUSINESS上一个服务编码值为 0!",
+  "point": "BUSINESS上一个服务编码值为 0!"
+}, {
+  "remark": "",
+  "core": "ssp_business_015",
+  "number": "3107020114",
+  "illustration": "BUSINESS无共享时长记录!",
+  "point": "BUSINESS无共享时长记录!"
+}, {
+  "remark": "",
+  "core": "ssp_business_016",
+  "number": "3107020115",
+  "illustration": "BUSINESS无操作员相关信息!",
+  "point": "BUSINESS无操作员相关信息!"
+}, {
+  "remark": "",
+  "core": "ssp_business_045",
+  "number": "3107020140",
+  "illustration": "BUSINESS对不起，您输入的iccid不合法!",
+  "point": "对不起，您输入的iccid不合法!"
+}, {
+  "remark": "",
+  "core": "ssp_business_046",
+  "number": "3107020141",
+  "illustration": "BUSINESS对不起，您输入的时间不在同一月或同一年内!",
+  "point": "对不起，您输入的时间不在同一月或同一年内!"
+}, {
+  "remark": "",
+  "core": "ssp_business_047",
+  "number": "3107020142",
+  "illustration": "BUSINESS对不起，您输入的时间格式不正确!",
+  "point": "对不起，您输入的时间格式不正确!"
+}, {
+  "remark": "",
+  "core": "ssp_business_048",
+  "number": "3107020143",
+  "illustration": "BUSINESS对不起，您输入的开始日大于结束日!",
+  "point": "对不起，您输入的开始日大于结束日!"
+}, {
+  "remark": "",
+  "core": "ssp_business_049",
+  "number": "3107020172",
+  "illustration": "BUSINESS对不起，您输入的时间不在有效期内!",
+  "point": "对不起，您输入的时间不在有效期内!"
+}, {
+  "remark": "",
+  "core": "ssp_business_074",
+  "number": "3107020145",
+  "illustration": "BUSINESS(密钥错误)无对应密钥!",
+  "point": "(密钥错误)无对应密钥!"
+}, {
+  "remark": "",
+  "core": "ssp_business_113",
+  "number": "3107000033",
+  "illustration": "BUSINESS对不起，业务编码无效",
+  "point": "对不起，业务编码无效"
+}, {
+  "remark": "",
+  "core": "ssp_business_114",
+  "number": "3107000034",
+  "illustration": "BUSINESS用户类型，付费类型跟业务编码不一致",
+  "point": "用户类型，付费类型跟业务编码不一致"
+}, {
+  "remark": "",
+  "core": "ssp_business_129",
+  "number": "3107000035",
+  "illustration": "BUSINESS对不起，订单子表入库失败",
+  "point": "对不起，订单子表入库失败"
+}, {
+  "remark": "",
+  "core": "ssp_business_130",
+  "number": "3107000036",
+  "illustration": "BUSINESS对不起，您所办理的信用额度不合理，请检查后重新输入！",
+  "point": "BUSINESS对不起，您所办理的信用额度不合理，请检查后重新输入！"
+}, {
+  "remark": "",
+  "core": "ssp_business_133",
+  "number": "3107000041",
+  "illustration": "BUSINESS（网龄升级）对不起，您的产品标识与付费类型不一致！",
+  "point": "对不起，您的产品标识与付费类型不一致！"
+}, {
+  "remark": "",
+  "core": "ssp_business_134",
+  "number": "3107000042",
+  "illustration": "BUSINESS（网龄升级）对不起，您的产品标识不能为空！",
+  "point": "对不起，您的产品标识不能为空！"
+}, {
+  "remark": "",
+  "core": "ssp_business_999",
+  "number": "3107020999",
+  "illustration": "系统异常",
+  "point": "系统异常"
+}, {
+  "remark": "",
+  "core": "ssp_business_9999",
+  "number": "3107099999",
+  "illustration": "系统升级",
+  "point": "系统升级"
+}, {
+  "remark": "",
+  "core": "ssp_business_8888",
+  "number": "3107088888",
+  "illustration": "省份系统升级，请稍后！",
+  "point": "省份系统系统升级，请稍后！"
+}, {
+  "remark": "",
+  "core": "ssp_business_135",
+  "number": "3107000043",
+  "illustration": "对部分省份开放，其他省份将陆续上线，敬请期待！",
+  "point": "对部分省份开放，其他省份将陆续上线，敬请期待！"
+}, {
+  "remark": "03.19新增",
+  "core": "ssp_business_136",
+  "number": "3107000044",
+  "illustration": "接口响应超时",
+  "point": "接口响应超时"
+}, {
+  "remark": "03.20新增",
+  "core": "ssp_business_137",
+  "number": "3107000045",
+  "illustration": "BUSINESS对不起，未找到此套餐",
+  "point": "BUSINESS对不起，未找到此套餐"
+}, {
+  "remark": "",
+  "core": "ssp_business_150",
+  "number": "3107000046",
+  "illustration": "该渠道不支持此业务",
+  "point": "该渠道不支持此业务！"
+}, {
+  "remark": "",
+  "core": "ssp_business_151",
+  "number": "3107000050",
+  "illustration": "BUSINESS对不起，此业务月底最后一天限制办理",
+  "point": "BUSINESS对不起，此业务月底最后一天限制办理"
+}, {
+  "remark": "",
+  "core": "ssp_business_152",
+  "number": "3107000051",
+  "illustration": "BUSINESS对不起，此业务省份个性化限制月末不能办理",
+  "point": "BUSINESS对不起，此业务省份个性化限制月末不能办理"
+}, {
+  "remark": "WLAN开通",
+  "core": "ssp_business_205",
+  "number": "3107000047",
+  "illustration": "BUSINESS对不起，您的认证密码为空，不能办理该业务",
+  "point": "BUSINESS对不起，您的认证密码为空，不能办理该业务"
+}, {
+  "remark": "红包网龄共用",
+  "core": "ssp_business_216",
+  "number": "3107000048",
+  "illustration": "BUSINESS对不起，操作标识无效",
+  "point": "BUSINESS对不起，操作标识无效"
+}, {
+  "remark": "送红包业务",
+  "core": "ssp_business_229",
+  "number": "3107000049",
+  "illustration": "BUSINESS对不起，流量包信息不能为空",
+  "point": "BUSINESS对不起，流量包信息不能为空"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_234",
+  "number": "3107040106",
+  "illustration": "BUSINESS对不起，本期不支撑此类型套餐变更",
+  "point": "BUSINESS对不起，本期不支撑此类型套餐变更"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_235",
+  "number": "3107040107",
+  "illustration": "BUSINESS对不起，目标产品信息targetproduct不能为空",
+  "point": "BUSINESS对不起，目标产品信息targetproduct不能为空"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_236",
+  "number": "3107040105",
+  "illustration": "BUSINESS对不起，必选包类型不能为空或必选包ID错误",
+  "point": "BUSINESS对不起，必选包类型不能为空或必选包ID错误"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_238",
+  "number": "3107040108",
+  "illustration": "BUSINESS对不起，目标产品(包)信息与次月生效产品(包)信息不能完全相同",
+  "point": "BUSINESS对不起，目标产品包信息与次月生效产品包信息不能完全相同"
+}, {
+  "remark": "4G套餐变更/老用户转4G",
+  "core": "ssp_business_239",
+  "number": "3107040109",
+  "illustration": "BUSINESS对不起，目标产品包信息中资费标识不能为空",
+  "point": "BUSINESS对不起，目标产品包信息中资费标识不能为空"
+}, {
+  "remark": "老用户转4G/公共",
+  "core": "ssp_business_240",
+  "number": "3107040110",
+  "illustration": "BUSINESS对不起，暂不支持该业务",
+  "point": "BUSINESS对不起，暂不支持该业务"
+}, {
+  "remark": "老用户转4G",
+  "core": "upay_business_001",
+  "number": "3107040111",
+  "illustration": "BUSINESS对不起，支付失败",
+  "point": "BUSINESS对不起，支付失败"
+}, {
+  "remark": "老用户转4G",
+  "core": "upay_business_002",
+  "number": "3107040112",
+  "illustration": "BUSINESS对不起，支付签名错误",
+  "point": "BUSINESS对不起，支付签名错误"
+}, {
+  "remark": "老用户转4G",
+  "core": "upay_business_003",
+  "number": "3107040113",
+  "illustration": "BUSINESS对不起，支付回调URL解码失败",
+  "point": "BUSINESS对不起，支付回调URL解码失败"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_241",
+  "number": "3107040114",
+  "illustration": "BUSINESS对不起，请求参数custinfo不能为空",
+  "point": "BUSINESS对不起，请求参数custinfo不能为空"
+}, {
+  "remark": "老用户转4G/公共",
+  "core": "ssp_business_242",
+  "number": "3107040115",
+  "illustration": "BUSINESS对不起，信息表中没有该记录不能办理",
+  "point": "BUSINESS对不起，信息表中没有该记录不能办理"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_246",
+  "number": "3107040116",
+  "illustration": "BUSINESS对不起，你选择的套餐类型不符合预受理条件",
+  "point": "BUSINESS对不起，你选择的套餐类型不符合预受理条件"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_249",
+  "number": "3107040117",
+  "illustration": "BUSINESS对不起，套餐类型产品类型为非01或非04或非07时，产品包信息不能为空",
+  "point": "BUSINESS对不起，套餐类型产品类型为非01或非04时，产品包信息不能为空"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_250",
+  "number": "3107040118",
+  "illustration": "BUSINESS对不起，请勿重复提交订单",
+  "point": "BUSINESS对不起，请勿重复提交订单"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_251",
+  "number": "3107040119",
+  "illustration": "BUSINESS对不起，同一种类型包不能选择多个资费",
+  "point": "BUSINESS对不起，同一种类型包不能选择多个资费"
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_252",
+  "number": "3107040120",
+  "illustration": "BUSINESS对不起，客户类型不正确！",
+  "point": "BUSINESS对不起，客户类型不正确！"
+}, {
+  "remark": "网龄3.0",
+  "core": "ssp_business_253",
+  "number": "3107040121",
+  "illustration": "BUSINESS对不起，是否允许办理标识不为1，不能办理！",
+  "point": "BUSINESS对不起，是否允许办理标识不为1，不能办理！"
+}, {
+  "remark": "网龄3.0",
+  "core": "ssp_business_254",
+  "number": "3107040122",
+  "illustration": "BUSINESS对不起，本期开通为短信网龄或只能变更为短信网龄！",
+  "point": "BUSINESS对不起，本期开通为短信网龄或只能变更为短信网龄！"
+}, {
+  "remark": "公共",
+  "core": "ssp_business_255",
+  "number": "3107040123",
+  "illustration": "BUSINESS对不起，上一步服务返回不允许继续办理！",
+  "point": "BUSINESS对不起，上一步服务返回不允许继续办理！"
+}, {
+  "remark": "网龄3.0",
+  "core": "ssp_business_256",
+  "number": "3107040124",
+  "illustration": "BUSINESS对不起，没有可办理的网龄类型，只能做关闭不能变更！",
+  "point": "BUSINESS对不起，没有可办理的网龄类型，只能做关闭不能变更！"
+}, {
+  "remark": "校园营销套餐定向流量包",
+  "core": "ssp_business_258",
+  "number": "3107040125",
+  "illustration": "BUSINESS对不起，当前状态为已申请退出(次月生效)或已申请开通(次月生效)时，不允许操作！",
+  "point": "BUSINESS对不起，当前状态为已申请退出(次月生效)或已申请开通(次月生效)时，不允许操作！"
+}, {
+  "remark": "校园营销套餐定向流量包",
+  "core": "ssp_business_259",
+  "number": "3107040126",
+  "illustration": "BUSINESS对不起，操作标识为关闭时，生效方式只能选次月生效！",
+  "point": "BUSINESS对不起，操作标识为关闭时，生效方式只能选次月生效！"
+}, {
+  "remark": "校园营销套餐定向流量包",
+  "core": "ssp_business_260",
+  "number": "3107040127",
+  "illustration": "BUSINESS对不起，生效方式无效！",
+  "point": "BUSINESS对不起，生效方式无效！"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_265",
+  "number": "3107040128",
+  "illustration": "BUSINESS对不起，目标产品来电显示资费选择有误！",
+  "point": "BUSINESS对不起，目标产品来电显示资费选择有误！"
+}, {
+  "remark": "实名制发展人校验",
+  "core": "ssp_business_268",
+  "number": "3107040129",
+  "illustration": "BUSINESS对不起，缺失必填发展人信息！",
+  "point": "BUSINESS对不起，缺失必填发展人信息！"
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_269",
+  "number": "3107040130",
+  "illustration": "BUSINESS对不起，套餐类型与业务类型不符！",
+  "point": "BUSINESS对不起，套餐类型与业务类型不符！"
+}, {
+  "remark": "预受理固化",
+  "core": "ssp_business_276",
+  "number": "3107040131",
+  "illustration": "BUSINESS对不起，公共参数服务编码为必填参数",
+  "point": "BUSINESS对不起，公共参数服务编码为必填参数"
+}, {
+  "remark": "预受理固化",
+  "core": "ssp_business_277",
+  "number": "3107040132",
+  "illustration": "BUSINESS对不起，所拼业务参数格式不正确！",
+  "point": "BUSINESS对不起，所拼业务参数格式不正确！"
+}, {
+  "remark": "宽带装移修",
+  "core": "ssp_business_278",
+  "number": "3107040133",
+  "illustration": "BUSINESS对不起，省份证号码、受理单号、联系电话、业务号码必须填写其中一项",
+  "point": "BUSINESS对不起，省份证号码、受理单号、联系电话、业务号码必须填写其中一项"
+}, {
+  "remark": "实名制改造",
+  "core": "ssp_business_288",
+  "number": "3107040134",
+  "illustration": "BUSINESS对不起，当前用户身份证号码为15位，无法办理！",
+  "point": "BUSINESS对不起，当前用户身份证号码为15位，无法办理！"
+}, {
+  "remark": "网购节专用",
+  "core": "ssp_business_323",
+  "number": "3107040135",
+  "illustration": "BUSINESS对不起，请求资源编码不正确",
+  "point": "BUSINESS对不起，请求资源编码不正确"
+}, {
+  "remark": "详单分页",
+  "core": "ssp_business_337",
+  "number": "3107040136",
+  "illustration": "BUSINESS对不起，查询批次号节点不符合规范中规则传参！",
+  "point": "BUSINESS对不起，查询批次号节点不符合规范中规则传参！"
+}, {
+  "remark": "详单分页",
+  "core": "ssp_business_338",
+  "number": "3107040137",
+  "illustration": "BUSINESS对不起，当前业务不支持跨月查询!",
+  "point": "BUSINESS对不起，当前业务不支持跨月查询!"
+}, {
+  "remark": "公共（闲时流量包和语音随意打包新增）",
+  "core": "ssp_business_335",
+  "number": "3107040138",
+  "illustration": "BUSINESS对不起，变更方式不符合产品状态!",
+  "point": ""
+}, {
+  "remark": "公共（闲时流量包和语音随意打包新增）",
+  "core": "ssp_business_336",
+  "number": "3107040139",
+  "illustration": "BUSINESS对不起，产品类型冲突,不允许办理!",
+  "point": ""
+}, {
+  "remark": "公共（闲时流量包和语音随意打包新增）",
+  "core": "ssp_business_339",
+  "number": "3107040140",
+  "illustration": "BUSINESS对不起，产品类型或产品构成不正确!",
+  "point": ""
+}, {
+  "remark": "积分+现金兑换半年流量包（暂不用）",
+  "core": "ssp_business_347",
+  "number": "3107040141",
+  "illustration": "BUSINESS对不起，此订单已扣减过积分!",
+  "point": ""
+}, {
+  "remark": "流量放心用业务",
+  "core": "ssp_business_349",
+  "number": "3107040142",
+  "illustration": "BUSINESS对不起，本月已办理套餐变更，生效方式只能选次月生效！",
+  "point": ""
+}, {
+  "remark": "4G历史账单查询",
+  "core": "ssp_business_353",
+  "number": "3107040143",
+  "illustration": "BUSINESS对不起，查询类别或查询类型输入有误！",
+  "point": ""
+}, {
+  "remark": "沃享退出",
+  "core": "ssp_business_354",
+  "number": "3107040144",
+  "illustration": "BUSINESS对不起，主号码信息与当前号码不符!",
+  "point": ""
+}, {
+  "remark": "沃享退出",
+  "core": "ssp_business_355",
+  "number": "3107040145",
+  "illustration": "BUSINESS对不起，目标产品信息targetproduct只能为一个!",
+  "point": ""
+}, {
+  "remark": "4G积分查询二期",
+  "core": "ssp_business_357",
+  "number": "3107040146",
+  "illustration": "BUSINESS对不起，当前只支持号码查询!",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "ssp_business_360",
+  "number": "3107040147",
+  "illustration": "BUSINESS对不起，证件类型不符合办理条件!",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "ssp_business_362",
+  "number": "3107040148",
+  "illustration": "BUSINESS对不起，未找到对应订单信息，无法继续办理！",
+  "point": ""
+}, {
+  "remark": "资源升级包",
+  "core": "ssp_business_371",
+  "number": "3107040149",
+  "illustration": "BUSINESS对不起，当前产品配置月末失效，无法继续办理！",
+  "point": ""
+}, {
+  "remark": "无纸化详单查询",
+  "core": "ssp_business_374",
+  "number": "3107040150",
+  "illustration": "BUSINESS对不起，请求参数与上一步返回信息不符！",
+  "point": ""
+}, {
+  "remark": "开具发票",
+  "core": "ssp_business_385",
+  "number": "3107040151",
+  "illustration": "BUSINESS对不起，发票开具信息列表对应流水号/账期不能相同！",
+  "point": ""
+}, {
+  "remark": "开具发票",
+  "core": "ssp_business_386",
+  "number": "3107040152",
+  "illustration": "BUSINESS对不起，同一发票类型只支持相同的查询订单号！",
+  "point": ""
+}, {
+  "remark": "开具发票",
+  "core": "ssp_business_387",
+  "number": "3107040153",
+  "illustration": "BUSINESS对不起，开具发票只支持相同发票类型的订单！",
+  "point": ""
+}, {
+  "remark": "开具发票",
+  "core": "ssp_business_388",
+  "number": "3107040154",
+  "illustration": "BUSINESS对不起，发票开具信息列表关键参数（发票项,发票抬头,短信接收号码,账户标识）必须相同！",
+  "point": ""
+}, {
+  "remark": "开具发票",
+  "core": "ssp_business_389",
+  "number": "3107040155",
+  "illustration": "BUSINESS对不起，发票开具信息列表不能为空！",
+  "point": ""
+}, {
+  "remark": "腾讯微信国际漫游包办理",
+  "core": "ssp_business_363",
+  "number": "3107040156",
+  "illustration": "对不起,145号段不能订购！",
+  "point": ""
+}, {
+  "remark": "腾讯微信国际漫游包办理",
+  "core": "ssp_business_394",
+  "number": "3107040157",
+  "illustration": "BUSINESS对不起，该号码无预提交成功订单！",
+  "point": ""
+}, {
+  "remark": "12款月包使用",
+  "core": "ssp_business_400",
+  "number": "3107040158",
+  "illustration": "对不起,办理输入参数与查询服务参数不符合！",
+  "point": ""
+}, {
+  "remark": "12款月包使用，当数据库中流量包类型配置有非01，02是抛错",
+  "core": "ssp_business_401",
+  "number": "3107040159",
+  "illustration": "对不起,流量包类型错误！",
+  "point": ""
+}, {
+  "remark": "日租包/假日包南15省使用",
+  "core": "ssp_business_403",
+  "number": "3107040160",
+  "illustration": "对不起,日租包/假日包订购信息错误！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_eop_001",
+  "number": "3107010100",
+  "illustration": "EOP服务发布异常",
+  "point": "EOP服务发布异常"
+}, {
+  "remark": "",
+  "core": "ssp_eop_002",
+  "number": "3107010101",
+  "illustration": "EOP报文解密出错",
+  "point": "EOP报文解密出错"
+}, {
+  "remark": "",
+  "core": "ssp_eop_003",
+  "number": "3107010102",
+  "illustration": "EOP违反参数唯一性",
+  "point": "EOP违反参数唯一性"
+}, {
+  "remark": "",
+  "core": "ssp_eop_004",
+  "number": "3107000039",
+  "illustration": "EOP参数缺失",
+  "point": "EOP参数缺失"
+}, {
+  "remark": "",
+  "core": "ssp_eop_005",
+  "number": "3114010104",
+  "illustration": "EOP签名算法对于渠道无定义",
+  "point": "EOP签名算法对于渠道无定义"
+}, {
+  "remark": "",
+  "core": "ssp_eop_006",
+  "number": "3107010105",
+  "illustration": "EOP签名无效",
+  "point": "EOP签名无效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_007",
+  "number": "3107010106",
+  "illustration": "EOP无渠道接入唯一标识码",
+  "point": "EOP无渠道接入唯一标识码"
+}, {
+  "remark": "",
+  "core": "ssp_eop_008",
+  "number": "3107010107",
+  "illustration": "EOP渠道接入唯一标识码无效",
+  "point": "EOP渠道接入唯一标识码无效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_009",
+  "number": "3107010122",
+  "illustration": "EOP无业务编码",
+  "point": "EOP无业务编码"
+}, {
+  "remark": "",
+  "core": "ssp_eop_010",
+  "number": "3107010123",
+  "illustration": "EOP业务编码无效",
+  "point": "EOP业务编码无效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_011",
+  "number": "3107010108",
+  "illustration": "EOP接入ip无效",
+  "point": "EOP接入ip无效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_012",
+  "number": "3107010109",
+  "illustration": "EOP无请求发起时间",
+  "point": "EOP无请求发起时间"
+}, {
+  "remark": "",
+  "core": "ssp_eop_013",
+  "number": "3107010110",
+  "illustration": "EOP请求发起时间无效",
+  "point": "EOP请求发起时间无效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_014",
+  "number": "3107010111",
+  "illustration": "EOP请求发起时间超时",
+  "point": "EOP请求发起时间超时"
+}, {
+  "remark": "",
+  "core": "ssp_eop_015",
+  "number": "3107010112",
+  "illustration": "EOP业务不明确",
+  "point": "EOP业务不明确"
+}, {
+  "remark": "",
+  "core": "ssp_eop_016",
+  "number": "3107010113",
+  "illustration": "EOP无签名",
+  "point": "EOP无签名"
+}, {
+  "remark": "",
+  "core": "ssp_eop_017",
+  "number": "3107010114",
+  "illustration": "EOP检查ACTION对于APP而定义的最小调用间隔超出",
+  "point": "EOP检查ACTION对于APP而定义的最小调用间隔超出"
+}, {
+  "remark": "",
+  "core": "ssp_eop_018",
+  "number": "3107010124",
+  "illustration": "EOP渠道不在有效期",
+  "point": "EOP渠道不在有效期"
+}, {
+  "remark": "",
+  "core": "ssp_eop_019",
+  "number": "3107010103",
+  "illustration": "EOP渠道失效",
+  "point": "EOP渠道失效"
+}, {
+  "remark": "",
+  "core": "ssp_eop_020",
+  "number": "3107010104",
+  "illustration": "EOP渠道超过调用次数",
+  "point": "EOP渠道超过调用次数"
+}, {
+  "remark": "",
+  "core": "ssp_eop_021",
+  "number": "3107010125",
+  "illustration": "EOP渠道无权限调用该业务",
+  "point": "EOP渠道无权限调用该业务"
+}, {
+  "remark": "",
+  "core": "ssp_eop_022",
+  "number": "3107010119",
+  "illustration": "EOP参数校验失败",
+  "point": "EOP参数校验失败"
+}, {
+  "remark": "",
+  "core": "ssp_eop_023",
+  "number": "3107010120",
+  "illustration": "EOP业务定义异常",
+  "point": "EOP业务定义异常"
+}, {
+  "remark": "",
+  "core": "ssp_eop_024",
+  "number": "3107010121",
+  "illustration": "EOP服务调用异常",
+  "point": "EOP服务调用异常"
+}, {
+  "remark": "",
+  "core": "ssp_system_001",
+  "number": "3107040100",
+  "illustration": "BUSINESS业务订单入库出错!",
+  "point": "业务订单入库出错!"
+}, {
+  "remark": "",
+  "core": "ssp_system_002",
+  "number": "3107040101",
+  "illustration": "BUSINESS服务订单入库出错!",
+  "point": "服务订单入库出错!"
+}, {
+  "remark": "",
+  "core": "ssp_system_003",
+  "number": "3107040102",
+  "illustration": "BUSINESS业务订单更新出错!",
+  "point": "业务订单更新出错!"
+}, {
+  "remark": "",
+  "core": "ssp_system_004",
+  "number": "3107040103",
+  "illustration": "BUSINESS服务订单更新出错!",
+  "point": "服务订单更新出错!"
+}, {
+  "remark": "",
+  "core": "ssp_system_020",
+  "number": "3107040104",
+  "illustration": "系统错误",
+  "point": "系统错误"
+}, {
+  "remark": "",
+  "core": "ssp_business_017",
+  "number": "2107020116",
+  "illustration": "不符合亲情号码办理条件!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_018",
+  "number": "2107020117",
+  "illustration": "亲情号码设置次数超限!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_019",
+  "number": "2107020118",
+  "illustration": "该用户不支持国际长途业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_020",
+  "number": "2107020120",
+  "illustration": "该用户不支持国际漫游业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_021",
+  "number": "2107020119",
+  "illustration": "对不起，您不是2G后付费用户，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_022",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_023",
+  "number": "2114000060",
+  "illustration": "返回充值期或锁定期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_024",
+  "number": "2114030223",
+  "illustration": "用户在协议期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_025",
+  "number": "2114030224",
+  "illustration": "用户为集团成员！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_026",
+  "number": "2107020124",
+  "illustration": "对不起，您已办理融合业务，不符合办理条件，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_027",
+  "number": "2114030228",
+  "illustration": "初始密码不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_028",
+  "number": "2107020129",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_029",
+  "number": "2107020129",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_030",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_031",
+  "number": "2107020129",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_033",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_034",
+  "number": "2107020131",
+  "illustration": "对不起，您输入的优惠套餐数量超过最大限制！不能办理2G转3G业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_035",
+  "number": "2107020132",
+  "illustration": "该用户WLAN状态不正确!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_036",
+  "number": "2107020133",
+  "illustration": "对不起，您要办理套餐编码不存在，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_037",
+  "number": "2107020134",
+  "illustration": "对不起，您要办理资费编码不正确，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_038",
+  "number": "2107020135",
+  "illustration": "对不起，您未开通WLAN业务，不能办理该业务!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_039",
+  "number": "2107020136",
+  "illustration": "对不起，您不是后付费用户，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_040",
+  "number": "2107020137",
+  "illustration": "省份不支持该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_041",
+  "number": "2107020138",
+  "illustration": "该用户网别不支持此业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_042",
+  "number": "2107020171",
+  "illustration": "该接入渠道未关联此业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_044",
+  "number": "2107020139",
+  "illustration": "省份未配置业务信息（移动业务办理、呼叫转移）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_050",
+  "number": "2114030244",
+  "illustration": "未查询到亲情号码信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_051",
+  "number": "2107020174",
+  "illustration": "其它错误（亲情号码设置业务）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_075",
+  "number": "2107020146",
+  "illustration": "对不起，非3G用户不能办理21M上网业务!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_076",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_078",
+  "number": "2107020149",
+  "illustration": "对不起，您不是3G预付费20元套餐用户，不能办理20元套餐业务!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_079",
+  "number": "2107020150",
+  "illustration": "不存在该用户信息!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_080",
+  "number": "2107000022",
+  "illustration": "3G预付费20元套餐，不能办理3G流量包业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_081",
+  "number": "2107000023",
+  "illustration": "在网时长不足6个月，不能办理3G流量包业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_082",
+  "number": "2107000021",
+  "illustration": "对不起，您在网时间不满5个月不能办理该业务!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_083",
+  "number": "2107000024",
+  "illustration": "2G用户主产品不在省份上报的列表中",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_084",
+  "number": "2107000025",
+  "illustration": "非2G3G流量附加包",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_087",
+  "number": "2107000025",
+  "illustration": "非2G3G流量附加包",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_088",
+  "number": "2107000026",
+  "illustration": "用户已经订购流量包，不能继续订购",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_089",
+  "number": "2107000027",
+  "illustration": "用户本月有流量包生效，不能立即生效",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_090",
+  "number": "2107000028",
+  "illustration": "用户没有订购流量包，不能变更或退订",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_092",
+  "number": "2107000031",
+  "illustration": "该省份不支持立即生效",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_115",
+  "number": "2107020136",
+  "illustration": "对不起，您不是后付费用户，不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_117",
+  "number": "2107020165",
+  "illustration": "用户非实名用户，不能使用3G信用额度业务！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_123",
+  "number": "2107020166",
+  "illustration": "用户信用额度为无限额",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_124",
+  "number": "2107020167",
+  "illustration": "(3G信用额度)请您到营业厅办理预付费信用额度调整业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_125",
+  "number": "2107020168",
+  "illustration": "该省份未配置信用额度信息",
+  "point": ""
+}, {
+  "remark": "完善4G",
+  "core": "ssp_business_127",
+  "number": "2107020169",
+  "illustration": "(2G/3G/4G信用额度)用户办理临时信用额度超过本月次数上限，请下月进行办理。",
+  "point": ""
+}, {
+  "remark": "完善4G",
+  "core": "ssp_business_128",
+  "number": "2107020170",
+  "illustration": "(3G/4G信用额度)用户办理基本信用额度超过本月次数上限，请下月进行办理。",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_131",
+  "number": "2107000037",
+  "illustration": "对不起，无线上网卡不能办理网龄升级！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_132",
+  "number": "2107020137",
+  "illustration": "省份不支持该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_200",
+  "number": "2107000040",
+  "illustration": "（接口限制）对不起，该业务已被限制办理，请办理其他业务!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_201",
+  "number": "2107000041",
+  "illustration": "对不起，不存在优惠信息！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_202",
+  "number": "2107000042",
+  "illustration": "无省份相关信息!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_203",
+  "number": "2107000043",
+  "illustration": "该用户未订购融合流量包业务，无法查询流量包信息！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_204",
+  "number": "2107000044",
+  "illustration": "该用户无返回land_fee或roam_fee节点，无法判断是否为长市漫合一用户！",
+  "point": ""
+}, {
+  "remark": "新网龄包（08.29增）",
+  "core": "ssp_business_206",
+  "number": "2107000045",
+  "illustration": "该用户的主套餐不在语音网龄办理范围内，无法办理网龄升级计划!",
+  "point": ""
+}, {
+  "remark": "新网龄包（08.29增）",
+  "core": "ssp_business_207",
+  "number": "2107000047",
+  "illustration": "该用户未订购或已申请退出（次月生效）融合业务流量包，请先办理融合流量包办理!",
+  "point": ""
+}, {
+  "remark": "新网龄包/沃微信共用（08.29增）",
+  "core": "ssp_business_208",
+  "number": "2107000052",
+  "illustration": "办理类业务查询服务返回参数入库失败!",
+  "point": ""
+}, {
+  "remark": "沃微信（08.29增）",
+  "core": "ssp_business_209",
+  "number": "2107000053",
+  "illustration": "对不起，您不是沃派用户，不能办理此业务！",
+  "point": ""
+}, {
+  "remark": "沃微信（08.29增）",
+  "core": "ssp_business_210",
+  "number": "2107000054",
+  "illustration": "对不起，您本月做过主产品变更，请次月来办理！",
+  "point": ""
+}, {
+  "remark": "沃微信（08.29增）",
+  "core": "ssp_business_211",
+  "number": "2107000055",
+  "illustration": "对不起，微信特权信息同步文件表入库失败！",
+  "point": ""
+}, {
+  "remark": "WLAN业务（08.30增）",
+  "core": "ssp_business_212",
+  "number": "2107000056",
+  "illustration": "对不起，当前套餐/预约套餐只允许有一个，实际为多个 ！",
+  "point": ""
+}, {
+  "remark": "沃微信（09.04增）",
+  "core": "ssp_business_213",
+  "number": "2107000057",
+  "illustration": "对不起，微信沃叠加包配置表没有找到信息！",
+  "point": ""
+}, {
+  "remark": "新增余额播报2.0",
+  "core": "ssp_business_214",
+  "number": "2107000058",
+  "illustration": "一级余额播报，账户可用余额/当前可用余额未返回！",
+  "point": ""
+}, {
+  "remark": "新网龄包（09.17增）",
+  "core": "ssp_business_215",
+  "number": "2107000059",
+  "illustration": "对不起，网龄配置表没有找到信息！",
+  "point": ""
+}, {
+  "remark": "WLAN密码重置(10.10新增)",
+  "core": "ssp_business_217",
+  "number": "2107000060",
+  "illustration": "对不起，接口成功但密码未返回！",
+  "point": ""
+}, {
+  "remark": "0元存费送费",
+  "core": "ssp_business_218",
+  "number": "2107000061",
+  "illustration": "对不起，接口没有返回主套餐！",
+  "point": ""
+}, {
+  "remark": "0元存费送费",
+  "core": "ssp_business_219",
+  "number": "2107000062",
+  "illustration": "对不起，活动信息配置表没有找到主套餐信息，不能办理！",
+  "point": ""
+}, {
+  "remark": "0元存费送费",
+  "core": "ssp_business_220",
+  "number": "2107000063",
+  "illustration": "对不起，活动的结束时间大于6个月，不符合办理条件，不能办理！",
+  "point": ""
+}, {
+  "remark": "0元存费送费",
+  "core": "ssp_business_221",
+  "number": "2107000064",
+  "illustration": "对不起，产品无构成信息！",
+  "point": ""
+}, {
+  "remark": "0元存费送费",
+  "core": "ssp_business_222",
+  "number": "2107000065",
+  "illustration": "对不起，您已订购该业务，目前此业务不支持取消或二次新增！",
+  "point": ""
+}, {
+  "remark": "送红包业务/新春派红包",
+  "core": "ssp_business_225",
+  "number": "2107000068",
+  "illustration": "对不起，电商20元套餐用户无法办理红包！",
+  "point": ""
+}, {
+  "remark": "送红包业务",
+  "core": "ssp_business_226",
+  "number": "2107000069",
+  "illustration": "对不起，不符合办理红包条件！",
+  "point": ""
+}, {
+  "remark": "送红包业务",
+  "core": "ssp_business_227",
+  "number": "2107000070",
+  "illustration": "对不起，请先订购流量包！",
+  "point": ""
+}, {
+  "remark": "送红包业务",
+  "core": "ssp_business_228",
+  "number": "2107000052",
+  "illustration": "办理类业务查询服务返回参数入库失败!",
+  "point": ""
+}, {
+  "remark": "流量加油包",
+  "core": "ssp_business_230",
+  "number": "2107000071",
+  "illustration": "对不起，资源编码不正确！",
+  "point": ""
+}, {
+  "remark": "流量加油包",
+  "core": "ssp_business_231",
+  "number": "2107000072",
+  "illustration": "对不起，20元套餐用户无法办理流量加油包！",
+  "point": ""
+}, {
+  "remark": "流量加油包",
+  "core": "ssp_business_232",
+  "number": "2107000073",
+  "illustration": "对不起，返回流量单位错误！",
+  "point": ""
+}, {
+  "remark": "流量加油包",
+  "core": "ssp_business_233",
+  "number": "2107000074",
+  "illustration": "对不起，到账时间解析异常！",
+  "point": ""
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_237",
+  "number": "2107000075",
+  "illustration": "不允许变更套餐，请查看查询类返回opercode值!",
+  "point": ""
+}, {
+  "remark": "老用户转4G、宽带装移修改",
+  "core": "ssp_business_243",
+  "number": "2107000076",
+  "illustration": "查询无记录！",
+  "point": ""
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_244",
+  "number": "2107000077",
+  "illustration": "对不起，该用户已在线受理成功，不能继续再次受理！",
+  "point": ""
+}, {
+  "remark": "老用户转4G",
+  "core": "ssp_business_245",
+  "number": "2107000078",
+  "illustration": "对不起，该用户已预约受理成功或受理中，不能再次受理！",
+  "point": ""
+}, {
+  "remark": "5.17流量加油包活动",
+  "core": "ssp_business_247",
+  "number": "2107000079",
+  "illustration": "该用户已办理过517活动!",
+  "point": ""
+}, {
+  "remark": "5.17流量加油包活动",
+  "core": "ssp_business_248",
+  "number": "2107000080",
+  "illustration": "省份接口已迁出!",
+  "point": ""
+}, {
+  "remark": "信用额度",
+  "core": "ssp_business_257",
+  "number": "2107000081",
+  "illustration": "省份未返回当月临时授信次数",
+  "point": ""
+}, {
+  "remark": "共用",
+  "core": "ssp_business_261",
+  "number": "2107000082",
+  "illustration": "该用户未订购相关流量包业务，无法查询流量包余量信息！",
+  "point": ""
+}, {
+  "remark": "省内流量包",
+  "core": "ssp_business_262",
+  "number": "2107000083",
+  "illustration": "订购流量包不在查询范围!",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_263",
+  "number": "2107000084",
+  "illustration": "省份没有返回固定额度上限值！",
+  "point": ""
+}, {
+  "remark": "合约期查询",
+  "core": "ssp_business_264",
+  "number": "2107000085",
+  "illustration": "该用户无合约信息记录！",
+  "point": ""
+}, {
+  "remark": "9.19非合约转本地diy套餐zyy赠",
+  "core": "ssp_business_266",
+  "number": "2107000086",
+  "illustration": "合约期用户不能办理！",
+  "point": ""
+}, {
+  "remark": "4G沃享",
+  "core": "ssp_business_267",
+  "number": "2107000087",
+  "illustration": "非主号码不符合办理条件！",
+  "point": ""
+}, {
+  "remark": "4G套餐变更",
+  "core": "ssp_business_270",
+  "number": "2107000088",
+  "illustration": "一体化合约用户，套餐外互转不允许办理！",
+  "point": ""
+}, {
+  "remark": "4G套餐变更11月20号新版本修改描述",
+  "core": "ssp_business_271",
+  "number": "2107000089",
+  "illustration": "套餐内不允许同档办理！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_272",
+  "number": "2107000090",
+  "illustration": "已达到当日办理限制次数！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_273",
+  "number": "2107000091",
+  "illustration": "已达到当月办理限制次数！",
+  "point": ""
+}, {
+  "remark": "老用户转4G提交失败直接转预约",
+  "core": "ssp_business_274",
+  "number": "2107000092",
+  "illustration": "在线流程失败,已转入预约流程！",
+  "point": ""
+}, {
+  "remark": "流量包优化读取redis",
+  "core": "ssp_business_275",
+  "number": "2107000093",
+  "illustration": "redis查询失败，业务结束！",
+  "point": ""
+}, {
+  "remark": "老用户转4G预提交服务接口类报错",
+  "core": "ssp_business_279",
+  "number": "2107000094",
+  "illustration": "预提交失败！",
+  "point": "预提交失败！"
+}, {
+  "remark": "流量包订购2.0",
+  "core": "ssp_business_280",
+  "number": "2107000095",
+  "illustration": "es入库失败，业务结束！",
+  "point": ""
+}, {
+  "remark": "流量包订购2.0",
+  "core": "ssp_business_281",
+  "number": "2107000096",
+  "illustration": "已达到活动办理限制次数！",
+  "point": ""
+}, {
+  "remark": "业务拉动终端礼包订购",
+  "core": "ssp_business_282",
+  "number": "2107000097",
+  "illustration": "该用户未订购后向流量语音半年包业务，无法查询！",
+  "point": ""
+}, {
+  "remark": "预约取号省份返回验证码长度检验",
+  "core": "ssp_business_283",
+  "number": "2107000098",
+  "illustration": "预约验证码长度过长！",
+  "point": ""
+}, {
+  "remark": "新春派红包",
+  "core": "ssp_business_284",
+  "number": "2107000099",
+  "illustration": "入网时间在2015年12月31日后不能办理！",
+  "point": ""
+}, {
+  "remark": "新春派红包",
+  "core": "ssp_business_285",
+  "number": "2107000100",
+  "illustration": "当前号码已预约过新春红包！",
+  "point": ""
+}, {
+  "remark": "新春派红包",
+  "core": "ssp_business_286",
+  "number": "2107000101",
+  "illustration": "当用户已经订购新春红包，不允许重复订购",
+  "point": ""
+}, {
+  "remark": "新春派红包（FTP回执所需）",
+  "core": "ssp_business_287",
+  "number": "2107000102",
+  "illustration": "同本省其他产品冲突，不允许订购",
+  "point": ""
+}, {
+  "remark": "新春派红包（业务逻辑判断0321）",
+  "core": "ssp_business_289",
+  "number": "2107000102",
+  "illustration": "同本省其他产品冲突，不允许订购",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_290",
+  "number": "2107000119",
+  "illustration": "不允许重复支付！",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_291",
+  "number": "2107000120",
+  "illustration": "金额校验失败！",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_292",
+  "number": "2107000121",
+  "illustration": "当前业务未接入统一支付！",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_293",
+  "number": "2107000122",
+  "illustration": "支付失败！",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_294",
+  "number": "2107000123",
+  "illustration": "当前业务不符合条件接入统一支付！",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_295",
+  "number": "2107000103",
+  "illustration": "已预约23G转4G业务，不允许继续办理!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_296",
+  "number": "2107000104",
+  "illustration": "已办理23G转4G业务，不允许继续办理!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_297",
+  "number": "2107000105",
+  "illustration": "已预约开通4G网络，不允许继续办理!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_298",
+  "number": "2107000106",
+  "illustration": "当前用户网络级别为LTE，不允许办理!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_299",
+  "number": "2107000107",
+  "illustration": "当前用户只能通过23转4业务进行LTE速率升级!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_300",
+  "number": "2107000108",
+  "illustration": "当前用户已经达到数据封顶要求!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_301",
+  "number": "2107000109",
+  "illustration": "当前用户已经在办理迁转cBSS业务中!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_302",
+  "number": "2107000110",
+  "illustration": "当前用户不能升速为LTE!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_303",
+  "number": "2107000111",
+  "illustration": "当前用户卡类型为sim卡，不允许办理!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_304",
+  "number": "2107000112",
+  "illustration": "预提交接口失败，需用户确认是否进入预约流程!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_305",
+  "number": "2107000113",
+  "illustration": "订单提交接口失败，已进入预约流程!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_306",
+  "number": "2107000114",
+  "illustration": "该笔订单号不符合预约办理条件!",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_307",
+  "number": "2107000115",
+  "illustration": "电商20元套餐用户不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "23转4改造判断用户实名",
+  "core": "ssp_business_308",
+  "number": "2107000116",
+  "illustration": "现不支持15位身份证，请到实体营业厅办理！",
+  "point": ""
+}, {
+  "remark": "23转4改造判断用户实名",
+  "core": "ssp_business_309",
+  "number": "2107000117",
+  "illustration": "现只支持18位身份证，请到实体营业厅办理!",
+  "point": ""
+}, {
+  "remark": "23转4,4G互转判断用户入网时间",
+  "core": "ssp_business_310",
+  "number": "2107000118",
+  "illustration": "入网时间没有超过6个月，无法办理！",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_311",
+  "number": "2107020129",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "23G开通4G网络业务",
+  "core": "ssp_business_312",
+  "number": "2107000112",
+  "illustration": "预提交接口失败，需用户确认是否进入预约流程!",
+  "point": "预提交接口省份订单号未返回"
+}, {
+  "remark": "开通数据漫游封顶",
+  "core": "ssp_business_313",
+  "number": "2107020140",
+  "illustration": "特服状态已开通，不充许继续办理！",
+  "point": ""
+}, {
+  "remark": "开通数据漫游封顶特服业务编码（FeatCode）：不为00014返回",
+  "core": "ssp_business_314",
+  "number": "2107020129",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "开通数据漫游封顶",
+  "core": "ssp_business_315",
+  "number": "2107020142",
+  "illustration": "特服状态为空，查询失败",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_316",
+  "number": "2107020143",
+  "illustration": "标识校验失败",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_317",
+  "number": "2107020144",
+  "illustration": "请在支付页面支付完成后，在继续办理业务",
+  "point": ""
+}, {
+  "remark": "支付类校验",
+  "core": "ssp_business_318",
+  "number": "2107020145",
+  "illustration": "支付URL生成失败",
+  "point": ""
+}, {
+  "remark": "网购节专用",
+  "core": "ssp_business_319",
+  "number": "2107020147",
+  "illustration": "电商20元套餐用户不能办理网购节流量包",
+  "point": ""
+}, {
+  "remark": "网购节专用",
+  "core": "ssp_business_320",
+  "number": "2107020148",
+  "illustration": "网购节流量包只限办理一次",
+  "point": ""
+}, {
+  "remark": "网购节专用",
+  "core": "ssp_business_321",
+  "number": "2107020151",
+  "illustration": "该用户已经预约网购节流量包",
+  "point": ""
+}, {
+  "remark": "话付通详单查询",
+  "core": "ssp_business_324",
+  "number": "2107000076",
+  "illustration": "查询无记录！",
+  "point": "APP消费详单查询接口CONSUME_DETAIL_INFO未返回"
+}, {
+  "remark": "4G短信定制",
+  "core": "ssp_business_325",
+  "number": "2107020175",
+  "illustration": "短信大类为54，提醒频率未返回，不允许继续办理！",
+  "point": "短信大类为54，接口未返回提醒频率！"
+}, {
+  "remark": "",
+  "core": "ssp_business_326",
+  "number": "2107020152",
+  "illustration": "办理类业务查询服务参数redis插入异常！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_327",
+  "number": "2107020153",
+  "illustration": "办理类业务查询服务参数redis获取异常！",
+  "point": ""
+}, {
+  "remark": "4G漫游长途权限开通暂用（可共用，对三户的CUST_INFO和ACCT_INFO判断 ）",
+  "core": "ssp_business_328",
+  "number": "2107020156",
+  "illustration": "客户信息或账户资料未返回",
+  "point": ""
+}, {
+  "remark": "4G短信定制",
+  "core": "ssp_business_329",
+  "number": "2107020154",
+  "illustration": "当短信大类编码54为订购或变更时，提醒频率为必传！",
+  "point": "短信大类编码为54时且操作标识为订购或变更时，提醒频率未传"
+}, {
+  "remark": "4G短信定制",
+  "core": "ssp_business_330",
+  "number": "2107020155",
+  "illustration": "短信定制大类信息不正确，不允许继续办理！",
+  "point": "短信定制办理服务入参不正确"
+}, {
+  "remark": "公共（闲时流量包和语音随意打包新增、流量放心用）",
+  "core": "ssp_business_331",
+  "number": "2107020157",
+  "illustration": "该套餐不支持本次业务!",
+  "point": "4G共享套餐办理闲时流量包及随意打包"
+}, {
+  "remark": "23转4改造判断用户实名",
+  "core": "ssp_business_332",
+  "number": "2107020158",
+  "illustration": "没有返回实名证件类信息或联系人信息,不允许办理！",
+  "point": ""
+}, {
+  "remark": "23转4改造判断用户实名",
+  "core": "ssp_business_333",
+  "number": "2107020159",
+  "illustration": "联系人不能全部为数字！",
+  "point": ""
+}, {
+  "remark": "23转4改造判断用户实名",
+  "core": "ssp_business_334",
+  "number": "2107020160",
+  "illustration": "联系人电话必须大于6位！",
+  "point": ""
+}, {
+  "remark": "mifi续订",
+  "core": "ssp_business_340",
+  "number": "2107020161",
+  "illustration": "非MIFI产品或当月没有订购此类产品,请先进行订购!",
+  "point": ""
+}, {
+  "remark": "mifi续订",
+  "core": "ssp_business_341",
+  "number": "2107020162",
+  "illustration": "订购产品已失效,请重新订购",
+  "point": ""
+}, {
+  "remark": "公共（2015定向包）",
+  "core": "ssp_business_342",
+  "number": "2107020163",
+  "illustration": "该用户办理过套餐变更,不支持该业务!",
+  "point": ""
+}, {
+  "remark": "小额流量月包",
+  "core": "ssp_business_343",
+  "number": "2107020164",
+  "illustration": "订购顺序与实际订购个数不符!",
+  "point": "接口返回小额包资费信息个数与配置订购顺序不符合"
+}, {
+  "remark": "积分+现金兑换半年流量包",
+  "core": "ssp_business_344",
+  "number": "2107020172",
+  "illustration": "没有返回积分信息，无法办理该业务！",
+  "point": ""
+}, {
+  "remark": "积分+现金（公共）兑换半年流量包",
+  "core": "ssp_business_345",
+  "number": "2107020173",
+  "illustration": "用户状态未开通，无法办理该业务！",
+  "point": ""
+}, {
+  "remark": "积分+现金兑换半年流量包",
+  "core": "ssp_business_346",
+  "number": "2107020176",
+  "illustration": "网龄不足12个月，无法办理该业务！",
+  "point": ""
+}, {
+  "remark": "4G套餐余量改造",
+  "core": "ssp_business_348",
+  "number": "2107020177",
+  "illustration": "接口字段应返回数值,实际返回为空!",
+  "point": ""
+}, {
+  "remark": "龙江沃卡订购流量包业务",
+  "core": "ssp_business_350",
+  "number": "2107020178",
+  "illustration": "对不起，当前无已生效的龙江沃卡增值包，无法办理该业务",
+  "point": "接口未返回已生效的龙江沃卡增值包"
+}, {
+  "remark": "公共",
+  "core": "ssp_business_351",
+  "number": "2107020179",
+  "illustration": "省份订单号未返回，无法办理该业务",
+  "point": "预提交接口省份订单号未返回"
+}, {
+  "remark": "联通秘书",
+  "core": "ssp_business_352",
+  "number": "2107020180",
+  "illustration": "当前用户已订购联通秘书,请先退订后方可继续办理!",
+  "point": "接口返回不可办理的联通秘书"
+}, {
+  "remark": "",
+  "core": "ssp_business_356",
+  "number": "2107020181",
+  "illustration": "无账单信息",
+  "point": "接口未返回账单查询结果信息"
+}, {
+  "remark": "腾讯微信国际漫游包",
+  "core": "ssp_business_364",
+  "number": "2107020182",
+  "illustration": "当前用户已经订购该产品，不允许重复订购",
+  "point": ""
+}, {
+  "remark": "公共",
+  "core": "ssp_business_368",
+  "number": "2107020190",
+  "illustration": "无相关余量信息",
+  "point": ""
+}, {
+  "remark": "积分二期积分消费记录查询",
+  "core": "ssp_business_369",
+  "number": "2107020191",
+  "illustration": "无积分消费记录",
+  "point": "SCORE_DETAIL_INFO节点为空返回"
+}, {
+  "remark": "积分二期积分生产记录查询",
+  "core": "ssp_business_370",
+  "number": "2107020192",
+  "illustration": "无积分生产记录",
+  "point": "RETURN_INFO节点为空时抛错"
+}, {
+  "remark": "无纸化电子受理单记录查询",
+  "core": "ssp_business_372",
+  "number": "2107020193",
+  "illustration": "无相关受理记录信息",
+  "point": "PAPERLESS_LIST节点未返回时抛错"
+}, {
+  "remark": "2016年新春派红包新增",
+  "core": "ssp_business_373",
+  "number": "2107020194",
+  "illustration": "副卡用户不支持本次业务！",
+  "point": ""
+}, {
+  "remark": "4G信用额度信息",
+  "core": "ssp_business_375",
+  "number": "2107020195",
+  "illustration": "无信用信息！",
+  "point": "无信用信息"
+}, {
+  "remark": "",
+  "core": "ssp_business_376",
+  "number": "2107020196",
+  "illustration": "对不起,当前用户实名制校验失败！",
+  "point": ""
+}, {
+  "remark": "电子发票开具（根据三个查询服务来判断对应缓存值是否符合开具条件）",
+  "core": "ssp_business_377",
+  "number": "2107020197",
+  "illustration": "发票信息列表已经打印（开具），不支持开具发票！",
+  "point": ""
+}, {
+  "remark": "校园定向包",
+  "core": "ssp_business_379",
+  "number": "2107020199",
+  "illustration": "用户已订购同类产品，无可办理定向包",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_380",
+  "number": "2107020200",
+  "illustration": "用户套餐无可办理定向包！",
+  "point": ""
+}, {
+  "remark": "电子发票开具（根据三个查询服务来判断对应缓存值是否符合开具条件）",
+  "core": "ssp_business_381",
+  "number": "2107020201",
+  "illustration": "发票类型不正确，不支持开具发票！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_382",
+  "number": "2107020202",
+  "illustration": "打印金额超出可打金额，不支持开具发票！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_383",
+  "number": "2107020203",
+  "illustration": "发票业务流水号/账期不正确，不支持开具发票！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_384",
+  "number": "2107020204",
+  "illustration": "该用户不支持开具发票条件！",
+  "point": ""
+}, {
+  "remark": "腾讯国漫订单提交超时，缴费进行退订操作",
+  "core": "ssp_business_390",
+  "number": "2107020205",
+  "illustration": "订单提交超时，请发起退订！",
+  "point": ""
+}, {
+  "remark": "落地开",
+  "core": "ssp_business_391",
+  "number": "2107020206",
+  "illustration": "BUSINESS对不起，获取省份地市网别付费类型等参数异常！",
+  "point": ""
+}, {
+  "remark": "落地开",
+  "core": "ssp_business_392",
+  "number": "2107020207",
+  "illustration": "BUSINESS对不起，不符合免缴条件！",
+  "point": ""
+}, {
+  "remark": "落地开",
+  "core": "ssp_business_393",
+  "number": "2107020208",
+  "illustration": "BUSINESS对不起，没有该省份漫游包配置！",
+  "point": ""
+}, {
+  "remark": "一卡充发票查询返回异常",
+  "core": "ssp_business_395",
+  "number": "2107020209",
+  "illustration": "BUSINESS对不起，调用一卡充系统返回异常！",
+  "point": ""
+}, {
+  "remark": "月结发票查询，QUERY_TYPE未返回",
+  "core": "ssp_business_396",
+  "number": "2107020210",
+  "illustration": "BUSINESS对不起，查询类型未返回，不能继续办理！",
+  "point": ""
+}, {
+  "remark": "开通volte，北六只有先开通lte后才能开通volte",
+  "core": "ssp_business_397",
+  "number": "2107020211",
+  "illustration": "BUSINESS对不起，请先开通LTE网络！",
+  "point": ""
+}, {
+  "remark": "三户接口未返回attrinfo节点",
+  "core": "ssp_business_405",
+  "number": "2107020212",
+  "illustration": "对不起,接口返回无attrinfo节点！",
+  "point": ""
+}, {
+  "remark": "creditAdjust（沃信用分信用额度调整）",
+  "core": "ssp_business_412",
+  "number": "3107040161",
+  "illustration": "对不起,尚未开通国际漫游权限！",
+  "point": ""
+}, {
+  "remark": "creditAdjust（沃信用分信用额度调整）",
+  "core": "ssp_business_413",
+  "number": "3107040162",
+  "illustration": "对不起,沃信用分不在可办理范围内！",
+  "point": ""
+}, {
+  "remark": "creditAdjust（沃信用分信用额度调整）",
+  "core": "ssp_business_415",
+  "number": "3107040163",
+  "illustration": "对不起,您输入的调整方式不正确！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_416",
+  "number": "2107020215",
+  "illustration": "该业务只支持二代身份证进行办理！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_417",
+  "number": "2107020216",
+  "illustration": "对不起,没有沃账户，不能办理沃账户钱包！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_418",
+  "number": "2107020217",
+  "illustration": "对不起，操作类型无效！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_419",
+  "number": "2107020218",
+  "illustration": "对不起，不存在该业务类型！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_420",
+  "number": "2107020219",
+  "illustration": "对不起，已有沃账户！不能创建！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_421",
+  "number": "2107020220",
+  "illustration": "对不起，业务限制必填！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_422",
+  "number": "2107020221",
+  "illustration": "对不起，非实名用户不能办理该业务！",
+  "point": ""
+}, {
+  "remark": "账户通",
+  "core": "ssp_business_423",
+  "number": "2107020222",
+  "illustration": "对不起，账户创建成功办理该业务失败！",
+  "point": ""
+}, {
+  "remark": "serviceChg（沃信用分逾期延停）",
+  "core": "ssp_business_424",
+  "number": "3107040164",
+  "illustration": "对不起，该用户状态不支持该业务！",
+  "point": ""
+}, {
+  "remark": "双11",
+  "core": "ssp_business_425",
+  "number": "3107040165",
+  "illustration": "非4G用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_045",
+  "number": "2114000217",
+  "illustration": "对不起，您的号码不存在，不能办理该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_046",
+  "number": "2114030145",
+  "illustration": "智能网用户，不支持对该用户类型的缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_047",
+  "number": "2114030146",
+  "illustration": "缴费金额不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_048",
+  "number": "2114030147",
+  "illustration": "系统出账，不能缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_049",
+  "number": "2114030148",
+  "illustration": "用户不在充值期，暂不容许缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_050",
+  "number": "2114030149",
+  "illustration": "无订购关系",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_051",
+  "number": "2114030150",
+  "illustration": "不允许跨月查询",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_052",
+  "number": "2114030151",
+  "illustration": "号码不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_053",
+  "number": "2114030152",
+  "illustration": "用户状态不正常",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_057",
+  "number": "2114030156",
+  "illustration": "无该服务类型",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_058",
+  "number": "2114030157",
+  "illustration": "不支持该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_059",
+  "number": "2114030158",
+  "illustration": "此用户类型用户不能使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_060",
+  "number": "2114030159",
+  "illustration": "不支持智能网用户使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_061",
+  "number": "2114030160",
+  "illustration": "不支持预付费用户使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_062",
+  "number": "2114030161",
+  "illustration": "其它业务支持错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_063",
+  "number": "2114030162",
+  "illustration": "用户档案不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_064",
+  "number": "2114030218",
+  "illustration": "密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_065",
+  "number": "2114030164",
+  "illustration": "客户(信息)不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_066",
+  "number": "2114030165",
+  "illustration": "帐户不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_067",
+  "number": "2114030166",
+  "illustration": "无缴费记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_068",
+  "number": "2114030167",
+  "illustration": "无帐单记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_069",
+  "number": "2114030168",
+  "illustration": "无受理日志记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_070",
+  "number": "2114030169",
+  "illustration": "该用户详单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_071",
+  "number": "2114030170",
+  "illustration": "无详单记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_072",
+  "number": "2114030171",
+  "illustration": "无积分消费记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_073",
+  "number": "2114030172",
+  "illustration": "无积分产生记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_074",
+  "number": "2114030173",
+  "illustration": "无租机信息记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_075",
+  "number": "2114030174",
+  "illustration": "无免费资源记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_076",
+  "number": "2114030175",
+  "illustration": "无亲友号码记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_077",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_078",
+  "number": "2114030177",
+  "illustration": "无此用户预交信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_079",
+  "number": "2114030178",
+  "illustration": "日期错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_080",
+  "number": "2114030179",
+  "illustration": "该帐期不允许查询",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_081",
+  "number": "2114030180",
+  "illustration": "积分接口错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_082",
+  "number": "2114000063",
+  "illustration": "附加流量包产品互斥",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_083",
+  "number": "2114030182",
+  "illustration": "该月帐单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_084",
+  "number": "2114030183",
+  "illustration": "该月详单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_085",
+  "number": "2114000060",
+  "illustration": "该用户在锁定期或充值期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_086",
+  "number": "2114000066",
+  "illustration": "用户状态不处于有效期",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_087",
+  "number": "2114030254",
+  "illustration": "查询日期应小于当日",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_088",
+  "number": "2114030195",
+  "illustration": "只能查询7个月内的信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_089",
+  "number": "2114030196",
+  "illustration": "红名单验证失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_090",
+  "number": "2114030197",
+  "illustration": "红名单成员不允许查询详单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_091",
+  "number": "2114030198",
+  "illustration": "预付费用户不能查当月",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_092",
+  "number": "2114030199",
+  "illustration": "只能查询上月起的6个月内信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_093",
+  "number": "2114030200",
+  "illustration": "其它业务处理错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_094",
+  "number": "2114030185",
+  "illustration": "只能查询一个月内的记录（只有当月和上月话单可以按天查询，之前的只能整月查询）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_095",
+  "number": "2114030254",
+  "illustration": "查询日期应小于当日",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_096",
+  "number": "2114030195",
+  "illustration": "只能查询7个月内的信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_097",
+  "number": "2114030196",
+  "illustration": "红名单验证失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_098",
+  "number": "2114030197",
+  "illustration": "红名单成员不允许查询详单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_099",
+  "number": "2114030198",
+  "illustration": "预付费用户不能查当月",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_100",
+  "number": "2114030199",
+  "illustration": "只能查询上月起的6个月内信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_101",
+  "number": "2114030200",
+  "illustration": "其它业务处理错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_102",
+  "number": "2114000212",
+  "illustration": "密码为初始密码",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_103",
+  "number": "2114000071",
+  "illustration": "无历史欠费信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_104",
+  "number": "2114000208",
+  "illustration": "不允许新旧密码相同",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_105",
+  "number": "2114000209",
+  "illustration": "密码修改更新数据失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_106",
+  "number": "2114000210",
+  "illustration": "旧密码不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_107",
+  "number": "2114000211",
+  "illustration": "新密码长度不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_108",
+  "number": "2114030207",
+  "illustration": "初始密码不允许重置",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_109",
+  "number": "2114000213",
+  "illustration": "密码重置失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_110",
+  "number": "2114000214",
+  "illustration": "新密码复杂度过低",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_111",
+  "number": "2114000215",
+  "illustration": "其他密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_112",
+  "number": "2114030211",
+  "illustration": "用户密码与账户密码不一致，密码不允许修改",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_113",
+  "number": "2114030212",
+  "illustration": "暂不支持此功能",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_114",
+  "number": "2114000217",
+  "illustration": "对不起，您的号码不存在，不能办理该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_115",
+  "number": "2114030242",
+  "illustration": "其他错误原因",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_116",
+  "number": "2114000217",
+  "illustration": "对不起，您的号码不存在，不能办理该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_117",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_118",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_119",
+  "number": "2114030218",
+  "illustration": "密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_120",
+  "number": "2114000060",
+  "illustration": "该用户在锁定期或充值期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_121",
+  "number": "2114030220",
+  "illustration": "客户资料不完整",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_122",
+  "number": "2114030221",
+  "illustration": "未返回信用信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_123",
+  "number": "2114030222",
+  "illustration": "该用户为预付费用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_124",
+  "number": "2114030223",
+  "illustration": "用户在协议期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_125",
+  "number": "2114030224",
+  "illustration": "用户为集团成员",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_126",
+  "number": "2114030225",
+  "illustration": "融合业务/增值业务未退订",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_127",
+  "number": "2114030226",
+  "illustration": "此用户不允许做携号转网",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_128",
+  "number": "2114030227",
+  "illustration": "固网号码不能跨服务区受理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_129",
+  "number": "2114030228",
+  "illustration": "初始密码不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_130",
+  "number": "2114030229",
+  "illustration": "必须先解散亲情关系",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_131",
+  "number": "2114030230",
+  "illustration": "出账日限制",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_132",
+  "number": "2114030231",
+  "illustration": "未办理预约销户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_133",
+  "number": "2114030232",
+  "illustration": "预约正式拆机未到期",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_134",
+  "number": "2114030233",
+  "illustration": "该用户不能加装",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_135",
+  "number": "2114000216",
+  "illustration": "当前用户存在在途工单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_136",
+  "number": "2114030235",
+  "illustration": "用户不允许加入该营销活动",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_137",
+  "number": "2114030242",
+  "illustration": "其他错误原因",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_138",
+  "number": "2114030237",
+  "illustration": "保证金余额不足",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_139",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_140",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_141",
+  "number": "2114030240",
+  "illustration": "用户已开通此服务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_142",
+  "number": "2114030241",
+  "illustration": "用户未开通此服务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_143",
+  "number": "2114030242",
+  "illustration": "其他错误原因",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_144",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_145",
+  "number": "2114030244",
+  "illustration": "未查询到亲情号码信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_146",
+  "number": "2114030152",
+  "illustration": "用户状态不正常",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_147",
+  "number": "2114030245",
+  "illustration": "不允许呼转的号码（帐户不存在、特殊号码如110、120、95533等）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_148",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_149",
+  "number": "2114030248",
+  "illustration": "停机保号、黑名单不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_150",
+  "number": "2114030249",
+  "illustration": "与已订购的其他产品冲突",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_151",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_152",
+  "number": "2114030167",
+  "illustration": "无帐单记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_154",
+  "number": "2114030184",
+  "illustration": "无产品（套餐）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_155",
+  "number": "2114030185",
+  "illustration": "只能查询一个月内的记录（只有当月和上月话单可以按天查询，之前的只能整月查询）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_160",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_162",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_163",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_164",
+  "number": "2114000207",
+  "illustration": "无特服业务信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_165",
+  "number": "2114000208",
+  "illustration": "不允许新旧密码相同",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_166",
+  "number": "2114000209",
+  "illustration": "密码修改更新数据失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_167",
+  "number": "2114000210",
+  "illustration": "旧密码不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_168",
+  "number": "2114000211",
+  "illustration": "新密码长度不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_169",
+  "number": "2114000212",
+  "illustration": "密码为初始密码",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_170",
+  "number": "2114000213",
+  "illustration": "密码重置失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_171",
+  "number": "2114000214",
+  "illustration": "新密码复杂度过低",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_172",
+  "number": "2114000215",
+  "illustration": "其他密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_173",
+  "number": "2114000216",
+  "illustration": "当前用户存在在途工单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_174",
+  "number": "2114000217",
+  "illustration": "对不起，您的号码不存在，不能办理该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_175",
+  "number": "2114000060",
+  "illustration": "返回充值期或锁定期内",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_176",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_902",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_903",
+  "number": "2114000064",
+  "illustration": "不符合办理条件",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_905",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_906",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_345",
+  "number": "2114000217",
+  "illustration": "对不起，您的号码不存在，不能办理该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_346",
+  "number": "2114030145",
+  "illustration": "智能网用户，不支持对该用户类型的缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_347",
+  "number": "2114030146",
+  "illustration": "缴费金额不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_348",
+  "number": "2114030147",
+  "illustration": "系统出账，不能缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_349",
+  "number": "2114030148",
+  "illustration": "用户不在充值期，暂不容许缴费",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_350",
+  "number": "2114030149",
+  "illustration": "无订购关系",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_351",
+  "number": "2114030150",
+  "illustration": "不允许跨月查询",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_352",
+  "number": "2114030151",
+  "illustration": "号码不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_353",
+  "number": "2114030152",
+  "illustration": "用户状态不正常",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_357",
+  "number": "2114030156",
+  "illustration": "无该服务类型",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_358",
+  "number": "2114030157",
+  "illustration": "不支持该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_359",
+  "number": "2114030158",
+  "illustration": "此用户类型用户不能使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_360",
+  "number": "2114030159",
+  "illustration": "不支持智能网用户使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_361",
+  "number": "2114030160",
+  "illustration": "不支持预付费用户使用该业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_362",
+  "number": "2114030161",
+  "illustration": "其它业务支持错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_363",
+  "number": "2114030162",
+  "illustration": "用户档案不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_364",
+  "number": "2114030218",
+  "illustration": "密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_366",
+  "number": "2114030165",
+  "illustration": "帐户不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_367",
+  "number": "2114030166",
+  "illustration": "无缴费记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_368",
+  "number": "2114030167",
+  "illustration": "无帐单记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_369",
+  "number": "2114030168",
+  "illustration": "无受理日志记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_370",
+  "number": "2114030169",
+  "illustration": "该用户详单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_371",
+  "number": "2114030170",
+  "illustration": "无详单记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_372",
+  "number": "2114030171",
+  "illustration": "无积分消费记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_373",
+  "number": "2114030172",
+  "illustration": "无积分产生记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_374",
+  "number": "2114030173",
+  "illustration": "无租机信息记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_375",
+  "number": "2114030174",
+  "illustration": "无免费资源记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_376",
+  "number": "2114030175",
+  "illustration": "无亲友号码记录",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_377",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_378",
+  "number": "2114030177",
+  "illustration": "无此用户预交信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_379",
+  "number": "2114030178",
+  "illustration": "日期错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_380",
+  "number": "2114030179",
+  "illustration": "该帐期不允许查询",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_381",
+  "number": "2114030180",
+  "illustration": "积分接口错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_382",
+  "number": "2114030182",
+  "illustration": "该月帐单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_383",
+  "number": "2114030183",
+  "illustration": "该月详单不可查",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_384",
+  "number": "2114030254",
+  "illustration": "查询日期应小于当日",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_385",
+  "number": "2114030195",
+  "illustration": "只能查询7个月内的信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_386",
+  "number": "2114030196",
+  "illustration": "红名单验证失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_387",
+  "number": "2114030197",
+  "illustration": "红名单成员不允许查询详单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_388",
+  "number": "2114030198",
+  "illustration": "预付费用户不能查当月",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_389",
+  "number": "2114030199",
+  "illustration": "只能查询上月起的6个月内信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_390",
+  "number": "2114030200",
+  "illustration": "其它业务处理错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_391",
+  "number": "2114030185",
+  "illustration": "只能查询一个月内的记录（只有当月和上月话单可以按天查询，之前的只能整月查询）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_392",
+  "number": "2114030254",
+  "illustration": "查询日期应小于当日",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_393",
+  "number": "2114030195",
+  "illustration": "只能查询7个月内的信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_394",
+  "number": "2114030196",
+  "illustration": "红名单验证失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_395",
+  "number": "2114030197",
+  "illustration": "红名单成员不允许查询详单",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_396",
+  "number": "2114030198",
+  "illustration": "预付费用户不能查当月",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_397",
+  "number": "2114030199",
+  "illustration": "只能查询上月起的6个月内信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_398",
+  "number": "2114030200",
+  "illustration": "其它业务处理错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_399",
+  "number": "2114000212",
+  "illustration": "密码为初始密码",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_400",
+  "number": "2114000071",
+  "illustration": "无历史欠费信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_401",
+  "number": "2114000208",
+  "illustration": "不允许新旧密码相同",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_402",
+  "number": "2114000209",
+  "illustration": "密码修改更新数据失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_403",
+  "number": "2114000210",
+  "illustration": "旧密码不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_404",
+  "number": "2114000211",
+  "illustration": "新密码长度不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_405",
+  "number": "2114030207",
+  "illustration": "初始密码不允许重置",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_406",
+  "number": "2114000213",
+  "illustration": "密码重置失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_407",
+  "number": "2114000214",
+  "illustration": "新密码复杂度过低",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_408",
+  "number": "2114000215",
+  "illustration": "其他密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_409",
+  "number": "2114030211",
+  "illustration": "用户密码与账户密码不一致，密码不允许修改",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_410",
+  "number": "2114030212",
+  "illustration": "暂不支持此功能",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_412",
+  "number": "2114030184",
+  "illustration": "无产品（套餐）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_413",
+  "number": "2114030185",
+  "illustration": "只能查询一个月内的记录（只有当月和上月话单可以按天查询，之前的只能整月查询）",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_414",
+  "number": "2114000207",
+  "illustration": "无特服业务信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_415",
+  "number": "2114000208",
+  "illustration": "不允许新旧密码相同",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_416",
+  "number": "2114000209",
+  "illustration": "密码修改更新数据失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_417",
+  "number": "2114000210",
+  "illustration": "旧密码不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_418",
+  "number": "2114000211",
+  "illustration": "新密码长度不正确",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_419",
+  "number": "2114000212",
+  "illustration": "密码为初始密码",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_420",
+  "number": "2114000213",
+  "illustration": "密码重置失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_421",
+  "number": "2114000214",
+  "illustration": "新密码复杂度过低",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_422",
+  "number": "2114000215",
+  "illustration": "其他密码错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_424",
+  "number": "2114000218",
+  "illustration": "用户不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_425",
+  "number": "2114000219",
+  "illustration": "无该业务类型",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_426",
+  "number": "2114000220",
+  "illustration": "系统故障",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_428",
+  "number": "2114000222",
+  "illustration": "用户资信等级不够",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_427",
+  "number": "2114029399",
+  "illustration": "非3G用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_429",
+  "number": "2114000223",
+  "illustration": "非联通用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_430",
+  "number": "2114000224",
+  "illustration": "用户未开通手机上网",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_431",
+  "number": "2114000225",
+  "illustration": "用户非 3G后付费上网卡用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_432",
+  "number": "2114000226",
+  "illustration": "产品编码不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_433",
+  "number": "2114000227",
+  "illustration": "不允许变更的产品",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_434",
+  "number": "2114030230",
+  "illustration": "出账日限制",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_435",
+  "number": "2114000229",
+  "illustration": "此用户无使用人信息",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_138",
+  "number": "2107000046",
+  "illustration": "对不起，您当前没有预约下月生效的套餐！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_140",
+  "number": "2107000048",
+  "illustration": "未签约的银行卡账户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_141",
+  "number": "2107000049",
+  "illustration": "账户未办理省分托收业务",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_142",
+  "number": "2107000050",
+  "illustration": "查询银行卡签约信息失败",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_436",
+  "number": "2114000231",
+  "illustration": "证件类型不合法",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_437",
+  "number": "2114000232",
+  "illustration": "证件号码不合法",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_438",
+  "number": "2114000233",
+  "illustration": "会员卡号不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_143",
+  "number": "2107000051",
+  "illustration": "该用户不是VIP用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_147",
+  "number": "2107000001",
+  "illustration": "原产品退订不成功！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_148",
+  "number": "2107000002",
+  "illustration": "原产品退订成功，新产品订购不成功！",
+  "point": ""
+}, {
+  "remark": "新加WLAN密码修改",
+  "core": "ssp_interface_439",
+  "number": "2114000234",
+  "illustration": "用户新密码非法",
+  "point": ""
+}, {
+  "remark": "新加WLAN密码修改",
+  "core": "ssp_interface_444",
+  "number": "2114000235",
+  "illustration": "用户不存在",
+  "point": ""
+}, {
+  "remark": "新加WLAN状态变更",
+  "core": "ssp_interface_445",
+  "number": "2114000236",
+  "illustration": "业务编码错误",
+  "point": ""
+}, {
+  "remark": "新加WLAN状态变更",
+  "core": "ssp_interface_446",
+  "number": "2114000237",
+  "illustration": "资费编码错误",
+  "point": ""
+}, {
+  "remark": "实名制",
+  "core": "ssp_interface_365",
+  "number": "2114030164",
+  "illustration": "客户（信息）不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_144",
+  "number": "2114000223",
+  "illustration": "(用户不存在)非联通用户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_business_146",
+  "number": "2117000003",
+  "illustration": "mini厅只支持新用户！",
+  "point": "已取消该错误编码"
+}, {
+  "remark": "",
+  "core": "ssp_business_145",
+  "number": "2117000004",
+  "illustration": "MINI厅不支持固网和小灵通用户！",
+  "point": "已取消该错误编码"
+}, {
+  "remark": "",
+  "core": "ssp_business_149",
+  "number": "2107000005",
+  "illustration": "实名制验证返回结果错误！",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_447",
+  "number": "2114000238",
+  "illustration": "担保人信息不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_448",
+  "number": "2114000239",
+  "illustration": "账户ID不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_449",
+  "number": "2114000240",
+  "illustration": "托收账户不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_450",
+  "number": "2114000241",
+  "illustration": "当前客户资料不允许变更",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_451",
+  "number": "2114000242",
+  "illustration": "客户资料输入不合规",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_452",
+  "number": "2114000243",
+  "illustration": "客户下用户超过数量限制",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_455",
+  "number": "2114000246",
+  "illustration": "未销售号码不允许操作",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_456",
+  "number": "2114000247",
+  "illustration": "返档/补登在途不允许办理",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_457",
+  "number": "2114000248",
+  "illustration": "无限通用户不允许做实名制客户资料修改",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_458",
+  "number": "2114000249",
+  "illustration": "系统中存在对应的15位身份证号码",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_460",
+  "number": "2114000251",
+  "illustration": "该证件下存在多个客户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_461",
+  "number": "2114000252",
+  "illustration": "返档/补登客户为集团客户",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_462",
+  "number": "2114000253",
+  "illustration": "客户姓名输入不合规",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_463",
+  "number": "2114000254",
+  "illustration": "证件类型输入不合规",
+  "point": "1029"
+}, {
+  "remark": "",
+  "core": "ssp_interface_464",
+  "number": "2114000255",
+  "illustration": "证件号码输入不合规",
+  "point": "1030"
+}, {
+  "remark": "",
+  "core": "ssp_interface_465",
+  "number": "2114000256",
+  "illustration": "证件地址输入不合规",
+  "point": "1031"
+}, {
+  "remark": "",
+  "core": "ssp_interface_466",
+  "number": "2114000258",
+  "illustration": "证件类型、证件号码一致，客户名称不同",
+  "point": "1032（10.18新增）"
+}, {
+  "remark": "",
+  "core": "ssp_interface_453",
+  "number": "2114000244",
+  "illustration": "产品校验错误",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_454",
+  "number": "2114000245",
+  "illustration": "特服校验错误",
+  "point": ""
+}, {
+  "remark": "余额播报2.0预付费9.5新增",
+  "core": "ssp_interface_459",
+  "number": "2114000257",
+  "illustration": "用户ID校验失败",
+  "point": "1206"
+}, {
+  "remark": "10.30新增ECS接口公共错误编码",
+  "core": "ssp_interface_467",
+  "number": "2114000259",
+  "illustration": "包体长度不正确",
+  "point": "00100"
+}, {
+  "remark": "11.13新增qryUserProInfo错误编码",
+  "core": "ssp_interface_468",
+  "number": "2114000260",
+  "illustration": "返回用户合约（存费送机、购机送费、存费送费）到期时间大于6个月，不能办理",
+  "point": "1535"
+}, {
+  "remark": "11.13新增qryUserProInfo错误编码",
+  "core": "ssp_interface_469",
+  "number": "2114000261",
+  "illustration": "用户未办理过合约计划，不能办理",
+  "point": "1525"
+}, {
+  "remark": "11.13新增qryUserProInfo错误编码",
+  "core": "ssp_interface_470",
+  "number": "2114000262",
+  "illustration": "未订购此类产品",
+  "point": "1242"
+}, {
+  "remark": "11.13新增qryUserProInfo错误编码",
+  "core": "ssp_interface_471",
+  "number": "2114000263",
+  "illustration": "无订购信息",
+  "point": "1243"
+}, {
+  "remark": "02.21新增qryUserProInfo错误编码",
+  "core": "ssp_interface_487",
+  "number": "2114000279",
+  "illustration": "预约活动互斥",
+  "point": "1536"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_472",
+  "number": "2114000264",
+  "illustration": "活动校验错误",
+  "point": "1216"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_473",
+  "number": "2114000265",
+  "illustration": "客户资料校验失败",
+  "point": "1006"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_474",
+  "number": "2114000266",
+  "illustration": "账户资料校验失败",
+  "point": "1101"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_475",
+  "number": "2114000267",
+  "illustration": "用户资料校验失败",
+  "point": "1201"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_476",
+  "number": "2114000268",
+  "illustration": "活动已结束",
+  "point": "1220"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_477",
+  "number": "2114000269",
+  "illustration": "起止时间不合法",
+  "point": "1009"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_478",
+  "number": "2114000270",
+  "illustration": "系统错误，订单丢失",
+  "point": "1812"
+}, {
+  "remark": "11.18新增sProductChg错误编码",
+  "core": "ssp_interface_479",
+  "number": "2114000271",
+  "illustration": "互斥在途工单",
+  "point": "1813"
+}, {
+  "remark": "14.1.18新增T2030512/公共",
+  "core": "ssp_interface_480",
+  "number": "2114000272",
+  "illustration": "费用校验失败",
+  "point": ""
+}, {
+  "remark": "14.1.18新增T2030512/公共",
+  "core": "ssp_interface_481",
+  "number": "2114000273",
+  "illustration": "资源校验失败",
+  "point": ""
+}, {
+  "remark": "14.1.18新增T2030511/公共",
+  "core": "ssp_interface_482",
+  "number": "2114000274",
+  "illustration": "合约协议期校验错误",
+  "point": ""
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_483",
+  "number": "2114000275",
+  "illustration": "用户预存款余额不足",
+  "point": "1548"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_484",
+  "number": "2114000276",
+  "illustration": "用户可用额度不足",
+  "point": "1549"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_485",
+  "number": "2114000277",
+  "illustration": "用户状态不正确",
+  "point": "1540"
+}, {
+  "remark": "14.8.19新增creditAdjust",
+  "core": "ssp_interface_486",
+  "number": "2114000278",
+  "illustration": "信用度调整方向有误",
+  "point": "1464"
+}, {
+  "remark": "14.8.19新增creditAdjust",
+  "core": "ssp_interface_488",
+  "number": "2114000280",
+  "illustration": "信用度调整值有误",
+  "point": "1465"
+}, {
+  "remark": "14.9.25新增resourcePurchase",
+  "core": "ssp_interface_489",
+  "number": "2114000281",
+  "illustration": "当天订购限制已超过次数",
+  "point": "1605"
+}, {
+  "remark": "14.9.25新增resourcePurchase",
+  "core": "ssp_interface_490",
+  "number": "2114000282",
+  "illustration": "当月订购限制已超过次数",
+  "point": "1606"
+}, {
+  "remark": "新增FixedOrderSer/公共",
+  "core": "ssp_interface_491",
+  "number": "2114000283",
+  "illustration": "查询无记录！",
+  "point": "1328"
+}, {
+  "remark": "",
+  "core": "ssp_interface_492",
+  "number": "2114000284",
+  "illustration": "营业厅ID不存在",
+  "point": "1330"
+}, {
+  "remark": "",
+  "core": "ssp_interface_493",
+  "number": "2114000285",
+  "illustration": "查询异常",
+  "point": "1329"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_494",
+  "number": "2114000286",
+  "illustration": "本日和本月全国流量包订购次数均已达最大限制",
+  "point": "1551"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_495",
+  "number": "2114000287",
+  "illustration": "本月全国流量包订购次数已达最大限制",
+  "point": "1552"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_496",
+  "number": "2114000288",
+  "illustration": "当日全国流量包订购次数已达最大限制",
+  "point": "1553"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_497",
+  "number": "2114000289",
+  "illustration": "本日和本月省内流量包订购次数均已达最大限制",
+  "point": "1554"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_498",
+  "number": "2114000290",
+  "illustration": "本月省内流量包订购次数已达最大限制",
+  "point": "1555"
+}, {
+  "remark": "resourcePurchase/resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_499",
+  "number": "2114000291",
+  "illustration": "当日省内流量包订购次数已达最大限制",
+  "point": "1556"
+}, {
+  "remark": "T2031505/公共",
+  "core": "ssp_interface_508",
+  "number": "2114000314",
+  "illustration": "发票校验错误",
+  "point": ""
+}, {
+  "remark": "T2031505/公共",
+  "core": "ssp_interface_509",
+  "number": "2114000315",
+  "illustration": "发票编码错误",
+  "point": ""
+}, {
+  "remark": "T2031505/公共",
+  "core": "ssp_interface_510",
+  "number": "2114000316",
+  "illustration": "发票与操作员归属不一致",
+  "point": ""
+}, {
+  "remark": "T2031505/公共",
+  "core": "ssp_interface_511",
+  "number": "2114000317",
+  "illustration": "发票已打印过",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_512",
+  "number": "2114000294",
+  "illustration": "该用户已绑定过无线上网卡",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_513",
+  "number": "2114000295",
+  "illustration": "改用户未开通/申请沃家庭计划",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_514",
+  "number": "2114000296",
+  "illustration": "沃家庭计划成员中已有小流量上网卡",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_515",
+  "number": "2114000297",
+  "illustration": "上网卡未开通",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_516",
+  "number": "2114000298",
+  "illustration": "该用户为集团客户",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_517",
+  "number": "2114000300",
+  "illustration": "该用户为后付费用户",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_518",
+  "number": "2114000302",
+  "illustration": "用户为集团用户",
+  "point": ""
+}, {
+  "remark": "T2030509/公共",
+  "core": "ssp_interface_519",
+  "number": "2114000304",
+  "illustration": "上网卡已激活",
+  "point": ""
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_520",
+  "number": "2114000305",
+  "illustration": "该号码已成功预约，不能重复预约",
+  "point": "1331"
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_521",
+  "number": "2114000306",
+  "illustration": "此营业厅此时间段预约已满",
+  "point": "1332"
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_522",
+  "number": "2114000307",
+  "illustration": "预约时间不在可预约时间段内",
+  "point": "1333"
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_523",
+  "number": "2114000308",
+  "illustration": "预约必须在30分钟以后",
+  "point": "1334"
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_524",
+  "number": "2114000309",
+  "illustration": "预约必须在一小时以后",
+  "point": "1335"
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_525",
+  "number": "2114000310",
+  "illustration": "当前日期不可预约（以天为单位）",
+  "point": "1336"
+}, {
+  "remark": "terminalPackageSerch",
+  "core": "ssp_interface_526",
+  "number": "2114000311",
+  "illustration": "终端串码未绑定业务包",
+  "point": ""
+}, {
+  "remark": "新增：bookingNum",
+  "core": "ssp_interface_527",
+  "number": "2114000312",
+  "illustration": "预约必须在2小时以后",
+  "point": "1337"
+}, {
+  "remark": "serviceChg/23开通4G网络专用（当业务受理类型为0153时才允许返回）",
+  "core": "ssp_interface_528",
+  "number": "2114000313",
+  "illustration": "用户订购了省分特有产品不允许开通LTE功能",
+  "point": "1618"
+}, {
+  "remark": "流量包2.0-cbss报错",
+  "core": "ssp_interface_529",
+  "number": "2114000318",
+  "illustration": "副卡用户不能办理流量半年包",
+  "point": "1557"
+}, {
+  "remark": "qryScoreInfoFor4G/deductScoreFor4G/公共",
+  "core": "ssp_interface_530",
+  "number": "2114000319",
+  "illustration": "客户无积分",
+  "point": "1420"
+}, {
+  "remark": "deductScoreFor4G/公共",
+  "core": "ssp_interface_531",
+  "number": "2114000320",
+  "illustration": "可转赠积分余额不足",
+  "point": "1560"
+}, {
+  "remark": "deductScoreFor4G/公共",
+  "core": "ssp_interface_532",
+  "number": "2114000321",
+  "illustration": "不同地市号码不可转赠",
+  "point": "1561"
+}, {
+  "remark": "resourcePurchaseFor4G/公共",
+  "core": "ssp_interface_533",
+  "number": "2114000322",
+  "illustration": "副卡用户不能订购流量半年包",
+  "point": "1557"
+}, {
+  "remark": "qryInheritResourceInfo 4G校园沃派不清零使用",
+  "core": "ssp_interface_534",
+  "number": "2114000323",
+  "illustration": "该用户不存在结转资源",
+  "point": "1430"
+}, {
+  "remark": "",
+  "core": "ssp_interface_535",
+  "number": "2114030151",
+  "illustration": "号码不存在",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_536",
+  "number": "2114030242",
+  "illustration": "其他错误原因",
+  "point": ""
+}, {
+  "remark": "免费资源查询（智慧沃家）qryFeePolicyAddupMerge",
+  "core": "ssp_interface_537",
+  "number": "2114030151",
+  "illustration": "号码不存在",
+  "point": "1204"
+}, {
+  "remark": "免费资源查询（智慧沃家）qryFeePolicyAddupMerge",
+  "core": "ssp_interface_538",
+  "number": "2114030242",
+  "illustration": "其他错误原因",
+  "point": "8888"
+}, {
+  "remark": "账单查询（智慧沃家）qryAccountBillMerge",
+  "core": "ssp_interface_539",
+  "number": "2114000324",
+  "illustration": "无账单",
+  "point": "1131"
+}, {
+  "remark": "无积分转增信息qryScoreTransferGive",
+  "core": "ssp_interface_540",
+  "number": "2114000325",
+  "illustration": "无积分转增信息",
+  "point": "1420"
+}, {
+  "remark": "",
+  "core": "ssp_interface_541",
+  "number": "",
+  "illustration": "",
+  "point": ""
+}, {
+  "remark": "",
+  "core": "ssp_interface_542",
+  "number": "2114000327",
+  "illustration": "不符合国际业务免缴条件",
+  "point": ""
+}, {
+  "remark": "productFeeChange 产品变更",
+  "core": "ssp_interface_544",
+  "number": "2114000328",
+  "illustration": "不允许套餐升档赠费",
+  "point": "1302"
+}, {
+  "remark": "resourcePurchaseFor4G(资源购买)",
+  "core": "ssp_interface_545",
+  "number": "2114000329",
+  "illustration": "本日和本月流量包订购次数均已达最大限制",
+  "point": "1563"
+}, {
+  "remark": "resourcePurchaseFor4G(资源购买)",
+  "core": "ssp_interface_546",
+  "number": "2114000330",
+  "illustration": "本月流量包订购次数已达最大限制",
+  "point": "1564"
+}, {
+  "remark": "resourcePurchaseFor4G(资源购买)",
+  "core": "ssp_interface_547",
+  "number": "2114000331",
+  "illustration": "当日流量包订购次数已达最大限制",
+  "point": "1565"
+}, {
+  "remark": "T2000101",
+  "core": "ssp_interface_548",
+  "number": "2114000329",
+  "illustration": "本日和本月流量包订购次数均已达最大限制",
+  "point": "09"
+}, {
+  "remark": "T2000101",
+  "core": "ssp_interface_549",
+  "number": "2114000330",
+  "illustration": "本月流量包订购次数已达最大限制",
+  "point": "08"
+}, {
+  "remark": "T2000101",
+  "core": "ssp_interface_550",
+  "number": "2114000331",
+  "illustration": "当日流量包订购次数已达最大限制",
+  "point": "07"
+}, {
+  "remark": "checkOrderRelation青年产品订购关系查询",
+  "core": "ssp_interface_551",
+  "number": "2114000332",
+  "illustration": "1333此套餐不属于青年产品",
+  "point": "1333"
+}, {
+  "remark": "WoPayDetailQry小沃科技沃商店详单查询",
+  "core": "ssp_interface_552",
+  "number": "2114000333",
+  "illustration": "0001用户在沃商店无订购记录",
+  "point": "0001"
+}, {
+  "remark": "WoPayDetailQry小沃科技沃商店详单查询",
+  "core": "ssp_interface_553",
+  "number": "2114000334",
+  "illustration": "0002手机号码、开始时间、结束时间参数不能为空",
+  "point": "0002"
+}, {
+  "remark": "WoPayDetailQry小沃科技沃商店详单查询",
+  "core": "ssp_interface_554",
+  "number": "2114000335",
+  "illustration": "0003手机格式、开始时间、结束时间格式错误",
+  "point": "0003"
+}, {
+  "remark": "WoPayDetailQry小沃科技沃商店详单查询",
+  "core": "ssp_interface_555",
+  "number": "2114000336",
+  "illustration": "0099系统错误",
+  "point": "0099"
+}, {
+  "remark": "WoPayDetailQry小沃科技沃商店详单查询",
+  "core": "ssp_interface_556",
+  "number": "2114000337",
+  "illustration": "0004开始时间不能大于结束时间",
+  "point": "0004"
+}, {
+  "remark": "账户通接口qryWoPurseInfo",
+  "core": "ssp_interface_557",
+  "number": "2114000338",
+  "illustration": "沃账户不存在",
+  "point": "1503"
+}, {
+  "remark": "qrySimpleCustInfo（客户信息查询/校验（简单版））",
+  "core": "ssp_interface_558",
+  "number": "2114000339",
+  "illustration": "无此客户信息",
+  "point": "1001"
+}, {
+  "remark": "用户具有不能办理该业务的服务状态(停机或半停机)",
+  "core": "ssp_interface_559",
+  "number": "2114000340",
+  "illustration": "用户具有不能办理该业务的服务状态(停机或半停机)",
+  "point": "00001"
+}, {
+  "remark": "不满足开通国际漫游条件",
+  "core": "ssp_interface_560",
+  "number": "2114000341",
+  "illustration": "不满足开通国际漫游条件",
+  "point": "00002"
+}, {
+  "remark": "用户办理的业务与未完工的订单业务冲突",
+  "core": "ssp_interface_561",
+  "number": "2114000342",
+  "illustration": "用户办理的业务与未完工的订单业务冲突",
+  "point": "00003"
+}, {
+  "remark": "用户已经欠费不能办理业务",
+  "core": "ssp_interface_562",
+  "number": "2114000061",
+  "illustration": "返回欠费不能办理",
+  "point": "00004"
+}, {
+  "remark": "黑名单客户不能办理业务",
+  "core": "ssp_interface_563",
+  "number": "2114000062",
+  "illustration": "黑名单用户不允许办理",
+  "point": "00005"
+}, {
+  "remark": "无权办理优惠",
+  "core": "ssp_interface_564",
+  "number": "2114000343",
+  "illustration": "无权办理优惠",
+  "point": "10000"
+}, {
+  "remark": "元素之间存在互斥依赖关系",
+  "core": "ssp_interface_565",
+  "number": "2114000344",
+  "illustration": "元素之间存在互斥依赖关系",
+  "point": "10001"
+}, {
+  "remark": "无权受理该元素",
+  "core": "ssp_interface_566",
+  "number": "2114000345",
+  "illustration": "无权受理该元素",
+  "point": "10002"
+}, {
+  "remark": "元素完全依赖关系业务无法继续",
+  "core": "ssp_interface_567",
+  "number": "2114000346",
+  "illustration": "元素完全依赖关系业务无法继续",
+  "point": "10006"
+}, {
+  "remark": "元素互斥关系业务无法继续",
+  "core": "ssp_interface_568",
+  "number": "2114000347",
+  "illustration": "元素互斥关系业务无法继续",
+  "point": "10007"
+}, {
+  "remark": "元素部分依赖关系业务无法继续",
+  "core": "ssp_interface_569",
+  "number": "2114000348",
+  "illustration": "元素部分依赖关系业务无法继续",
+  "point": "10008"
+}, {
+  "remark": "补充国际漫游台账表出错",
+  "core": "ssp_interface_570",
+  "number": "2114000349",
+  "illustration": "补充国际漫游台账表出错",
+  "point": "10009"
+}, {
+  "remark": "必选业务包没有选择",
+  "core": "ssp_interface_571",
+  "number": "2114000350",
+  "illustration": "必选业务包没有选择",
+  "point": "10010"
+}, {
+  "remark": "流量包不可取消",
+  "core": "ssp_interface_572",
+  "number": "2114000351",
+  "illustration": "流量包不可取消",
+  "point": "10011"
+}, {
+  "remark": "流量包此时刻不允许办理",
+  "core": "ssp_interface_573",
+  "number": "2114000352",
+  "illustration": "流量包此时刻不允许办理",
+  "point": "10012"
+}, {
+  "remark": "流量包不可预约办理",
+  "core": "ssp_interface_574",
+  "number": "2114000353",
+  "illustration": "流量包不可预约办理",
+  "point": "10013"
+}, {
+  "remark": "流量包必须按顺序订购",
+  "core": "ssp_interface_575",
+  "number": "2114000354",
+  "illustration": "流量包必须按顺序订购",
+  "point": "10014"
+}, {
+  "remark": "达到同档流量包资费月订购数量限制",
+  "core": "ssp_interface_576",
+  "number": "2114000355",
+  "illustration": "达到同档流量包资费月订购数量限制",
+  "point": "10015"
+}, {
+  "remark": "月末最后一天不能受理业务",
+  "core": "ssp_interface_577",
+  "number": "2114000356",
+  "illustration": "月末最后一天不能受理业务",
+  "point": "20000"
+}, {
+  "remark": "号码有冲突在途工单业务不能继续",
+  "core": "ssp_interface_578",
+  "number": "2114000357",
+  "illustration": "号码有冲突在途工单业务不能继续",
+  "point": "20001"
+}, {
+  "remark": "用户有相同业务类型的在途订单不允许办理此业务",
+  "core": "ssp_interface_579",
+  "number": "2114000358",
+  "illustration": "用户有相同业务类型的在途订单不允许办理此业务",
+  "point": "20002"
+}, {
+  "remark": "已开通三方通话用户禁止开通国际业务",
+  "core": "ssp_interface_580",
+  "number": "2114000359",
+  "illustration": "已开通三方通话用户禁止开通国际业务",
+  "point": "20003"
+}, {
+  "remark": "局方停逾期欠费停或挂失停逾期欠费停状态不允许办理",
+  "core": "ssp_interface_581",
+  "number": "2114000360",
+  "illustration": "局方停逾期欠费停或挂失停逾期欠费停状态不允许办理",
+  "point": "20004"
+}, {
+  "remark": "自由组合产品变更请取消套内八折优惠资费",
+  "core": "ssp_interface_582",
+  "number": "2114000361",
+  "illustration": "自由组合产品变更请取消套内八折优惠资费",
+  "point": "20005"
+}, {
+  "remark": "订购资费的开始时间必须小于结束时间",
+  "core": "ssp_interface_583",
+  "number": "2114000362",
+  "illustration": "订购资费的开始时间必须小于结束时间",
+  "point": "20006"
+}, {
+  "remark": "融合业务关系不准再此做业务变更请到“融合变更”界面办理",
+  "core": "ssp_interface_584",
+  "number": "2114000363",
+  "illustration": "融合业务关系不准再此做业务变更请到“融合变更”界面办理",
+  "point": "20007"
+}, {
+  "remark": "资费不可以重复订购",
+  "core": "ssp_interface_585",
+  "number": "2114000364",
+  "illustration": "资费不可以重复订购",
+  "point": "20008"
+}, {
+  "remark": "流量包只能逐一往上累加，不可间隔订购",
+  "core": "ssp_interface_586",
+  "number": "2114000365",
+  "illustration": "流量包只能逐一往上累加，不可间隔订购",
+  "point": "20009"
+},{
+  "remark": "AOP系统类错误（公共）",
+  "core": "aop_interface_002",
+  "number": "3210000002",
+  "illustration": "AOP超时",
+  "point": "0001"
+},{
+  "remark": "AOP系统类错误（公共）",
+  "core": "aop_interface_001",
+  "number": "3210000001",
+  "illustration": "AOP其他错误",
+  "point": "9999"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_003",
+  "number": "2210000001",
+  "illustration": "AOP业务其他错误",
+  "point": "9999"
+}, {
+  "remark": "AOP业务类错误",
+  "core": "aop_interface_004",
+  "number": "2210000002",
+  "illustration": "AOP无活动信息",
+  "point": ""
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_005",
+  "number": "2210000003",
+  "illustration": "AOP欠费号码",
+  "point": "0100/1202"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_006",
+  "number": "2210000004",
+  "illustration": "AOP老客户信息不完整",
+  "point": "0002"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_007",
+  "number": "2210000005",
+  "illustration": "AOP老客户证件不合规",
+  "point": "0003/1024"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_008",
+  "number": "2210000006",
+  "illustration": "AOP该用户是黑名单用户",
+  "point": "0200/1203/0203"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_009",
+  "number": "2210000007",
+  "illustration": "AOP该号码不存在",
+  "point": "0300/1204"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_010",
+  "number": "2210000008",
+  "illustration": "AOP密码错误",
+  "point": "0400/1205"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_011",
+  "number": "2210000009",
+  "illustration": "AOP该用户已绑定过无线上网卡",
+  "point": "1000"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_012",
+  "number": "2210000010",
+  "illustration": "AOP改用户未开通/申请沃家庭计划",
+  "point": "1001"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_013",
+  "number": "2210000011",
+  "illustration": "AOP沃家庭计划成员中已有小流量上网卡",
+  "point": "1002"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_014",
+  "number": "2210000012",
+  "illustration": "AOP上网卡未开通",
+  "point": "1003"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_015",
+  "number": "2210000013",
+  "illustration": "AOP该用户在锁定期或充值期内",
+  "point": "2000/1406"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_016",
+  "number": "2210000014",
+  "illustration": "AOP该用户为集团客户",
+  "point": "2001/1303"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_017",
+  "number": "2210000015",
+  "illustration": "AOP客户资料不完整",
+  "point": "2002"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_018",
+  "number": "2210000016",
+  "illustration": "AOP该用户为后付费用户",
+  "point": "2003"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_019",
+  "number": "2210000017",
+  "illustration": "AOP该用户为预付费用户",
+  "point": "2004"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_020",
+  "number": "2210000018",
+  "illustration": "AOP预付费用户状态不处于有效期",
+  "point": "2100"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_021",
+  "number": "2210000019",
+  "illustration": "AOP用户在协议期内",
+  "point": "3001"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_022",
+  "number": "2210000020",
+  "illustration": "AOP用户为集团用户",
+  "point": "3002"
+}, {
+  "remark": "AOP业务类错误（公共）",
+  "core": "aop_interface_023",
+  "number": "2210000021",
+  "illustration": "AOP融合业务/增值业务未退订",
+  "point": "3003/1309"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_024",
+  "number": "2210000022",
+  "illustration": "AOP上网卡已激活",
+  "point": "4001"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_025",
+  "number": "2210000023",
+  "illustration": "AOP此用户不允许做携号转网",
+  "point": "5001"
+}, {
+  "remark": "AOP业务类错误（三户）",
+  "core": "aop_interface_026",
+  "number": "2210000024",
+  "illustration": "AOP3G用户续约办理超过限制次数（未到期合约的协议期内，已续办一次合约，不允许再次续约，用于3G用户合约续约业务）",
+  "point": "6001"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_027",
+  "number": "2210000025",
+  "illustration": "AOP银行卡代扣非签约用户",
+  "point": "1519"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_028",
+  "number": "2210000026",
+  "illustration": "AOP银行账户余额不足",
+  "point": "1511"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_029",
+  "number": "2210000027",
+  "illustration": "AOP银行卡账户失效",
+  "point": "1512"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_030",
+  "number": "2210000028",
+  "illustration": "AOP银行账户冻结",
+  "point": "1513"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_031",
+  "number": "2210000029",
+  "illustration": "AOP超过银行卡限额",
+  "point": "1514"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_032",
+  "number": "2210000030",
+  "illustration": "AOP银签约信息有误",
+  "point": "1515"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_033",
+  "number": "2210000031",
+  "illustration": "AOP原代扣交易不存在",
+  "point": "1516"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_034",
+  "number": "2210000032",
+  "illustration": "AOP与原交易金额不一致",
+  "point": "1517"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_035",
+  "number": "2210000033",
+  "illustration": "AOP重复退款",
+  "point": "1518"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_036",
+  "number": "2210000034",
+  "illustration": "AOP没有开通银联无卡支付业务",
+  "point": "1520"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_037",
+  "number": "2210000035",
+  "illustration": "AOP没有开通网上支付功能",
+  "point": "1521"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_038",
+  "number": "2210000036",
+  "illustration": "AOP代扣交易异常",
+  "point": "1522"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_039",
+  "number": "2210000037",
+  "illustration": "AOP银行交易异常",
+  "point": "1523"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_040",
+  "number": "2210000038",
+  "illustration": "AOP卡过期",
+  "point": "1531"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_041",
+  "number": "2210000039",
+  "illustration": "AOP卡号与银行名称不一致",
+  "point": "1532"
+}, {
+  "remark": "AOP业务类错误（扣款通知）",
+  "core": "aop_interface_042",
+  "number": "2210000040",
+  "illustration": "AOP银行账户或卡号错误",
+  "point": "1533"
+}, {
+  "remark": "AOP业务类错误（代扣记录）",
+  "core": "aop_interface_043",
+  "number": "2210000041",
+  "illustration": "AOP无此订单",
+  "point": "1801"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_044",
+  "number": "2210000042",
+  "illustration": "AOP必须先解散亲情关系",
+  "point": "1490"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_045",
+  "number": "2210000043",
+  "illustration": "AOP当前用户存在在途工单",
+  "point": "1493"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_046",
+  "number": "2210000044",
+  "illustration": "AOP当前用户已处于停机状态（挂失）",
+  "point": "1540"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_047",
+  "number": "2210000045",
+  "illustration": "AOP身份证件需要升位",
+  "point": "1025"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_048",
+  "number": "2210000046",
+  "illustration": "AOP客户资料未返档",
+  "point": "1026"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_049",
+  "number": "2210000047",
+  "illustration": "AOP用户存在预约业务",
+  "point": "1542"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_050",
+  "number": "2210000048",
+  "illustration": "AOP合帐用户不能办理",
+  "point": "1543"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_051",
+  "number": "2210000049",
+  "illustration": "AOP有代付关系的用户不准办理此业务",
+  "point": "1546"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_052",
+  "number": "2210000050",
+  "illustration": "AOP“用户有包年附加产品或资费”不允许受理",
+  "point": "1547"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_053",
+  "number": "2210000051",
+  "illustration": "AOP用户存在续约未生效合约",
+  "point": "1600"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_054",
+  "number": "2210000052",
+  "illustration": "AOP该用户为上网卡用户，不能转4G",
+  "point": "1601"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_055",
+  "number": "2210000053",
+  "illustration": "AOP该用户为行业应用用户，不能转4G",
+  "point": "1602"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_056",
+  "number": "2210000054",
+  "illustration": "AOP当前用户合约不能转4G",
+  "point": "1603"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_057",
+  "number": "2210000055",
+  "illustration": "AOP携号转网用户不能办理23转4业务",
+  "point": "1604"
+}, {
+  "remark": "AOP平台业务类错误（23转4接口）",
+  "core": "aop_interface_058",
+  "number": "2210000056",
+  "illustration": "AOP客户信息不完整",
+  "point": "1014"
+}, {
+  "remark": "国政通",
+  "core": "aop_interface_059",
+  "number": "2210000057",
+  "illustration": "AOP没有查询到该身份证号码",
+  "point": "0001"
+}, {
+  "remark": "国政通",
+  "core": "aop_interface_060",
+  "number": "2210000058",
+  "illustration": "AOP姓名核查不一致",
+  "point": "0002"
+}, {
+  "remark": "国政通",
+  "core": "aop_interface_061",
+  "number": "2210000059",
+  "illustration": "AOP很抱歉，本地系统认证暂时关闭",
+  "point": "0003"
+}, {
+  "remark": "国政通",
+  "core": "aop_interface_062",
+  "number": "2210000060",
+  "illustration": "AOP很抱歉，公安认证暂时关闭",
+  "point": "0004"
+}, {
+  "remark": "集客返回",
+  "core": "aop_interface_063",
+  "number": "2210000061",
+  "illustration": "AOP用户有在途工单",
+  "point": "1111"
+}, {
+  "remark": "集客返回",
+  "core": "aop_interface_064",
+  "number": "2210000062",
+  "illustration": "AOP用户有cBSS系统不支持的集团",
+  "point": "1112"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_065",
+  "number": "2210000063",
+  "illustration": "AOP客户验证异常",
+  "point": "0001"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_066",
+  "number": "2210000064",
+  "illustration": "AOP号码验证异常",
+  "point": "0002"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_067",
+  "number": "2210000065",
+  "illustration": "AOP卡信息验证异常",
+  "point": "0003"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_068",
+  "number": "2210000066",
+  "illustration": "AOP资源验证异常",
+  "point": "0004"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_069",
+  "number": "2210000067",
+  "illustration": "AOP业务验证与费用计算异常",
+  "point": "0005"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_070",
+  "number": "2210000068",
+  "illustration": "AOP受理渠道非电子渠道",
+  "point": "0006"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_071",
+  "number": "2210000069",
+  "illustration": "AOP证件类型为集客证件，不允许创建新客户",
+  "point": "0007"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_072",
+  "number": "2210000070",
+  "illustration": "AOP业务预收理异常",
+  "point": "0006"
+}, {
+  "remark": "23转4开户处理申请",
+  "core": "aop_interface_073",
+  "number": "2210000071",
+  "illustration": "AOP写卡前业务正式受理异常",
+  "point": "0007"
+}, {
+  "remark": "开户处理提交",
+  "core": "aop_interface_074",
+  "number": "2210000072",
+  "illustration": "AOP发票校验错误",
+  "point": "1100"
+}, {
+  "remark": "开户处理提交",
+  "core": "aop_interface_075",
+  "number": "2210000073",
+  "illustration": "AOP发票编码错误",
+  "point": "1110"
+}, {
+  "remark": "开户处理提交",
+  "core": "aop_interface_076",
+  "number": "2210000074",
+  "illustration": "AOP发票与操作员归属不一致",
+  "point": "1120"
+}, {
+  "remark": "开户处理提交",
+  "core": "aop_interface_077",
+  "number": "2210000075",
+  "illustration": "AOP发票已打印过",
+  "point": "1130"
+}, {
+  "remark": "开户处理提交",
+  "core": "aop_interface_078",
+  "number": "2210000076",
+  "illustration": "AOP操作员有未稽核的发票",
+  "point": "1140"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_079",
+  "number": "2210000077",
+  "illustration": "AOP老用户优惠购机费用计算失败",
+  "point": "7001"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_080",
+  "number": "2210000078",
+  "illustration": "AOP保证金余额不足",
+  "point": "7200"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_081",
+  "number": "2210000079",
+  "illustration": "AOP产品校验错误",
+  "point": "7300"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_082",
+  "number": "2210000080",
+  "illustration": "AOP资源校验错误",
+  "point": "7400"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_083",
+  "number": "2210000081",
+  "illustration": "AOP活动校验错误",
+  "point": "7500"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_084",
+  "number": "2210000082",
+  "illustration": "AOP特服校验错误",
+  "point": "7600"
+}, {
+  "remark": "自由套餐互转变更预提交",
+  "core": "aop_interface_085",
+  "number": "2210000083",
+  "illustration": "AOP合约协议期校验错误",
+  "point": "7700"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_086",
+  "number": "2210000084",
+  "illustration": "AOP非4G用户",
+  "point": "2000"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_087",
+  "number": "2210000085",
+  "illustration": "AOP用户停机保号",
+  "point": "2001"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_088",
+  "number": "2210000086",
+  "illustration": "AOP用户紧急停机",
+  "point": "2002"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_089",
+  "number": "2210000087",
+  "illustration": "AOP用户欠费停机",
+  "point": "2003"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_090",
+  "number": "2210000088",
+  "illustration": "AOP该用户套餐月费不足30元",
+  "point": "2004"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_091",
+  "number": "2210000089",
+  "illustration": "AOP该用户最近6个月内被赠送过流量语音半年包",
+  "point": "2005"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_092",
+  "number": "2210000090",
+  "illustration": "AOP激活码无效",
+  "point": "2006"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_093",
+  "number": "2210000091",
+  "illustration": "AOP激活码已失效",
+  "point": "2007"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_094",
+  "number": "2210000092",
+  "illustration": "AOP激活码终端串码不匹配",
+  "point": "2008"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_095",
+  "number": "2210000093",
+  "illustration": "AOP激活码已使用",
+  "point": "2009"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_096",
+  "number": "2210000094",
+  "illustration": "AOP用户已订购4001(业务拉动终端流量语音半年包)",
+  "point": "2010"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_097",
+  "number": "2210000095",
+  "illustration": "AOP用户已订购4002（业务拉动终端流量语音季度包）",
+  "point": "2011"
+}, {
+  "remark": "终端流量包订购",
+  "core": "aop_interface_098",
+  "number": "2210000096",
+  "illustration": "AOP用户月费不足16元",
+  "point": "2012"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_099",
+  "number": "2210000097",
+  "illustration": "AOP此前无此客户信息",
+  "point": "0001"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_100",
+  "number": "2210000098",
+  "illustration": "AOP最大用户数",
+  "point": "0204"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_101",
+  "number": "2210000099",
+  "illustration": "AOP证件格式不合法",
+  "point": "0200"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_102",
+  "number": "2210000100",
+  "illustration": "AOP证件类型不合法",
+  "point": "0201"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_103",
+  "number": "2210000101",
+  "illustration": "AOP证件号码不合法",
+  "point": "0202"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_104",
+  "number": "3210000003",
+  "illustration": "AOP系统异常类",
+  "point": "0900"
+}, {
+  "remark": "实名补登(客户资料校验)",
+  "core": "aop_interface_105",
+  "number": "3210000004",
+  "illustration": "AOP数据库连接异常",
+  "point": "0901"
+}, {
+  "remark": "自助服务逻辑判断",
+  "core": "aop_business_001",
+  "number": "2107010001",
+  "illustration": "AOP对不起，签约/解约标识不能为空！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断",
+  "core": "aop_business_002",
+  "number": "2107010002",
+  "illustration": "AOP对不起，客户信息不存在，不能继续办理签约或解约业务！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断",
+  "core": "aop_business_003",
+  "number": "2107010003",
+  "illustration": "AOP对不起，用户信息acctInfo为0或多个，不能继续办理签约或解约业务！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断老用户转4G",
+  "core": "aop_business_004",
+  "number": "2107010004",
+  "illustration": "不符合办理条件没有返回产品信息！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断老用户转4G",
+  "core": "aop_business_005",
+  "number": "2107010005",
+  "illustration": "不符合办理条件，已有活动产品！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断老用户转4G",
+  "core": "aop_business_006",
+  "number": "2107010006",
+  "illustration": "多个条件不符合办理条件！",
+  "point": ""
+}, {
+  "remark": "自助服务逻辑判断老用户转4G",
+  "core": "aop_business_007",
+  "number": "2107010007",
+  "illustration": "省份返回结果集有误，不能办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_008",
+  "number": "2107010008",
+  "illustration": "认证类型有误,需要线下办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_009",
+  "number": "2107010009",
+  "illustration": "用户已实名,不能再次办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_010",
+  "number": "2107010010",
+  "illustration": "客户信息不唯一,不允许办理!",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_011",
+  "number": "2107010011",
+  "illustration": "照片上传状态修改失败,请重新调用!",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_012",
+  "number": "2107010012",
+  "illustration": "自助实名补登已通过，接口认证类型未同步，需要线下办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_013",
+  "number": "2107010013",
+  "illustration": "审核失败，失败原因无法再次进行补登，需要线下办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_014",
+  "number": "2107010014",
+  "illustration": "该补登用户存在审核中订单，不能继续办理！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_015",
+  "number": "2107010015",
+  "illustration": "用户查询信息存在不符合条件因素，不允许补登！",
+  "point": ""
+}, {
+  "remark": "实名补登",
+  "core": "aop_business_016",
+  "number": "2107010016",
+  "illustration": "用户无照片信息，不允许办理！",
+  "point": ""
+}]

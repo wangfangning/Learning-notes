@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>20活动结束-话费领取成功</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="piaodaicon">
+            <img src="images/piaodai.png" class="piaodai">
+        </div>
+        <div class="close" id="close"></div>
+        <div class="housecon2">
+            <div class="tip2">
+                <p style="color: #c28c55;">话费已领取成功，</p>
+                <p style="color: #c28c55;">请注意查收~</p>
+            </div>
+            <div class="eggcon">
+                <img src="images/eggface.png" class="eggface">
+            </div>
+            <div class="btncon">
+                <button class="btn" id="close2">咯叽咯叽，我知道啦！</button>
+            </div>
+
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+
+</script>
+</body>
+</html>

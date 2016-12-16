@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>活动未结束领取话费失败弹窗</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<div class="conPrize"></div>
+<div class="bgdark" id="bgdark">
+    <div class="close" id="close"></div>
+    <div class="housecon">
+
+        <div class="tip" style="padding-top: 0.82rem;">
+            <p>咯叽咯叽，活动还未结束</p>
+            <p>请结束后来点击领取哦</p>
+        </div>
+        <div class="eggcon">
+            <img src="images/comloadface.png" class="eggface">
+        </div>
+        <div class="btncon" style="margin-top: 0.3rem;">
+            <button class="btn" id="close2">咯叽咯叽，我知道了！</button>
+        </div>
+        <p class="tips" style="font-size: 0.18rem;">*活动时间2017年1月5日-17日</p>
+
+    </div>
+</div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>

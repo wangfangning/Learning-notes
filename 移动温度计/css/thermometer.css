@@ -1,0 +1,124 @@
+html{
+  background-color: #299079;
+}
+body{
+  font-family: "microsoft YaHei";
+  background-image: url('images/bgW.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: .26rem;
+}
+.logow{
+  width: 1.84rem;
+  height: .38rem;
+  margin-left: .22rem;
+  margin-top: .24rem
+}
+.toptext{
+  margin-top: .6rem;
+  text-align: center;
+}
+.phone{
+color: #595757;
+font-size: .26rem;
+}
+.texto{
+  color: #e7403e;
+  margin: .1rem 0;
+  font-family: "黑体"
+}
+.zhong{
+margin-top: .18rem;
+}
+.wendujiim{
+  width: 2rem;
+  height: 4.8rem;
+  position: absolute;
+  top: .7rem;
+  left: .4rem;
+}
+.zhong span{
+  display: inline-block;
+}
+.number{
+  width: .68rem;
+  /*height: .65rem;*/
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 1.13rem;
+  top: 4.46rem;
+  color: #fff;
+  text-align: center;
+  line-height: .74rem;
+  font-size: .25rem;
+  /*transition: all .3s ease-in-out;*/
+}
+.wenduji{
+  position: relative;
+  background-image: url('images/danone.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8.2rem;
+  width: 6.6rem;
+  margin: auto;
+}
+.sunclick{
+  position: absolute;
+  right: .55rem;
+  top: .5rem;
+  width: 1.58rem;
+}
+.sleep1{
+  width: 3.56rem;
+  height: 2.96rem;
+  margin-top: 2.6rem;
+  margin-left: 2.3rem;
+}
+.jilu{
+  color: #fff;
+  font-size: .24rem;
+  position: absolute;
+  top: 5.5rem;
+  left: .95rem;
+  text-decoration: underline;
+}
+.wenduji_n{
+  width: .45rem;
+  height: 0rem;
+  background-color: #e7403e;
+  position: absolute;
+  left:1.24rem ;
+  bottom:3.43rem;
+  transition: all 1s ease-in-out;
+  /*transform: rotate(90deg);*/
+  /*border-radius: .3rem;*/
+}
+.fri_wf{
+  color: #e7403e;
+  text-align: center;
+  margin-top: .9rem;
+}
+.buttonw{
+  background-image: url('images/btnw.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: .65rem;
+  width: 3.57rem;
+  height: .7rem;
+
+  color: #fff;
+  font-size: .32rem;
+  margin:.2rem auto;
+}
+.huodongw{
+
+  color: #fff;
+  font-size: .24rem;
+  text-decoration: underline;
+}
+.bottom{
+  margin-top: .4rem;
+  text-align: center;
+}

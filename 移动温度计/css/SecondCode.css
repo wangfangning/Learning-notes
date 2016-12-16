@@ -1,0 +1,89 @@
+.houseconSmall{
+    width: 6.66rem;
+    height: 6rem;
+    background: url("images/GameOverDole.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 2.64rem;
+    left: 50%;
+    margin-left: -3.33rem;
+    text-align: center;
+}
+.foleFail .OverdoleCore{
+    width: 1.99rem;
+    display: block;
+    margin:0 auto;
+}
+.foleFail .CodeContainer{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.foleFail .explainCodeOver{
+    color: #595757;
+    font-size: 0.21rem;
+    width: 4.8rem;
+    margin:0 auto;
+    text-align: center;
+}
+.foleFail .explainCodeOver li{
+    padding-bottom: 0.1rem;
+    word-wrap: break-word;
+}
+.foleFail .btn{
+    display: block;
+    margin: 0 auto;
+}
+.btnContainer{
+    padding-top: 0.15rem;
+}
+.overerDole .btnBack{
+    width: 2.54rem;
+    height: 0.65rem;
+    line-height: 0.45rem;
+    background: url("images/backBtnBg.png") no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.24rem;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+.houseconBig{
+    width: 6.66rem;
+    height: 7.58rem;
+    background: url("images/houseDoleFailBg.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 2.64rem;
+    left: 50%;
+    margin-left: -3.33rem;
+    text-align: center;
+}
+.foleFail .dolefailCore{
+    width: 2.38rem;
+    display: block;
+    margin:0 auto;
+}
+.foleFail .explainCode{
+    color: #595757;
+    font-size: 0.21rem;
+    width: 4.8rem;
+    margin:0 auto;
+    text-align: left;
+}
+.foleFail .explainCode li{
+    line-height: 0.35rem;
+    padding-bottom: 0.1rem;
+}
+.foleFail .explainCode span{
+    color: #e7403e;
+}
+.foleFail .conPrize{
+    height: 12rem;
+    background: url("images/bgPrize.jpg") no-repeat;
+    font-size: 0.2rem;
+    background-size: 100% 100%;
+    text-align: center;
+}

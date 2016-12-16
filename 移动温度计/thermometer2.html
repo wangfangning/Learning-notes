@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>随机话费</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/thermometer.css" />
+    <link rel="stylesheet" href="css/twoegg.css">
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <style>
+        .bgdark{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="bgdark" id="bgdark10" style="display: none;">
+    <div class="czrjbox" >
+        <div id="fx" style="top:38%;"><img src="images/fxmb.png" alt=""></div>
+    </div>
+</div>
+    <section class="top">
+        <div>
+            <a href="#"><img src="images/logow.png" alt="" class="logow"></a>
+        </div>
+        <div class="toptext">
+            <p class="phone">136XXXX1234</p>
+            <p class="texto">成长值突破2017，养成金蛋孵出小鸡，赢得最终奖励！</p>
+        </div>
+    </section>
+    <section class="zhong">
+        <div class="wenduji">
+            <img src="images/sun_btn_pic.png" alt="" class="sunclick" onclick="window.location.href='lj_brck.html'">
+            <img src="images/wenduji_pic.png" alt="" class="wendujiim">
+            <img src="images/sleep_egg.png" alt="" class="sleep1">
+            <span class="wenduji_n"></span>
+            <span class="number" data-value="400"></span>
+            <p class="jilu_p"><a  href="czrj_brck.html" class="jilu">成长记录</a></p>
+            <p class="fri_wf">众人孵蛋长得快，奖励来更快！</p>
+            <div class="buttonw" id="sunclick">
+              呼朋唤友一起来孵蛋
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+    <a href="hdgz.html" class="huodongw">活动规则</a>
+    </section>
+</body>
+
+</html>
+<script>
+    function closeAndShow(clickID,showCon,closeCon){
+        $(clickID).on("click", function () {
+            $(showCon).show();
+            $(closeCon).hide()
+        });
+    }
+    closeAndShow("#sunclick","#bgdark10","");
+
+    $(document).ready(function() {
+
+        $("body").height($(window).height());
+        $(".close,.closeEnd").on("click", function () {
+            $(".bgdark").hide();
+        });
+
+        var Data = parseInt($(".number").attr('data-value'));
+        var colorV = Data / 2017;
+        var Height_new = parseFloat("3.25rem")
+        var Height = Height_new * colorV + "rem";
+        if (Data > 0 && Data < 2017) {
+            $(".number").css('height', '.68rem');
+            $(".number").text('' + Data + '');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data > 2016) {
+            $('.wenduji_n').css('border-radius', '.28rem');
+            $(".number").css('height', '.68rem');
+            $(".number").text('完成');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data<1) {
+          $(".number").text('' + Data + '');
+        $(".number").css('color', '#3fafcb');
+        }
+    });
+</script>

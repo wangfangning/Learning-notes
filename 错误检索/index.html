@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>异常编码检测系统</title>
+    <script src="jquery-1.8.0.min.js"></script>
+    <script src="dataW.js"></script>
+    <script src="dataW1.js"></script>
+    <style media="screen">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 40px 0;
+        }
+
+        body {
+            width: 90%;
+            min-width: 1100px;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        .search {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 4px 3px;
+            width: 200px;
+        }
+
+        img {
+            vertical-align: middle;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1100px;
+            max-width: 1500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            display: table-cell;
+        }
+
+        tr th:nth-child(1) {
+            width: 15%;
+        }
+
+        tr th:nth-child(2) {
+            width: 60%;
+        }
+
+        tr:first-child {
+            background-color: #ffd8d8;
+        }
+
+        tr th:nth-child(3) {
+            width: 25%;
+        }
+
+        tr * {
+            line-height: 26px;
+        }
+
+        tr {
+            background-color: #fff;
+        }
+
+        .Nonum {
+            margin: 20px auto;
+            ;
+        }
+
+        .Nonum img {
+            margin: 20px auto;
+        }
+
+        span {
+            color: #ff6600;
+        }
+        .tcw{
+          position: fixed;
+          background:rgba(255,255,255,0);
+
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+        }
+        .tcwf{
+          position: fixed;
+          width: 600px;
+          min-height: 300px;
+          left: 50%;
+          margin-left: -300px;
+          background-color: #fff;
+          z-index: 100;
+          margin-top: 200px;
+        }
+        .shuju{
+          padding: 10px 15px;
+        }
+        .tcwf h1{
+          text-align: left;
+          padding: 5px 15px;
+          margin: 5px auto;
+          font-size: 20px;
+        }
+        .tcwf h1 i{
+          float: right;
+          font-style: normal;
+          cursor: pointer;
+        }
+        .shuju{
+          text-align: left;
+        }
+        .shuju p{
+          margin-bottom: 12px;
+        }
+        .tcwf a{
+          cursor: pointer;
+          background-color:rgb(160, 153, 162) ;
+
+          padding: 8px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>异常编码检索系统</h1>
+    <div class="search">
+        <input type="text" name="" placeholder="请输入要搜索的编码"><img src="images/fajW.png" alt="">
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>编号</th>
+                <th>说明</th>
+                <th>备注</th>
+            </tr>
+        </tbody>
+    </table>
+    <div class="Nonum" style="display:none;">
+        <img src="http://124.192.56.213:197/e4/images/photo.jpg" alt="">
+        <p>未搜索到<span></span>编码，请立该反馈给我们</p>
+    </div>
+    <div class="tcw" style="display:none;">
+      <div class="tcwf">
+<h1>异常编码详情</h1>
+<div class="shuju">
+
+</div>
+<a>关闭</a>
+      </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        for (var i = 0; i < data.length; i++) {
+            var NumberW = data[i].number;
+            var Illustrationvw = data[i].illustration;
+            var NoteW = data[i].point;
+            var dataW = "<tr><td>" + NumberW + "</td><td>" + Illustrationvw + "</td><td>" + NoteW + "</td></tr>";
+            $("tbody").append(dataW);
+        };
+        $(".search img").on('click', function(event) {
+            $('tbody tr').eq(0).siblings().hide();
+                     dataWf=""
+            for (var i = 0; i < data.length; i++) {
+                var NumberW = String(data[i].number);
+                var Text = $("input").val();
+                if (NumberW.indexOf(Text) >= 0) {
+                    var NumberW = data[i].number;
+                    var Illustrationvw = data[i].illustration;
+                    var NoteW = data[i].point;
+                     dataWf += "<tr><td>" + NumberW + "</td><td>" + Illustrationvw + "</td><td>" + NoteW + "</td></tr>";
+                    $(".Nonum").hide();
+
+                }
+            }
+            $("tbody").append(dataWf);
+            if (dataWf=="") {
+                $(".Nonum span").text(' ' + Text + ' ');
+                $(".Nonum").show()
+            }
+        });
+        $("tr td").on('click', function(event) {
+          var Indexw = $(this).parent().index()-1;
+          var remark = data[Indexw].remark;
+          // var core = data[Indexw].core;
+          var number = data[Indexw].number;
+          var sub =String(number).substring(1,5)
+          var illustration =data[Indexw].illustration;
+          var point =data[Indexw].point;
+          for (var i = 0; i < data1.length; i++) {
+            var NumberW1=data1[i].PlatformCore;
+            if (sub==NumberW1) {
+            var terrace = data1[i].PlatformInfo
+            }
+          }
+          var fruit ="<p>错误编码："+number+"</p><p>所属平台："+terrace+"</p><p>错误类型："+remark+"</p>"+"<p>原型说明："+illustration+"</p><p>备注："+point+"</p>";
+          $(".shuju").append(fruit)
+         $(".tcw").show();
+        });
+        $(".tcwf  h1 i,.tcw a").on('click', function(event) {
+          $(".shuju").text("")
+          $(".tcw").hide();
+
+        });
+    });
+    // $.ajax({
+    //     url: "dataW.txt",
+    //     dataType: "json",
+    //     type: "get",
+    //     async: false,
+    //     success: function(data) {
+    //         // var text = '';
+    //         alert(data);
+    //         // data.map(function(item, index) {
+    //         //     text += '<li>' + item + '</li>';
+    //         // });
+    //         // $("tbody").prepend('<tr>' + text + '<tr>');
+    //     }
+    // })
+</script>
+
+</html>

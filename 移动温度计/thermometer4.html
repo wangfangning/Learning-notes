@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>随机话费</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/thermometer.css" />
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <style media="screen">
+      .sleep1{
+        width: 4.66rem;
+        height: 4.54rem;
+        margin: 1.6rem 0 0 1.7rem;
+      }
+      .fri_wf{
+        margin-top: 0.1rem;
+      }
+      .ptwo{
+        margin: 0;
+      }
+    </style>
+</head>
+
+<body>
+
+<div class="bgdark" id="bgdark13" style="display: none;">
+    <div class="close"></div>
+    <div class="houseconBig">
+        <div class="tip3">
+            <p>金蛋孵金“机”</p>
+            <p>恭喜获得1部手机</p>
+        </div>
+        <div class="getPhoneCon" style="margin-top: 0.3rem;">
+            <img src="images/getPhone.png" class="getPhone">
+        </div>
+        <div class="smaTip">
+            <p>*实物礼品将在活动结束后由工作人员 </p>
+            <p>主动电话联系并在30个工作日内安排寄送。</p>
+        </div>
+        <div style="margin-top: 0.25rem;">
+            <button class="btn" id="btn13">咯叽咯叽，我知道啦！</button>
+        </div>
+    </div>
+</div>
+
+<div class="bgdark" id="bgdark14" style="display: none;">
+    <div class="close"></div>
+    <div class="houseconBig">
+        <div class="tip3">
+            <p>金蛋最懂你</p>
+            <p>恭喜获得50元话费</p>
+        </div>
+        <div class="getPhoneCon" style="margin-top: 0.3rem;">
+            <img src="images/getPhoneMoney.png" class="getPhone">
+        </div>
+        <div class="smaTip" style="padding-top: 0.2rem;">
+            <p>*请在活动结束后点击“点击领奖”按钮领取</p>
+        </div>
+        <div style="margin-top: 0.4rem;">
+            <button class="btn closeEnd" id="btn14">咯叽咯叽，我知道啦！</button>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <section class="top">
+        <div>
+            <a href="#"><img src="images/logow.png" alt="" class="logow"></a>
+        </div>
+        <div class="toptext">
+            <p class="phone">136XXXX1234</p>
+            <p class="texto">咯叽咯叽，彩蛋孵化成功啦！</p>
+        </div>
+    </section>
+    <section class="zhong">
+        <div class="wenduji">
+            <img src="images/sun_btn_pic.png" alt="" class="sunclick" onclick="window.location.href='lj_brck.html'">
+            <img src="images/wenduji_pic.png" alt="" class="wendujiim">
+            <img src="images/cute_egg.png" alt="" class="sleep1">
+            <span class="wenduji_n"></span>
+            <span class="number" data-value="2017"></span>
+            <p class="jilu_p"><a  href="czrj_brck.html" class="jilu">成长记录</a></p>
+            <p class="fri_wf">金蛋一枚已到手？</p>
+            <p class="ptwo fri_wf">会是50元话费，还是一部手机？</p>
+            <div class="buttonw" id="sunclick" >
+                我要孵蛋领奖励拉！
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <a href="hdgz.html" class="huodongw">活动规则</a>
+    </section>
+</div>
+
+</body>
+
+</html>
+<script>
+    function closeAndShow(clickID,showCon,closeCon){
+        $(clickID).on("click", function () {
+            $(showCon).show();
+            $(closeCon).hide()
+        });
+    }
+    closeAndShow("#sunclick","#bgdark13","");
+    closeAndShow("#btn13","#bgdark14","#bgdark13");
+
+    $(document).ready(function() {
+        $("body").height($(window).height());
+        $(".close,.closeEnd").on("click", function () {
+            $(".bgdark").hide();
+        });
+
+
+        var Data = parseInt($(".number").attr('data-value'));
+        var colorV = Data / 2017;
+        var Height_new = parseFloat("3.25rem")
+        var Height = Height_new * colorV + "rem";
+        if (Data > 0 && Data < 2017) {
+            $(".number").css('height', '.68rem');
+            $(".number").text('' + Data + '');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data > 2016) {
+            $('.wenduji_n').css('border-radius', '.28rem');
+            $(".number").css('height', '.68rem');
+            $(".number").text('完成');
+            $(".number").css('background-color', '#e7403e');
+            $('.wenduji_n').css('height', Height);
+        }
+        if (Data<1) {
+          $(".number").text('' + Data + '');
+        $(".number").css('color', '#3fafcb');
+        }
+    });
+</script>

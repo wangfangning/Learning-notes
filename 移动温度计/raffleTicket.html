@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>随机彩票券</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tanceng.css"/>
+    <script src="js/public750.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="con"></div>
+    <div class="bgdark" id="bgdark">
+        <div class="piaodaicon">
+            <img src="images/piaodai.png" class="piaodai">
+        </div>
+        <div class="close" id="close"></div>
+        <div class="housecon">
+            <div class="jiangcon">
+                <img src="images/jiang.png" class="jiang">
+            </div>
+            <div class="tip">
+                <p>鸡年讨个好彩头！</p>
+                <p>恭喜获得10元体育彩票代金券！</p>
+            </div>
+            <div class="eggcon">
+                <img src="images/loveface.png" class="eggface">
+            </div>
+            <div class="btncon" style="margin-top: -0.2rem;">
+                <button class="btn" id="close2">咯叽咯叽，我收下啦！</button>
+            </div>
+            <p class="tips">明天还有奖励，主人记得肥来喔~</p>
+
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("body").height( $(window).height());
+        $("#close,#close2").on("click",function(){
+            $("#bgdark").hide();
+        });
+    });
+</script>
+</body>
+</html>
