@@ -1,0 +1,524 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    width: 100%;
+    background: url('../images/arborday_bg.jpg') no-repeat;
+    background-size: 100% 100%;
+    font-size: .24rem;
+}
+
+.mengceng {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.mengceng1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.mengceng2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.mengceng3 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+
+.mengceng3 .content_shengji {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.content_shengji_text {
+    font-size: .76rem;
+    width: 1rem;
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.5rem;
+    top: .5rem;
+}
+
+.mengceng3 .content_shengji img:nth-child(1) {
+    width: 2.6rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.3rem;
+    z-index: 100;
+}
+
+.mengceng3 .content_shengji .star {
+    width: 2.4rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.2rem;
+    z-index: 101;
+}
+
+.mengceng3 .content_shengji .guang {
+    width: 3.5rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.75rem;
+    top: -0.6rem;
+    z-index: 99;
+    -moz-animation:rotate 20s infinite linear;
+            -webkit-animation:rotate 20s infinite linear;
+            animation:rotate 20s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+i, b {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.arborday_ray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.6rem;
+}
+
+.user {
+    position: absolute;
+    top: .46rem;
+    width: 3.86rem;
+    border-radius: 0 1.2rem 1.2rem 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .1rem .16rem;
+}
+
+.user .user_left {
+    width: .8rem;
+    float: left;
+    /*margin-left: .24rem;*/
+}
+
+.user_right {
+    float: left;
+    margin-left: .06rem;
+    position: relative;
+}
+
+.user_right_name {
+    margin: 0.02rem 0 0.1rem;
+    font-size: .22rem;
+    color: #343434;
+}
+
+.position_jiang {
+    width: .36rem;
+    height: .38rem;
+    position: absolute;
+    left: -0.26rem;
+    top: -0.06rem;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.user_jiangpai {
+    width: 0.34rem;
+    position: absolute;
+    left: 0rem;
+    top: -0rem;
+    z-index: 3;
+    display: none;
+}
+
+.user_ex {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 2.6rem;
+    height: .26rem;
+    margin-left: .26rem;
+    margin-top: 0.08rem;
+    border-radius: .1rem;
+    border: 1px solid #fff;
+}
+
+.user_ex span {
+    display: inline-block;
+    width: .26rem;
+    height: .26rem;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    z-index: 4;
+}
+
+.jingyanzhi {
+    position: absolute;
+    width: 2.6rem;
+    text-align: center;
+    color: #b75800;
+    font-size: .2rem;
+    z-index: 8;
+}
+
+.user_ex_color {
+    position: absolute;
+    background: linear-gradient(to right, #ffe117, #fe8e19);
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    /*border-radius: .1rem;*/
+}
+
+.user_ex_span {
+    position: absolute;
+    width: 2.6rem;
+    z-index: 6;
+}
+
+.strategy {
+    position: absolute;
+    top: .5rem;
+    right: 0.3rem;
+}
+
+.strategy img:nth-child(1) {
+    width: .61rem;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.strategy img:nth-child(2) {
+    width: .76rem;
+    display: block;
+}
+
+.tree {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.shu_2 {
+    position: absolute;
+    width: 2.16rem;
+    height: 2.95rem;
+    left: 50%;
+    margin-left: -1.08rem;
+    bottom: 0;
+}
+
+.shu_3 {
+    position: absolute;
+    width: 2.2rem;
+    height: 2.95rem;
+    left: 50%;
+    margin-left: -1.08rem;
+    bottom: 0;
+}
+
+.dingwei {
+    position: relative;
+}
+
+
+/*.dingwei img {
+    position: absolute;
+}*/
+
+.cli {
+    display: none;
+}
+
+.chongchong {
+    position: absolute;
+    z-index: 99;
+    width: .25rem;
+    left: 1.5rem;
+    display: none;
+}
+
+.shui_1 {
+    position: absolute;
+    width: .91rem;
+    /*-webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;*/
+    display: none;
+    -webkit-animation: click_nu .4s ease-in-out;
+    animation: click_nu .4s ease-in-out;
+    right: -1.6rem;
+    top: -1.2rem;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+
+.zhuan1 {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+}
+
+
+/*@keyframes click_nu {
+    form {
+        left: 1.2rem;
+        top:-1.2rem;
+    }
+    to {
+        left: 1rem;
+        top: -1rem
+    }
+}*/
+
+.shui_2 {
+    width: .65rem;
+    position: absolute;
+    top: -0.4rem;
+    right: 0.2rem;
+    display: none;
+}
+
+.chu_1 {
+    position: absolute;
+    bottom: 0.5rem;
+    right: -1.4rem;
+    width: .78rem;
+    /*-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;*/
+    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    display: none;
+}
+
+.zhuan2 {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+
+.chu_2 {
+    position: absolute;
+    bottom: 0.8rem;
+    right: -0.8rem;
+    width: .56rem;
+}
+
+.peng_1 {
+    position: absolute;
+    top: 0.1rem;
+    right: -1.6rem;
+}
+
+.peng_2 {
+    position: absolute;
+    width: 1.3rem;
+    top: -0.2rem;
+    right: -0.7rem;
+}
+
+.jian_1 {
+    position: absolute;
+    right: -0.5rem;
+    top: 0.2rem;
+    width: .84rem;
+}
+
+.jian_2 {
+    position: absolute;
+    width: .9rem;
+    top: .5rem;
+    right: -1.2rem;
+}
+
+.jian_3 {
+    position: absolute;
+    top: -0.3rem;
+    right: -0.7rem;
+    width: .87rem;
+}
+
+.tree span {
+    display: inline-block;
+    color: #57c51b;
+    font-size: .22rem;
+    line-height: .56rem;
+    text-align: center;
+    width: .56rem;
+    height: .56rem;
+    background-image: url('../images/exper_bg.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: -0.4rem;
+    left: 0rem;
+    display: none;
+}
+
+.jingyan {
+    -webkit-animation: jingyan 1s ease-in-out;
+    animation: jingyan 1s ease-in-out;
+}
+
+@keyframes jingyan {
+    from {
+        top: -0.4rem;
+    }
+    to {
+        top: -1rem;
+    }
+}
+
+@-webkit-keyframes jingyan {
+    from {
+        top: -0.4rem;
+    }
+    to {
+        top: -1rem;
+    }
+}
+
+.tree_tree {
+    width: 1.86rem;
+    height: 1.61rem;
+    position: absolute;
+    left: 50%;
+    bottom: -0.1rem;
+    margin-left: -0.93rem;
+}
+
+.tree_soil {
+    width: 2.26rem;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 50%;
+    margin-left: -1.13rem;
+    z-index: -1;
+}
+
+.kuang {
+    width: 3.38rem;
+    background-image: url("../images/kuang.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1.4rem;
+    left: 50%;
+    margin-left: -1.79rem;
+    display: none;
+    padding: .1rem .2rem .24rem;
+    color: #2a950c;
+    font-size: .22rem;
+    z-index: 999;
+}
+
+.tool {
+    position: absolute;
+    width: 98%;
+    bottom: 1.2rem;
+    left: 50%;
+    margin-left: -49%;
+}
+
+.tool ul {
+  display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.tool ul li {
+  -webkit-box-flex: 1   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;     /* OLD - Firefox 19- */
+  -webkit-flex: 1;      /* Chrome */
+  -ms-flex: 1           /* IE 10 */
+  flex: 1;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    text-align: center;
+    background-image: url('../images/dituo.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    ;
+    position: relative;
+}
+
+.tool ul li:nth-child(1) img {
+    width: 1.2rem;
+}
+
+.tool ul li:nth-child(2) img {
+    width: .62rem;
+}
+
+.tool ul li:nth-child(3) img {
+    width: .98rem;
+}
+
+.tool ul li:nth-child(4) img {
+    width: .8rem;
+}
+
+.tool ul li:nth-child(5) img {
+    width: .72rem;
+}
+
+.tool ul li b {
+    width: .26rem;
+    height: .26rem;
+    text-align: center;
+    line-height: .26rem;
+    font-size: .2rem;
+    border-radius: 50%;
+    background-color: #ff0000;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}

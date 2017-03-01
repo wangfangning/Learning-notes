@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>活动页面</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
+    <script src="js/public640.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <div class="mengceng"></div>
+    <div class="mengceng1"></div>
+    <div class="mengceng2"></div>
+    <div class="mengceng3">
+        <div class="content_shengji">
+            <img src="images/tishi_sj.png" alt="" class="animated zoomIn img1">
+            <p class="content_shengji_text animated zoomIn">V2</p>
+            <img src="images/tishi_star.png" alt="" class="animated zoomIn star">
+            <img src="images/tishi_guang.png" alt="" class="guang">
+        </div>
+    </div>
+
+    <img src="images/arborday_ray.png" alt="" class="arborday_ray">
+
+    <div class="user">
+        <img src="images/user.png" alt="" class="user_left">
+
+        <div class="user_right">
+            <p class="user_right_name">王XX</p>
+
+            <div class="user_ex">
+                <div class="position_jiang">
+                    <img src="images/jiangpai1.png" alt="" class="user_jiangpai" style="display:block;">
+                    <img src="images/jiangpai2.png" alt="" class="user_jiangpai">
+                    <img src="images/jiangpai3.png" alt="" class="user_jiangpai">
+                    <img src="images/jiangpai4.png" alt="" class="user_jiangpai">
+                    <img src="images/jiangpai5.png" alt="" class="user_jiangpai">
+                </div>
+
+
+                <div class="jingyanzhi">
+                    <i>91</i>/<b>100</b>
+                </div>
+                <div class="user_ex_color"></div>
+                <div class="user_ex_span">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="strategy">
+        <img src="images/shouce.png" onclick="location.href='http://124.192.56.213:99/zhishujiehd/zssc.html'" alt="" />
+            <img src="images/shubao.png" onclick="location.href='http://124.192.56.213:99/zhishujiehd/beibao.html'" alt="">
+    </div>
+    <div class="tree">
+        <div class="dingwei">
+
+            <span>+<i class="exnumber"></i></span>
+            <p class="kuang"></p>
+            <img src="images/peng_3.png" alt="" class="chongchong">
+            <img src="images/arborday_tree.png" alt="" class="tree_tree shumiao">
+            <img src="images/shu_2.png" alt="" class="shu_2 shumiao">
+            <img src="images/shu_3.png" alt="" class="shu_3 shumiao">
+            <img src="images/shu_4.png" alt="" class="shu_4 shumiao">
+            <img src="images/shu_5.png" alt="" class="shu_5 shumiao">
+            <img src="images/shu_6.png" alt="" class="shu_6 shumiao">
+            <img src="images/arborday_soil.png" alt="" class="tree_soil">
+
+            <img src="images/shui_1.png" alt="" class="shui_1 shui cli">
+            <img src="images/shui_2.png" alt="" class="shui_2 shui cli">
+
+
+            <img src="images/chu_1.png" alt="" class="chu_1 chu cli">
+            <img src="images/chu_2.png" alt="" class="chu_2 chu cli">
+
+
+            <img src="images/peng_1.png" alt="" class="peng_1 peng cli">
+            <img src="images/peng_2.png" alt="" class="peng_2 peng cli">
+
+            <img src="images/jian_1.png" alt="" class="jian_1 jian cli">
+            <img src="images/jian_2.png" alt="" class="jian_2 jian cli">
+            <img src="images/jian_3.png" alt="" class="jian_3 jian cli">
+
+        </div>
+
+    </div>
+    <div class="tool">
+        <ul>
+            <li><b>3</b><img src="images/shuihu.png" alt=""></li>
+            <li><b>8</b><img src="images/chutou.png" alt=""></li>
+            <li><b>4</b><img src="images/shachongji.png" alt=""></li>
+            <li><b>2</b><img src="images/jiandao.png" alt=""></li>
+            <li><b>0</b><img src="images/feiliao.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+
+        (function() {
+            $('.tool b').each(function(index, el) {
+                if ($(this).text() == 0) {
+                    $(this).hide()
+                }
+            });
+            var height = $('.user_ex').height();
+            var number = $('.jingyanzhi i').text();
+            $('.jingyanzhi').css({
+                'height': height,
+                'line-height': height + 'px'
+            });
+            $('.user_ex_color').css({
+                'height': height,
+                'width': number + '%'
+            })
+            if (number >= 100) {
+                $('.user_ex_color').css({
+                    'width': '100%'
+                })
+                $('.user_ex_color').css('border-radius', '.1rem');
+            };
+            if (number < 100) {
+
+                $('.shumiao').hide();
+                $('.tree_tree').show();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+
+                $(".dingwei").css({
+                    'height': Height,
+                    'width': Width
+                });
+                 $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+            }
+            if (number >= 100 && number < 400) {
+                $('.shumiao').hide();
+                $('.shu_2').show();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+                // alert(Width)
+                $(".dingwei").css({
+                    'height': Height * 1.8,
+                    'width': Width * 1.16
+                });
+                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+            }
+        })();
+        var arrnum = [100, 400, 1000, 2500]
+        //        全局时间对象
+        var Timeevent = {
+// 树苗等级成长
+        growUp:function(){
+          setTimeout(function(){
+            var Height = $('.shumiao').height();
+            var Width = $('.shumiao').width();
+            // alert(Width)
+            $(".dingwei").css({
+                'height': Height * 1.8,
+                'width': Width * 1.16
+            });
+          },1800)
+        },
+            //            经验球时间
+            time: function() {
+                setTimeout(function() {
+                    $('.tree span').addClass('jingyan');
+                    $('.tree span').delay(400).fadeOut(200);
+                }, 300);
+            },
+            //            水壶旋转事件
+            shui_time: function() {
+                setTimeout(function() {
+                    $('.shui_1').addClass('zhuan1');
+                    $('.jingyanzhi i').text(Text + exNumber);
+                    var Length = parseInt($('.jingyanzhi i').text());
+                    var maxlength = parseInt($('.jingyanzhi b').text());
+                    if (Length == maxlength || Length > maxlength) {
+
+
+                        for (var i = 0; i < arrnum.length; i++) {
+                            if (arrnum[i] == maxlength) {
+                                // setTimeout(function(){
+                                maxlength = arrnum[i + 1];
+                                $('.jingyanzhi b').text(maxlength);
+                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                $('.user_ex_color').width(baifenbi);
+                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                $('.shumiao').hide();
+                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                Timeevent.growUp()
+                                // var Height = $('.shumiao').height();
+                                // var Width = $('.shumiao').width();
+                                // // alert(Width)
+                                // $(".dingwei").css({
+                                //     'height': Height * 1.8,
+                                //     'width': Width * 1.16
+                                // });
+                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+
+                                //  },1000)
+                                return;
+                            }
+                        }
+                    }
+                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                    $('.user_ex_color').width(baifenbi)
+                }, 2000)
+            },
+            //            浇水重置事件
+            zhuan1: function() {
+                setTimeout(function() {
+                    //$('.jingyanzhi i').text(Text+exNumber);
+                    // .delay(1600).fadeOut(100);
+                    $('.shui').hide()
+                    $('.shui_1').css({
+                        right: '-1.6rem',
+                        top: '-1.2rem'
+                    }).removeClass('zhuan1');
+                }, 2000)
+            },
+            //            锄头旋转事件
+            chu_time: function() {
+                setTimeout(function() {
+                    $('.chu_1').addClass('zhuan2');
+                    $('.jingyanzhi i').text(Text + exNumber);
+                    var Length = parseInt($('.jingyanzhi i').text());
+                    var maxlength = parseInt($('.jingyanzhi b').text());
+                    if (Length == maxlength || Length > maxlength) {
+
+                        for (var i = 0; i < arrnum.length; i++) {
+                            if (arrnum[i] == maxlength) {
+                                // setTimeout(function(){
+                                maxlength = arrnum[i + 1];
+                                $('.jingyanzhi b').text(maxlength);
+                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                $('.user_ex_color').width(baifenbi);
+                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                $('.shumiao').hide();
+                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                Timeevent.growUp()
+                                // var Height = $('.shumiao').height();
+                                // var Width = $('.shumiao').width();
+                                // // alert(Width)
+                                // $(".dingwei").css({
+                                //     'height': Height * 1.8,
+                                //     'width': Width * 1.16
+                                // });
+                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+
+
+                                //  },1000)
+                                return;
+                            }
+                        }
+                    }
+                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                    $('.user_ex_color').width(baifenbi)
+                }, 1000)
+            },
+            //            松土重置事件
+            zhuan2: function() {
+                setTimeout(function() {
+                    // .delay(1600).fadeOut(100);
+                    $('.chu').hide()
+                    $('.chu_1').css({
+                        right: '-1.4rem',
+                        bottom: '0.5rem'
+                    }).removeClass('zhuan2');
+                }, 2000)
+            },
+            //            杀虫重置事件
+            peng_time: function() {
+                setTimeout(function() {
+                    $('.jingyanzhi i').text(Text + exNumber);
+                    var Length = parseInt($('.jingyanzhi i').text());
+                    var maxlength = parseInt($('.jingyanzhi b').text());
+                    $('.peng,.chongchong').hide()
+                    $('.peng_1').css({
+                        right: '-1.6rem',
+                        top: '0.1rem'
+                    });
+                    if (Length == maxlength || Length > maxlength) {
+
+                        for (var i = 0; i < arrnum.length; i++) {
+                            if (arrnum[i] == maxlength) {
+                                // setTimeout(function(){
+                                maxlength = arrnum[i + 1];
+                                $('.jingyanzhi b').text(maxlength);
+                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                $('.user_ex_color').width(baifenbi);
+                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                $('.shumiao').hide();
+                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                Timeevent.growUp()
+                                // var Height = $('.shumiao').height();
+                                // var Width = $('.shumiao').width();
+                                // // alert(Width)
+                                // $(".dingwei").css({
+                                //     'height': Height * 1.8,
+                                //     'width': Width * 1.16
+                                // });
+                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+
+
+                                //  },1000)
+                                return;
+                            }
+                        }
+                    }
+                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                    $('.user_ex_color').width(baifenbi)
+                    // .delay(1600).fadeOut(100);
+
+                }, 2000)
+            },
+            //                        锄头旋转事件
+            jian_time: function() {
+                setTimeout(function() {
+                    $('.jian_2').fadeOut(100);
+                    $('.jingyanzhi i').text(Text + exNumber);
+                    var Length = parseInt($('.jingyanzhi i').text());
+                    var maxlength = parseInt($('.jingyanzhi b').text());
+                    if (Length == maxlength || Length > maxlength) {
+
+                        for (var i = 0; i < arrnum.length; i++) {
+                            if (arrnum[i] == maxlength) {
+                                // setTimeout(function(){
+                                maxlength = arrnum[i + 1];
+                                $('.jingyanzhi b').text(maxlength);
+                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                $('.user_ex_color').width(baifenbi);
+                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                $('.shumiao').hide();
+                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                Timeevent.growUp()
+                                // var Height = $('.shumiao').height();
+                                // var Width = $('.shumiao').width();
+                                // // alert(Width)
+                                // $(".dingwei").css({
+                                //     'height': Height * 1.8,
+                                //     'width': Width * 1.16
+                                // });
+                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+
+
+                                //  },1000)
+                                return;
+                            }
+                        }
+                    }
+                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                    var user_length = $('.user_ex_color').width(baifenbi)
+                }, 1100)
+            },
+            //            锄头重置事件
+            jian_chong: function() {
+                setTimeout(function() {
+                    // .delay(1600).fadeOut(100);
+                    $('.jian').hide()
+                    $('.jian_2').css({
+                        right: '-1.2rem',
+                        top: '.5rem'
+                    });
+                }, 2200)
+            },
+            //            提示语
+            arr: ['快来帮我浇水吧，我要长高高~',
+                '快来帮我修剪哦，我要变漂亮~',
+                '只有订购立即生效的流量包，才能获得修剪机会哦~',
+                '种树好处多多，可以净化空气，防止水土流失呢~',
+                '定期会有惊喜奖励活动，一定要每天都来哦~'
+            ],
+            arr1: [
+                '更多培养机会正在筹建中，表着急哦~',
+                '免费机会用完啦！订购流量包可获得修剪机会呢，一般人我不告诉他~~<a href="" style="color:#ff6600;text-decoration:underline ">订购流量包</a>'
+                //                    '免费机会用完啦！订购流量包可获得修剪机会呢，一般人我不告诉他~~<a href="">订购流量包</a>'
+            ],
+            //       事件间隔时间蒙层
+            mengceng: function() {
+                setTimeout(function() {
+                    $('.mengceng').hide();
+                }, 4000)
+            },
+            mengceng1: function() {
+                setTimeout(function() {
+                    $('.mengceng1,.kuang').fadeOut();
+
+                }, 2000)
+            },
+            mengceng2: function() {
+                setTimeout(function() {
+                    $('.mengceng2,.kuang').fadeOut();
+
+                }, 2000)
+            },
+            mengceng3: function() {
+                $('mengceng3')
+            }
+        };
+
+
+
+
+
+
+        // 提示文案
+
+        $('.dingwei').on('click','img', function() {
+            var index_number = Math.floor(Math.random() * 5);
+            var treeH = $(this).index();
+            switch (treeH) {
+              case 3:
+              $(this).stop().animate({
+                  height: '1.66rem'
+              }, 200);
+              $(this).delay(80).animate({
+                  height: '1.61rem'
+              }, 200);
+
+                break;
+                case 4:
+                $(this).stop().animate({
+                    height: '3rem'
+                }, 200);
+                $(this).delay(80).animate({
+                    height: '2.95rem'
+                }, 200);
+                  break;
+                  case 5:
+                  $(this).stop().animate({
+                      height: '3rem'
+                  }, 200);
+                  $(this).delay(80).animate({
+                      height: '2.95rem'
+                  }, 200);
+                    break;
+              default:
+
+            }
+            // $(this).stop().animate({
+            //     height: '1.66rem'
+            // }, 200);
+            // $(this).delay(80).animate({
+            //     height: '1.61rem'
+            // }, 200);
+            $('.kuang').text(Timeevent.arr[index_number]).fadeIn(300);
+            $(".mengceng1").show();
+            Timeevent.mengceng1()
+
+        });
+
+        $(".tool ul li").on('click', 'img', function() {
+            var Index = $(this).parent().index();
+            var b_number = parseInt($(this).siblings('b').text());
+            Text = parseInt($('.jingyanzhi i').text());
+            // if (b_number <= 1) {
+            //     $(this).siblings('b').text('0').hide();
+            // } else {
+            //     $(this).siblings('b').text(b_number - 1)
+            // }
+            // var ah = parseInt($(this).siblings('b').text());
+            switch (Index) {
+                case 0:
+                    switch (b_number) {
+                        case 0:
+                            var index_text = Timeevent.arr1[1];
+                            $(".kuang").html(index_text).fadeIn(200);
+                            $(".mengceng2").show();
+                            Timeevent.mengceng2()
+
+                            break;
+
+                        default:
+                            $('.mengceng').show();
+                            $(this).siblings('b').text('0').fadeOut();;
+                            // 这里传事件的基数
+                            var jishu = jishu || 2;
+                            exNumber = Math.round(jishu * b_number);
+                            $(this).fadeOut().delay(2000).fadeIn(200);
+                            if (exNumber == 0) {
+                                exNumber = 1;
+                            }
+                            $('.exnumber').text(exNumber);
+                            $('.tree span').delay(1800).fadeIn();
+                            Timeevent.time()
+                            $('.tree span').removeClass('jingyan');
+
+                            Timeevent.mengceng();
+                            $('.shui_1').delay(200).fadeIn(200).animate({
+                                right: '-1rem',
+                                top: '-1rem'
+                            }, 600);
+                            Timeevent.shui_time();
+                            $('.shui_2').delay(1200).fadeIn(100);
+
+                            Timeevent.zhuan1();
+                            // $('.jingyanzhi i').delay(3000).text(Text+exNumber);
+                            // $('.shui_1').delay(4000).css({left:'1.2rem',top:'-1.2rem'}).removeClass('zhuan1');
+
+                    }
+                    break;
+                case 1:
+                    switch (b_number) {
+                        case 0:
+                            var index_text = Timeevent.arr1[1];
+                            $(".kuang").html(index_text).fadeIn(200);
+                            $(".mengceng2").show();
+                            Timeevent.mengceng2()
+                            break;
+
+                        default:
+                            $('.mengceng').show();
+                            $(this).siblings('b').text('0').fadeOut();;
+                            // 这里传事件的基数
+                            var jishu = jishu || 2;
+                            exNumber = Math.round(jishu * b_number);
+                            $(this).fadeOut().delay(2000).fadeIn(200);
+                            if (exNumber == 0) {
+                                exNumber = 1;
+                            }
+                            $('.exnumber').text(exNumber);
+                            $('.tree span').delay(1500).fadeIn();
+                            Timeevent.time()
+                            $('.tree span').removeClass('jingyan');
+
+                            Timeevent.mengceng();
+
+                            $('.chu_1').delay(200).fadeIn(200).animate({
+                                right: '-0.4rem',
+                                bottom: '0.1rem'
+                            }, 600);
+                            Timeevent.chu_time();
+                            $('.chu_2').delay(1200).fadeIn(100);
+
+                            Timeevent.zhuan2()
+                    }
+                    break;
+                case 2:
+                    switch (b_number) {
+                        case 0:
+                            var index_text = Timeevent.arr1[1];
+                            $(".kuang").html(index_text).fadeIn(200);
+                            $(".mengceng2").show();
+                            Timeevent.mengceng2()
+                            break;
+                            // case 1:
+                            //     $('.mengceng').show();
+                            //     $(this).siblings('b').text('0').fadeOut();;
+                            //     // 这里传事件的基数
+                            //     var jishu = jishu || 2;
+                            //     exNumber = Math.round(jishu * b_number);
+                            //     $(this).fadeOut().delay(3000).fadeIn(200);
+                            //     if (exNumber == 0) {
+                            //         exNumber = 1;
+                            //     }
+                            //     $('.exnumber').text(exNumber);
+                            //     $('.tree span').delay(1500).fadeIn();
+                            //     Timeevent.time()
+                            //     $('.tree span').removeClass('jingyan');
+                            //
+                            //     Timeevent.mengceng();
+                            //     $('.peng_1').delay(200).fadeIn(200).animate({
+                            //         right: '-1.3rem',
+                            //         top: '0.1rem'
+                            //     }, 600);
+                            //     //                            Timeevent.chu_time();
+                            //     $('.peng_2').delay(1200).fadeIn(100);
+                            //     $('.chongchong').delay(1250).fadeOut(100);
+                            //
+                            //     Timeevent.peng_time()
+                            //
+                            //
+                            //     break;
+
+                        default:
+                            $('.mengceng').show();
+                            $(this).siblings('b').text('0').fadeOut();;
+                            // 这里传事件的基数
+                            var jishu = jishu || 2;
+                            exNumber = Math.round(jishu * b_number);
+                            $('.chongchong').fadeIn();
+                            $(this).fadeOut().delay(2000).fadeIn(200);
+                            if (exNumber == 0) {
+                                exNumber = 1;
+                            }
+                            $('.exnumber').text(exNumber);
+                            $('.tree span').delay(1500).fadeIn();
+                            Timeevent.time();
+                            $('.tree span').removeClass('jingyan');
+
+                            Timeevent.mengceng();
+                            $('.peng_1').delay(200).fadeIn(200).animate({
+                                right: '-1.3rem',
+                                top: '0.1rem'
+                            }, 600);
+                            //                            Timeevent.chu_time();
+                            $('.peng_2').delay(1200).fadeIn(100);
+                            //$('.jingyanzhi i').text(Text+exNumber);
+                            Timeevent.peng_time()
+                    }
+                    break;
+                case 3:
+                    switch (b_number) {
+                        case 0:
+                            var index_text = Timeevent.arr1[1];
+                            $(".kuang").html(index_text).fadeIn(200);
+                            $(".mengceng2").show();
+                            Timeevent.mengceng2()
+                            break;
+
+                        default:
+                            $('.mengceng').show();
+                            $(this).siblings('b').text('0').fadeOut();;
+                            // 这里传事件的基数
+                            var jishu = jishu || 2;
+                            exNumber = Math.round(jishu * b_number);
+                            $(this).fadeOut().delay(2000).fadeIn(200);
+                            if (exNumber == 0) {
+                                exNumber = 1;
+                            }
+                            $('.exnumber').text(exNumber);
+                            $('.tree span').delay(1600).fadeIn();
+                            Timeevent.time()
+                            $('.tree span').removeClass('jingyan');
+
+                            Timeevent.mengceng();
+                            $('.jian_2').delay(200).fadeIn(200).animate({
+                                right: '-0.5rem',
+                                top: '0.2rem'
+                            }, 600);
+                            Timeevent.jian_time()
+                            //                            Timeevent.chu_time();
+                            $('.jian_1').delay(1100).fadeIn(100);
+                            $('.jian_3').delay(1300).fadeIn(50);
+                            Timeevent.jian_chong()
+                    }
+                    break;
+                default:
+                    var index_text = Timeevent.arr1[0];
+                    $(".kuang").text(index_text).fadeIn(200);
+                    $(".mengceng2").show();
+                    Timeevent.mengceng2()
+            }
+
+        })
+
+    });
+</script>
+
+</html>
