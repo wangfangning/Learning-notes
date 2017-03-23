@@ -41,11 +41,12 @@
                     <img src="images/jiangpai3.png" alt="" class="user_jiangpai">
                     <img src="images/jiangpai4.png" alt="" class="user_jiangpai">
                     <img src="images/jiangpai5.png" alt="" class="user_jiangpai">
+                    <img src="images/jiangpai6.png" alt="" class="user_jiangpai">
                 </div>
 
 
                 <div class="jingyanzhi">
-                    <i>91</i>/<b>100</b>
+                    <i>2261</i>/<b>100</b>
                 </div>
                 <div class="user_ex_color"></div>
                 <div class="user_ex_span">
@@ -63,7 +64,7 @@
     </div>
     <div class="strategy">
         <img src="images/shouce.png" onclick="location.href='http://124.192.56.213:99/zhishujiehd/zssc.html'" alt="" />
-            <img src="images/shubao.png" onclick="location.href='http://124.192.56.213:99/zhishujiehd/beibao.html'" alt="">
+        <img src="images/shubao.png" onclick="location.href='http://124.192.56.213:99/zhishujiehd/beibao.html'" alt="">
     </div>
     <div class="tree">
         <div class="dingwei">
@@ -99,17 +100,691 @@
     </div>
     <div class="tool">
         <ul>
-            <li><b>3</b><img src="images/shuihu.png" alt=""></li>
-            <li><b>8</b><img src="images/chutou.png" alt=""></li>
-            <li><b>4</b><img src="images/shachongji.png" alt=""></li>
-            <li><b>2</b><img src="images/jiandao.png" alt=""></li>
+            <li><b>60</b><img src="images/shuihu.png" alt=""></li>
+            <li><b>120</b><img src="images/chutou.png" alt=""></li>
+            <li><b>400</b><img src="images/shachongji.png" alt=""></li>
+            <li><b>600</b><img src="images/jiandao.png" alt=""></li>
             <li><b>0</b><img src="images/feiliao.png" alt=""></li>
         </ul>
     </div>
 </body>
 <script>
     $(document).ready(function() {
+      //        全局时间对象
+      var Timeevent = {
+        // 树苗获取经验等级成长
+          autogrowUp: function(widX,heiG) {
+                  $(".dingwei").css({
+                      'height': heiG,
+                      'width': widX
+                  });
+              $('.tree').css('margin-left', '-' + widX / 2 + 'px');
+          },
+          //            经验球时间
+          time: function() {
+              setTimeout(function() {
+                  $('.tree span').addClass('jingyan');
+                  $('.tree span').delay(400).fadeOut(200);
+              }, 300);
+          },
+          //            水壶旋转事件
+          shui_time: function() {
+              setTimeout(function() {
+                  $('.shui_1').addClass('zhuan1');
+                  // var itext = $('.jingyanzhi i').text(Text);
+                  $('.jingyanzhi i').text(Text + exNumber);
+                  var Length = parseInt($('.jingyanzhi i').text());
+                  var maxlength = parseInt($('.jingyanzhi b').text());
 
+                  if (Length == maxlength || Length > maxlength) {
+                      if (Length > 399 && Length < 1000 && maxlength == 100) {
+
+                          for (var i = 0; i < arrnum.length; i++) {
+                              if (arrnum[i] == maxlength) {
+
+                                  $('.jingyanzhi b').text('1000');
+                                  var baifenbi = Math.floor(Length / 1000 * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 2).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 2).fadeIn();
+                                  var Height = $('.shumiao').height();
+                                  var Width = $('.shumiao').width();
+                                  setTimeout(function() {
+                                      $(".dingwei").css({
+                                          'height': Height * 2.1,
+                                          'width': Width * 1.16
+                                      });
+                                  }, 1800)
+
+                                  return;
+                              }
+                          }
+                      }
+
+                      for (var i = 0; i < arrnum.length; i++) {
+
+                          if (arrnum[i] == maxlength) {
+                              if (Length > 10000) {
+                                  alert('manjile')
+                              } else {
+                                  // setTimeout(function(){
+                                  maxlength = arrnum[i + 1];
+                                  var numI = i + 1
+                                  $('.jingyanzhi b').text(maxlength);
+                                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                  switch (numI) {
+                                      case 1:
+                                          setTimeout(function() {
+
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 2:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 1.6;
+                                                  var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                      shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                      console.log(shuheight);
+                                                      console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 3:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 2.1;
+                                                  var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                      shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                      console.log(shuheight);
+                                                      console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 4:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.18,
+                                              //     shuheight = sheight * 1.9;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 5:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.3,
+                                              //     shuheight = sheight * 1.6;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      default:
+
+                                  }
+
+                                  return;
+                              }
+
+                          }
+                      }
+                  }
+                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                  $('.user_ex_color').width(baifenbi)
+              }, 1400)
+          },
+          //            浇水重置事件
+          zhuan1: function() {
+              setTimeout(function() {
+
+                  $('.shui').hide()
+                  $('.shui_1').css({
+                      right: '-1.6rem',
+                      top: '-0.9rem'
+                  }).removeClass('zhuan1');
+              }, 2500)
+          },
+          //            锄头旋转事件
+          chu_time: function() {
+              setTimeout(function() {
+                  $('.chu_1').addClass('zhuan2');
+                  $('.jingyanzhi i').text(Text + exNumber);
+                  var Length = parseInt($('.jingyanzhi i').text());
+                  var maxlength = parseInt($('.jingyanzhi b').text());
+                  if (Length == maxlength || Length > maxlength) {
+                      if (Length > 399 && Length < 1000 && maxlength == 100) {
+
+                          for (var i = 0; i < arrnum.length; i++) {
+                              if (arrnum[i] == maxlength) {
+
+                                  $('.jingyanzhi b').text('1000');
+                                  var baifenbi = Math.floor(Length / 1000 * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 2).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 2).fadeIn();
+
+                                  var Height = $('.shumiao').height();
+                                  var Width = $('.shumiao').width();
+                                  setTimeout(function() {
+                                      $(".dingwei").css({
+                                          'height': Height * 2.1,
+                                          'width': Width * 1.16
+                                      });
+                                  }, 1800)
+
+
+                                  //  },1000)
+                                  return;
+                              }
+                          }
+                      }
+
+                      for (var i = 0; i < arrnum.length; i++) {
+                          if (arrnum[i] == maxlength) {
+                              if (Length > 10000) {
+                                  alert('manjile')
+                              } else {
+                                  // setTimeout(function(){
+                                  maxlength = arrnum[i + 1];
+                                  var numI = i + 1
+                                  $('.jingyanzhi b').text(maxlength);
+                                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                  switch (numI) {
+                                      case 1:
+                                          setTimeout(function() {
+
+                                              // var shuwidth = swidth * 1.16,
+                                              //     shuheight = sheight * 1.8;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 2:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 1.6;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 3:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 2.1;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 4:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.18,
+                                              //     shuheight = sheight * 1.9;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 5:
+
+                                          setTimeout(function() {
+                                            // var shuwidth = swidth * 1.3,
+                                            //     shuheight = sheight * 1.6;
+                                            var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                console.log(shuheight);
+                                                console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      default:
+
+                                  }
+
+                                  return;
+                              }
+
+                          }
+                      }
+                  }
+                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                  $('.user_ex_color').width(baifenbi)
+              }, 1000)
+          },
+          //            松土重置事件
+          zhuan2: function() {
+              setTimeout(function() {
+                  // .delay(1600).fadeOut(100);
+                  $('.chu').hide()
+                  $('.chu_1').css({
+                      right: '-1.4rem',
+                      bottom: '0.5rem'
+                  }).removeClass('zhuan2');
+              }, 2000)
+          },
+          //            杀虫重置事件
+          peng_time: function() {
+              setTimeout(function() {
+                  $('.jingyanzhi i').text(Text + exNumber);
+                  var Length = parseInt($('.jingyanzhi i').text());
+                  var maxlength = parseInt($('.jingyanzhi b').text());
+                  $('.peng,.chongchong').hide()
+                  $('.peng_1').css({
+                      right: '-1.2rem',
+                      top: '0.1rem'
+                  });
+                  if (Length == maxlength || Length > maxlength) {
+                      if (Length > 399 && Length < 1000 && maxlength == 100) {
+
+                          for (var i = 0; i < arrnum.length; i++) {
+                              if (arrnum[i] == maxlength) {
+
+                                  $('.jingyanzhi b').text('1000');
+                                  var baifenbi = Math.floor(Length / 1000 * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 2).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 2).fadeIn();
+
+                                  var Height = $('.shumiao').height();
+                                  var Width = $('.shumiao').width();
+                                  setTimeout(function() {
+                                      $(".dingwei").css({
+                                          'height': Height * 2.1,
+                                          'width': Width * 1.16
+                                      });
+                                  }, 1800)
+
+                                  //  },1000)
+                                  return;
+                              }
+                          }
+                      }
+
+                      for (var i = 0; i < arrnum.length; i++) {
+                          if (arrnum[i] == maxlength) {
+                              if (Length > 10000) {
+                                  alert('manjile')
+                              } else {
+
+                                  maxlength = arrnum[i + 1];
+                                  var numI = i + 1
+                                  $('.jingyanzhi b').text(maxlength);
+                                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                  switch (numI) {
+                                      case 1:
+                                          setTimeout(function() {
+
+                                              // var shuwidth = swidth * 1.16,
+                                              //     shuheight = sheight * 1.8;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 2:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 1.6;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 3:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 2.1;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 4:
+
+                                          setTimeout(function() {
+                                            // var shuwidth = swidth * 1.18,
+                                            //     shuheight = sheight * 1.9;
+                                            var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                console.log(shuheight);
+                                                console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 5:
+
+                                          setTimeout(function() {
+                                            // var shuwidth = swidth * 1.3,
+                                            //     shuheight = sheight * 1.6;
+                                            var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                console.log(shuheight);
+                                                console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      default:
+
+                                  }
+
+                                  return;
+                              }
+
+                          }
+                      }
+                  }
+                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                  $('.user_ex_color').width(baifenbi)
+
+
+              }, 2000)
+          },
+          //                        锄头旋转事件
+          jian_time: function() {
+              setTimeout(function() {
+                  $('.jian_2').fadeOut(100);
+                  $('.jingyanzhi i').text(Text + exNumber);
+                  var Length = parseInt($('.jingyanzhi i').text());
+                  var maxlength = parseInt($('.jingyanzhi b').text());
+                  if (Length == maxlength || Length > maxlength) {
+                      if (Length > 399 && Length < 1000 && maxlength == 100) {
+
+                          for (var i = 0; i < arrnum.length; i++) {
+                              if (arrnum[i] == maxlength) {
+
+                                  $('.jingyanzhi b').text('1000');
+                                  var baifenbi = Math.floor(Length / 1000 * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 2).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 2).fadeIn();
+
+                                  var Height = $('.shumiao').height();
+                                  var Width = $('.shumiao').width();
+                                  setTimeout(function() {
+                                      $(".dingwei").css({
+                                          'height': Height * 2.1,
+                                          'width': Width * 1.16
+                                      });
+                                  }, 1800)
+
+                                  //  },1000)
+                                  return;
+                              }
+                          }
+                      }
+
+                      for (var i = 0; i < arrnum.length; i++) {
+                          if (arrnum[i] == maxlength) {
+                              if (Length > 10000) {
+                                  alert('manjile')
+                              } else {
+
+                                  maxlength = arrnum[i + 1];
+                                  var numI = i + 1
+                                  $('.jingyanzhi b').text(maxlength);
+                                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                                  $('.user_ex_color').width(baifenbi);
+                                  $('.position_jiang img').eq(i + 1).show().siblings().hide();
+                                  $('.shumiao').hide();
+                                  $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
+                                  $('.shumiao').delay(200).eq(i + 1).fadeIn();
+                                  switch (numI) {
+                                      case 1:
+                                          setTimeout(function() {
+
+                                              // var shuwidth = swidth * 1.16,
+                                              //     shuheight = sheight * 1.8;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 2:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 1.6;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 3:
+
+                                          setTimeout(function() {
+                                              // var shuwidth = swidth * 1.2,
+                                              //     shuheight = sheight * 2.1;
+                                              var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                  shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                  console.log(shuheight);
+                                                  console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 4:
+
+                                          setTimeout(function() {
+                                            // var shuwidth = swidth * 1.18,
+                                            //     shuheight = sheight * 1.9;
+                                            var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                console.log(shuheight);
+                                                console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      case 5:
+
+                                          setTimeout(function() {
+                                            // var shuwidth = swidth * 1.3,
+                                            //     shuheight = sheight * 1.6;
+                                            var shuwidth = $('.shumiao').delay(200).eq(i + 1).width(),
+                                                shuheight = $('.shumiao').delay(200).eq(i + 1).height();
+                                                console.log(shuheight);
+                                                console.log(shuwidth);
+                                              $(".dingwei").css({
+                                                  'height': shuheight + 'px',
+                                                  'width': shuwidth + 'px'
+                                              });
+                                              $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
+                                          }, 1800)
+                                          break;
+                                      default:
+
+                                  }
+
+                                  return;
+                              }
+
+                          }
+                      }
+                  }
+                  var baifenbi = Math.floor(Length / maxlength * 100) + '%';
+                  var user_length = $('.user_ex_color').width(baifenbi)
+              }, 1100)
+          },
+          //            锄头重置事件
+          jian_chong: function() {
+              setTimeout(function() {
+
+                  $('.jian').hide()
+                  $('.jian_2').css({
+                      right: '-1.2rem',
+                      top: '.5rem'
+                  });
+              }, 2200)
+          },
+          //            提示语
+          arr: ['快来帮我浇水吧，我要长高高~',
+              '快来帮我修剪哦，我要变漂亮~',
+              '只有订购立即生效的流量包，才能获得修剪机会哦~',
+              '种树好处多多，可以净化空气，防止水土流失呢~',
+              '定期会有惊喜奖励活动，一定要每天都来哦~'
+          ],
+          arr1: [
+              '更多培养机会正在筹建中，表着急哦~',
+              '免费机会用完啦！订购流量包可获得修剪机会呢，一般人我不告诉他~~<a href="" style="color:#ff6600;text-decoration:underline ">订购流量包</a>'
+          ],
+          //       事件间隔时间蒙层
+          mengceng: function() {
+              setTimeout(function() {
+                  $('.mengceng').hide();
+              }, 2000)
+          },
+          mengceng1: function() {
+              setTimeout(function() {
+                  $('.kuang').delay(1000).fadeOut(300);
+                  $('.mengceng1').fadeOut();
+
+              }, 1000)
+          },
+          mengceng2: function() {
+              setTimeout(function() {
+                  $('.mengceng2,.kuang').fadeOut();
+
+              }, 2000)
+          },
+          mengceng3: function() {
+              $('mengceng3')
+          }
+      };
         (function() {
             $('.tool b').each(function(index, el) {
                 if ($(this).text() == 0) {
@@ -119,14 +794,14 @@
             var height = $('.user_ex').height();
             var number = $('.jingyanzhi i').text();
             $('.jingyanzhi').css({
-                'height': height,
-                'line-height': height + 'px'
+                'height': height
+                // 'line-height': height + 'px'
             });
             $('.user_ex_color').css({
-                'height': height,
-                'width': number + '%'
+                'height': height
+                // 'width': number + '%'
             })
-            if (number >= 100) {
+            if (number >= 5000) {
                 $('.user_ex_color').css({
                     'width': '100%'
                 })
@@ -136,6 +811,11 @@
 
                 $('.shumiao').hide();
                 $('.tree_tree').show();
+                $('.jingyanzhi b').text('100')
+
+                $('.user_ex_color').css({
+                    'width': number + '%'
+                });
                 var Height = $('.shumiao').height();
                 var Width = $('.shumiao').width();
 
@@ -143,277 +823,109 @@
                     'height': Height,
                     'width': Width
                 });
-                 $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+                $('.tree').css('margin-left', '-' + Width / 2 + 'px');
             }
+
             if (number >= 100 && number < 400) {
                 $('.shumiao').hide();
                 $('.shu_2').show();
+                $('.jingyanzhi b').text('400');
+                $('.position_jiang img').eq(1).show().siblings().hide();
                 var Height = $('.shumiao').height();
                 var Width = $('.shumiao').width();
-                // alert(Width)
-                $(".dingwei").css({
-                    'height': Height * 1.8,
-                    'width': Width * 1.16
+                var baifenbi = Math.floor(number / 400 * 100) + '%';
+                $('.user_ex_color').css({
+                    'width': baifenbi
+                })
+                var widX = Width * 1.22;
+                var heiG = Height*1.86;
+              Timeevent.autogrowUp(widX,heiG)
+            }
+            if (number >= 400 && number < 1000) {
+                $('.shumiao').hide();
+                $('.shu_3').show();
+                $('.jingyanzhi b').text('1000');
+                $('.position_jiang img').eq(2).show().siblings().hide();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+                var baifenbi = Math.floor(number / 1000 * 100) + '%';
+
+                $('.user_ex_color').css({
+                    'width': baifenbi
                 });
-                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
+                var widX = Width * 1.2;
+                var heiG = Height*2.06;
+              Timeevent.autogrowUp(widX,heiG)
+            }
+            if (number >= 1000 && number < 3000) {
+                $('.shumiao').hide();
+                $('.shu_4').show();
+                $('.jingyanzhi b').text('3000');
+                $('.position_jiang img').eq(3).show().siblings().hide();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+
+                var baifenbi = Math.floor(number / 3000 * 100) + '%';
+                $('.user_ex_color').css({
+                    'width': baifenbi
+                });
+                var widX = Width * 1.2;
+                var heiG = Height*1.9;
+                Timeevent.autogrowUp(widX,heiG)
+            }
+            if (number >= 3000 && number < 6000) {
+                $('.shumiao').hide();
+                $('.shu_5').show();
+                $('.jingyanzhi b').text('6000');
+                $('.position_jiang img').eq(4).show().siblings().hide();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+
+                var baifenbi = Math.floor(number / 6000 * 100) + '%';
+                $('.user_ex_color').css({
+                    'width': baifenbi
+                })
+                var widX = Width * 1.1;
+                var heiG = Height*2;
+                Timeevent.autogrowUp(widX,heiG)
+            }
+            if (number >= 6000 && number < 10000) {
+                $('.shumiao').hide();
+                $('.shu_6').show();
+                $('.jingyanzhi b').text('10000');
+                $('.position_jiang img').eq(5).show().siblings().hide();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+                var baifenbi = Math.floor(number / 10000 * 100) + '%';
+
+                $('.user_ex_color').css({
+                    'width': baifenbi
+                });
+                var widX = Width * 1.5;
+                var heiG = Height*2;
+                Timeevent.autogrowUp(widX,heiG)
+            }
+            if (number >= 10000) {
+                $('.shumiao').hide();
+                $('.shu_6').show();
+                $('.jingyanzhi b').text('10000');
+                $('.position_jiang img').eq(5).show().siblings().hide();
+                var Height = $('.shumiao').height();
+                var Width = $('.shumiao').width();
+
+                $('.user_ex_color').css({
+                    'width': '100%'
+                })
+                var widX = Width * 1.5;
+                var heiG = Height*2;
+              Timeevent.autogrowUp(widX,heiG)
             }
         })();
-        var arrnum = [100, 400, 1000, 2500]
-        //        全局时间对象
-        var Timeevent = {
-// 树苗等级成长
-        growUp:function(){
-          setTimeout(function(){
-            var Height = $('.shumiao').height();
-            var Width = $('.shumiao').width();
-            // alert(Width)
-            $(".dingwei").css({
-                'height': Height * 1.8,
-                'width': Width * 1.16
-            });
-          },1800)
-        },
-            //            经验球时间
-            time: function() {
-                setTimeout(function() {
-                    $('.tree span').addClass('jingyan');
-                    $('.tree span').delay(400).fadeOut(200);
-                }, 300);
-            },
-            //            水壶旋转事件
-            shui_time: function() {
-                setTimeout(function() {
-                    $('.shui_1').addClass('zhuan1');
-                    $('.jingyanzhi i').text(Text + exNumber);
-                    var Length = parseInt($('.jingyanzhi i').text());
-                    var maxlength = parseInt($('.jingyanzhi b').text());
-                    if (Length == maxlength || Length > maxlength) {
+        var arrnum = [100, 400, 1000, 3000, 6000, 10000];
+        // 初始化一个宽高
+        var swidth = 120,
+            sheight = 104;
 
-
-                        for (var i = 0; i < arrnum.length; i++) {
-                            if (arrnum[i] == maxlength) {
-                                // setTimeout(function(){
-                                maxlength = arrnum[i + 1];
-                                $('.jingyanzhi b').text(maxlength);
-                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                                $('.user_ex_color').width(baifenbi);
-                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
-                                $('.shumiao').hide();
-                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
-                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
-                                Timeevent.growUp()
-                                // var Height = $('.shumiao').height();
-                                // var Width = $('.shumiao').width();
-                                // // alert(Width)
-                                // $(".dingwei").css({
-                                //     'height': Height * 1.8,
-                                //     'width': Width * 1.16
-                                // });
-                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
-
-                                //  },1000)
-                                return;
-                            }
-                        }
-                    }
-                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                    $('.user_ex_color').width(baifenbi)
-                }, 2000)
-            },
-            //            浇水重置事件
-            zhuan1: function() {
-                setTimeout(function() {
-                    //$('.jingyanzhi i').text(Text+exNumber);
-                    // .delay(1600).fadeOut(100);
-                    $('.shui').hide()
-                    $('.shui_1').css({
-                        right: '-1.6rem',
-                        top: '-1.2rem'
-                    }).removeClass('zhuan1');
-                }, 2000)
-            },
-            //            锄头旋转事件
-            chu_time: function() {
-                setTimeout(function() {
-                    $('.chu_1').addClass('zhuan2');
-                    $('.jingyanzhi i').text(Text + exNumber);
-                    var Length = parseInt($('.jingyanzhi i').text());
-                    var maxlength = parseInt($('.jingyanzhi b').text());
-                    if (Length == maxlength || Length > maxlength) {
-
-                        for (var i = 0; i < arrnum.length; i++) {
-                            if (arrnum[i] == maxlength) {
-                                // setTimeout(function(){
-                                maxlength = arrnum[i + 1];
-                                $('.jingyanzhi b').text(maxlength);
-                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                                $('.user_ex_color').width(baifenbi);
-                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
-                                $('.shumiao').hide();
-                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
-                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
-                                Timeevent.growUp()
-                                // var Height = $('.shumiao').height();
-                                // var Width = $('.shumiao').width();
-                                // // alert(Width)
-                                // $(".dingwei").css({
-                                //     'height': Height * 1.8,
-                                //     'width': Width * 1.16
-                                // });
-                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
-
-
-                                //  },1000)
-                                return;
-                            }
-                        }
-                    }
-                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                    $('.user_ex_color').width(baifenbi)
-                }, 1000)
-            },
-            //            松土重置事件
-            zhuan2: function() {
-                setTimeout(function() {
-                    // .delay(1600).fadeOut(100);
-                    $('.chu').hide()
-                    $('.chu_1').css({
-                        right: '-1.4rem',
-                        bottom: '0.5rem'
-                    }).removeClass('zhuan2');
-                }, 2000)
-            },
-            //            杀虫重置事件
-            peng_time: function() {
-                setTimeout(function() {
-                    $('.jingyanzhi i').text(Text + exNumber);
-                    var Length = parseInt($('.jingyanzhi i').text());
-                    var maxlength = parseInt($('.jingyanzhi b').text());
-                    $('.peng,.chongchong').hide()
-                    $('.peng_1').css({
-                        right: '-1.6rem',
-                        top: '0.1rem'
-                    });
-                    if (Length == maxlength || Length > maxlength) {
-
-                        for (var i = 0; i < arrnum.length; i++) {
-                            if (arrnum[i] == maxlength) {
-                                // setTimeout(function(){
-                                maxlength = arrnum[i + 1];
-                                $('.jingyanzhi b').text(maxlength);
-                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                                $('.user_ex_color').width(baifenbi);
-                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
-                                $('.shumiao').hide();
-                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
-                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
-                                Timeevent.growUp()
-                                // var Height = $('.shumiao').height();
-                                // var Width = $('.shumiao').width();
-                                // // alert(Width)
-                                // $(".dingwei").css({
-                                //     'height': Height * 1.8,
-                                //     'width': Width * 1.16
-                                // });
-                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
-
-
-                                //  },1000)
-                                return;
-                            }
-                        }
-                    }
-                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                    $('.user_ex_color').width(baifenbi)
-                    // .delay(1600).fadeOut(100);
-
-                }, 2000)
-            },
-            //                        锄头旋转事件
-            jian_time: function() {
-                setTimeout(function() {
-                    $('.jian_2').fadeOut(100);
-                    $('.jingyanzhi i').text(Text + exNumber);
-                    var Length = parseInt($('.jingyanzhi i').text());
-                    var maxlength = parseInt($('.jingyanzhi b').text());
-                    if (Length == maxlength || Length > maxlength) {
-
-                        for (var i = 0; i < arrnum.length; i++) {
-                            if (arrnum[i] == maxlength) {
-                                // setTimeout(function(){
-                                maxlength = arrnum[i + 1];
-                                $('.jingyanzhi b').text(maxlength);
-                                var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                                $('.user_ex_color').width(baifenbi);
-                                $('.position_jiang img').eq(i + 1).show().siblings().hide();
-                                $('.shumiao').hide();
-                                $('.mengceng3').delay(400).fadeIn(50).delay(2000).fadeOut(100);
-                                $('.shumiao').delay(200).eq(i + 1).fadeIn();
-                                Timeevent.growUp()
-                                // var Height = $('.shumiao').height();
-                                // var Width = $('.shumiao').width();
-                                // // alert(Width)
-                                // $(".dingwei").css({
-                                //     'height': Height * 1.8,
-                                //     'width': Width * 1.16
-                                // });
-                                // $('.tree').css('margin-left', '-' + Width / 2 + 'px');
-
-
-                                //  },1000)
-                                return;
-                            }
-                        }
-                    }
-                    var baifenbi = Math.floor(Length / maxlength * 100) + '%';
-                    var user_length = $('.user_ex_color').width(baifenbi)
-                }, 1100)
-            },
-            //            锄头重置事件
-            jian_chong: function() {
-                setTimeout(function() {
-                    // .delay(1600).fadeOut(100);
-                    $('.jian').hide()
-                    $('.jian_2').css({
-                        right: '-1.2rem',
-                        top: '.5rem'
-                    });
-                }, 2200)
-            },
-            //            提示语
-            arr: ['快来帮我浇水吧，我要长高高~',
-                '快来帮我修剪哦，我要变漂亮~',
-                '只有订购立即生效的流量包，才能获得修剪机会哦~',
-                '种树好处多多，可以净化空气，防止水土流失呢~',
-                '定期会有惊喜奖励活动，一定要每天都来哦~'
-            ],
-            arr1: [
-                '更多培养机会正在筹建中，表着急哦~',
-                '免费机会用完啦！订购流量包可获得修剪机会呢，一般人我不告诉他~~<a href="" style="color:#ff6600;text-decoration:underline ">订购流量包</a>'
-                //                    '免费机会用完啦！订购流量包可获得修剪机会呢，一般人我不告诉他~~<a href="">订购流量包</a>'
-            ],
-            //       事件间隔时间蒙层
-            mengceng: function() {
-                setTimeout(function() {
-                    $('.mengceng').hide();
-                }, 4000)
-            },
-            mengceng1: function() {
-                setTimeout(function() {
-                    $('.mengceng1,.kuang').fadeOut();
-
-                }, 2000)
-            },
-            mengceng2: function() {
-                setTimeout(function() {
-                    $('.mengceng2,.kuang').fadeOut();
-
-                }, 2000)
-            },
-            mengceng3: function() {
-                $('mengceng3')
-            }
-        };
 
 
 
@@ -422,45 +934,21 @@
 
         // 提示文案
 
-        $('.dingwei').on('click','img', function() {
+        $('.dingwei').on('click', 'img', function() {
+          $('.mengceng1,.kuang').hide();
             var index_number = Math.floor(Math.random() * 5);
-            var treeH = $(this).index();
-            switch (treeH) {
-              case 3:
-              $(this).stop().animate({
-                  height: '1.66rem'
-              }, 200);
-              $(this).delay(80).animate({
-                  height: '1.61rem'
-              }, 200);
+            var treeH = $(this).height()+'px';
+            var treemH = $(this).height()+8+'px';
 
-                break;
-                case 4:
-                $(this).stop().animate({
-                    height: '3rem'
-                }, 200);
-                $(this).delay(80).animate({
-                    height: '2.95rem'
-                }, 200);
-                  break;
-                  case 5:
-                  $(this).stop().animate({
-                      height: '3rem'
-                  }, 200);
-                  $(this).delay(80).animate({
-                      height: '2.95rem'
-                  }, 200);
-                    break;
-              default:
+                    $(this).stop().animate({
+                        height: treemH
+                    }, 300);
+                    $(this).delay(80).animate({
+                        height: treeH
+                    }, 300);
 
-            }
-            // $(this).stop().animate({
-            //     height: '1.66rem'
-            // }, 200);
-            // $(this).delay(80).animate({
-            //     height: '1.61rem'
-            // }, 200);
-            $('.kuang').text(Timeevent.arr[index_number]).fadeIn(300);
+            $('.kuang').text(Timeevent.arr[index_number]).stop().fadeIn(300);
+
             $(".mengceng1").show();
             Timeevent.mengceng1()
 
@@ -470,12 +958,7 @@
             var Index = $(this).parent().index();
             var b_number = parseInt($(this).siblings('b').text());
             Text = parseInt($('.jingyanzhi i').text());
-            // if (b_number <= 1) {
-            //     $(this).siblings('b').text('0').hide();
-            // } else {
-            //     $(this).siblings('b').text(b_number - 1)
-            // }
-            // var ah = parseInt($(this).siblings('b').text());
+
             switch (Index) {
                 case 0:
                     switch (b_number) {
@@ -491,7 +974,7 @@
                             $('.mengceng').show();
                             $(this).siblings('b').text('0').fadeOut();;
                             // 这里传事件的基数
-                            var jishu = jishu || 2;
+                            var jishu = jishu || 5;
                             exNumber = Math.round(jishu * b_number);
                             $(this).fadeOut().delay(2000).fadeIn(200);
                             if (exNumber == 0) {
@@ -505,14 +988,13 @@
                             Timeevent.mengceng();
                             $('.shui_1').delay(200).fadeIn(200).animate({
                                 right: '-1rem',
-                                top: '-1rem'
+                                top: '-0.7rem'
                             }, 600);
                             Timeevent.shui_time();
-                            $('.shui_2').delay(1200).fadeIn(100);
+                            $('.shui_2').delay(1800).fadeIn(100);
 
                             Timeevent.zhuan1();
-                            // $('.jingyanzhi i').delay(3000).text(Text+exNumber);
-                            // $('.shui_1').delay(4000).css({left:'1.2rem',top:'-1.2rem'}).removeClass('zhuan1');
+
 
                     }
                     break;
@@ -529,7 +1011,7 @@
                             $('.mengceng').show();
                             $(this).siblings('b').text('0').fadeOut();;
                             // 这里传事件的基数
-                            var jishu = jishu || 2;
+                            var jishu = jishu || 5;
                             exNumber = Math.round(jishu * b_number);
                             $(this).fadeOut().delay(2000).fadeIn(200);
                             if (exNumber == 0) {
@@ -560,40 +1042,13 @@
                             $(".mengceng2").show();
                             Timeevent.mengceng2()
                             break;
-                            // case 1:
-                            //     $('.mengceng').show();
-                            //     $(this).siblings('b').text('0').fadeOut();;
-                            //     // 这里传事件的基数
-                            //     var jishu = jishu || 2;
-                            //     exNumber = Math.round(jishu * b_number);
-                            //     $(this).fadeOut().delay(3000).fadeIn(200);
-                            //     if (exNumber == 0) {
-                            //         exNumber = 1;
-                            //     }
-                            //     $('.exnumber').text(exNumber);
-                            //     $('.tree span').delay(1500).fadeIn();
-                            //     Timeevent.time()
-                            //     $('.tree span').removeClass('jingyan');
-                            //
-                            //     Timeevent.mengceng();
-                            //     $('.peng_1').delay(200).fadeIn(200).animate({
-                            //         right: '-1.3rem',
-                            //         top: '0.1rem'
-                            //     }, 600);
-                            //     //                            Timeevent.chu_time();
-                            //     $('.peng_2').delay(1200).fadeIn(100);
-                            //     $('.chongchong').delay(1250).fadeOut(100);
-                            //
-                            //     Timeevent.peng_time()
-                            //
-                            //
-                            //     break;
+
 
                         default:
                             $('.mengceng').show();
                             $(this).siblings('b').text('0').fadeOut();;
                             // 这里传事件的基数
-                            var jishu = jishu || 2;
+                            var jishu = jishu || 5;
                             exNumber = Math.round(jishu * b_number);
                             $('.chongchong').fadeIn();
                             $(this).fadeOut().delay(2000).fadeIn(200);
@@ -607,12 +1062,12 @@
 
                             Timeevent.mengceng();
                             $('.peng_1').delay(200).fadeIn(200).animate({
-                                right: '-1.3rem',
+                                right: '-1rem',
                                 top: '0.1rem'
                             }, 600);
-                            //                            Timeevent.chu_time();
+
                             $('.peng_2').delay(1200).fadeIn(100);
-                            //$('.jingyanzhi i').text(Text+exNumber);
+
                             Timeevent.peng_time()
                     }
                     break;
@@ -629,7 +1084,7 @@
                             $('.mengceng').show();
                             $(this).siblings('b').text('0').fadeOut();;
                             // 这里传事件的基数
-                            var jishu = jishu || 2;
+                            var jishu = jishu || 5;
                             exNumber = Math.round(jishu * b_number);
                             $(this).fadeOut().delay(2000).fadeIn(200);
                             if (exNumber == 0) {
